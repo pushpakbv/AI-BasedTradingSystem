@@ -1,0 +1,23 @@
+{
+  "url": "https://www.freightwaves.com/news/first-look-union-pacific-3q-earnings",
+  "fetched_at": "2025-10-24T04:22:45.589995Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T12:51:04Z",
+  "title": "First look: Union Pacific Q3 earnings",
+  "content": "Union Pacific Corp. (NYSE: UNP ) on Thursday said third-quarter earnings were $1.79 billion on revenue of $6.24 billion.\n\nThe Omaha, Nebraska-based company said per-share profit was $3.01. Adjusted earnings for costs related to its proposed transcontinental merger with Norfolk Southern (NYSE: NSC ) were $3.08 per share.\n\nThe results exceeded expectations of revenue of $6.23 billion and $2.99 EPS of seven analysts surveyed by Zacks Investment Research.\n\nNorfolk Southern reports earnings Thursday after the close of markets.\n\nFind more articles by Stuart Chirls here .\n\nFreight locomotive sales power Wabtec earnings\n\nJust two U.S. makers of critical railroad material left after plant closure\n\nCN announces changes to senior management\n\nThe chemicals industry hates the UP – NS merger",
+  "meta_description": "Union Pacific third quarter profit beat estimates despite costs related to its proposed merger with Norfolk Southern.",
+  "status": 200,
+  "source_domain": "www.freightwaves.com",
+  "word_count": 119,
+  "matched_companies": [
+    {
+      "name": "Union Pacific Corporation",
+      "ticker": "UNP",
+      "sector": "Rail",
+      "mentions": 4
+    }
+  ],
+  "relevance_score": 0.4225352112676056,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

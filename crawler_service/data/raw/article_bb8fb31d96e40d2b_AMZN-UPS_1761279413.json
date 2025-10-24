@@ -1,0 +1,29 @@
+{
+  "url": "https://www.supplychaindive.com/news/amazon-us-postal-service-doorstep-returns/803544/",
+  "fetched_at": "2025-10-24T04:16:53.114037Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T00:00:00Z",
+  "title": "Amazon links up with USPS for doorstep returns",
+  "content": "Pickups from the Postal Service have been available for some customers since this summer, per the e-commerce giant.\n\nReturns services could become an important piece of the USPS' business as it looks to turn around its ailing financial results, according to a 2024 report from the agency's Office of Inspector General. In fiscal year 2023, the agency received $665 million in revenue from 132 million returned parcels.\n\n\"Considering the significant growth of the reverse logistics business, there may be additional opportunities for USPS to grow its share of the reverse logistics marketplace and increase its revenues from this line of business,\" the report said.\n\nFor Amazon, the additional returns option comes as it gears up for the peak shipping season and the expected post-holiday wave of returns. Retailers forecast 17% of 2025 holiday sales will be returned , a notch above the projected 15.8% in overall annual sales to be returned this year, per a report from the National Retail Federation and Happy Returns.\n\nAmazon still has a variety of returns options for customers beyond USPS pickup, including drop-off returns options at Staples, Whole Foods and The UPS Store locations.\n\n\"Four out of five Amazon customers in the U.S. have access to at least one of our 8,000-plus drop-off locations, with a label-free, shipping box-free return option available within 5 miles of their home,\" the Amazon spokesperson said.",
+  "meta_description": "Pickups from the Postal Service have been available for some customers since this summer, per the e-commerce giant.",
+  "status": 200,
+  "source_domain": "www.supplychaindive.com",
+  "word_count": 228,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 5
+    },
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.3543307086614173,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

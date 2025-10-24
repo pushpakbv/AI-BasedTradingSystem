@@ -1,0 +1,29 @@
+{
+  "url": "https://www.aircargonews.net/news/region/middle-east",
+  "fetched_at": "2025-10-24T04:17:34.789926Z",
+  "published_date": "2025-09-26",
+  "published_datetime": "2025-09-26T11:15:00Z",
+  "title": "Air Cargo News | The latest Middle East airfreight news",
+  "content": "Qatar Airways Cargo has upgraded its mobile application to provide customers with enhanced self-service capabilities, including real-time shipment tracking\n\nQatar Airways Cargo is leveraging passenger network adjustments to boost winter capacity, adding frequencies to London, Bangkok and multiple African destinations\n\nGerman logistics provider Rhenus Group is expanding its UAE operations and Gulf presence with a new Abu Dhabi office and air-ocean service\n\nSaudi Arabia’s new flag carrier Riyadh Air has secured a comprehensive ULD supply and management partnership with Unilode, featuring Bluetooth tracking\n\nAircraft charter specialist Air Charter Service has established its first Saudi Arabian presence with a new office in Riyadh\n\nFederal Express (FedEx) has launched its first dedicated flight into Saudi Arabia, connecting the country with the US and Europe\n\nDHL eCommerce has finalised its entry into the Saudi Arabian market with the investment in a minority stake of parcel logistics firm AJEX Logistics Services.\n\nNew Saudi Arabian airline Riyadh Air has selected SATS Saudia Arabia to provide cargo handling services at several airports across the country\n\nAbu Dhabi's vaccine distribution hub, developed in partnership with stakeholders including Etihad Cargo, has begun operations following the arrival of the facility’s first shipments\n\nFreighter operator Cargolux has dismissed social media statements alleging that its flights have been using Iranian airspace\n\nDubai-headquartered cargo airline SolitAir has launched flights to Beirut and Kuwait and has and signed an agreement for the lease of two Boeing 737-800 freighters\n\nQatar Airways has restarted flights from Doha after the country’s airspace was closed yesterday due to Iran launching missiles against US bases in Qatar and Iraq\n\nAirlines cancelled more flights to the Middle East over the weekend and are continuing to divert around much of the region following US strikes on Iran\n\nAircraft lessor AviLease has become the latest company to place an order for the Airbus A350 freighter in a deal that will make it the joint largest owner of the model\n\nThreatened 100% tariffs have triggered a surge in air cargo demand from China to the US with strong demand from the technology and e-commerce sectors\n\nAirfreight rates from China to the US increased 2.5% week-on-week to $5 per kg last week, reaching levels not seen since mid-August as trade tensions escalate",
+  "meta_description": "Interested in the latest air cargo developments in the Middle East? Air Cargo News is the leading provider of news and analysis on the airfreight industry. Learn more",
+  "status": 200,
+  "source_domain": "www.aircargonews.net",
+  "word_count": 369,
+  "matched_companies": [
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 2
+    },
+    {
+      "name": "DHL Group",
+      "ticker": "DPW.DE",
+      "sector": "Logistics",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.14742014742014742,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

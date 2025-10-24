@@ -1,0 +1,35 @@
+{
+  "url": "https://www.freightwaves.com/news/category/shared-truckload",
+  "fetched_at": "2025-10-24T04:15:43.626547Z",
+  "published_date": "2025-10-24",
+  "published_datetime": "2025-10-24T04:15:43.625514Z",
+  "title": "Shared Truckload Archives",
+  "content": "E-commerce retailers using programs like Amazon FBA or Walmart Fulfillment Services face mounting logistics challenges that can make or break their success. From rigid delivery windows to seasonal inventory fluctuations, these sellers must navigate a complex shipping environment while maintaining tight margins. In this high-stakes arena, innovative freight solutions like Shared Truckload (STL) are emerging […]",
+  "meta_description": "Shared Truckload News, Freight Information Delivered On Time — Sponsored by Flock Freight",
+  "status": 200,
+  "source_domain": "www.freightwaves.com",
+  "word_count": 56,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 1
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.4166666666666667,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "sector": "Technology",
+    "mentions": 1
+  }
+}

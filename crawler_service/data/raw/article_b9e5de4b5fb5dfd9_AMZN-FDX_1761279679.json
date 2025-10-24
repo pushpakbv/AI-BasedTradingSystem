@@ -1,0 +1,29 @@
+{
+  "url": "https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/",
+  "fetched_at": "2025-10-24T04:21:19.534074Z",
+  "published_date": "2025-10-21",
+  "published_datetime": "2025-10-21T08:00:00Z",
+  "title": "Amazon identifies the issue that broke much of the internet, says AWS is back to normal | TechCrunch",
+  "content": "An outage on Monday affected web hosting giant Amazon Web Services (AWS), which took out vast swathes of the web, including websites, banks, and some government services. On Monday afternoon, the company offered an update on the cause of the issue and said it was working to restore services. At 6:01 p.m. ET, Amazon said all AWS services had returned to normal operations.\n\nIn an announcement on the Amazon website, the company shared that the underlying issue was related to DNS resolution. DNS, or Domain Name System, is a system that converts web addresses into IP addresses so that customer apps and websites can load. While some glitches can be resolved quickly, DNS issues can sometimes take longer to resolve.\n\n“AWS reported increased error rates for multiple services and determined that the issue was related to DNS resolution of the DynamoDB API endpoints in the N. Virginia (us-east-1) Region,” the announcement stated. “The underlying DNS issue was fully mitigated at 2:24 AM PDT.”\n\nThough the issue itself was fixed, Amazon needed more time to “fully restore service,” which it said it was doing “as quickly as possible.” The company also said that the issue affected Amazon.com and its subsidiaries, as well as AWS customer support operations.\n\nAmazon said on Monday evening Eastern time that the outage had been “fully mitigated” and that most services are returning to normal after an hours-long stretch during which much of the internet could not load.\n\nSeveral major apps were not working. Coinbase , Fortnite , Signal , Perplexity , Venmo , and Zoom faced lengthy outages, as did Amazon’s own services , including its Ring video surveillance products . The outage even disrupted Eight Sleep’s cooling pods, disturbing the sleep of users .\n\nMillions of companies and organizations rely on AWS to host their websites, apps, and other critical online systems. The company has data centers all over the world, and Amazon is said to have at least 30% of the total cloud market.\n\nBefore this, the most recent global internet outage was in 2024, when cybersecurity giant CrowdStrike published a buggy update to its anti-malware engine, causing millions of computers around the world to crash and resulting in airport delays and mass outages. Systems globally took several days to return to normal.\n\nPrior to that, a malfunction at DNS provider Akamai in 2021 caused some of the world’s largest websites to drop off the internet for several hours, including FedEx, Steam, and the PlayStation Network.\n\nAmazon advised customers to refer to the AWS Health Dashboard for more detailed information on the outage and how it was being resolved.",
+  "meta_description": "The outage affected websites like Coinbase and Fortnite, and disrupted services like Signal, Zoom, and Amazon's own products, including Ring.",
+  "status": 200,
+  "source_domain": "techcrunch.com",
+  "word_count": 435,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 19
+    },
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.6342494714587738,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.aircargonews.net/news/business/finance",
+  "fetched_at": "2025-10-24T04:17:47.883734Z",
+  "published_date": "2025-09-19",
+  "published_datetime": "2025-09-19T09:29:00Z",
+  "title": "The latest airfreight finance updates | Air Cargo News",
+  "content": "Express giant reduces own-controlled transpacific capacity by 25% year-on-year as US tariffs on Chinese e-commerce shipments dampen demand\n\nEtihad Cargo saw its revenues increase in the first half of the year, while cargo volumes also improved but by a lower amount\n\nVietnam-based air cargo handling company ALS Cargo Terminal (ALSC) has secured investment from AP Moller Capital to help fund automation and expansion\n\nScan Global Logistics (SGL) is expecting a ”highly volatile” end to the year, driven by global trade unpredictability, and will look to cut costs in response\n\nForwarders that embrace agility, specialise in specific verticals, and offer value-added services proved a winning combination during the first half of 2025\n\nFlexport has partnered with investment firm BlackRock to expand its financing programme that allows customers to access funding for their supply chain operations\n\nCargojet's second-quarter revenues increased by 3.2% year on year due to growth in domestic and charter revenues\n\nCathay Cargo delivered a “resilient” performance in the first half of the year despite the impact of US tariffs and the ending of the de minimis exemption\n\nDHL’s airfreight revenues declined in the second quarter of the year despite an increase in volumes, while the overall business focused on cost control\n\nThe Air France KLM Group saw its cargo revenues and traffic improve slightly in the second quarter of the year\n\nLufthansa's cargo revenues and volumes were up in the second quarter of 2025, supported by \"robust market demand\"\n\nIAG Cargo recorded a rise in cargo volumes and cargo revenue in the second quarter of 2025, driven by investment in digital infrastructure and service improvement\n\nThe acquisition of Schenker and frontloading contributed to a rise in DSV's airfreight volumes in the second quarter of 2025\n\nUPS was challenged by tariffs and changing consumer habits in the second quarter, but air cargo business helped improve its results\n\nAir Cargo Forum 2025 will feature fireside chats, CEO roundtables and sessions looking at industry outlook, trends and much more\n\nAsia Pacific has become a greater focus for e-commerce following US tariff and de minimis changes that curbed e-commerce out of China",
+  "meta_description": "Interested in the latest airfreight finance news? Air Cargo News is the leading provider of news and analysis covering the airfreight industry. Learn more",
+  "status": 200,
+  "source_domain": "www.aircargonews.net",
+  "word_count": 349,
+  "matched_companies": [
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 1
+    },
+    {
+      "name": "DHL Group",
+      "ticker": "DPW.DE",
+      "sector": "Logistics",
+      "mentions": 1
+    },
+    {
+      "name": "A.P. Moller – Maersk",
+      "ticker": "AMKBY",
+      "sector": "Ocean Freight",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.11780104712041885,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "A.P. Moller – Maersk",
+    "ticker": "AMKBY",
+    "sector": "Ocean Freight",
+    "mentions": 1
+  }
+}

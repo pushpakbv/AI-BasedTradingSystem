@@ -1,0 +1,23 @@
+{
+  "url": "https://www.freightwaves.com/news/union-pacific-profits-rise-on-operational-efficiency-pricing-gains",
+  "fetched_at": "2025-10-24T04:22:59.286299Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T15:34:19Z",
+  "title": "Union Pacific profits rise on operational efficiency, pricing gains",
+  "content": "Union Pacific was firing on all cylinders during the third quarter, as pricing gains, record workforce productivity and fuel consumption led to higher profits despite flat volume.\n\n“We are focused on driving continued improvements in our pursuit of what’s possible … [C]ore pricing gains and continued operational efficiencies drove the strong financial results in the quarter,” Chief Executive Jim Vena said on the railroad’s Thursday morning earnings call. “Freight revenue, excluding fuel, grew for the sixth consecutive quarter and set a best-ever record. In addition, we set best-ever quarterly records in workforce productivity, fuel consumption, terminal dwell, and train length.”\n\nOperating income at Omaha-based UP (NYSE: UNP ) increased 6%, to $2.5 billion, as revenue grew 3%, to $6.2 billion. Earnings per share increased 9%, to $3.01.\n\nThe quarterly operating ratio improved 1.1 points to 59.2% as expenses increased 1%. Adjusted for costs related to the proposed acquisition of Norfolk Southern (NYSE: NSC ), the operating ratio was 58.5%.\n\nNorfolk Southern will report earnings Thursday after the close of markets. The companies are expected to submit their detailed merger application with the Surface Transportation Board after Oct. 29.\n\nVolume was flat when measured by carloads and intermodal units, but up 5% based on revenue ton-miles.\n\nBulk carloads increased 7%, largely on a spike in coal traffic. Industrial products volume rose 3% as industrial chemicals and plastic traffic increased 8%. Premium volume – which includes intermodal and automotive traffic – declined 5%, led by an identical drop in intermodal volume. The intermodal decline, UP said, was largely due to unfavorable comparisons to last year’s unprecedented surge in international intermodal traffic.\n\nKey operational metrics all improved for the quarter: Freight car velocity was up 8%, train speed increased 4%, and terminal dwell declined 9% to an all-time low of 20.4 hours. Average train length grew 2% to 9,801 feet, a quarterly record.\n\n“Our results do an excellent job demonstrating the team’s unwavering focus on our strategy to lead the industry in safety, service, and operational excellence,” said Eric Gehringer, executive vice president of operations. “Our vision is clear and fundamentally the railroad is operating exceptionally well, showcasing robust fluidity, consistency, and reliability.”\n\nExecutives noted that the operational improvements came amid the highest volume quarter of the year.\n\nEmployment levels dropped 4% compared to a year ago, to 28,871.\n\nIn a note to employees, Vena said the personal injury and train accident rates improved to the point that UP was on pace to reach its goal of becoming the safest Class I railroad in the U.S.\n\nThe chemicals industry hates the UP – NS merger\n\nFreight locomotive sales power Wabtec earnings\n\nJust two U.S. makers of critical railroad material left after plant closure\n\nCN announces changes to senior management",
+  "meta_description": "Union Pacific's Q3 profits rose on improved pricing, record workforce productivity and fuel consumption.",
+  "status": 200,
+  "source_domain": "www.freightwaves.com",
+  "word_count": 456,
+  "matched_companies": [
+    {
+      "name": "Union Pacific Corporation",
+      "ticker": "UNP",
+      "sector": "Rail",
+      "mentions": 4
+    }
+  ],
+  "relevance_score": 0.12526096033402923,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

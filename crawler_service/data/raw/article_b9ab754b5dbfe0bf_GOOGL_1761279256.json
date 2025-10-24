@@ -1,0 +1,23 @@
+{
+  "url": "https://www.marketwatch.com/story/googles-new-anthropic-deal-is-a-validation-moment-for-this-under-the-radar-asset-e78a46ec?mod=newsviewer_click",
+  "fetched_at": "2025-10-24T04:14:16.964394Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T22:22:00Z",
+  "title": "Google’s new Anthropic deal is a validation moment for this under-the-radar asset",
+  "content": "Google’s new Anthropic deal is a validation moment for this under-the-radar asset\n\nAlphabet Inc.’s cloud and chip businesses just got a big endorsement in the form of a refreshed agreement with artificial-intelligence startup Anthropic.\n\nUnder the terms of the newly announced deal, Anthropic will be able to access up to 1 million of Google’s GOOGL GOOG tensor processing units, or TPUs, to train and run its Claude large-language model. The company, which is a rival to OpenAI, will also use various Google Cloud services.\n\nEmily Bary is MarketWatch's assistant managing editor, tech. She is based in New York.\n\nCopyright © 2025 MarketWatch, Inc. All rights reserved.",
+  "meta_description": "Alphabet’s cloud business secured a key AI partnership with Anthropic, signaling an increasingly competitive landscape for high-performance chips.",
+  "status": 200,
+  "source_domain": "www.marketwatch.com",
+  "word_count": 106,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 8
+    }
+  ],
+  "relevance_score": 0.8823529411764706,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

@@ -1,0 +1,35 @@
+{
+  "url": "https://www.supplychaindive.com/news/fedex-ups-delivery-rates-q3-2025-increase/803239/",
+  "fetched_at": "2025-10-24T04:16:44.946544Z",
+  "published_date": "2025-10-22",
+  "published_datetime": "2025-10-22T00:00:00Z",
+  "title": "FedEx, UPS pricing tweaks set up ground shipping rates for record 2025",
+  "content": "Fuel surcharge pressures and new rounding rules are challenging shippers ahead of peak season, per the TD Cowen/AFS Freight Index.\n\nTD Cowen and AFS Logistics project that 2025 will set a record for highest average rate per package as carrier pricing tweaks, additional fees and waning discount activity keep the index elevated. Fuel surcharge increases from FedEx and UPS have been a particular pain point for shippers in recent quarters.\n\n\"The on-highway diesel fuel price rose 1.3% YOY, while the carrier Ground fuel surcharge rates increased 26.1% YOY, perpetuating cumulative effects of prior fuel surcharge adjustments,\" per the index.\n\nShippers are proactively finding ways to limit the effects of carrier pricing adjustments, said Mingshu Bates, chief analytics officer and president of parcel at AFS, in an interview. Many are shifting volume to slower, less expensive services and exploring alternative delivery options.\n\nAdditionally, Bates said several AFS Logistics clients are working with their packaging providers to shrink their box sizes, blunting the impact of FedEx and UPS' moves to round up any fraction of an inch when calculating dimensions.\n\n\"I think the shippers are getting savvier,\" Bates said.\n\nMeanwhile, the cost per package for express parcel shipments increased more than TD Cowen and AFS Logistics expected in Q3. The index attributed the year-over-year jump from 0.7% to 4% in part to fuel surcharge pressures, an increase in average billed weight and shippers using more premium services.",
+  "meta_description": "Fuel surcharge pressures and new rounding rules are challenging shippers ahead of peak season, per the TD Cowen/AFS Freight Index.",
+  "status": 200,
+  "source_domain": "www.supplychaindive.com",
+  "word_count": 235,
+  "matched_companies": [
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 3
+    },
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.33707865168539325,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "FedEx Corporation",
+    "ticker": "FDX",
+    "sector": "Logistics",
+    "mentions": 3
+  }
+}

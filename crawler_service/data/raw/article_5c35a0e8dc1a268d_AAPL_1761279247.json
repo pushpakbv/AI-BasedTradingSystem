@@ -1,0 +1,23 @@
+{
+  "url": "https://www.cnbc.com/2025/10/23/apple-american-made-ai-servers-texas.html",
+  "fetched_at": "2025-10-24T04:14:07.748750Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T21:26:11Z",
+  "title": "Apple begins shipping American-made AI servers from Texas",
+  "content": "Apple has started shipping advanced servers for artificial intelligence applications out of a factory in Houston, Texas, the company announced on Thursday.\n\nThese servers are a core part of Apple's commitment to spend $600 billion in the U.S . on advanced manufacturing, suppliers, and other initiatives, and the milestone could please President Donald Trump , who has called for Apple and other technology companies to do more manufacturing on U.S. shores.\n\nApple's plan to assemble servers in the U.S. was first revealed in February.\n\nApple Chief Operating Officer Sabih Khan said on Thursday that the servers will power the company's Apple Intelligence and Private Cloud Compute services. Apple is using its own silicon in its Apple Intelligence servers.\n\n\"Our teams have done an incredible job accelerating work to get the new Houston factory up and running ahead of schedule and we plan to continue expanding the facility to increase production next year,\" Khan said in a statement.\n\nThe Houston factory is on track to create thousands of jobs, Apple said. The Apple servers were previously manufactured overseas.\n\nIn August, Apple CEO Tim Cook met with Trump to announce additional U.S. spending , especially on semiconductor companies under a program it calls the American Manufacturing Program.\n\nCook gave Trump a gift based on the U.S.-made Corning glass used on iPhones and Apple Watches.\n\nApple also opened a manufacturing academy in partnership with Michigan State in July .\n\nWhile Trump has praised Cook and Apple for its U.S. spending commitments, he has also at times pushed Apple to make its iPhones in the U.S ., a process that experts say could take years and would be costly.\n\nThe Trump administration has separately called for and cancelled tariffs that could hurt Apple, which imports its computers and phones to the U.S. from China, India, and Vietnam.\n\nIn September, Cook said in a CNBC interview that Apple is contributing to U.S. manufacturing by doing business with U.S.-based semiconductor suppliers, and that its spending and expertise is enabling chips to be fabricated and packaged entirely in the U.S.\n\n\"You can add a lot by making it global and then stitching together the end-to-end supply chain in semiconductors,\" Cook said. \"I can't stress how important this is and how much that will add to what we're doing.\"\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "The milestone could please President Donald Trump, who has called for Apple to do more manufacturing on U.S. shores.",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 441,
+  "matched_companies": [
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 20
+    }
+  ],
+  "relevance_score": 0.6410256410256411,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

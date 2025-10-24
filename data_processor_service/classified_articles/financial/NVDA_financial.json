@@ -1,0 +1,113 @@
+[
+  {
+    "url": "https://www.marketwatch.com/story/intels-stock-is-climbing-as-earnings-show-a-turnaround-slowly-taking-hold-017a84c0?mod=newsviewer_click",
+    "fetched_at": "2025-10-24T04:14:19.786079Z",
+    "published_date": "2025-10-23",
+    "published_datetime": "2025-10-23T23:03:00Z",
+    "title": "Intel’s stock is climbing as earnings show a turnaround slowly taking hold",
+    "content": "Intel’s stock is climbing as earnings show a turnaround slowly taking hold\n\nIntel Corp. has the investment backing of the U.S. government and a product partnership with Nvidia Corp. that’s expected to pay off down the road. But Thursday was all about meeting expectations in the present day.\n\nOn that, the company delivered, at least when it came to third-quarter results. Intel posted $13.7 billion in revenue, above the $13.2 billion that analysts tracked by FactSet were expecting and up 3% from a year before.\n\nBritney Nguyen is a tech reporter covering Nvidia, chips and AI. You can find her on X at @britneycath.\n\nEmily Bary is MarketWatch's assistant managing editor, tech. She is based in New York.\n\nCopyright © 2025 MarketWatch, Inc. All rights reserved.",
+    "meta_description": "The company topped revenue expectations and said it’s “having a difficult time meeting all the demand that’s out there” because of supply constraints.",
+    "status": 200,
+    "source_domain": "www.marketwatch.com",
+    "word_count": 126,
+    "matched_companies": [
+      {
+        "name": "NVIDIA Corporation",
+        "ticker": "NVDA",
+        "sector": "Semiconductors",
+        "mentions": 2
+      }
+    ],
+    "relevance_score": 0.18633540372670807,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 2
+    },
+    "classification": "financial",
+    "classified_at": "2025-10-24T04:52:31.663210Z"
+  },
+  {
+    "url": "https://www.cnbc.com/2025/10/23/stock-market-today-live-updates.html",
+    "fetched_at": "2025-10-24T04:14:10.195197Z",
+    "published_date": "2025-10-23",
+    "published_datetime": "2025-10-23T22:07:04Z",
+    "title": "Stock futures are little changed ahead of highly awaited inflation data: Live updates",
+    "content": "Stock futures are little changed Thursday night ahead of a key inflation print.\n\nFutures tied to the Dow Jones Industrial Average fell 18 points, or 0.04%. S&P futures ticked up 0.06%, while Nasdaq 100 futures added almost 0.2%.\n\nIn after-hours trading, Intel shares popped 7% after the chipmaker reported third-quarter sales that exceeded analysts' estimates . Target shares rose marginally after the retailer announced it would slash its corporate workforce by 8%, marking its first major layoff in a decade. Applied Materials and Rivian also announced layoffs.\n\nThe three major U.S. indexes ended the previous session higher, driven by inflows into tech stocks and bullish sentiment heading into the heat of third-quarter earnings season. The S&P 500 rose nearly 0.6%, while the Dow Jones Industrial Average gained 144 points, or 0.3%. The tech-heavy Nasdaq Composite outperformed, closing the day 0.9% higher as heavyweight AI stocks such as Nvidia and Oracle got a boost.\n\nInvestors are awaiting Friday's release of the September consumer price index report, which could be a market-moving event given the lack of federal data being released amid the ongoing U.S. government shutdown. Wall Street will be watching for any signs of inflation cooling or getting hotter, and if tariffs are affecting consumer prices.\n\nThe CPI, which was supposed to be released Oct. 15, will be the last economic reading before the Federal Reserve's October meeting next week. Markets widely expect the Fed to lower interest rates by another quarter percentage point.\n\n\"Markets remain cautious, as the lack of clean economic data adds uncertainty for both the Fed and investors,\" said Vishal Khanduja, head of broad markets fixed income at Morgan Stanley Investment Management. \"Until more reliable data emerges, the Fed is likely to adhere to market-priced expectations, though Friday's CPI should provide greater clarity. The impact of tariffs creeping into inflation will be key.\"\n\nStocks are on pace to notch weekly gains, after Thursday's moves erased Wednesday's losses. The S&P 500 is tracking for a 1.1% gain, while the Nasdaq and the 30-stock Dow are up nearly 1.2% week to date.\n\nAI company Anthropic and Google officially announced their cloud partnership Thursday in a deal worth tens of billions of dollars.\n\nThe deal, which marks Google's largest TPU commitment to date, gives Anthropic access to up to one million of Google's custom-designed Tensor Processing Units, or TPUs, and is expected to bring well over a gigawatt of AI compute capacity online in 2026. The partnership will add over a gigawatt of compute capacity by 2026, supporting Anthropic's surging $7 billion revenue run rate.\n\nShares of Google parent Alphabet were about 0.7% higher in extended trading. More on the deal here .\n\nCheck out the companies making headlines in after-hours trading:\n\nShortly after 6 p.m. ET on Thursday, futures tied to the S&P 500 gained about 0.05% and Nasdaq-100 futures added nearly 0.1%. Futures tied to the Dow Jones Industrial Average dipped 15 points, or less than 0.1%.\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+    "meta_description": "The three major U.S. indexes ended Thursday higher, driven by inflows into tech stocks and bullish sentiment heading into the heat of earnings season.",
+    "status": 200,
+    "source_domain": "www.cnbc.com",
+    "word_count": 550,
+    "matched_companies": [
+      {
+        "name": "Alphabet Inc. (Google)",
+        "ticker": "GOOGL",
+        "sector": "Technology",
+        "mentions": 5
+      },
+      {
+        "name": "NVIDIA Corporation",
+        "ticker": "NVDA",
+        "sector": "Semiconductors",
+        "mentions": 1
+      }
+    ],
+    "relevance_score": 0.15332197614991483,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    },
+    "classification": "financial",
+    "classified_at": "2025-10-24T04:52:31.664213Z"
+  },
+  {
+    "url": "https://www.fool.com/coverage/filings/2025/10/24/ellis-investment-partners-loads-up-64k-gpix-shares/",
+    "fetched_at": "2025-10-24T04:15:14.348861Z",
+    "published_date": "2025-10-24",
+    "published_datetime": "2025-10-24T02:53:28Z",
+    "title": "This Fund Bet $3.3 Billion on GPIX — Here's Why Income-Focused ETFs Are Gaining Momentum | The Motley Fool",
+    "content": "Ellis Investment Partners disclosed a purchase of Goldman Sachs S&P 500 Premium Income ETF ( GPIX +0.54% ) shares valued at an estimated $3.3 million during the quarter ended September 30, according to an SEC filing released Wednesday.\n\nAccording to an SEC filing on Wednesday, Ellis Investment Partners increased its stake in the Goldman Sachs S&P 500 Premium Income ETF by 64,462 shares during the third quarter. The estimated transaction value was $3.3 million. Following this buy, the fund’s position totals 107,147 shares valued at $5.6 million as of September 30.\n\nThis was a buy; the GPIX stake now represents 1.01% of Ellis Investment Partners’ 13F reportable AUM.\n\nAs of Thursday's market close, GPIX shares were priced at $52.41, up 7% over the past year versus a 16% gain for the S&P 500.\n\nThe fund offers investors a rules-based approach to income generation from S&P 500 equities, maintaining broad market exposure while focusing on yield and diversification.\n\nEllis Investment Partners’ latest investment in the Goldman Sachs S&P 500 Premium Income ETF (GPIX) highlights the continued appeal of income-focused equity strategies among institutional investors seeking steady returns. The ETF, which launched last year, blends traditional S&P 500 exposure with an options overlay that generates monthly income distributions, yielding a roughly 8% 12-month distribution rate as of September 30. That structure has drawn demand from investors looking for yield without leaving equities. GPIX’s assets under management stand $1.95 billion as of late October, underscoring its momentum in the premium-income ETF space. For Ellis, and given the ETF's top holdings in NVIDIA, Microsoft, and Apple, this move complements its growth-heavy investments in VUG, QQQ, and AAPL, adding a more defensive element to the portfolio after a strong year for risk assets. For long-term investors, GPIX offers an alternative to bond-like income with equity participation, even though the options strategy can lag in sharply rising markets.\n\nETF (Exchange-Traded Fund): An investment fund traded on stock exchanges, holding a basket of assets like stocks or bonds.\n\nAUM (Assets Under Management): The total market value of assets an investment firm or fund manages on behalf of clients.\n\n13F reportable: Refers to holdings that must be disclosed in quarterly SEC filings by institutional investment managers with over $100 million in assets.\n\nDividend yield: Annual dividends paid by a fund or stock divided by its current price, shown as a percentage.\n\nTrailing twelve-month: Data measured over the most recent 12 consecutive months, often used for performance or yield.\n\nS&P 500 Index: A stock market index tracking the performance of 500 large U.S. companies, widely used as a benchmark.\n\nBenchmark: A standard against which the performance of a security, fund, or investment manager is measured.\n\nLarge-cap: Refers to companies with a large market capitalization, typically over $10 billion.\n\nSystematic exposure: Investment strategy aiming for consistent, rules-based exposure to a specific market or asset class.\n\nPortfolio composition: The mix and proportion of different assets or securities held within an investment portfolio.\n\nPremium Income: Investment strategy focused on generating additional income, often through options or enhanced yield techniques.\n\nOutperforming: Achieving a higher return than a specific benchmark or comparable investment.",
+    "meta_description": "This Fund Bet $3.3 Billion on GPIX — Here's Why Income-Focused ETFs Are Gaining Momentum",
+    "status": 200,
+    "source_domain": "www.fool.com",
+    "word_count": 519,
+    "matched_companies": [
+      {
+        "name": "Apple Inc.",
+        "ticker": "AAPL",
+        "sector": "Technology & Manufacturing",
+        "mentions": 2
+      },
+      {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 1
+      },
+      {
+        "name": "NVIDIA Corporation",
+        "ticker": "NVDA",
+        "sector": "Semiconductors",
+        "mentions": 1
+      }
+    ],
+    "relevance_score": 0.10849909584086799,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    },
+    "classification": "financial",
+    "classified_at": "2025-10-24T04:52:31.665210Z"
+  }
+]

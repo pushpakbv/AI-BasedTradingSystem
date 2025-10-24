@@ -1,0 +1,29 @@
+{
+  "url": "https://www.digitalcommerce360.com/article/alibaba-revenue/",
+  "fetched_at": "2025-10-24T04:21:06.553066Z",
+  "published_date": "2025-10-24",
+  "published_datetime": "2025-10-24T04:21:06.547957Z",
+  "title": "Alibaba posts a 10% gain in ecommerce sales in Q1",
+  "content": "Alibaba Group Holding Ltd. posted stronger profit but only modest revenue growth in its fiscal Q1, as the Chinese ecommerce giant leaned on gains from investments while continuing to push into quick commerce and cloud computing.\n\nFor its fiscal Q1 ending June 30, 2025, Alibaba revenue reached RMB247.65 billion (US$34.57 billion). That’s up 2% from RMB243.24 billion a year earlier. Stripping out divested businesses such as Sun Art and Intime, sales would have risen 10% year over year, reflecting gains in their domestic and international e-commerce operations.\n\nNet income jumped sharply. The company reported RMB42.38 billion (US$5.92 billion), up 76% from RMB24.02 billion a year earlier, boosted by investment gains and the sale of its Trendyol local consumer services unit. Operating profit, however, slipped 3% to RMB34.99 billion (US$4.88 billion) as Alibaba increased spending on its Taobao Instant Commerce quick-delivery service, user acquisition, and technology.\n\nAlibaba owns the world’s two largest online marketplaces by gross merchandise value (GMV), Taobao and Tmall. Taobao ranks No. 1 in the Global Online Marketplaces Database , Digital Commerce 360’s ranking of the largest such marketplaces by GMV. Tmall ranks No. 2. Both platforms operate in China and primarily serve the Chinese market. Among Alibaba’s other marketplaces is the global B2B marketplace Alibaba.com .\n\nAlibaba’s B2B ecommerce engine powers Q4 surge\n\nEcommerce remained the company’s largest revenue driver. Alibaba’s China retail platforms, including Taobao and Tmall, posted 10% year-over-year growth to RMB89.25 billion (US$12.46 billion), aided by June’s 6.18 Shopping Festival and a continued rise in high-spending 88VIP members, which climbed past 53 million.\n\nInternational commerce also gained ground. Revenue from AliExpress and Trendyol rose 19% to RMB34.74 billion (US$4.85 billion), helped by stronger cross-border sales and tighter logistics controls, which narrowed losses.\n\nCloud computing showed the fastest expansion. Alibaba Cloud generated RMB33.40 billion (US$4.66 billion), up 26% year over year, with AI-related products now making up a sizable portion of sales to external customers.\n\nOn an adjusted basis, non-GAAP net income fell 18% to RMB33.51 billion (US$4.68 billion) from RMB40.69 billion a year earlier, as the company poured resources into new ecommerce formats and cloud infrastructure.\n\nCEO Eddie Wu said Alibaba’s strategy remains fixed on “consumption and AI + Cloud,” calling them the company’s two long-term growth pillars.\n\nCheck back in for more earnings updates . Here’s last quarter’s update about Alibaba revenue and earnings.",
+  "meta_description": "CEO Eddie Wu said in a Q1 earnings call that Alibaba’s strategy remains fixed on “consumption and AI + Cloud,” calling them long-term revenue growth pillars.",
+  "status": 200,
+  "source_domain": "www.digitalcommerce360.com",
+  "word_count": 391,
+  "matched_companies": [
+    {
+      "name": "Alibaba Group Holding Limited",
+      "ticker": "BABA",
+      "sector": "E-commerce",
+      "mentions": 22
+    }
+  ],
+  "relevance_score": 0.7728337236533958,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Alibaba Group Holding Limited",
+    "ticker": "BABA",
+    "sector": "E-commerce",
+    "mentions": 22
+  }
+}

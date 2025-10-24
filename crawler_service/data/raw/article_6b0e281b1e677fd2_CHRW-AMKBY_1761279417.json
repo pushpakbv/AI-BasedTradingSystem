@@ -1,0 +1,29 @@
+{
+  "url": "https://www.logisticsmgmt.com/article/rxo_uber_freight_c.h_robinson_headline_3pl_logistics_track_at_2025_nextgen_supply_chain_conference",
+  "fetched_at": "2025-10-24T04:16:57.014239Z",
+  "published_date": "2025-10-24",
+  "published_datetime": "2025-10-24T04:16:57.011785Z",
+  "title": "RXO, Uber Freight, C.H. Robinson headline 3PL/logistics track at 2025 NextGen Supply Chain Conference",
+  "content": "The 2025 NextGen Supply Chain Conference is highlighting the 3PL and logistics industry as one of its core focus areas, with a lineup that features some of the sector’s most influential names.\n\nFrom reimagining freight markets to orchestrating warehouse robotics at scale, this track brings together leaders driving the future of logistics with AI, automation, and data-driven insights.\n\nThe logistics program begins with a keynote from Uber Freight’s EVP & CTO Val Marchevsky on how AI is transforming planning, execution, and cost control. Executives from RXO, C.H. Robinson, GEODIS, Kenco, Sysco, and GreyOrange will then take the stage to share strategies for navigating freight volatility, scaling warehouse networks, and delivering measurable results.\n\nThe 2025 NextGen Supply Chain Conference, held Oct. 22–24 at the W Nashville, will bring together 50+ senior executives and thought leaders across industries. Alongside logistics, the program includes tracks on CPG, life sciences, food & beverage, and general supply chain strategy and optimization.",
+  "meta_description": "Kenco, GEODIS, Sysco, Maersk, and other logistics leaders will join the program at the 2025 NextGen Supply Chain Conference to showcase AI, automation, and strategies reshaping global logistics.",
+  "status": 200,
+  "source_domain": "www.logisticsmgmt.com",
+  "word_count": 156,
+  "matched_companies": [
+    {
+      "name": "C.H. Robinson Worldwide",
+      "ticker": "CHRW",
+      "sector": "Freight Brokerage",
+      "mentions": 2
+    },
+    {
+      "name": "A.P. Moller – Maersk",
+      "ticker": "AMKBY",
+      "sector": "Ocean Freight",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.22727272727272727,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

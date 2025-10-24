@@ -1,0 +1,41 @@
+{
+  "url": "https://www.supplychaindive.com/news/package-disposal-policies-ups-fedex-dhl/803468/",
+  "fetched_at": "2025-10-24T04:16:48.379664Z",
+  "published_date": "2025-10-22",
+  "published_datetime": "2025-10-22T00:00:00Z",
+  "title": "How UPS, FedEx and DHL Express handle customs hangups post-de minimis",
+  "content": "As parcel carriers try to help shippers navigate U.S. regulatory changes, experts say there are ways to limit negative customs outcomes such as package disposals.\n\nSome U.S.-bound packages are being held by Customs and Border Protection for prolonged periods — and, on occasion, disposed of — as shippers struggle to adjust to the end of the de minimis exemption, according to parcel carriers.\n\nOn Aug. 29, the Trump administration eliminated de minimis , a trade tool allowing sub-$800 imports to enter the U.S. duty and tax-free. Without the exemption, low-cost packages are now subject to tariffs and more stringent entry requirements before entering a carrier's domestic delivery network.\n\nThe shift in U.S. import regulations has led to instances of packages being unable to clear customs due to missing or incomplete information, UPS said in an emailed statement to Supply Chain Dive. The carrier didn't specify how many packages are experiencing customs holdups but said its brokerage team is clearing more than 90% of packages on the first day of entry. FedEx and DHL Express also cited changes in trade rules as an obstacle for some cross-border shippers.\n\n\"All of this is an implication of the abrupt changes to de minimis,\" said Rathna Sharad, CEO and founder of FlavorCloud, a cross-border shipping platform.\n\nThe post-de minimis customs snafus have led to surprise fees and unexpected cases of package disposals for a wave of consumers, according to recent reports. The complications could challenge importers' efforts to keep customers happy as the peak holiday shipping season draws near .\n\nHere's what direct-to-consumer shippers need to know about potential customs holdups, from carrier policies on handling rejected shipments to expert tips on mitigating disposal risks.\n\nWhile policies vary by company, UPS, FedEx and DHL Express all said their practices aim to ensure a smooth and compliant customs clearance process. Standard freight shipments typically have 15 days to clear customs , after which disposal is one option to maintain compliance with CBP, said Thomas Taggart, VP of global trade at Passport, an international shipping and compliance provider.\n\nUPS said in instances of customs holdups, it makes multiple attempts to contact shippers to obtain the necessary information. If UPS is unable to get that information to clear the package, the carrier said two options are available.\n\n\"First, the package can be returned to the original shipper at their expense,\" UPS said. \"Second, if the customer does not respond and the package cannot be cleared for delivery, it is considered abandoned, and we dispose of it in compliance with U.S. customs regulations.\"\n\nFedEx said it works with shippers to update customs paperwork in instances of incomplete or rejected information by CBP officials. In cases where clearance remains an issue, shippers can opt to either return the package to the sender or request that the shipment be disposed of.\n\n\"In those rare cases, recipients are notified at the direction of the shipper,\" FedEx said. \"This is not a common practice.\"\n\nDHL Express said in an email that it doesn't dispose of packages that aren't cleared by customs. Instead, it pushes to gather any missing information within 10 days. If unsuccessful, DHL Express returns the shipment to its origin.\n\n\"This timeframe allows DHL Express to process the shipment for export prior to day 15 to ensure Customs regulations compliance,\" the company said.\n\nShippers should work closely with their broker and carrier to ensure their import paperwork is completed correctly to limit customs issues, something many formerly de minimis-reliant importers have struggled with, experts said. Key information needed by CBP includes a 10-digit Harmonized System commodity code and the product's country of origin, according to Sharad of FlavorCloud.\n\nAnother common issue stemming from de minimis' end is that U.S. buyers are now designated as the importer of record for many cross-border shipments, per experts. This puts much of the burden on end customers to release the goods from customs and pay for incurred fees, which can spur some to abandon their purchase and try to collect a refund instead.\n\n\"The shippers would likely only be involved on the front end to make sure the carrier has contact info for the buyer, or the buyer may contact the shipper to ask why their package is delayed,\" said Nick Baker, co-lead of Kroll’s trade and customs practice, in an email. \"But once the package is in the US and pending customs clearance, it’s really the buyer’s responsibility to work with the carrier to clear the goods and tender any duties owed.\"\n\nTo avoid these scenarios, foreign merchants should work with a third-party customs broker to manage clearance on behalf of customers, especially when using express carriers to move the goods, Baker said. Non-U.S. shippers also have the option to establish themselves as a foreign importer of record to prevent the end customer from being designated as the importer.\n\n\"If you are a legitimate shipper and you want to streamline the process, you should get set up as a non-resident importer and get established, and that way you can streamline the process,\" said Passport's Taggart.",
+  "meta_description": "As parcel carriers try to help shippers navigate U.S. regulatory changes, experts say there are ways to limit negative customs outcomes, such as package disposals.",
+  "status": 200,
+  "source_domain": "www.supplychaindive.com",
+  "word_count": 842,
+  "matched_companies": [
+    {
+      "name": "DHL Group",
+      "ticker": "DPW.DE",
+      "sector": "Logistics",
+      "mentions": 12
+    },
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 6
+    },
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 5
+    }
+  ],
+  "relevance_score": 0.3929384965831435,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "FedEx Corporation",
+    "ticker": "FDX",
+    "sector": "Logistics",
+    "mentions": 5
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "ticker": "AMZN",
+  "company_sentiment": {
+    "label": "neutral",
+    "average_score": -0.04662419387272425,
+    "article_count": 7
+  },
+  "sentiment_distribution": {
+    "positive": 1,
+    "neutral": 3,
+    "negative": 3
+  },
+  "articles": [
+    {
+      "url": "https://www.marketingdive.com/news/elf-cosmetics-first-test-twitch-livestream-shopping-ads/802953/",
+      "fetched_at": "2025-10-24T04:21:50.674567Z",
+      "published_date": "2025-10-16",
+      "published_datetime": "2025-10-16T00:00:00Z",
+      "title": "E.l.f. Cosmetics first to test Twitch’s new livestream shopping ads",
+      "content": "A new integration powered by Amazon Ads’ retail media data is meant to drive “more measurable business outcomes” for E.l.f. on the platform.\n\nE.l.f. Cosmetics wants to inject more performance into its Twitch advertising with the new in-stream shoppable integration. The capability is powered by Amazon Ads, allowing E.l.f. to draw on the e-commerce giant’s troves of retail media data to better target and measure campaigns. The announcement lands ahead of TwitchCon San Diego 2025, where E.l.f. executives will discuss the collaboration in greater detail. The timing also aligns with the gear up to the holiday season, a critical sales window for retail brands.\n\n“Twitch is where communities and creators connect through authentic, live engagement — and now, through shoppable moments,” said Sarah Iooss, head of U.S. agency at Amazon Ads, in a press statement. “We’re thrilled to partner with e.l.f. to test this innovative new format that keeps viewers immersed in the content they love while discovering and purchasing products in real time.”\n\nE.l.f. sees the ad format as a way to drive “more measurable business outcomes” from its creator content without putting off viewers through disruptive messages, per the release. The brand launched on Twitch in 2020 to better connect with subcultures like gaming and empower women creators in the space. E.l.f.YOU! has accrued over 43.3 million cumulative minutes watched and nearly 24,000 followers .\n\nThe news builds on a run of experiments where Amazon has tried to tie livestreaming and commerce closer together, a strategy that has not always panned out despite the company’s considerable scale and sophistication in retail media advertising. Amazon does not publicly share Twitch’s ad revenue, but some streamers claim their earnings from the site have plunged and the platform’s struggles to turn a profit have been well documented .\n\nSocial and livestreaming-enabled commerce broadly have seen sluggish adoption in the U.S., though that’s not for lack of platforms trying to make the idea popular. TikTok, a Twitch rival, is also making commerce a bigger part of its growth agenda through TikTok Shop, an offering that has started to see more traction with consumers.",
+      "meta_description": "A new integration powered by Amazon Ads’ retail media data is meant to drive “more measurable business outcomes” for E.l.f. on the platform.",
+      "status": 200,
+      "source_domain": "www.marketingdive.com",
+      "word_count": 351,
+      "matched_companies": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 6
+        }
+      ],
+      "relevance_score": 0.234375,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 6
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.627188Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "neutral",
+          "score": 0.0,
+          "confidence": 0.659689337015152
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.7244334816932678,
+          "confidence": 0.7244334816932678
+        },
+        "content_sentiment": {
+          "label": "neutral",
+          "score": 0.5949451923370361,
+          "confidence": 0.5949451923370361
+        },
+        "analyzed_at": "2025-10-24T04:54:05.627289Z"
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/",
+      "fetched_at": "2025-10-24T04:21:19.534074Z",
+      "published_date": "2025-10-21",
+      "published_datetime": "2025-10-21T08:00:00Z",
+      "title": "Amazon identifies the issue that broke much of the internet, says AWS is back to normal | TechCrunch",
+      "content": "An outage on Monday affected web hosting giant Amazon Web Services (AWS), which took out vast swathes of the web, including websites, banks, and some government services. On Monday afternoon, the company offered an update on the cause of the issue and said it was working to restore services. At 6:01 p.m. ET, Amazon said all AWS services had returned to normal operations.\n\nIn an announcement on the Amazon website, the company shared that the underlying issue was related to DNS resolution. DNS, or Domain Name System, is a system that converts web addresses into IP addresses so that customer apps and websites can load. While some glitches can be resolved quickly, DNS issues can sometimes take longer to resolve.\n\n“AWS reported increased error rates for multiple services and determined that the issue was related to DNS resolution of the DynamoDB API endpoints in the N. Virginia (us-east-1) Region,” the announcement stated. “The underlying DNS issue was fully mitigated at 2:24 AM PDT.”\n\nThough the issue itself was fixed, Amazon needed more time to “fully restore service,” which it said it was doing “as quickly as possible.” The company also said that the issue affected Amazon.com and its subsidiaries, as well as AWS customer support operations.\n\nAmazon said on Monday evening Eastern time that the outage had been “fully mitigated” and that most services are returning to normal after an hours-long stretch during which much of the internet could not load.\n\nSeveral major apps were not working. Coinbase , Fortnite , Signal , Perplexity , Venmo , and Zoom faced lengthy outages, as did Amazon’s own services , including its Ring video surveillance products . The outage even disrupted Eight Sleep’s cooling pods, disturbing the sleep of users .\n\nMillions of companies and organizations rely on AWS to host their websites, apps, and other critical online systems. The company has data centers all over the world, and Amazon is said to have at least 30% of the total cloud market.\n\nBefore this, the most recent global internet outage was in 2024, when cybersecurity giant CrowdStrike published a buggy update to its anti-malware engine, causing millions of computers around the world to crash and resulting in airport delays and mass outages. Systems globally took several days to return to normal.\n\nPrior to that, a malfunction at DNS provider Akamai in 2021 caused some of the world’s largest websites to drop off the internet for several hours, including FedEx, Steam, and the PlayStation Network.\n\nAmazon advised customers to refer to the AWS Health Dashboard for more detailed information on the outage and how it was being resolved.",
+      "meta_description": "The outage affected websites like Coinbase and Fortnite, and disrupted services like Signal, Zoom, and Amazon's own products, including Ring.",
+      "status": 200,
+      "source_domain": "techcrunch.com",
+      "word_count": 435,
+      "matched_companies": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 19
+        },
+        {
+          "name": "FedEx Corporation",
+          "ticker": "FDX",
+          "sector": "Logistics",
+          "mentions": 1
+        }
+      ],
+      "relevance_score": 0.6342494714587738,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 19
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.628212Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "negative",
+          "score": -0.33552299737930297,
+          "confidence": 0.6732797026634216
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.7873544096946716,
+          "confidence": 0.7873544096946716
+        },
+        "content_sentiment": {
+          "label": "negative",
+          "score": 0.5592049956321716,
+          "confidence": 0.5592049956321716
+        },
+        "analyzed_at": "2025-10-24T04:54:05.898478Z"
+      }
+    },
+    {
+      "url": "https://chainstoreage.com/amazon-reportedly-plans-replace-600000-workers-robots",
+      "fetched_at": "2025-10-24T04:20:52.143401Z",
+      "published_date": "2025-10-23",
+      "published_datetime": "2025-10-23T15:13:28Z",
+      "title": "Amazon reportedly plans to replace 600,000 workers with robots",
+      "content": "Amazon’s robotic automation efforts may wind up in the company cutting its human U.S. workforce roughly in half.\n\nAn internal corporate memo initially obtained by the New York Times indicates Amazon thinks the increasing usage of robots could enable to it replace more than 500,000 U.S. human employees and avoid having to bring on another 160,000 workers by 2027, according to the New York Daily News .\n\nThe memo also reportedly states Amazon believes referring to its robots as “cobots” (short for “collaborative robots”) may make transitioning to more robotic operations more publicly acceptable. The compny employs roughly 1.2 million workers in the U.S.\n\nThe memo reportedly says Amazon’s ultimate goal is automating 75% of its corporate operations using robots. However, Amazon strongly disputed the notion that it seeks any widescale reduction in human employees by using robots in an official statement to the New York Daily News .\n\n\"Leaked documents often paint an incomplete and misleading picture of our plans, and that’s the case here,\" an Amazon spokesman said. \"In this instance, the materials appear to reflect the perspective of just one team and don’t represent our overall hiring strategy across our various operations business lines — now or moving forward.\"\n\nAmazon plans to bring on 250,000 seasonal holiday workers for the third straight year. Without necessarily being related to automation, the company has been reducing staffing across various parts of the organization since 2023, including the layoff of roughly 200 employees from its North America stores group, which includes the Fashion and Fitness offering, in January 2025.\n\nWhat is not in dispute is that Amazon is actively developing robotic and artificial intelligence solutions to automate workflows throughout its enterprise. In a June 2025 message to employees , Andy Jassy, CEO of Amazon, said as Amazon rolls out more generative AI and agentic AI solutions, it should change the way the company performs its work.\n\n\"We will need fewer people doing some of the jobs that are being done today, and more people doing other types of jobs,\" said Jassy in the message. \"It’s hard to know exactly where this nets out over time, but in the next few years, we expect that this will reduce our total corporate workforce as we get efficiency gains from using AI extensively across the company.\"\n\nAmazon recently delivered its millionth corporate robot to a fulfillment center in Japan, joining a global network that now spans more than 300 facilities worldwide. Its farflung network of warehouses may already soon have the same number of robots working as people, according to previous reports in The Wall Street Journal .\n\n[READ MORE: Amazon hits major robot milestone; launches new robotics AI model ]\n\nIn addition, Amazon is introducing a new generative AI foundation model designed to make its entire fleet of robots smarter and more efficient. Called DeepFleet, this AI technology will coordinate the movement of robots across the Amazon fulfillment network.\n\nAccording to Amazon, DeepFleet will improve the travel time of its robotic fleet by 10% and enabling it to deliver packages to customers faster and at lower costs. DeepFleet coordinates robots' movements to optimize how they navigate fulfillment centers, with the goals of enabling less congestion, more efficient paths, and faster processing of customer orders.\n\nAmazon developed its first corporate robot in 2021. The company has been actively developing and deploying robots in its warehouses for years since then, including \" Vulcan ,\" a robot with a human-like sense of touch; as well as Agility Robotics' bipendal robot , Digit, which is built in a human-like shape and can move like a person while also grasping and handling items with robotic \"arms\" resembling a human.\n\nThe company is also reportedly experimenting with prototype humanoid robots provided by Chinese robotics firm Unitreethat which would deliver packages from Amazon Rivian electric delivery vans to customer doors.\n\nIn addition, Amazon recently rolled out seven new robots that will help take on heavy lifting and repetitive tasks at a delivery station in Germany.\n\n\"This is just the beginning,\" Scott Dresser, VP, Amazon Robotics, said in a June 2025 corporate blog post . \"As DeepFleet learns from more data, it will continue to get smarter—driving deeper efficiencies, unlocking more selection closer to customers, and reimagining what's possible in robotic logistics.\"",
+      "meta_description": "Amazon’s robotic automation efforts may wind up in the company cutting its human U.S. workforce roughly in half.",
+      "status": 200,
+      "source_domain": "chainstoreage.com",
+      "word_count": 712,
+      "matched_companies": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 23
+        }
+      ],
+      "relevance_score": 0.4668470906630582,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 23
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.630264Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "negative",
+          "score": -0.5667567372322082,
+          "confidence": 0.7731337249279022
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.601672887802124,
+          "confidence": 0.601672887802124
+        },
+        "content_sentiment": {
+          "label": "negative",
+          "score": 0.9445945620536804,
+          "confidence": 0.9445945620536804
+        },
+        "analyzed_at": "2025-10-24T04:54:06.146000Z"
+      }
+    },
+    {
+      "url": "https://www.pymnts.com/news/retail/2025/walmart-checks-out-with-chat-amazon-chases-75percent-operational-automation/",
+      "fetched_at": "2025-10-24T04:21:52.658442Z",
+      "published_date": "2025-10-23",
+      "published_datetime": "2025-10-23T18:05:36Z",
+      "title": "Update: Amazon and Walmart Race to Build the Self-Driving Store | PYMNTS.com",
+      "content": "Retail is going digital-first as the art of selling becomes the science of systems — data, AI and automation now drive every sale.\n\nWalmart’s ChatGPT-powered shopping and Amazon’s smart glasses show that frictionless, personalized and even voice-driven buying is fast becoming the norm for retail.\n\nA back-end revolution is happening as robots and AI run fulfillment, but the AWS outage proves even the smartest systems are only as strong as their backbone.\n\nRetail is no longer a tale of shelves and sales. It’s a story of systems.\n\nComplete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.\n\nBy completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .\n\nThe industry has evolved from an art of merchandising into a science of experience design and data orchestration. This evolution is being driven not only by changing customer expectations, but by technology’s ability to re-architect both what the customer sees (the “front end”) and what happens behind the scenes (the “back end”).\n\nAmazon , for example, on Wednesday (Oct. 22) announced it is equipping its delivery drivers with artificial intelligence (AI)-powered smart glasses to accelerate last-mile logistics, part of a broader operational overhaul that also includes enhanced delivery networks and seller-facing intelligence tools.\n\nMeanwhile, Walmart ’s earlier announcement of a partnership with OpenAI could potentially open a new chapter for the retailer. Under the deal, Walmart will allow customers to shop via the ChatGPT interface, choosing items simply by conversing with the chatbot and completing transactions in-chat via “Instant Checkout.”\n\nThe announcements underscore the rising trend of frictionless interaction the new baseline in retail, while personalization becomes the organizing principle of the modern shopping journey.\n\nRead also: Walmart and Amazon Race to Merge Physical Scale With Digital Intelligence\n\nAs the Walmart and OpenAI partnership spotlights, checkout is disappearing into the background. Payment, once a potential friction point of every purchase, is now becoming a silent, embedded action that’s executed by tapping a phone, scanning a face, walking out of the store or using artificial intelligence.\n\nWalmart — and the retailer is far from alone in this — has long invested in artificial intelligence across its operations, for example embedding generative AI into its search experience via Microsoft’s Azure OpenAI service, enabling shoppers to ask “Help me plan a unicorn-themed party” and receive a tailored list of items. But the new OpenAI tie-up marks a purposeful pivot: the chatbot becomes not just a helper, but the front door to purchase.\n\nThis initiative raises the bar for rivals, most notably Amazon, in how consumers expect to interact with retail platforms.\n\nStill, important questions linger. The exact launch date remains unspecified. Data privacy, trust and governance will become significant battlegrounds, particularly as the AI begins to anticipate needs (such as “you’re almost out of detergent, shall I reorder?”) rather than respond. The shift may also work to erode traditional browsing and discovery-driven retail dynamics.\n\nAmazon on Thursday (Oct. 23) launched its own AI sally with “Help Me Decide,” an AI shopping tool designed to pair users with personalized products.\n\nData from the PYMNTS Intelligence report, “ The 2025 Global Digital Shopping Index: The Rise of the Mobile Window Shopper and What It Means for Payments ,” found that nearly half of consumers surveyed worldwide used a smartphone in their most recent retail purchase. Ultimately, the frontline of retail engagement as 2026 draws near may no longer be just human but hybrid, and increasingly autonomous and digital.\n\nSee also: Amazon Tests Loyalty as Walmart Tests Gravity\n\nIf checkout is being re-engineered, so too is the supply chain behind it. Contemporary shopping may pivot on chatbots, but the orders must still be picked, packed and delivered.\n\nAmazon, for example, is layering AI and robotics across warehouses and delivery. The company reportedly plans to automate 75% of its operations, replacing up to 600,000 human jobs with robotic alternatives.\n\nStill, amid the flurry of innovation, the week delivered a sobering reminder: no matter how advanced the AI and robotics stack, the underlying infrastructure remains a potential point of systemic fragility. On Monday (Oct. 20), Amazon Web Services (AWS) suffered a major outage that lasted hours, disrupted hundreds of services globally and illustrated how the most heavily relied-upon cloud infrastructure still carries risks.  When many parts of the retail value chain rely on the same cloud backbone, a single failure can become systemic.\n\nWalmart Checks Out With Chat, Amazon Chases 75% Operational Automation\n\nAutoNation Sees Revenues Rise as Tariff Situation ‘Evolves’\n\nAmerican Airlines Leverages Loyalty Program and Co-Branded Cards to Boost Revenue Growth\n\nWorldpay Integrates Affirm Into Embedded Payments Offering for SaaS Firms\n\nWe’re always on the lookout for opportunities to partner with innovators and disruptors.",
+      "meta_description": "As Walmart taps OpenAI and Amazon drivers get smart glasses, the two retailers are leaning on technology to define the future of shopping.",
+      "status": 200,
+      "source_domain": "www.pymnts.com",
+      "word_count": 811,
+      "matched_companies": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 14
+        },
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 2
+        }
+      ],
+      "relevance_score": 0.28368794326241137,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 14
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.631237Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "neutral",
+          "score": 0.0,
+          "confidence": 0.778236448764801
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.6440474987030029,
+          "confidence": 0.6440474987030029
+        },
+        "content_sentiment": {
+          "label": "neutral",
+          "score": 0.9124253988265991,
+          "confidence": 0.9124253988265991
+        },
+        "analyzed_at": "2025-10-24T04:54:06.410738Z"
+      }
+    },
+    {
+      "url": "https://www.logisticsmgmt.com/article/ups_makes_progress_on_key_deliverable_of_deal_with_teamsters_plans_to_install_ac_in_5000_delivery_vehicles",
+      "fetched_at": "2025-10-24T04:16:59.907807Z",
+      "published_date": "2025-10-24",
+      "published_datetime": "2025-10-24T04:16:59.896241Z",
+      "title": "UPS makes progress on key deliverable of deal with Teamsters, plans to install AC in 5,000 delivery vehicles",
+      "content": "A key component of the five-year labor deal signed in August 2023 between Atlanta-based global freight transportation and logistics services provider UPS and the International Brotherhood of Teamsters was related to the rate of delivery of package cars and vans equipped with air conditioning, which required UPS to provide a minimum of 28,000 air-conditioned vehicles to drivers, is gaining momentum.\n\nIn a statement issued on October 20, UPS said that it is installing air conditioning in 5,000 of its existing delivery vehicles in the hottest regions across the country and also testing air conditioning in the cargo area of its package cars.\n\n“This investment is above and beyond the commitment we’ve made to include air conditioning in all newly purchased vehicles,” said UPS. “In every region, our drivers will also continue to benefit from improvements we’ve made to our vehicles to reduce temperature and improve air flow. Collaboration with the Teamsters has been important as we take these steps for our people.”\n\nThe Teamsters said yesterday that UPS signed a new letter of agreement with the UPS Teamsters National Negotiating Committee to begin retrofitting 5,000 package cars with air conditioning for the hottest delivery zone in the country, including Alabama, Arizona, Arkansas, California, Florida, Georgia, Hawaii, Louisiana, Mississippi, Nevada, New Mexico, North Caolina, Oklahoma, Oregon, South Carolina, Tennessee, Texas, and Washington.\n\nPrior to the August 2023 deal being completed, when it was still being negotiated, the Teamsters said in June 2023 that it had come to terms with UPS on installing air conditioning in UPS delivery trucks driven by UPS Teamsters members. Teamsters’ officials said at the time that new contract language would mandate UPS equip in-cab air conditioning systems in all larger delivery vehicles, small sprinter vans, and UPS’s brown package cars purchased after January 1, 2024, with the regular package cars comprising the majority of the company’s 93,000 vehicles within its fleet.\n\n“The Teamsters Union appreciates UPS’s recognition that our members in Zone 1 need real relief from the heat, and they need it now,” said Teamsters General President Sean M. O’Brien. “The rank-and-file at UPS are essential workers who move the American economy. In 2023, the Teamsters secured historic heat protections for our members, and there can be no further delay in the implementation of these safeguards. We look forward to working with UPS to ensure this retrofitting is completed on schedule to get our members the relief they deserve.”\n\nIn terms of the timing in regards to the implementation of air conditioning into 5,000 of UPS’s existing delivery vehicles, the Teamsters noted that\n\nstrategies for greater heat relief, which it said is an evolution of UPS’s commitment under to 2023 National Master Agreement to ventilate cargo compartments with retrofitted air ducts\n\nWhile this represents a positive development, tensions between UPS and the Teamsters were running high over the summer, when UPS said in July that it planned to roll out what it called “the largest network reconfiguration in UPS history,” which took effect on July 18 , and offer full-time UPS drivers the opportunity to participate in a voluntary program that would provide an opportunity to receive a generous financial package if they choose to leave UPS. It said that the financial package available through this program is in addition to any earned retirement benefits, including pension and health care, each driver would have the ability to decide if this voluntary program is beneficial to their family and the plans they have for the future.\n\nThe Teamsters called it “an illegal plan” to buy out full-time Teamsters-represented UPS employees, labeling it a corporate scheme which directly violated its contract with UPS that represents 340,000 delivery workers. And it added that a Driver Voluntary Severance Plan (DVSP), which UPS has not yet publicly disclosed, would offer cash to drivers to initiate early retirement or quit their job. It also stated that the DVSP would leave most drivers without quality health insurance if they retire under the program and would undermine UPS's own legal commitment to create 22,500 more jobs under its current Teamsters contract.\n\nAnd, also, at that time, it formally requested data from UPS in regards to the status of open positions and also the rate of delivery of package cars and vans equipped with air conditioning.\n\n“UPS is trying to weasel its way out of creating good union jobs here in America by dangling insulting buyouts in front of Teamsters drivers,” said Teamsters General President Sean M. O'Brien. “It is an illegal violation of our national contract. UPS is obligated to establish tens of thousands of new full-time jobs under the agreement. But CEO Carol Tomé and UPS's corporate managers are hoping that if they offer paltry severance packages to enough workers, no one will notice the company is setting the union's contract on fire. UPS Teamsters work too damn hard to be treated with such disrespect.”\n\nAs previously reported, on the company’s first quarter earnings call in April , UPS CEO Carol Tomé outlined key strategic actions tied to the company’s January network reconfiguration plans. A major step is the accelerated reduction of Amazon package volume in UPS’s network—cutting it by more than 50% by June 2026—focusing on eliminating unprofitable fulfillment center outbound volume, while retaining profitable segments like returns and Seller Fulfilled shipments. This adjustment is part of UPS’s broader “Network of the Future” initiative, the company’s largest-ever network overhaul aimed at aligning capacity with volume and increasing automation.\n\nUPS is also restructuring operations to match labor and facility usage with volume levels. In 2024, the company closed 11 buildings and plans to complete 164 more operational closures (including 73 buildings) by June. Despite a reduced building footprint, it said customer access remains strong through UPS’s extensive retail network.",
+      "meta_description": "UPS said that it is installing air conditioning in 5,000 of its existing delivery vehicles in the hottest regions across the country and also testing air conditioning in the cargo area of its package cars.",
+      "status": 200,
+      "source_domain": "www.logisticsmgmt.com",
+      "word_count": 956,
+      "matched_companies": [
+        {
+          "name": "United Parcel Service",
+          "ticker": "UPS",
+          "sector": "Logistics",
+          "mentions": 39
+        },
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 1
+        }
+      ],
+      "relevance_score": 0.5946481665014867,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 1
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.631915Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "positive",
+          "score": 0.8520072460174561,
+          "confidence": 0.8630752563476562
+        },
+        "title_sentiment": {
+          "label": "positive",
+          "score": 0.9184153079986572,
+          "confidence": 0.9184153079986572
+        },
+        "content_sentiment": {
+          "label": "positive",
+          "score": 0.8077352046966553,
+          "confidence": 0.8077352046966553
+        },
+        "analyzed_at": "2025-10-24T04:54:06.683413Z"
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2025/10/23/big-tech-is-paying-for-trumps-white-house-ballroom/",
+      "fetched_at": "2025-10-24T04:21:26.609182Z",
+      "published_date": "2025-10-24",
+      "published_datetime": "2025-10-24T02:54:46Z",
+      "title": "Big tech is paying for Trump's White House ballroom | TechCrunch",
+      "content": "While the U.S. government remains in limbo during a shutdown , the White House grounds have been busy this week. Construction workers have begun demolition on the White House’s East Wing, which will be replaced by a 90,000-square-foot ballroom that’s estimated to hold up to 1,000 guests.\n\nTaxpayers are not funding President Donald Trump’s $250 million project. Rather, he is using private donations to construct his lavish addition to the White House.\n\nThe White House released a list of the project’s funders on Thursday, which include some of the most influential American tech companies, like Amazon, Apple, Google, Meta, and Microsoft, as well as defense companies like Palantir and Lockheed Martin and telecom providers like Comcast and T-Mobile. The crypto industry is also represented among the White House ballroom donors, with money coming from Coinbase, Ripple, Tether America, and the Winklevoss twins.\n\nIt is not clear how much each donor has contributed to the project. However, at least $20 million from Google is part of a recent lawsuit settlement over YouTube’s suspension of Trump’s account after the January 6, 2021, riots. TechCrunch asked Google if the money from the settlement represents the full extent of the company’s contributions, but has not yet received an answer.\n\nSilicon Valley’s relationship with Trump has changed markedly. While much of the tech industry initially resisted Trump when he became president for the first time in 2016, it has cozied up to Trump during his second term. Meta, for instance, did not donate to Trump’s first inauguration fund, but contributed $1 million to the president’s second inauguration; Amazon donated $58,000 the first time, but made a heftier $1 million donation this time around.\n\nThese donations reflect a greater alignment between Trump and the tech industry.\n\nThe industry could be more willing to cooperate with Trump’s current administration because many of these major tech companies are facing antitrust litigation. The Trump administration has been much less aggressive in its antitrust enforcement than former President Joe Biden’s FTC was under former FTC Chair Lina Khan.\n\nTrump has also taken a more aggressive approach to AI development than his predecessor, which is a financial boon for the companies building out that technology. In his AI action plan, which was unveiled in July, Trump and his administration outlined a goal to cut red tape and use government funds to support the construction of data centers.",
+      "meta_description": "Trump's $250 million White House ballroom will be funded in part by big tech companies like Amazon, Apple, Google, Meta, and Microsoft.",
+      "status": 200,
+      "source_domain": "techcrunch.com",
+      "word_count": 396,
+      "matched_companies": [
+        {
+          "name": "Alphabet Inc. (Google)",
+          "ticker": "GOOGL",
+          "sector": "Technology",
+          "mentions": 5
+        },
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 3
+        },
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 2
+        },
+        {
+          "name": "Apple Inc.",
+          "ticker": "AAPL",
+          "sector": "Technology & Manufacturing",
+          "mentions": 2
+        }
+      ],
+      "relevance_score": 0.4195804195804196,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 3
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.634430Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "neutral",
+          "score": 0.0,
+          "confidence": 0.9293413162231445
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9334326386451721,
+          "confidence": 0.9334326386451721
+        },
+        "content_sentiment": {
+          "label": "neutral",
+          "score": 0.9252499938011169,
+          "confidence": 0.9252499938011169
+        },
+        "analyzed_at": "2025-10-24T04:54:06.953529Z"
+      }
+    },
+    {
+      "url": "https://www.freightwaves.com/news/category/shared-truckload",
+      "fetched_at": "2025-10-24T04:15:43.626547Z",
+      "published_date": "2025-10-24",
+      "published_datetime": "2025-10-24T04:15:43.625514Z",
+      "title": "Shared Truckload Archives",
+      "content": "E-commerce retailers using programs like Amazon FBA or Walmart Fulfillment Services face mounting logistics challenges that can make or break their success. From rigid delivery windows to seasonal inventory fluctuations, these sellers must navigate a complex shipping environment while maintaining tight margins. In this high-stakes arena, innovative freight solutions like Shared Truckload (STL) are emerging […]",
+      "meta_description": "Shared Truckload News, Freight Information Delivered On Time — Sponsored by Flock Freight",
+      "status": 200,
+      "source_domain": "www.freightwaves.com",
+      "word_count": 56,
+      "matched_companies": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 1
+        },
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 1
+        }
+      ],
+      "relevance_score": 0.4166666666666667,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 1
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.634430Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "negative",
+          "score": -0.27609686851501464,
+          "confidence": 0.6807770431041718
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9013926386833191,
+          "confidence": 0.9013926386833191
+        },
+        "content_sentiment": {
+          "label": "negative",
+          "score": 0.4601614475250244,
+          "confidence": 0.4601614475250244
+        },
+        "analyzed_at": "2025-10-24T04:54:07.087276Z"
+      }
+    }
+  ],
+  "analyzed_at": "2025-10-24T04:54:07.087276Z"
+}

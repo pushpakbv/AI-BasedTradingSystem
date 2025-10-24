@@ -1,0 +1,23 @@
+{
+  "url": "https://www.freightwaves.com/news/first-look-norfolk-southern-q3-earnings",
+  "fetched_at": "2025-10-24T04:23:00.442810Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T17:25:00Z",
+  "title": "First look: Norfolk Southern Q3 earnings",
+  "content": "Norfolk Southern Corp. reported third quarter income of $1.1 billion on revenue that was 2% higher at $3.1 billion despite flat freight volumes.\n\nDiluted earnings per share was $3.16, down from the prior year and short of Wall Street’s forecast range of $3.18 to $3.22.\n\nThe earnings for the Atlanta-based carrier (NYSE: NSC ) came after the close of markets and on the same day proposed merger partner Union Pacific (NYSE: UNP ) reported its earnings.\n\nIncome from railway operations was lower than the previous year’s figure of $1.6 billion (that had included significant railway line sales benefits), and showed a meaningful adjusted increase when excluding merger-related expenses and other charges. On an adjusted basis, the income showed an uptick of $21 million to $1.1 billion, fueled primarily by incremental land sales amounting to $65 million.\n\nThe operating ratio, a critical measure of efficiency, was 64.6% and a significant increase from the 47.7% recorded in the third quarter of 2024. When adjusting for extraordinary items, the current operating ratio presented a slight improvement to 63.3%, comparing favorably to the adjusted 63.4% from the previous year.\n\nExcluding merger-related and other extraordinary charges, diluted earnings per share slightly increased to $3.30, up by 2% from the adjusted result for the third quarter of 2024.\n\n“Norfolk Southern delivered another quarter of strong results on safety, service, and productivity through a dynamic freight market,” said President and Chief Executive Mark George, in a release. “The entire Thoroughbred team pulled together to serve our customers, achieve an all-time record in fuel efficiency, delivered on key productivity initiatives, and executed a noteworthy land sale that will ultimately deliver rail volumes for years to come. I’m proud of the way our team is performing with discipline and focus — driving results and strengthening our foundation for long term success.”\n\nFind more articles by Stuart Chirls here .\n\nUnion Pacific profits rise on operational efficiency, pricing gains\n\nFirst look: Union Pacific Q3 earnings\n\nFreight locomotive sales power Wabtec earnings\n\nJust two U.S. makers of critical railroad material left after plant closure",
+  "meta_description": "Norfolk Southern Corp. said third quarter income fell on revenue that was slightly higher than the 2024 period.",
+  "status": 200,
+  "source_domain": "www.freightwaves.com",
+  "word_count": 343,
+  "matched_companies": [
+    {
+      "name": "Union Pacific Corporation",
+      "ticker": "UNP",
+      "sector": "Rail",
+      "mentions": 4
+    }
+  ],
+  "relevance_score": 0.16348773841961853,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

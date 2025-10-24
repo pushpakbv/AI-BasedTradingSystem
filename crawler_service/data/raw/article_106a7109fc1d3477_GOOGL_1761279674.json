@@ -1,0 +1,23 @@
+{
+  "url": "https://techcrunch.com/2025/10/19/openais-embarrassing-math/",
+  "fetched_at": "2025-10-24T04:21:14.177758Z",
+  "published_date": "2025-10-19",
+  "published_datetime": "2025-10-19T18:56:58Z",
+  "title": "OpenAI’s ‘embarrassing’ math | TechCrunch",
+  "content": "“Hoisted by their own GPTards.”\n\nThat’s how Meta’s chief AI scientist Yann LeCun described the blowback after OpenAI researchers did a victory lap over GPT-5’s supposed math breakthroughs.\n\nGoogle DeepMind CEO Demis Hassabis added , “This is embarrassing.”\n\nThe Decoder reports that in a since-deleted tweet, OpenAI VP Kevin Weil declared that “GPT-5 found solutions to 10 (!) previously unsolved Erdős problems and made progress on 11 others.” (“Erdős problems” are famous conjectures posed by mathematician Paul Erdős.)\n\nHowever, mathematician Thomas Bloom, who maintains the Erdos Problems website , said Weil’s post was “a dramatic misrepresentation” — while these problems were indeed listed as “open” on Bloom’s website, he said that only means “I personally am unaware of a paper which solves it.”\n\nIn other words, it’s not accurate to claim GPT-5 was able to solve previously unsolved problems. Instead, Bloom wrote, “GPT-5 found references, which solved these problems, that I personally was unaware of.”\n\nSebastien Bubeck, an OpenAI researcher who’d also been touting GPT-5’s accomplishments, then acknowledged that “only solutions in the literature were found,” but he suggested this remains a real accomplishment: “I know how hard it is to search the literature.”",
+  "meta_description": "No, GPT-5 did not solve a bunch of previously unsolved math problems.",
+  "status": 200,
+  "source_domain": "techcrunch.com",
+  "word_count": 194,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.14218009478672985,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "url": "https://techcrunch.com/2025/10/19/openais-embarrassing-math/",
+    "fetched_at": "2025-10-24T04:21:14.177758Z",
+    "published_date": "2025-10-19",
+    "published_datetime": "2025-10-19T18:56:58Z",
+    "title": "OpenAI’s ‘embarrassing’ math | TechCrunch",
+    "content": "“Hoisted by their own GPTards.”\n\nThat’s how Meta’s chief AI scientist Yann LeCun described the blowback after OpenAI researchers did a victory lap over GPT-5’s supposed math breakthroughs.\n\nGoogle DeepMind CEO Demis Hassabis added , “This is embarrassing.”\n\nThe Decoder reports that in a since-deleted tweet, OpenAI VP Kevin Weil declared that “GPT-5 found solutions to 10 (!) previously unsolved Erdős problems and made progress on 11 others.” (“Erdős problems” are famous conjectures posed by mathematician Paul Erdős.)\n\nHowever, mathematician Thomas Bloom, who maintains the Erdos Problems website , said Weil’s post was “a dramatic misrepresentation” — while these problems were indeed listed as “open” on Bloom’s website, he said that only means “I personally am unaware of a paper which solves it.”\n\nIn other words, it’s not accurate to claim GPT-5 was able to solve previously unsolved problems. Instead, Bloom wrote, “GPT-5 found references, which solved these problems, that I personally was unaware of.”\n\nSebastien Bubeck, an OpenAI researcher who’d also been touting GPT-5’s accomplishments, then acknowledged that “only solutions in the literature were found,” but he suggested this remains a real accomplishment: “I know how hard it is to search the literature.”",
+    "meta_description": "No, GPT-5 did not solve a bunch of previously unsolved math problems.",
+    "status": 200,
+    "source_domain": "techcrunch.com",
+    "word_count": 194,
+    "matched_companies": [
+      {
+        "name": "Alphabet Inc. (Google)",
+        "ticker": "GOOGL",
+        "sector": "Technology",
+        "mentions": 2
+      }
+    ],
+    "relevance_score": 0.14218009478672985,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 2
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.651992Z"
+  },
+  {
+    "url": "https://techcrunch.com/2025/10/21/openai-launches-an-ai-powered-browser-chatgpt-atlas/",
+    "fetched_at": "2025-10-24T04:21:20.849316Z",
+    "published_date": "2025-10-21",
+    "published_datetime": "2025-10-21T17:15:40Z",
+    "title": "OpenAI launches an AI-powered browser: ChatGPT Atlas | TechCrunch",
+    "content": "OpenAI announced Tuesday the launch of its AI-powered browser, ChatGPT Atlas, a major step in the company’s quest to unseat Google as the main way people find information online.\n\nThe company says Atlas will first roll out on macOS, with support for Windows, iOS, and Android coming soon. OpenAI says the product will be available to all free users at launch.\n\nBrowsers have quickly become the AI industry’s next battleground. While Google Chrome has long dominated the space, there’s a sense that AI chatbots and agents are fundamentally changing how people get work done online. A handful of startups have tried to capture this by launching AI-powered browsers of their own, such as Perplexity’s Comet and The Browser Company’s Dia . Google and Microsoft have also tried to update Chrome and Edge, respectively, with AI-powered features to make their legacy products stand out.\n\nOpenAI’s Engineering Lead for Atlas, Ben Goodger, said in a livestream Tuesday that ChatGPT is core to the company’s first browser. Users in ChatGPT Atlas can chat with their search results, much like in Perplexity or in Google’s AI Mode.\n\nThe killer feature for other AI-powered browsers has been the built-in chatbot that sits in a side panel and automatically has context for whatever’s on your screen. It may sound minor, but many users spend all day copying and pasting text or dragging files and links into ChatGPT, just to provide context. The sidecar feature removes that friction and makes for a smoother user experience.\n\nOpenAI’s Product Lead, Adam Fry, said during the livestream that ChatGPT Atlas will have the sidecar feature, too. Further, ChatGPT Atlas has “browser history,” meaning that ChatGPT can now log the websites you visit and what you do on them, and use that information to make its answers more personalized.\n\nAI-powered browsers also commonly feature an AI agent that aims to automate web-based tasks on behalf of users. In TechCrunch’s testing, we’ve found the early versions of web-browsing AI agents leave something to be desired. While Perplexity’s Comet and OpenAI’s ChatGPT agent work well for simple tasks, they struggle to reliably automate the more cumbersome problems users might want to offload to an AI system.\n\nSure enough, OpenAI’s browser has a web-browsing agent too. By using “agent mode,” users can ask ChatGPT to complete small tasks in the browser on their behalf. The company says agent mode is only available to ChatGPT users on the Plus, Pro, and Business tier at launch.\n\nIn an interview at OpenAI’s DevDay conference, Head of ChatGPT Nick Turley told TechCrunch that he’s inspired by the way browsers have redefined what an operating system can look like. Turley noted that browsers have revolutionized the way people get work done online, and he thinks ChatGPT is a similar phenomenon.\n\nWhether OpenAI’s browser can put a dent in Google Chrome, which has more than 3 billion users around the globe, remains to be seen. AI browsers are quite buzzy in Silicon Valley today, but their impact in the broader world is limited.",
+    "meta_description": "OpenAI is launching an AI-powered browser, its latest challenge to Google as the main way people find information online.",
+    "status": 200,
+    "source_domain": "techcrunch.com",
+    "word_count": 503,
+    "matched_companies": [
+      {
+        "name": "Alphabet Inc. (Google)",
+        "ticker": "GOOGL",
+        "sector": "Technology",
+        "mentions": 6
+      },
+      {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 2
+      }
+    ],
+    "relevance_score": 0.22598870056497175,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 6
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.652991Z"
+  },
+  {
+    "url": "https://techcrunch.com/2025/10/23/youtube-paid-out-8b-to-the-music-industry-in-12-months/",
+    "fetched_at": "2025-10-24T04:21:23.814018Z",
+    "published_date": "2025-10-23",
+    "published_datetime": "2025-10-23T19:33:04Z",
+    "title": "YouTube paid out $8B to the music industry in 12 months | TechCrunch",
+    "content": "YouTube has paid more than $8 billion to the music industry in the 12 months between July 2024 and July 2025, the company announced on Thursday.\n\nCohen first announced the milestone during a talk at Billboard Latin Music Week on Wednesday.\n\nThe milestone marks a new record for the platform, as YouTube’s annual music industry payout increased by $2 billion since 2022, when the company reported contributing $6 billion in revenue to the music industry between July 2021 and June 2022. A year before that, in 2021, YouTube announced that it had paid out $4 billion to the industry in 12 months.\n\nThursday’s announcement comes as Spotify announced earlier this year that it paid out $10 billion to the music industry in 2024. The company delivered $9 billion in 2023. It’s worth noting that the artists themselves don’t receive all the money — it also goes to labels, publishers, songwriters, and others.\n\n“As the platform’s global footprint continues to expand, so does the potential for artists and songwriters to build long-lasting music careers and forever fans on YouTube,” the company wrote in a blog post .\n\nYouTube is available in more than 100 countries and supports 80 languages.\n\nThe company announced last month at its Made on YouTube event that it paid more than $100 billion to creators, artists, and media companies in the last four years.",
+    "meta_description": "The milestone marks a new record for the platform, as YouTube’s annual music industry payout increased by $2 billion since 2022.",
+    "status": 200,
+    "source_domain": "techcrunch.com",
+    "word_count": 227,
+    "matched_companies": [
+      {
+        "name": "Alphabet Inc. (Google)",
+        "ticker": "GOOGL",
+        "sector": "Technology",
+        "mentions": 8
+      }
+    ],
+    "relevance_score": 0.45977011494252873,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 8
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.652991Z"
+  },
+  {
+    "url": "https://www.marketwatch.com/story/googles-new-anthropic-deal-is-a-validation-moment-for-this-under-the-radar-asset-e78a46ec?mod=newsviewer_click",
+    "fetched_at": "2025-10-24T04:14:16.964394Z",
+    "published_date": "2025-10-23",
+    "published_datetime": "2025-10-23T22:22:00Z",
+    "title": "Google’s new Anthropic deal is a validation moment for this under-the-radar asset",
+    "content": "Google’s new Anthropic deal is a validation moment for this under-the-radar asset\n\nAlphabet Inc.’s cloud and chip businesses just got a big endorsement in the form of a refreshed agreement with artificial-intelligence startup Anthropic.\n\nUnder the terms of the newly announced deal, Anthropic will be able to access up to 1 million of Google’s GOOGL GOOG tensor processing units, or TPUs, to train and run its Claude large-language model. The company, which is a rival to OpenAI, will also use various Google Cloud services.\n\nEmily Bary is MarketWatch's assistant managing editor, tech. She is based in New York.\n\nCopyright © 2025 MarketWatch, Inc. All rights reserved.",
+    "meta_description": "Alphabet’s cloud business secured a key AI partnership with Anthropic, signaling an increasingly competitive landscape for high-performance chips.",
+    "status": 200,
+    "source_domain": "www.marketwatch.com",
+    "word_count": 106,
+    "matched_companies": [
+      {
+        "name": "Alphabet Inc. (Google)",
+        "ticker": "GOOGL",
+        "sector": "Technology",
+        "mentions": 8
+      }
+    ],
+    "relevance_score": 0.8823529411764706,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 8
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.653992Z"
+  },
+  {
+    "url": "https://www.cnbc.com/2025/10/23/microsoft-ai-chief-suleyman-company-wont-build-chatbots-for-erotica.html",
+    "fetched_at": "2025-10-24T04:14:11.650829Z",
+    "published_date": "2025-10-23",
+    "published_datetime": "2025-10-23T22:27:26Z",
+    "title": "Microsoft AI chief says company won’t build chatbots for erotica",
+    "content": "Microsoft AI CEO Mustafa Suleyman said the software giant won't build artificial intelligence services that provide \"simulated erotica,\" distancing itself from longtime partner OpenAI.\n\n\"That's just not a service we're going to provide,\" Suleyman said on Thursday at the Paley International Council Summit in Menlo Park, California. \"Other companies will build that.\"\n\nSuleyman's comments come a week after OpenAI CEO Sam Altman said his company plans to allow verified adults to use ChatGPT for erotica. Altman said that OpenAI is \"not the elected moral police of the world.\"\n\nMicrosoft has for years been a major investor and cloud partner to OpenAI, and the two companies have used their respective strengths to build big AI businesses. But the relationship has shown signs of tension of late, with OpenAI partnering with Microsoft rivals like Google and Oracle , and Microsoft focusing more on its own AI services.\n\nEarlier on Thursday, Microsoft announced a series of new features for its Copilot AI chatbot, including an AI companion called Mico that can respond to users through a call feature and express itself by changing its color.\n\nSuleyman in August penned an essay titled \"We must build AI for people; not to be a person.\" He argued that tech companies should not build \"seemingly conscious\" services that can give humans the impression that they may be capable of suffering, and wrote that conscious AIs could create another \"axis of division\" for humanity.\n\nOn Thursday, Suleyman said the creation of seemingly conscious AI is already happening, primarily with erotica-focused services. He referenced Altman's comments as well as Elon Musk's Grok, which in July launched its own companion features, including a female anime character.\n\n\"You can already see it with some of these avatars and people leaning into the kind of sexbot erotica direction,\" Suleyman said. \"This is very dangerous, and I think we should be making conscious decisions to avoid those kinds of things.\"\n\nOpenAI didn't immediately respond to requests for comment, while xAI responded saying, \"Legacy Media Lies.\"\n\nWATCH: Why it's time to take AI-human relationships seriously\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+    "meta_description": "Microsoft AI CEO Mustafa Suleyman said the software company won't build erotica AI services, the latest break with rival-partner OpenAI.",
+    "status": 200,
+    "source_domain": "www.cnbc.com",
+    "word_count": 402,
+    "matched_companies": [
+      {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 7
+      },
+      {
+        "name": "Alphabet Inc. (Google)",
+        "ticker": "GOOGL",
+        "sector": "Technology",
+        "mentions": 1
+      },
+      {
+        "name": "Tesla, Inc.",
+        "ticker": "TSLA",
+        "sector": "Automotive & Manufacturing",
+        "mentions": 1
+      }
+    ],
+    "relevance_score": 0.3125,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.654989Z"
+  },
+  {
+    "url": "https://techcrunch.com/2025/10/23/big-tech-is-paying-for-trumps-white-house-ballroom/",
+    "fetched_at": "2025-10-24T04:21:26.609182Z",
+    "published_date": "2025-10-24",
+    "published_datetime": "2025-10-24T02:54:46Z",
+    "title": "Big tech is paying for Trump's White House ballroom | TechCrunch",
+    "content": "While the U.S. government remains in limbo during a shutdown , the White House grounds have been busy this week. Construction workers have begun demolition on the White House’s East Wing, which will be replaced by a 90,000-square-foot ballroom that’s estimated to hold up to 1,000 guests.\n\nTaxpayers are not funding President Donald Trump’s $250 million project. Rather, he is using private donations to construct his lavish addition to the White House.\n\nThe White House released a list of the project’s funders on Thursday, which include some of the most influential American tech companies, like Amazon, Apple, Google, Meta, and Microsoft, as well as defense companies like Palantir and Lockheed Martin and telecom providers like Comcast and T-Mobile. The crypto industry is also represented among the White House ballroom donors, with money coming from Coinbase, Ripple, Tether America, and the Winklevoss twins.\n\nIt is not clear how much each donor has contributed to the project. However, at least $20 million from Google is part of a recent lawsuit settlement over YouTube’s suspension of Trump’s account after the January 6, 2021, riots. TechCrunch asked Google if the money from the settlement represents the full extent of the company’s contributions, but has not yet received an answer.\n\nSilicon Valley’s relationship with Trump has changed markedly. While much of the tech industry initially resisted Trump when he became president for the first time in 2016, it has cozied up to Trump during his second term. Meta, for instance, did not donate to Trump’s first inauguration fund, but contributed $1 million to the president’s second inauguration; Amazon donated $58,000 the first time, but made a heftier $1 million donation this time around.\n\nThese donations reflect a greater alignment between Trump and the tech industry.\n\nThe industry could be more willing to cooperate with Trump’s current administration because many of these major tech companies are facing antitrust litigation. The Trump administration has been much less aggressive in its antitrust enforcement than former President Joe Biden’s FTC was under former FTC Chair Lina Khan.\n\nTrump has also taken a more aggressive approach to AI development than his predecessor, which is a financial boon for the companies building out that technology. In his AI action plan, which was unveiled in July, Trump and his administration outlined a goal to cut red tape and use government funds to support the construction of data centers.",
+    "meta_description": "Trump's $250 million White House ballroom will be funded in part by big tech companies like Amazon, Apple, Google, Meta, and Microsoft.",
+    "status": 200,
+    "source_domain": "techcrunch.com",
+    "word_count": 396,
+    "matched_companies": [
+      {
+        "name": "Alphabet Inc. (Google)",
+        "ticker": "GOOGL",
+        "sector": "Technology",
+        "mentions": 5
+      },
+      {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 3
+      },
+      {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 2
+      },
+      {
+        "name": "Apple Inc.",
+        "ticker": "AAPL",
+        "sector": "Technology & Manufacturing",
+        "mentions": 2
+      }
+    ],
+    "relevance_score": 0.4195804195804196,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 5
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.654989Z"
+  }
+]

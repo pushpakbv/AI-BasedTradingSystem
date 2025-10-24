@@ -1,0 +1,33 @@
+[
+  {
+    "url": "https://www.fool.com/investing/2025/10/23/3-make-or-break-items-from-tesla-to-note-from-yest/",
+    "fetched_at": "2025-10-24T04:15:18.789582Z",
+    "published_date": "2025-10-23",
+    "published_datetime": "2025-10-23T17:43:49Z",
+    "title": "3 Make-or-Break Items From Tesla to Note From Yesterday's Earnings Report | The Motley Fool",
+    "content": "Electric vehicle maker Tesla ( TSLA +2.27% ) issued its third-quarter earnings report after the closing bell yesterday. And investors are still reeling from not only the numbers, but the commentary. Revenue was 12% higher on a year-over-year basis, but investors weren't pleased with the underlying figures.\n\nTesla stock fell 2% in morning trading before starting to rebound on heavy volume. Let's dive in and see what happened with three points to consider.\n\nThe first thing that stands out is Tesla's automotive numbers. Automotive revenue was up 6% from a year ago, reaching $21.2 billion. And the number of vehicles Tesla delivered was up 9%, to 481,166. That was entirely to be expected, but not for a reason that's good for Tesla stock.\n\nTesla and its CEO, Elon Musk , had been on a push to drive up Tesla sales as much as possible in the quarter, citing the expiration of the $7,500 federal EV tax credit. But now that the credit expired on Sept. 30, analysts are expecting Tesla's EV sales numbers to drop accordingly. It will be difficult for Tesla to set another new record for deliveries next quarter.\n\nA side note: While Tesla doesn't break out delivery figures for its infamous Cybertruck, it's clear that the 7,000-pound pickup isn't selling well. Tesla says its Model 3 sedan and Model Y SUV made up 96.7% of all its sales. The company's other offerings, including Cybertruck, Model X, Semi and Model S, collectively accounted for a mere 15,933 deliveries -- down 30% from a year ago.\n\nTesla is becoming a less-efficient company. Even though it delivered more vehicles, it spent a lot more to do so.\n\nOperating expenses were up 50% from a year ago, reaching $3.43 billion, and operating margin fell from 10.8% a year ago to 5.8% in this quarter. That's why, even though Tesla's total revenues for the quarter hit $28.09 billion, up 12% from a year ago, its gross profits were only up 1%.  Tesla attributed its lower margins to rising costs, weaker regulatory credit income, and sagging vehicle prices -- and those are issues that I don't see changing.\n\nTesla's generally accepted accounting principles ( GAAP ) earnings per share were $0.39, down 37% from last year when EPS was $0.62.\n\nAlthough Musk spent a lot of time pitching self-driving cars and the company's upcoming Optimus robots, he also made a pointed pitch for investors to grant him a revised compensation package, potentially worth $1 trillion, if the company's market capitalization grows to roughly $8.5 trillion. The proposal is opposed by two proxy advisors, Institutional Shareholder Services and Glass Lewis, but Musk said he needs to have greater influence in the company he founded. He currently owns about 15% of Tesla shares.\n\n\"I just don't feel comfortable building a robot army here, and then being ousted because of some asinine recommendations from ISS and Glass Lewis, who have no frigging clue,\" Musk said.\n\nThe package will be voted on at the company's shareholder meeting on Nov. 6.",
+    "meta_description": "Tesla set a record for deliveries, but the market is unimpressed.",
+    "status": 200,
+    "source_domain": "www.fool.com",
+    "word_count": 503,
+    "matched_companies": [
+      {
+        "name": "Tesla, Inc.",
+        "ticker": "TSLA",
+        "sector": "Automotive & Manufacturing",
+        "mentions": 20
+      }
+    ],
+    "relevance_score": 0.5671077504725898,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 20
+    },
+    "classification": "financial",
+    "classified_at": "2025-10-24T04:52:31.667211Z"
+  }
+]

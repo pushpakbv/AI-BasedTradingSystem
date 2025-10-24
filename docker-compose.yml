@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  crawler_service:
+    build:
+      context: .
+      dockerfile: crawler_service/Dockerfile
+    container_name: crawler_service
+    volumes:
+      # Mount data directory to persist crawled articles
+      - ./crawler_service/data:/app/crawler_service/data
+      # Mount config for easy updates
+      - ./crawler_service/config:/app/crawler_service/config
+      # Mount shared utilities
+      - ./shared:/app/shared
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+    networks:
+      - tradesystem_network
+    restart: unless-stopped
+    # Uncomment to run on a schedule (requires cron or scheduler)
+    # command: ["python", "-m", "crawler_service.main"]
+
+  # Other services...
+  # data_processor_service:
+  #   build:
+  #     context: .
+  #     dockerfile: data_processor_service/Dockerfile
+  #   ...
+
+networks:
+  tradesystem_network:
+    driver: bridge
+
+volumes:
+  crawler_data:
+    driver: local

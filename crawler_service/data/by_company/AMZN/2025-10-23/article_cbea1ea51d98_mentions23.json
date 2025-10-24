@@ -1,0 +1,29 @@
+{
+  "url": "https://chainstoreage.com/amazon-reportedly-plans-replace-600000-workers-robots",
+  "fetched_at": "2025-10-24T04:20:52.143401Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T15:13:28Z",
+  "title": "Amazon reportedly plans to replace 600,000 workers with robots",
+  "content": "Amazon’s robotic automation efforts may wind up in the company cutting its human U.S. workforce roughly in half.\n\nAn internal corporate memo initially obtained by the New York Times indicates Amazon thinks the increasing usage of robots could enable to it replace more than 500,000 U.S. human employees and avoid having to bring on another 160,000 workers by 2027, according to the New York Daily News .\n\nThe memo also reportedly states Amazon believes referring to its robots as “cobots” (short for “collaborative robots”) may make transitioning to more robotic operations more publicly acceptable. The compny employs roughly 1.2 million workers in the U.S.\n\nThe memo reportedly says Amazon’s ultimate goal is automating 75% of its corporate operations using robots. However, Amazon strongly disputed the notion that it seeks any widescale reduction in human employees by using robots in an official statement to the New York Daily News .\n\n\"Leaked documents often paint an incomplete and misleading picture of our plans, and that’s the case here,\" an Amazon spokesman said. \"In this instance, the materials appear to reflect the perspective of just one team and don’t represent our overall hiring strategy across our various operations business lines — now or moving forward.\"\n\nAmazon plans to bring on 250,000 seasonal holiday workers for the third straight year. Without necessarily being related to automation, the company has been reducing staffing across various parts of the organization since 2023, including the layoff of roughly 200 employees from its North America stores group, which includes the Fashion and Fitness offering, in January 2025.\n\nWhat is not in dispute is that Amazon is actively developing robotic and artificial intelligence solutions to automate workflows throughout its enterprise. In a June 2025 message to employees , Andy Jassy, CEO of Amazon, said as Amazon rolls out more generative AI and agentic AI solutions, it should change the way the company performs its work.\n\n\"We will need fewer people doing some of the jobs that are being done today, and more people doing other types of jobs,\" said Jassy in the message. \"It’s hard to know exactly where this nets out over time, but in the next few years, we expect that this will reduce our total corporate workforce as we get efficiency gains from using AI extensively across the company.\"\n\nAmazon recently delivered its millionth corporate robot to a fulfillment center in Japan, joining a global network that now spans more than 300 facilities worldwide. Its farflung network of warehouses may already soon have the same number of robots working as people, according to previous reports in The Wall Street Journal .\n\n[READ MORE: Amazon hits major robot milestone; launches new robotics AI model ]\n\nIn addition, Amazon is introducing a new generative AI foundation model designed to make its entire fleet of robots smarter and more efficient. Called DeepFleet, this AI technology will coordinate the movement of robots across the Amazon fulfillment network.\n\nAccording to Amazon, DeepFleet will improve the travel time of its robotic fleet by 10% and enabling it to deliver packages to customers faster and at lower costs. DeepFleet coordinates robots' movements to optimize how they navigate fulfillment centers, with the goals of enabling less congestion, more efficient paths, and faster processing of customer orders.\n\nAmazon developed its first corporate robot in 2021. The company has been actively developing and deploying robots in its warehouses for years since then, including \" Vulcan ,\" a robot with a human-like sense of touch; as well as Agility Robotics' bipendal robot , Digit, which is built in a human-like shape and can move like a person while also grasping and handling items with robotic \"arms\" resembling a human.\n\nThe company is also reportedly experimenting with prototype humanoid robots provided by Chinese robotics firm Unitreethat which would deliver packages from Amazon Rivian electric delivery vans to customer doors.\n\nIn addition, Amazon recently rolled out seven new robots that will help take on heavy lifting and repetitive tasks at a delivery station in Germany.\n\n\"This is just the beginning,\" Scott Dresser, VP, Amazon Robotics, said in a June 2025 corporate blog post . \"As DeepFleet learns from more data, it will continue to get smarter—driving deeper efficiencies, unlocking more selection closer to customers, and reimagining what's possible in robotic logistics.\"",
+  "meta_description": "Amazon’s robotic automation efforts may wind up in the company cutting its human U.S. workforce roughly in half.",
+  "status": 200,
+  "source_domain": "chainstoreage.com",
+  "word_count": 712,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 23
+    }
+  ],
+  "relevance_score": 0.4668470906630582,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Amazon.com, Inc.",
+    "ticker": "AMZN",
+    "sector": "E-commerce",
+    "mentions": 23
+  }
+}

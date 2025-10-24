@@ -1,0 +1,35 @@
+{
+  "url": "https://www.digitalcommerce360.com/article/ecommerce-stock-index-baird-dc360/",
+  "fetched_at": "2025-10-24T04:21:39.946294Z",
+  "published_date": "2025-10-24",
+  "published_datetime": "2025-10-24T04:21:39.936839Z",
+  "title": "AI lifts leaders in September Ecommerce Stock Index results",
+  "content": "New results are in from September 2025 activity in the Baird/Digital Commerce 360 Ecommerce Stock Index. Throughout the month, artificial intelligence (AI) and partnership announcements drove movement — both positive and negative — as Alibaba and Etsy helped lead overall gains in the fifth consecutive month of growth.\n\nShare prices benefited from investor interest in AI spending, as well as Etsy’s presence in ChatGPT’s new ecommerce checkout experience.\n\nThis index is a collaboration between Digital Commerce 360 and the financial advisory, capital markets, asset management and private equity firm Baird . It intends to provide perspective into how public markets value companies and technology providers that power digital commerce. The index contains four categories capturing activity extending throughout the Americas and China:\n\nReaders should note that this index complements insights from Digital Commerce 360’s Top 2000 Database . That database specifically tracks North American online retailers and their web sales. The Baird/Digital Commerce 360 Ecommerce Stock Index, meanwhile, covers both B2C retail and B2B ecommerce companies, in addition to the technology vendors that serve them, with a broader focus on global activity. All commentary and reporting is provided for informational purposes only and is not intended to be financial advice.\n\nClick here to read July’s ecommerce stock index results.\n\n“The Baird/Digital Commerce Ecommerce Stock Index increased 4.2% in September compared to the end of August — the fifth consecutive month for positive returns, with diminishing concerns among investors around the impact of tariffs on ecommerce, healthy consumer spending trends in the U.S., and increasing excitement over AI and agentic commerce ,” said Colin Sebastian, Baird’s managing director and senior research analyst covering internet/ecommerce.\n\nSeptember results were enough to keep year-to-date growth for ecommerce stocks tracked by the index higher than growth for the S&P 5000 over the same period of time.\n\n“For the year to date, the Ecommerce Stock Index is now up 16.5%, tracking ahead of the broader S&P index (+13.7% YTD),” Sebastian said. “However, September performance varied by subsector, with particular strength evident among International platforms (+12%) and Ecommerce Technology (+5%), while Online Marketplaces (+2%) and Online Retail (flat) underperformed.”\n\nAs AI news powered optimism among investors, that positive sentiment extended beyond the U.S. to China-based Alibaba and the Israel-based ecommerce site platform Wix.\n\n“At this point, we continue to expect approximately 6% year-over-year ecommerce growth in the U.S. for 2025, although that includes some deceleration in growth during Q4,” Sebastian noted.\n\nAmong the index’s top overall stock performers in September, Alibaba led with its share price up 32% at the end of the month. That movement happened “as the company’s ecommerce and cloud businesses appear to be improving,” Sebastian said.\n\nAlibaba Cloud, which is the cloud computing and artificial intelligence arm of Alibaba Group, announced in September that it would commit more than $50 billion to AI development, as well as related infrastructure. Specifically, it outlined plans to open new data centers in Brazil, France and the Netherlands.\n\nAlibaba owns the world’s two largest online marketplaces by gross merchandise value (GMV), Taobao and Tmall. Taobao ranks No. 1 in the Global Online Marketplaces Database . That database contains Digital Commerce 360’s ranking of the largest such marketplaces by third-party gross merchandise volume (GMV). Tmall ranks No. 2.\n\nWix shares were up 26% at September’s end, which Sebastian attributed to “momentum in AI tools.”\n\nMeanwhile, Etsy, whose shares were up 25% at the end of September, also made headlines with AI announcements. The online marketplace is among the first participants to be using OpenAI’s new ChatGPT checkout experience . As a result, Etsy sellers will gain access to shoppers on OpenAI’s platform using the company’s new Agentic Commerce Protocol.\n\nEtsy ranks No. 20 in the Global Online Marketplaces Database .\n\nDespite overall growth, gains across the index were not evenly distributed.\n\n“Conversely, 1-800-Flowers (-18%), Klaviyo (-15%) and Instacart (-15%) were laggards in September, with Instacart in focus as online grocery competitors made several competitive announcements,” Sebastian said.\n\nAmong Instacart’s competitors, Uber Eats announced the addition of DSW to its platform. Since June, Uber Eats has also brought on Best Buy, Dollar Tree , Sephora , Aldi and Dick’s Sporting Goods .\n\nIn addition, the delivery platform DoorDash announced Ace Hardware as a new same-day delivery partner. That news preceded DoorDash’s addition of Kroger stores and the debut of DoorDash’s new DashMart Fulfillment Services and Dot robot .\n\nFinally, as all of these delivery apps continued to chase new retailers, Amazon’s same-day grocery delivery capabilities expanded to add more than 1,000 U.S. cities and towns. Together with onboarding new third-party grocery partners, that move made Amazon a more serious competitor to Instacart and Walmart Plus in the grocery space heading into the final months of 2025.\n\nSubmit your data and we’ll see where you fit in our next ranking update.",
+  "meta_description": "Etsy's OpenAI announcement and Alibaba's AI investments both helped share prices, helping them to outperform other Ecommerce Stock Index companies in September.",
+  "status": 200,
+  "source_domain": "www.digitalcommerce360.com",
+  "word_count": 801,
+  "matched_companies": [
+    {
+      "name": "Alibaba Group Holding Limited",
+      "ticker": "BABA",
+      "sector": "E-commerce",
+      "mentions": 12
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.25240384615384615,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Amazon.com, Inc.",
+    "ticker": "AMZN",
+    "sector": "E-commerce",
+    "mentions": 2
+  }
+}

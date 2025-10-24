@@ -1,0 +1,29 @@
+{
+  "url": "https://techcrunch.com/2025/10/23/youtube-paid-out-8b-to-the-music-industry-in-12-months/",
+  "fetched_at": "2025-10-24T04:21:23.814018Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T19:33:04Z",
+  "title": "YouTube paid out $8B to the music industry in 12 months | TechCrunch",
+  "content": "YouTube has paid more than $8 billion to the music industry in the 12 months between July 2024 and July 2025, the company announced on Thursday.\n\nCohen first announced the milestone during a talk at Billboard Latin Music Week on Wednesday.\n\nThe milestone marks a new record for the platform, as YouTube’s annual music industry payout increased by $2 billion since 2022, when the company reported contributing $6 billion in revenue to the music industry between July 2021 and June 2022. A year before that, in 2021, YouTube announced that it had paid out $4 billion to the industry in 12 months.\n\nThursday’s announcement comes as Spotify announced earlier this year that it paid out $10 billion to the music industry in 2024. The company delivered $9 billion in 2023. It’s worth noting that the artists themselves don’t receive all the money — it also goes to labels, publishers, songwriters, and others.\n\n“As the platform’s global footprint continues to expand, so does the potential for artists and songwriters to build long-lasting music careers and forever fans on YouTube,” the company wrote in a blog post .\n\nYouTube is available in more than 100 countries and supports 80 languages.\n\nThe company announced last month at its Made on YouTube event that it paid more than $100 billion to creators, artists, and media companies in the last four years.",
+  "meta_description": "The milestone marks a new record for the platform, as YouTube’s annual music industry payout increased by $2 billion since 2022.",
+  "status": 200,
+  "source_domain": "techcrunch.com",
+  "word_count": 227,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 8
+    }
+  ],
+  "relevance_score": 0.45977011494252873,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Alphabet Inc. (Google)",
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "mentions": 8
+  }
+}

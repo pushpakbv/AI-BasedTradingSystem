@@ -1,0 +1,237 @@
+# =======================================================
+# COMPANY TRACKING CONFIGURATION
+# MAXIMUM DATA COLLECTION MODE for Sentiment Analysis
+# Captures all news mentioning tracked companies
+# =======================================================
+
+companies:
+
+  # ============================
+  # Shipping & Logistics Giants
+  # ============================
+  - name: "FedEx Corporation"
+    ticker: "FDX"
+    keywords: 
+      - "FedEx"
+      - "Federal Express"
+      - "FDX"
+      - "FedEx Ground"
+      - "FedEx Express"
+      - "FedEx Freight"
+      - "FedEx Office"
+      - "FedEx Services"
+      - "FedEx Supply Chain"
+    sector: "Logistics"
+
+  - name: "United Parcel Service"
+    ticker: "UPS"
+    keywords: 
+      - "UPS"
+      - "United Parcel Service"
+      - "UPS Freight"
+      - "UPS Supply Chain"
+      - "UPS Airlines"
+      - "Carol Tomé"  # CEO
+    sector: "Logistics"
+
+  - name: "DHL Group"
+    ticker: "DPW.DE"
+    keywords: 
+      - "DHL"
+      - "Deutsche Post"
+      - "DHL Express"
+      - "DHL Supply Chain"
+      - "DHL eCommerce"
+      - "DHL Freight"
+      - "DHL Global Forwarding"
+    sector: "Logistics"
+
+  - name: "XPO Inc."
+    ticker: "XPO"
+    keywords: 
+      - "XPO"
+      - "XPO Logistics"
+      - "XPO Inc"
+      - "XPO Freight"
+    sector: "Freight & Logistics"
+
+  - name: "GXO Logistics"
+    ticker: "GXO"
+    keywords: 
+      - "GXO"
+      - "GXO Logistics"
+      - "GXO Warehousing"
+    sector: "3PL & Warehousing"
+
+  - name: "C.H. Robinson Worldwide"
+    ticker: "CHRW"
+    keywords: 
+      - "C.H. Robinson"
+      - "CH Robinson"
+      - "Robinson Worldwide"
+      - "CHRW"
+    sector: "Freight Brokerage"
+
+  # ============================
+  # Ocean Freight
+  # ============================
+  - name: "A.P. Moller – Maersk"
+    ticker: "AMKBY"
+    keywords: 
+      - "Maersk"
+      - "A.P. Moller"
+      - "AP Moller"
+      - "Maersk Line"
+      - "APM Terminals"
+      - "Maersk Container"
+      - "AMKBY"
+    sector: "Ocean Freight"
+
+  # ============================
+  # Rail & Transportation
+  # ============================
+  - name: "Union Pacific Corporation"
+    ticker: "UNP"
+    keywords: 
+      - "Union Pacific"
+      - "UP Rail"
+      - "UNP"
+      - "Union Pacific Railroad"
+    sector: "Rail"
+
+  # ============================
+  # E-commerce & Retail Platforms
+  # ============================
+  - name: "Amazon.com, Inc."
+    ticker: "AMZN"
+    keywords: 
+      - "Amazon"
+      - "Amazon Logistics"
+      - "Amazon Fulfillment"
+      - "Amazon Prime Air"
+      - "Amazon Delivery"
+      - "Amazon Warehouse"
+      - "Amazon Supply Chain"
+      - "AWS"
+      - "Amazon Web Services"
+      - "Jeff Bezos"
+      - "Andy Jassy"
+      - "AMZN"
+    sector: "E-commerce"
+
+  - name: "Alibaba Group Holding Limited"
+    ticker: "BABA"
+    keywords: 
+      - "Alibaba"
+      - "Cainiao"
+      - "Alibaba Logistics"
+      - "AliExpress"
+      - "Alibaba Cloud"
+      - "Jack Ma"
+      - "BABA"
+      - "Taobao"
+      - "Tmall"
+    sector: "E-commerce"
+
+  - name: "JD.com, Inc."
+    ticker: "JD"
+    keywords: 
+      - "JD.com"
+      - "JD Logistics"
+      - "Jingdong"
+      - "JD.com Inc"
+      - "JD Supply Chain"
+    sector: "E-commerce"
+
+  # ============================
+  # Technology & Infrastructure
+  # ============================
+  - name: "Alphabet Inc. (Google)"
+    ticker: "GOOGL"
+    keywords: 
+      - "Google"
+      - "Alphabet"
+      - "Google Cloud"
+      - "Waymo"
+      - "DeepMind"
+      - "GOOGL"
+      - "Sundar Pichai"
+      - "YouTube"
+    sector: "Technology"
+
+  - name: "Microsoft Corporation"
+    ticker: "MSFT"
+    keywords: 
+      - "Microsoft"
+      - "Azure"
+      - "Microsoft Cloud"
+      - "MSFT"
+      - "Satya Nadella"
+      - "Office 365"
+      - "Windows"
+    sector: "Technology"
+
+  - name: "Apple Inc."
+    ticker: "AAPL"
+    keywords: 
+      - "Apple"
+      - "Apple Supply Chain"
+      - "iPhone Manufacturing"
+      - "Foxconn"
+      - "AAPL"
+      - "Tim Cook"
+      - "iPhone"
+      - "iPad"
+      - "Mac"
+    sector: "Technology & Manufacturing"
+
+  - name: "Tesla, Inc."
+    ticker: "TSLA"
+    keywords: 
+      - "Tesla"
+      - "Tesla Supply Chain"
+      - "Gigafactory"
+      - "Elon Musk"
+      - "TSLA"
+      - "Tesla Motors"
+      - "Tesla Manufacturing"
+      - "Tesla Delivery"
+    sector: "Automotive & Manufacturing"
+
+  - name: "NVIDIA Corporation"
+    ticker: "NVDA"
+    keywords: 
+      - "Nvidia"
+      - "NVDA"
+      - "NVIDIA AI"
+      - "NVIDIA Chips"
+      - "NVIDIA Supply Chain"
+      - "Jensen Huang"
+      - "NVIDIA GPU"
+      - "NVIDIA Data Center"
+    sector: "Semiconductors"
+
+# ============================
+# MAXIMUM COLLECTION MODE SETTINGS
+# Optimized for Sentiment Analysis Data Gathering
+# ============================
+
+# Lower threshold to catch more articles
+min_relevance_score: 0.1  # Changed from 0.3 to 0.1
+
+# Company-specific only (no generic articles)
+save_unmatched_articles: false
+save_general_supply_chain: false
+
+# Not used
+general_keywords: []
+
+# REMOVE time restrictions - collect all available data
+# STRICT 24-hour window - only fresh articles
+crawl_today_only: true  # ← Changed back to true
+max_article_age_hours: 24  # ← Changed back to 24 hours only
+
+
+# Increase articles per site for more data
+max_articles_per_site: 100  # Increased from 30
+max_crawl_depth: 3  # Increased from 2

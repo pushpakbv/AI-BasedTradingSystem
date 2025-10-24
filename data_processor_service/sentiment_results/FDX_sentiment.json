@@ -1,0 +1,407 @@
+{
+  "ticker": "FDX",
+  "company_sentiment": {
+    "label": "neutral",
+    "average_score": -0.04791520323072162,
+    "article_count": 7
+  },
+  "sentiment_distribution": {
+    "positive": 3,
+    "neutral": 0,
+    "negative": 4
+  },
+  "articles": [
+    {
+      "url": "https://www.supplychaindive.com/news/fedex-network-2-layoffs-closings-status/750513/",
+      "fetched_at": "2025-10-24T04:16:43.647700Z",
+      "published_date": "2025-07-14",
+      "published_datetime": "2025-07-14T00:00:00Z",
+      "title": "FedEx Network 2.0: Tracking closures, layoffs across the US",
+      "content": "The logistics giant is shutting down ship centers as part of its plan to streamline operations. Here’s how the overhaul is progressing.\n\nFedEx is making layoffs and closing facilities across the country as part of a plan to integrate its historically separate Ground and Express networks.\n\nThe yearslong overhaul known as Network 2.0 aims to improve the carrier’s pickup and delivery processes, trim costs and strengthen its position against competitors like UPS.\n\nThrough that plan, FedEx is shuttering ship centers to streamline its operations and move toward a future without overlapping driver routes. The company has shuttered 100 stations as of May 31, and more closures are on the way, President and CEO Raj Subramaniam said on a June 2025 earnings call .\n\nFedEx says the plan won’t hurt transit times and will reduce complexity for shippers, as they won’t have to navigate separate Express and Ground pickups. But with such a wide-ranging initiative, customers still want to know what's changing even if delivery speeds are unaffected, EVP and Chief Customer Officer Brie Carere said in March 2024 .\n\nTo keep FedEx shippers updated on the company's consolidation efforts, Supply Chain Dive has compiled information on which facilities are closing or reducing staff due to Network 2.0, along with the number of employees impacted, in the map and table below. We will continue to update this page as new closures and workforce reductions are confirmed.\n\nEditor’s Note: If you know of a FedEx facility closure due to Network 2.0 that is missing from this list, send us an email at [email protected] .",
+      "meta_description": "The logistics giant is shutting down ship centers as part of its plan to streamline operations. Here&#x27;s how the overhaul is progressing.",
+      "status": 200,
+      "source_domain": "www.supplychaindive.com",
+      "word_count": 263,
+      "matched_companies": [
+        {
+          "name": "FedEx Corporation",
+          "ticker": "FDX",
+          "sector": "Logistics",
+          "mentions": 6
+        },
+        {
+          "name": "United Parcel Service",
+          "ticker": "UPS",
+          "sector": "Logistics",
+          "mentions": 1
+        }
+      ],
+      "relevance_score": 0.35714285714285715,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 6
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.647907Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "negative",
+          "score": -0.8836372137069701,
+          "confidence": 0.894700288772583
+        },
+        "title_sentiment": {
+          "label": "negative",
+          "score": 0.950015664100647,
+          "confidence": 0.950015664100647
+        },
+        "content_sentiment": {
+          "label": "negative",
+          "score": 0.839384913444519,
+          "confidence": 0.839384913444519
+        },
+        "analyzed_at": "2025-10-24T04:54:09.509525Z"
+      }
+    },
+    {
+      "url": "https://www.aircargonews.net/news/region/middle-east",
+      "fetched_at": "2025-10-24T04:17:34.789926Z",
+      "published_date": "2025-09-26",
+      "published_datetime": "2025-09-26T11:15:00Z",
+      "title": "Air Cargo News | The latest Middle East airfreight news",
+      "content": "Qatar Airways Cargo has upgraded its mobile application to provide customers with enhanced self-service capabilities, including real-time shipment tracking\n\nQatar Airways Cargo is leveraging passenger network adjustments to boost winter capacity, adding frequencies to London, Bangkok and multiple African destinations\n\nGerman logistics provider Rhenus Group is expanding its UAE operations and Gulf presence with a new Abu Dhabi office and air-ocean service\n\nSaudi Arabia’s new flag carrier Riyadh Air has secured a comprehensive ULD supply and management partnership with Unilode, featuring Bluetooth tracking\n\nAircraft charter specialist Air Charter Service has established its first Saudi Arabian presence with a new office in Riyadh\n\nFederal Express (FedEx) has launched its first dedicated flight into Saudi Arabia, connecting the country with the US and Europe\n\nDHL eCommerce has finalised its entry into the Saudi Arabian market with the investment in a minority stake of parcel logistics firm AJEX Logistics Services.\n\nNew Saudi Arabian airline Riyadh Air has selected SATS Saudia Arabia to provide cargo handling services at several airports across the country\n\nAbu Dhabi's vaccine distribution hub, developed in partnership with stakeholders including Etihad Cargo, has begun operations following the arrival of the facility’s first shipments\n\nFreighter operator Cargolux has dismissed social media statements alleging that its flights have been using Iranian airspace\n\nDubai-headquartered cargo airline SolitAir has launched flights to Beirut and Kuwait and has and signed an agreement for the lease of two Boeing 737-800 freighters\n\nQatar Airways has restarted flights from Doha after the country’s airspace was closed yesterday due to Iran launching missiles against US bases in Qatar and Iraq\n\nAirlines cancelled more flights to the Middle East over the weekend and are continuing to divert around much of the region following US strikes on Iran\n\nAircraft lessor AviLease has become the latest company to place an order for the Airbus A350 freighter in a deal that will make it the joint largest owner of the model\n\nThreatened 100% tariffs have triggered a surge in air cargo demand from China to the US with strong demand from the technology and e-commerce sectors\n\nAirfreight rates from China to the US increased 2.5% week-on-week to $5 per kg last week, reaching levels not seen since mid-August as trade tensions escalate",
+      "meta_description": "Interested in the latest air cargo developments in the Middle East? Air Cargo News is the leading provider of news and analysis on the airfreight industry. Learn more",
+      "status": 200,
+      "source_domain": "www.aircargonews.net",
+      "word_count": 369,
+      "matched_companies": [
+        {
+          "name": "FedEx Corporation",
+          "ticker": "FDX",
+          "sector": "Logistics",
+          "mentions": 2
+        },
+        {
+          "name": "DHL Group",
+          "ticker": "DPW.DE",
+          "sector": "Logistics",
+          "mentions": 2
+        }
+      ],
+      "relevance_score": 0.14742014742014742,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 2
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.647907Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "positive",
+          "score": 0.5514232993125915,
+          "confidence": 0.9267869889736176
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9345351457595825,
+          "confidence": 0.9345351457595825
+        },
+        "content_sentiment": {
+          "label": "positive",
+          "score": 0.9190388321876526,
+          "confidence": 0.9190388321876526
+        },
+        "analyzed_at": "2025-10-24T04:54:09.757687Z"
+      }
+    },
+    {
+      "url": "https://www.aircargonews.net/news/supply-chains",
+      "fetched_at": "2025-10-24T04:17:41.961911Z",
+      "published_date": "2025-10-20",
+      "published_datetime": "2025-10-20T11:39:00Z",
+      "title": "Air Cargo News | The latest supply chain news",
+      "content": "Bangladesh authorities have launched an investigation into a major cargo area fire at Hazrat Shahjalal International Airport\n\nThreatened 100% tariffs have triggered a surge in air cargo demand from China to the US with strong demand from the technology and e-commerce sectors\n\nDHL will deploy €300m across Sub-Saharan Africa targeting express, forwarding and supply chain capabilities as the region posts 10% trade value growth in H1\n\nDHL Express and NYU Stern have revised down their global trade volume growth expectations to 2.5% annually through 2029, citing US tariff policy impacts\n\nAirfreight rates from China to the US increased 2.5% week-on-week to $5 per kg last week, reaching levels not seen since mid-August as trade tensions escalate\n\nMagma Aviation is set to expand its fleet before year-end while pursuing network growth in underserved Asian and African markets\n\nUS freight forwarders are reporting increased operational costs and compliance complexities following the termination of the de minimis exemption for low-value imports\n\nFreight forwarder Geodis has reached 500 successful flights on its dedicated Asia-Mexico freighter service operated by Atlas Air\n\nKenyan cargo carrier Astral Aviation has commenced operations on a new China-South Africa route, connecting Haikou with Johannesburg using its Boeing 767-300F\n\nIAG Cargo will expand winter capacity across key trade lanes with frequency increases on existing services and new routes between Dublin and Madrid\n\nAir cargo demand growth decelerated to 3% year-on-year in September, down from 5% in August, as frontloading effects from trade uncertainty began to subside\n\n2025-10-03T07:45:00+01:00 By Alexandra Herdman, senior policy manager, Logistics UK\n\nRecent approvals for runway expansion at Heathrow, Gatwick and Luton present opportunities to boost the UK's 2.6m tonne annual airfreight volumes\n\nThe Transpacific trade lane has seen a shake-up this year with the rollout of tariffs and the end of the de minimis exemption, but what are the longer term implications?\n\nFedEx has launched a new weekly service connecting South Korea, Vietnam and China, reducing transit times by one day as intra-Asia trade momentum builds\n\nGround handler secures partnership to operate new 1.2m-tonne capacity facility at PVG, featuring AI-driven systems and automated processing capabilities\n\nHong Kong International has reopened its North Runway following repairs after a 747 freighter veered off the runway into the sea, killing two airport security workers",
+      "meta_description": "Interested in the latest news from the supply chain sector? Air Cargo News is the leading provider of news and analysis on the airfreight industry. Learn more",
+      "status": 200,
+      "source_domain": "www.aircargonews.net",
+      "word_count": 374,
+      "matched_companies": [
+        {
+          "name": "DHL Group",
+          "ticker": "DPW.DE",
+          "sector": "Logistics",
+          "mentions": 3
+        },
+        {
+          "name": "FedEx Corporation",
+          "ticker": "FDX",
+          "sector": "Logistics",
+          "mentions": 1
+        }
+      ],
+      "relevance_score": 0.14634146341463414,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 1
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.648912Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "negative",
+          "score": -0.30978591442108155,
+          "confidence": 0.7216201424598694
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9269304275512695,
+          "confidence": 0.9269304275512695
+        },
+        "content_sentiment": {
+          "label": "negative",
+          "score": 0.5163098573684692,
+          "confidence": 0.5163098573684692
+        },
+        "analyzed_at": "2025-10-24T04:54:10.007385Z"
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/",
+      "fetched_at": "2025-10-24T04:21:19.534074Z",
+      "published_date": "2025-10-21",
+      "published_datetime": "2025-10-21T08:00:00Z",
+      "title": "Amazon identifies the issue that broke much of the internet, says AWS is back to normal | TechCrunch",
+      "content": "An outage on Monday affected web hosting giant Amazon Web Services (AWS), which took out vast swathes of the web, including websites, banks, and some government services. On Monday afternoon, the company offered an update on the cause of the issue and said it was working to restore services. At 6:01 p.m. ET, Amazon said all AWS services had returned to normal operations.\n\nIn an announcement on the Amazon website, the company shared that the underlying issue was related to DNS resolution. DNS, or Domain Name System, is a system that converts web addresses into IP addresses so that customer apps and websites can load. While some glitches can be resolved quickly, DNS issues can sometimes take longer to resolve.\n\n“AWS reported increased error rates for multiple services and determined that the issue was related to DNS resolution of the DynamoDB API endpoints in the N. Virginia (us-east-1) Region,” the announcement stated. “The underlying DNS issue was fully mitigated at 2:24 AM PDT.”\n\nThough the issue itself was fixed, Amazon needed more time to “fully restore service,” which it said it was doing “as quickly as possible.” The company also said that the issue affected Amazon.com and its subsidiaries, as well as AWS customer support operations.\n\nAmazon said on Monday evening Eastern time that the outage had been “fully mitigated” and that most services are returning to normal after an hours-long stretch during which much of the internet could not load.\n\nSeveral major apps were not working. Coinbase , Fortnite , Signal , Perplexity , Venmo , and Zoom faced lengthy outages, as did Amazon’s own services , including its Ring video surveillance products . The outage even disrupted Eight Sleep’s cooling pods, disturbing the sleep of users .\n\nMillions of companies and organizations rely on AWS to host their websites, apps, and other critical online systems. The company has data centers all over the world, and Amazon is said to have at least 30% of the total cloud market.\n\nBefore this, the most recent global internet outage was in 2024, when cybersecurity giant CrowdStrike published a buggy update to its anti-malware engine, causing millions of computers around the world to crash and resulting in airport delays and mass outages. Systems globally took several days to return to normal.\n\nPrior to that, a malfunction at DNS provider Akamai in 2021 caused some of the world’s largest websites to drop off the internet for several hours, including FedEx, Steam, and the PlayStation Network.\n\nAmazon advised customers to refer to the AWS Health Dashboard for more detailed information on the outage and how it was being resolved.",
+      "meta_description": "The outage affected websites like Coinbase and Fortnite, and disrupted services like Signal, Zoom, and Amazon's own products, including Ring.",
+      "status": 200,
+      "source_domain": "techcrunch.com",
+      "word_count": 435,
+      "matched_companies": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 19
+        },
+        {
+          "name": "FedEx Corporation",
+          "ticker": "FDX",
+          "sector": "Logistics",
+          "mentions": 1
+        }
+      ],
+      "relevance_score": 0.6342494714587738,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 1
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.648912Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "negative",
+          "score": -0.33552299737930297,
+          "confidence": 0.6732797026634216
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.7873544096946716,
+          "confidence": 0.7873544096946716
+        },
+        "content_sentiment": {
+          "label": "negative",
+          "score": 0.5592049956321716,
+          "confidence": 0.5592049956321716
+        },
+        "analyzed_at": "2025-10-24T04:54:10.265276Z"
+      }
+    },
+    {
+      "url": "https://www.supplychaindive.com/news/fedex-ups-delivery-rates-q3-2025-increase/803239/",
+      "fetched_at": "2025-10-24T04:16:44.946544Z",
+      "published_date": "2025-10-22",
+      "published_datetime": "2025-10-22T00:00:00Z",
+      "title": "FedEx, UPS pricing tweaks set up ground shipping rates for record 2025",
+      "content": "Fuel surcharge pressures and new rounding rules are challenging shippers ahead of peak season, per the TD Cowen/AFS Freight Index.\n\nTD Cowen and AFS Logistics project that 2025 will set a record for highest average rate per package as carrier pricing tweaks, additional fees and waning discount activity keep the index elevated. Fuel surcharge increases from FedEx and UPS have been a particular pain point for shippers in recent quarters.\n\n\"The on-highway diesel fuel price rose 1.3% YOY, while the carrier Ground fuel surcharge rates increased 26.1% YOY, perpetuating cumulative effects of prior fuel surcharge adjustments,\" per the index.\n\nShippers are proactively finding ways to limit the effects of carrier pricing adjustments, said Mingshu Bates, chief analytics officer and president of parcel at AFS, in an interview. Many are shifting volume to slower, less expensive services and exploring alternative delivery options.\n\nAdditionally, Bates said several AFS Logistics clients are working with their packaging providers to shrink their box sizes, blunting the impact of FedEx and UPS' moves to round up any fraction of an inch when calculating dimensions.\n\n\"I think the shippers are getting savvier,\" Bates said.\n\nMeanwhile, the cost per package for express parcel shipments increased more than TD Cowen and AFS Logistics expected in Q3. The index attributed the year-over-year jump from 0.7% to 4% in part to fuel surcharge pressures, an increase in average billed weight and shippers using more premium services.",
+      "meta_description": "Fuel surcharge pressures and new rounding rules are challenging shippers ahead of peak season, per the TD Cowen/AFS Freight Index.",
+      "status": 200,
+      "source_domain": "www.supplychaindive.com",
+      "word_count": 235,
+      "matched_companies": [
+        {
+          "name": "FedEx Corporation",
+          "ticker": "FDX",
+          "sector": "Logistics",
+          "mentions": 3
+        },
+        {
+          "name": "United Parcel Service",
+          "ticker": "UPS",
+          "sector": "Logistics",
+          "mentions": 3
+        }
+      ],
+      "relevance_score": 0.33707865168539325,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 3
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.648912Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "positive",
+          "score": 0.5598560571670532,
+          "confidence": 0.7534840106964111
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.5738745927810669,
+          "confidence": 0.5738745927810669
+        },
+        "content_sentiment": {
+          "label": "positive",
+          "score": 0.9330934286117554,
+          "confidence": 0.9330934286117554
+        },
+        "analyzed_at": "2025-10-24T04:54:10.514653Z"
+      }
+    },
+    {
+      "url": "https://www.aircargonews.net/news/cargo-airports",
+      "fetched_at": "2025-10-24T04:17:45.123023Z",
+      "published_date": "2025-10-22",
+      "published_datetime": "2025-10-22T08:29:00Z",
+      "title": "Air Cargo News | The latest airport cargo news and updates",
+      "content": "Hong Kong International has reopened its North Runway following repairs after a 747 freighter veered off the runway into the sea, killing two airport security workers\n\nFrankfurt Airport recorded modest cargo growth in September despite regional disparities, with Asia Pacific routes offsetting declines in North America and Latin America\n\nMunich Airport has achieved a 10% increase in air cargo volumes over six months, handling 182,000 tons between March and October\n\nBangladesh authorities have launched an investigation into a major cargo area fire at Hazrat Shahjalal International Airport\n\nBeijing Capital Airlines has commenced A330P2F operations between Zhengzhou Xinzheng International Airport and Glasgow Prestwick Airport\n\nBrussels Airport has officially opened its €70m Brucargo Central redevelopment, delivering 30% increased cargo storage capacity through three modern warehouses\n\nLiège Airport posted a 23% year-on-year increase in cargo volumes during the third quarter, reaching 334,956 tonnes as both import and export flows strengthened\n\nOstend-Bruges Airport has appointed Johan Leunen as cargo development director to strengthen air cargo operations and generate new business\n\nAvianca Cargo has launched twice-weekly A330 freighter flights to Maastricht Aachen Airport, targeting South American flower imports\n\nCincinnati/Northern Kentucky International Airport has marked the first development at its Global Logistics Park with F&F's 80,000 sq ft air cargo facility\n\nFederal Express has launched its first automated sorting facility at Tallinn airport, tripling capacity to 3,000 parcels per hour as Estonia's e-commerce sector grows 20% annually to reach €5 billion turnover.\n\nThe UK Government has approved Gatwick Airport's plans to operationalise its northern runway and Logistics UK has highlighted the benefits for cargo\n\nDHL Express has opened a €80m international hub at Barcelona Airport, featuring automated sorting systems capable of processing 20,000 parcels per hour\n\nFedEx has commissioned a 19,000 sq ft cargo handling facility at East Midlands Airport, operating independently from existing parcel operations\n\nMadrid-based air cargo and wet-lease operator Swiftair Group has agreed to sell a majority stake to investment firm Antin Infrastructure Partners\n\nIATA has reported that air cargo demand increased for the sixth consecutive month, showing \"resilience in a challenging global economic context\"",
+      "meta_description": "Interested in the latest news about cargo airports? Air Cargo News is the leading provider of news and analysis on the airfreight sector. Learn more",
+      "status": 200,
+      "source_domain": "www.aircargonews.net",
+      "word_count": 342,
+      "matched_companies": [
+        {
+          "name": "FedEx Corporation",
+          "ticker": "FDX",
+          "sector": "Logistics",
+          "mentions": 2
+        },
+        {
+          "name": "DHL Group",
+          "ticker": "DPW.DE",
+          "sector": "Logistics",
+          "mentions": 2
+        }
+      ],
+      "relevance_score": 0.15873015873015872,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 2
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.649912Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "positive",
+          "score": 0.5683899164199829,
+          "confidence": 0.9403500854969025
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9333836436271667,
+          "confidence": 0.9333836436271667
+        },
+        "content_sentiment": {
+          "label": "positive",
+          "score": 0.9473165273666382,
+          "confidence": 0.9473165273666382
+        },
+        "analyzed_at": "2025-10-24T04:54:10.750738Z"
+      }
+    },
+    {
+      "url": "https://www.supplychaindive.com/news/package-disposal-policies-ups-fedex-dhl/803468/",
+      "fetched_at": "2025-10-24T04:16:48.379664Z",
+      "published_date": "2025-10-22",
+      "published_datetime": "2025-10-22T00:00:00Z",
+      "title": "How UPS, FedEx and DHL Express handle customs hangups post-de minimis",
+      "content": "As parcel carriers try to help shippers navigate U.S. regulatory changes, experts say there are ways to limit negative customs outcomes such as package disposals.\n\nSome U.S.-bound packages are being held by Customs and Border Protection for prolonged periods — and, on occasion, disposed of — as shippers struggle to adjust to the end of the de minimis exemption, according to parcel carriers.\n\nOn Aug. 29, the Trump administration eliminated de minimis , a trade tool allowing sub-$800 imports to enter the U.S. duty and tax-free. Without the exemption, low-cost packages are now subject to tariffs and more stringent entry requirements before entering a carrier's domestic delivery network.\n\nThe shift in U.S. import regulations has led to instances of packages being unable to clear customs due to missing or incomplete information, UPS said in an emailed statement to Supply Chain Dive. The carrier didn't specify how many packages are experiencing customs holdups but said its brokerage team is clearing more than 90% of packages on the first day of entry. FedEx and DHL Express also cited changes in trade rules as an obstacle for some cross-border shippers.\n\n\"All of this is an implication of the abrupt changes to de minimis,\" said Rathna Sharad, CEO and founder of FlavorCloud, a cross-border shipping platform.\n\nThe post-de minimis customs snafus have led to surprise fees and unexpected cases of package disposals for a wave of consumers, according to recent reports. The complications could challenge importers' efforts to keep customers happy as the peak holiday shipping season draws near .\n\nHere's what direct-to-consumer shippers need to know about potential customs holdups, from carrier policies on handling rejected shipments to expert tips on mitigating disposal risks.\n\nWhile policies vary by company, UPS, FedEx and DHL Express all said their practices aim to ensure a smooth and compliant customs clearance process. Standard freight shipments typically have 15 days to clear customs , after which disposal is one option to maintain compliance with CBP, said Thomas Taggart, VP of global trade at Passport, an international shipping and compliance provider.\n\nUPS said in instances of customs holdups, it makes multiple attempts to contact shippers to obtain the necessary information. If UPS is unable to get that information to clear the package, the carrier said two options are available.\n\n\"First, the package can be returned to the original shipper at their expense,\" UPS said. \"Second, if the customer does not respond and the package cannot be cleared for delivery, it is considered abandoned, and we dispose of it in compliance with U.S. customs regulations.\"\n\nFedEx said it works with shippers to update customs paperwork in instances of incomplete or rejected information by CBP officials. In cases where clearance remains an issue, shippers can opt to either return the package to the sender or request that the shipment be disposed of.\n\n\"In those rare cases, recipients are notified at the direction of the shipper,\" FedEx said. \"This is not a common practice.\"\n\nDHL Express said in an email that it doesn't dispose of packages that aren't cleared by customs. Instead, it pushes to gather any missing information within 10 days. If unsuccessful, DHL Express returns the shipment to its origin.\n\n\"This timeframe allows DHL Express to process the shipment for export prior to day 15 to ensure Customs regulations compliance,\" the company said.\n\nShippers should work closely with their broker and carrier to ensure their import paperwork is completed correctly to limit customs issues, something many formerly de minimis-reliant importers have struggled with, experts said. Key information needed by CBP includes a 10-digit Harmonized System commodity code and the product's country of origin, according to Sharad of FlavorCloud.\n\nAnother common issue stemming from de minimis' end is that U.S. buyers are now designated as the importer of record for many cross-border shipments, per experts. This puts much of the burden on end customers to release the goods from customs and pay for incurred fees, which can spur some to abandon their purchase and try to collect a refund instead.\n\n\"The shippers would likely only be involved on the front end to make sure the carrier has contact info for the buyer, or the buyer may contact the shipper to ask why their package is delayed,\" said Nick Baker, co-lead of Kroll’s trade and customs practice, in an email. \"But once the package is in the US and pending customs clearance, it’s really the buyer’s responsibility to work with the carrier to clear the goods and tender any duties owed.\"\n\nTo avoid these scenarios, foreign merchants should work with a third-party customs broker to manage clearance on behalf of customers, especially when using express carriers to move the goods, Baker said. Non-U.S. shippers also have the option to establish themselves as a foreign importer of record to prevent the end customer from being designated as the importer.\n\n\"If you are a legitimate shipper and you want to streamline the process, you should get set up as a non-resident importer and get established, and that way you can streamline the process,\" said Passport's Taggart.",
+      "meta_description": "As parcel carriers try to help shippers navigate U.S. regulatory changes, experts say there are ways to limit negative customs outcomes, such as package disposals.",
+      "status": 200,
+      "source_domain": "www.supplychaindive.com",
+      "word_count": 842,
+      "matched_companies": [
+        {
+          "name": "DHL Group",
+          "ticker": "DPW.DE",
+          "sector": "Logistics",
+          "mentions": 12
+        },
+        {
+          "name": "United Parcel Service",
+          "ticker": "UPS",
+          "sector": "Logistics",
+          "mentions": 6
+        },
+        {
+          "name": "FedEx Corporation",
+          "ticker": "FDX",
+          "sector": "Logistics",
+          "mentions": 5
+        }
+      ],
+      "relevance_score": 0.3929384965831435,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 5
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.649912Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "negative",
+          "score": -0.4861295700073242,
+          "confidence": 0.8618101179599762
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9134042859077454,
+          "confidence": 0.9134042859077454
+        },
+        "content_sentiment": {
+          "label": "negative",
+          "score": 0.810215950012207,
+          "confidence": 0.810215950012207
+        },
+        "analyzed_at": "2025-10-24T04:54:11.010008Z"
+      }
+    }
+  ],
+  "analyzed_at": "2025-10-24T04:54:11.010008Z"
+}

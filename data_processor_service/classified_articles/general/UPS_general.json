@@ -1,0 +1,199 @@
+[
+  {
+    "url": "https://www.supplychaindive.com/news/fedex-network-2-layoffs-closings-status/750513/",
+    "fetched_at": "2025-10-24T04:16:43.647700Z",
+    "published_date": "2025-07-14",
+    "published_datetime": "2025-07-14T00:00:00Z",
+    "title": "FedEx Network 2.0: Tracking closures, layoffs across the US",
+    "content": "The logistics giant is shutting down ship centers as part of its plan to streamline operations. Here’s how the overhaul is progressing.\n\nFedEx is making layoffs and closing facilities across the country as part of a plan to integrate its historically separate Ground and Express networks.\n\nThe yearslong overhaul known as Network 2.0 aims to improve the carrier’s pickup and delivery processes, trim costs and strengthen its position against competitors like UPS.\n\nThrough that plan, FedEx is shuttering ship centers to streamline its operations and move toward a future without overlapping driver routes. The company has shuttered 100 stations as of May 31, and more closures are on the way, President and CEO Raj Subramaniam said on a June 2025 earnings call .\n\nFedEx says the plan won’t hurt transit times and will reduce complexity for shippers, as they won’t have to navigate separate Express and Ground pickups. But with such a wide-ranging initiative, customers still want to know what's changing even if delivery speeds are unaffected, EVP and Chief Customer Officer Brie Carere said in March 2024 .\n\nTo keep FedEx shippers updated on the company's consolidation efforts, Supply Chain Dive has compiled information on which facilities are closing or reducing staff due to Network 2.0, along with the number of employees impacted, in the map and table below. We will continue to update this page as new closures and workforce reductions are confirmed.\n\nEditor’s Note: If you know of a FedEx facility closure due to Network 2.0 that is missing from this list, send us an email at [email protected] .",
+    "meta_description": "The logistics giant is shutting down ship centers as part of its plan to streamline operations. Here&#x27;s how the overhaul is progressing.",
+    "status": 200,
+    "source_domain": "www.supplychaindive.com",
+    "word_count": 263,
+    "matched_companies": [
+      {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 6
+      },
+      {
+        "name": "United Parcel Service",
+        "ticker": "UPS",
+        "sector": "Logistics",
+        "mentions": 1
+      }
+    ],
+    "relevance_score": 0.35714285714285715,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 1
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.674774Z"
+  },
+  {
+    "url": "https://www.aircargonews.net/news/business/finance",
+    "fetched_at": "2025-10-24T04:17:47.883734Z",
+    "published_date": "2025-09-19",
+    "published_datetime": "2025-09-19T09:29:00Z",
+    "title": "The latest airfreight finance updates | Air Cargo News",
+    "content": "Express giant reduces own-controlled transpacific capacity by 25% year-on-year as US tariffs on Chinese e-commerce shipments dampen demand\n\nEtihad Cargo saw its revenues increase in the first half of the year, while cargo volumes also improved but by a lower amount\n\nVietnam-based air cargo handling company ALS Cargo Terminal (ALSC) has secured investment from AP Moller Capital to help fund automation and expansion\n\nScan Global Logistics (SGL) is expecting a ”highly volatile” end to the year, driven by global trade unpredictability, and will look to cut costs in response\n\nForwarders that embrace agility, specialise in specific verticals, and offer value-added services proved a winning combination during the first half of 2025\n\nFlexport has partnered with investment firm BlackRock to expand its financing programme that allows customers to access funding for their supply chain operations\n\nCargojet's second-quarter revenues increased by 3.2% year on year due to growth in domestic and charter revenues\n\nCathay Cargo delivered a “resilient” performance in the first half of the year despite the impact of US tariffs and the ending of the de minimis exemption\n\nDHL’s airfreight revenues declined in the second quarter of the year despite an increase in volumes, while the overall business focused on cost control\n\nThe Air France KLM Group saw its cargo revenues and traffic improve slightly in the second quarter of the year\n\nLufthansa's cargo revenues and volumes were up in the second quarter of 2025, supported by \"robust market demand\"\n\nIAG Cargo recorded a rise in cargo volumes and cargo revenue in the second quarter of 2025, driven by investment in digital infrastructure and service improvement\n\nThe acquisition of Schenker and frontloading contributed to a rise in DSV's airfreight volumes in the second quarter of 2025\n\nUPS was challenged by tariffs and changing consumer habits in the second quarter, but air cargo business helped improve its results\n\nAir Cargo Forum 2025 will feature fireside chats, CEO roundtables and sessions looking at industry outlook, trends and much more\n\nAsia Pacific has become a greater focus for e-commerce following US tariff and de minimis changes that curbed e-commerce out of China",
+    "meta_description": "Interested in the latest airfreight finance news? Air Cargo News is the leading provider of news and analysis covering the airfreight industry. Learn more",
+    "status": 200,
+    "source_domain": "www.aircargonews.net",
+    "word_count": 349,
+    "matched_companies": [
+      {
+        "name": "United Parcel Service",
+        "ticker": "UPS",
+        "sector": "Logistics",
+        "mentions": 1
+      },
+      {
+        "name": "DHL Group",
+        "ticker": "DPW.DE",
+        "sector": "Logistics",
+        "mentions": 1
+      },
+      {
+        "name": "A.P. Moller – Maersk",
+        "ticker": "AMKBY",
+        "sector": "Ocean Freight",
+        "mentions": 1
+      }
+    ],
+    "relevance_score": 0.11780104712041885,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 1
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.674774Z"
+  },
+  {
+    "url": "https://www.supplychaindive.com/news/fedex-ups-delivery-rates-q3-2025-increase/803239/",
+    "fetched_at": "2025-10-24T04:16:44.946544Z",
+    "published_date": "2025-10-22",
+    "published_datetime": "2025-10-22T00:00:00Z",
+    "title": "FedEx, UPS pricing tweaks set up ground shipping rates for record 2025",
+    "content": "Fuel surcharge pressures and new rounding rules are challenging shippers ahead of peak season, per the TD Cowen/AFS Freight Index.\n\nTD Cowen and AFS Logistics project that 2025 will set a record for highest average rate per package as carrier pricing tweaks, additional fees and waning discount activity keep the index elevated. Fuel surcharge increases from FedEx and UPS have been a particular pain point for shippers in recent quarters.\n\n\"The on-highway diesel fuel price rose 1.3% YOY, while the carrier Ground fuel surcharge rates increased 26.1% YOY, perpetuating cumulative effects of prior fuel surcharge adjustments,\" per the index.\n\nShippers are proactively finding ways to limit the effects of carrier pricing adjustments, said Mingshu Bates, chief analytics officer and president of parcel at AFS, in an interview. Many are shifting volume to slower, less expensive services and exploring alternative delivery options.\n\nAdditionally, Bates said several AFS Logistics clients are working with their packaging providers to shrink their box sizes, blunting the impact of FedEx and UPS' moves to round up any fraction of an inch when calculating dimensions.\n\n\"I think the shippers are getting savvier,\" Bates said.\n\nMeanwhile, the cost per package for express parcel shipments increased more than TD Cowen and AFS Logistics expected in Q3. The index attributed the year-over-year jump from 0.7% to 4% in part to fuel surcharge pressures, an increase in average billed weight and shippers using more premium services.",
+    "meta_description": "Fuel surcharge pressures and new rounding rules are challenging shippers ahead of peak season, per the TD Cowen/AFS Freight Index.",
+    "status": 200,
+    "source_domain": "www.supplychaindive.com",
+    "word_count": 235,
+    "matched_companies": [
+      {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 3
+      },
+      {
+        "name": "United Parcel Service",
+        "ticker": "UPS",
+        "sector": "Logistics",
+        "mentions": 3
+      }
+    ],
+    "relevance_score": 0.33707865168539325,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 3
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.674774Z"
+  },
+  {
+    "url": "https://www.supplychaindive.com/news/package-disposal-policies-ups-fedex-dhl/803468/",
+    "fetched_at": "2025-10-24T04:16:48.379664Z",
+    "published_date": "2025-10-22",
+    "published_datetime": "2025-10-22T00:00:00Z",
+    "title": "How UPS, FedEx and DHL Express handle customs hangups post-de minimis",
+    "content": "As parcel carriers try to help shippers navigate U.S. regulatory changes, experts say there are ways to limit negative customs outcomes such as package disposals.\n\nSome U.S.-bound packages are being held by Customs and Border Protection for prolonged periods — and, on occasion, disposed of — as shippers struggle to adjust to the end of the de minimis exemption, according to parcel carriers.\n\nOn Aug. 29, the Trump administration eliminated de minimis , a trade tool allowing sub-$800 imports to enter the U.S. duty and tax-free. Without the exemption, low-cost packages are now subject to tariffs and more stringent entry requirements before entering a carrier's domestic delivery network.\n\nThe shift in U.S. import regulations has led to instances of packages being unable to clear customs due to missing or incomplete information, UPS said in an emailed statement to Supply Chain Dive. The carrier didn't specify how many packages are experiencing customs holdups but said its brokerage team is clearing more than 90% of packages on the first day of entry. FedEx and DHL Express also cited changes in trade rules as an obstacle for some cross-border shippers.\n\n\"All of this is an implication of the abrupt changes to de minimis,\" said Rathna Sharad, CEO and founder of FlavorCloud, a cross-border shipping platform.\n\nThe post-de minimis customs snafus have led to surprise fees and unexpected cases of package disposals for a wave of consumers, according to recent reports. The complications could challenge importers' efforts to keep customers happy as the peak holiday shipping season draws near .\n\nHere's what direct-to-consumer shippers need to know about potential customs holdups, from carrier policies on handling rejected shipments to expert tips on mitigating disposal risks.\n\nWhile policies vary by company, UPS, FedEx and DHL Express all said their practices aim to ensure a smooth and compliant customs clearance process. Standard freight shipments typically have 15 days to clear customs , after which disposal is one option to maintain compliance with CBP, said Thomas Taggart, VP of global trade at Passport, an international shipping and compliance provider.\n\nUPS said in instances of customs holdups, it makes multiple attempts to contact shippers to obtain the necessary information. If UPS is unable to get that information to clear the package, the carrier said two options are available.\n\n\"First, the package can be returned to the original shipper at their expense,\" UPS said. \"Second, if the customer does not respond and the package cannot be cleared for delivery, it is considered abandoned, and we dispose of it in compliance with U.S. customs regulations.\"\n\nFedEx said it works with shippers to update customs paperwork in instances of incomplete or rejected information by CBP officials. In cases where clearance remains an issue, shippers can opt to either return the package to the sender or request that the shipment be disposed of.\n\n\"In those rare cases, recipients are notified at the direction of the shipper,\" FedEx said. \"This is not a common practice.\"\n\nDHL Express said in an email that it doesn't dispose of packages that aren't cleared by customs. Instead, it pushes to gather any missing information within 10 days. If unsuccessful, DHL Express returns the shipment to its origin.\n\n\"This timeframe allows DHL Express to process the shipment for export prior to day 15 to ensure Customs regulations compliance,\" the company said.\n\nShippers should work closely with their broker and carrier to ensure their import paperwork is completed correctly to limit customs issues, something many formerly de minimis-reliant importers have struggled with, experts said. Key information needed by CBP includes a 10-digit Harmonized System commodity code and the product's country of origin, according to Sharad of FlavorCloud.\n\nAnother common issue stemming from de minimis' end is that U.S. buyers are now designated as the importer of record for many cross-border shipments, per experts. This puts much of the burden on end customers to release the goods from customs and pay for incurred fees, which can spur some to abandon their purchase and try to collect a refund instead.\n\n\"The shippers would likely only be involved on the front end to make sure the carrier has contact info for the buyer, or the buyer may contact the shipper to ask why their package is delayed,\" said Nick Baker, co-lead of Kroll’s trade and customs practice, in an email. \"But once the package is in the US and pending customs clearance, it’s really the buyer’s responsibility to work with the carrier to clear the goods and tender any duties owed.\"\n\nTo avoid these scenarios, foreign merchants should work with a third-party customs broker to manage clearance on behalf of customers, especially when using express carriers to move the goods, Baker said. Non-U.S. shippers also have the option to establish themselves as a foreign importer of record to prevent the end customer from being designated as the importer.\n\n\"If you are a legitimate shipper and you want to streamline the process, you should get set up as a non-resident importer and get established, and that way you can streamline the process,\" said Passport's Taggart.",
+    "meta_description": "As parcel carriers try to help shippers navigate U.S. regulatory changes, experts say there are ways to limit negative customs outcomes, such as package disposals.",
+    "status": 200,
+    "source_domain": "www.supplychaindive.com",
+    "word_count": 842,
+    "matched_companies": [
+      {
+        "name": "DHL Group",
+        "ticker": "DPW.DE",
+        "sector": "Logistics",
+        "mentions": 12
+      },
+      {
+        "name": "United Parcel Service",
+        "ticker": "UPS",
+        "sector": "Logistics",
+        "mentions": 6
+      },
+      {
+        "name": "FedEx Corporation",
+        "ticker": "FDX",
+        "sector": "Logistics",
+        "mentions": 5
+      }
+    ],
+    "relevance_score": 0.3929384965831435,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 6
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.675771Z"
+  },
+  {
+    "url": "https://www.logisticsmgmt.com/article/ups_makes_progress_on_key_deliverable_of_deal_with_teamsters_plans_to_install_ac_in_5000_delivery_vehicles",
+    "fetched_at": "2025-10-24T04:16:59.907807Z",
+    "published_date": "2025-10-24",
+    "published_datetime": "2025-10-24T04:16:59.896241Z",
+    "title": "UPS makes progress on key deliverable of deal with Teamsters, plans to install AC in 5,000 delivery vehicles",
+    "content": "A key component of the five-year labor deal signed in August 2023 between Atlanta-based global freight transportation and logistics services provider UPS and the International Brotherhood of Teamsters was related to the rate of delivery of package cars and vans equipped with air conditioning, which required UPS to provide a minimum of 28,000 air-conditioned vehicles to drivers, is gaining momentum.\n\nIn a statement issued on October 20, UPS said that it is installing air conditioning in 5,000 of its existing delivery vehicles in the hottest regions across the country and also testing air conditioning in the cargo area of its package cars.\n\n“This investment is above and beyond the commitment we’ve made to include air conditioning in all newly purchased vehicles,” said UPS. “In every region, our drivers will also continue to benefit from improvements we’ve made to our vehicles to reduce temperature and improve air flow. Collaboration with the Teamsters has been important as we take these steps for our people.”\n\nThe Teamsters said yesterday that UPS signed a new letter of agreement with the UPS Teamsters National Negotiating Committee to begin retrofitting 5,000 package cars with air conditioning for the hottest delivery zone in the country, including Alabama, Arizona, Arkansas, California, Florida, Georgia, Hawaii, Louisiana, Mississippi, Nevada, New Mexico, North Caolina, Oklahoma, Oregon, South Carolina, Tennessee, Texas, and Washington.\n\nPrior to the August 2023 deal being completed, when it was still being negotiated, the Teamsters said in June 2023 that it had come to terms with UPS on installing air conditioning in UPS delivery trucks driven by UPS Teamsters members. Teamsters’ officials said at the time that new contract language would mandate UPS equip in-cab air conditioning systems in all larger delivery vehicles, small sprinter vans, and UPS’s brown package cars purchased after January 1, 2024, with the regular package cars comprising the majority of the company’s 93,000 vehicles within its fleet.\n\n“The Teamsters Union appreciates UPS’s recognition that our members in Zone 1 need real relief from the heat, and they need it now,” said Teamsters General President Sean M. O’Brien. “The rank-and-file at UPS are essential workers who move the American economy. In 2023, the Teamsters secured historic heat protections for our members, and there can be no further delay in the implementation of these safeguards. We look forward to working with UPS to ensure this retrofitting is completed on schedule to get our members the relief they deserve.”\n\nIn terms of the timing in regards to the implementation of air conditioning into 5,000 of UPS’s existing delivery vehicles, the Teamsters noted that\n\nstrategies for greater heat relief, which it said is an evolution of UPS’s commitment under to 2023 National Master Agreement to ventilate cargo compartments with retrofitted air ducts\n\nWhile this represents a positive development, tensions between UPS and the Teamsters were running high over the summer, when UPS said in July that it planned to roll out what it called “the largest network reconfiguration in UPS history,” which took effect on July 18 , and offer full-time UPS drivers the opportunity to participate in a voluntary program that would provide an opportunity to receive a generous financial package if they choose to leave UPS. It said that the financial package available through this program is in addition to any earned retirement benefits, including pension and health care, each driver would have the ability to decide if this voluntary program is beneficial to their family and the plans they have for the future.\n\nThe Teamsters called it “an illegal plan” to buy out full-time Teamsters-represented UPS employees, labeling it a corporate scheme which directly violated its contract with UPS that represents 340,000 delivery workers. And it added that a Driver Voluntary Severance Plan (DVSP), which UPS has not yet publicly disclosed, would offer cash to drivers to initiate early retirement or quit their job. It also stated that the DVSP would leave most drivers without quality health insurance if they retire under the program and would undermine UPS's own legal commitment to create 22,500 more jobs under its current Teamsters contract.\n\nAnd, also, at that time, it formally requested data from UPS in regards to the status of open positions and also the rate of delivery of package cars and vans equipped with air conditioning.\n\n“UPS is trying to weasel its way out of creating good union jobs here in America by dangling insulting buyouts in front of Teamsters drivers,” said Teamsters General President Sean M. O'Brien. “It is an illegal violation of our national contract. UPS is obligated to establish tens of thousands of new full-time jobs under the agreement. But CEO Carol Tomé and UPS's corporate managers are hoping that if they offer paltry severance packages to enough workers, no one will notice the company is setting the union's contract on fire. UPS Teamsters work too damn hard to be treated with such disrespect.”\n\nAs previously reported, on the company’s first quarter earnings call in April , UPS CEO Carol Tomé outlined key strategic actions tied to the company’s January network reconfiguration plans. A major step is the accelerated reduction of Amazon package volume in UPS’s network—cutting it by more than 50% by June 2026—focusing on eliminating unprofitable fulfillment center outbound volume, while retaining profitable segments like returns and Seller Fulfilled shipments. This adjustment is part of UPS’s broader “Network of the Future” initiative, the company’s largest-ever network overhaul aimed at aligning capacity with volume and increasing automation.\n\nUPS is also restructuring operations to match labor and facility usage with volume levels. In 2024, the company closed 11 buildings and plans to complete 164 more operational closures (including 73 buildings) by June. Despite a reduced building footprint, it said customer access remains strong through UPS’s extensive retail network.",
+    "meta_description": "UPS said that it is installing air conditioning in 5,000 of its existing delivery vehicles in the hottest regions across the country and also testing air conditioning in the cargo area of its package cars.",
+    "status": 200,
+    "source_domain": "www.logisticsmgmt.com",
+    "word_count": 956,
+    "matched_companies": [
+      {
+        "name": "United Parcel Service",
+        "ticker": "UPS",
+        "sector": "Logistics",
+        "mentions": 39
+      },
+      {
+        "name": "Amazon.com, Inc.",
+        "ticker": "AMZN",
+        "sector": "E-commerce",
+        "mentions": 1
+      }
+    ],
+    "relevance_score": 0.5946481665014867,
+    "article_type": "company_specific",
+    "crawl_mode": "strict_today_only",
+    "primary_company": {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 39
+    },
+    "classification": "general",
+    "classified_at": "2025-10-24T04:52:31.677326Z"
+  }
+]

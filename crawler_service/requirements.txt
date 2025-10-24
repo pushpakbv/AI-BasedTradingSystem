@@ -1,0 +1,24 @@
+# Core web scraping
+scrapy>=2.11.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# HTTP and requests
+requests>=2.31.0
+
+# Configuration
+pyyaml>=6.0
+
+# HTML parsing
+html5lib>=1.1
+cssselect>=1.2.0
+parsel>=1.8.0
+
+# Date parsing
+python-dateutil>=2.8.2
+
+# For handling different encodings
+chardet>=5.2.0
+
+# Data handling for sentiment analysis prep
+pandas>=2.0.0

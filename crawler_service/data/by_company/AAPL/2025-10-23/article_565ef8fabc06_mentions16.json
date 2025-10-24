@@ -1,0 +1,29 @@
+{
+  "url": "https://techcrunch.com/2025/10/23/openai-buys-sky-an-ai-interface-for-mac/",
+  "fetched_at": "2025-10-24T04:21:29.938810Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T20:53:02Z",
+  "title": "OpenAI buys Sky, an AI interface for Mac | TechCrunch",
+  "content": "OpenAI announced on Thursday it has acquired Software Applications, Inc., the makers of an AI-powered natural language interface for Mac computers called Sky.\n\nThe software product, which had not been released to the public, is designed to work alongside you throughout your day, as you use apps on the computer, writing, planning, coding, and more. Similar to AI browsers, Sky can see what’s on the your screen and take action in your apps for you.\n\nThe move is a significant step toward embedding OpenAI’s technology into consumers’ everyday lives and within businesses that run on Mac.\n\n“We’ve always wanted computers to be more empowering, customizable, and intuitive. With LLMs, we can finally put the pieces together. That’s why we built Sky, an AI experience that floats over your desktop to help you think and create. We’re thrilled to join OpenAI to bring that vision to hundreds of millions of people,” Software Applications co-founder and CEO Ari Weinstein said in a statement.\n\nNotably, the team behind Sky had another prominent exit before this.\n\nWeinstein and Conrad Kramer previously co-founded Workflow, which they sold to Apple , where it became the technology now known as Shortcuts. Both continued to work at Apple for several years before leaving to found Software Applications in August 2023. Sky’s third co-founder and COO, Kim Beverett , was a senior program and product manager at Apple, where she spent nearly 10 years working on technology like Safari, WebKit, Privacy, Messages, Mail, Phone, FaceTime, and SharePlay.\n\nApple, which has so far been behind on AI, is expected to launch an overhauled Siri with AI smarts next year . Apple has already shipped other features that use its AI tech known as Apple Intelligence, including writing helpers, live translation, image creation, visual search, and more. It’s also working with OpenAI to shuffle off queries Siri can’t answer to ChatGPT. Apple Intelligence works across platforms, including Mac.\n\nIn addition, Apple offers a Foundation Models framework that provides access to local AI models, allowing developers to build AI into their apps directly.\n\nHowever, Apple values privacy as a core part of its AI offering, and an agentic system that views your screen and takes action on your behalf could raise concerns for some of its more security-minded customers. Agentic AI is still in its early days, and recent reviews indicate that AI browsers have a lot of safety risks . It could take Apple time to launch a Mac AI system comparable to Sky, as a result.\n\nDeal terms for OpenAI’s acquistion were not revealed, but Sky’s maker had raised $6.5 million from investors, including OpenAI CEO Sam Altman, Figma CEO Dylan Field, Context Ventures, and Stellation Capital, according to data from Pitchbook . OpenAI disclosed that Altman held a passive interest in the startup through an investment fund.\n\nThe deal was led by Head of ChatGPT Nick Turley and OpenAI’s CEO of Applications, Fidji Simo, and approved by OpenAI’s board.",
+  "meta_description": "OpenAI has acquired Software Applications, Inc., the startup behind Sky — an AI-powered natural language interface for Mac that can view your screen and take actions in your apps.",
+  "status": 200,
+  "source_domain": "techcrunch.com",
+  "word_count": 490,
+  "matched_companies": [
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 16
+    }
+  ],
+  "relevance_score": 0.45368620037807184,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "sector": "Technology & Manufacturing",
+    "mentions": 16
+  }
+}

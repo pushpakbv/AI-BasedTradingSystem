@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/23/3-artificial-intelligence-stocks-you-can-buy-and-h/",
+  "fetched_at": "2025-10-24T04:15:20.517837Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T07:52:00Z",
+  "title": "3 Artificial Intelligence Stocks You Can Buy and Hold for the Next Decade | The Motley Fool",
+  "content": "What's a key downside of investing in a game-changing technology with fast-paced advances? One that immediately comes to mind is that there's no way to know for sure which stocks will be the biggest winners.\n\nArtificial intelligence (AI) is a great case in point. Some of the top AI names right now might not be at the top 10 years from now. Does this mean that buy-and-hold investing is futile with AI stocks? Not at all. Here are three AI stocks I think you can safely buy and hold for the next decade.\n\nOnce upon a time, some pundits predicted that generative AI would present an existential threat to Alphabet 's ( GOOG +0.46% ) ( GOOGL +0.54% ) Google Search. You don't hear such dire warnings too much these days, though. Nearly three years after OpenAI launched ChatGPT, Google Search continues to grow robustly.\n\nAlphabet defied the expectations of some doomsayers by evolving its search engine to incorporate generative AI, introducing new features such as AI Overviews and AI Mode. The company also released one of the top-ranked large language models (LLMs) on the market, Google Gemini, which has an even more powerful version on the way soon.\n\nAlphabet CEO Sundar Pichai said in July, \"AI is positively impacting every part of the business, driving strong momentum.\" He was right. His statement is especially true for Google Cloud. The unit's revenue soared 32% year over year in the second quarter of 2025, maintaining Google Cloud's position as the fastest-growing major cloud services provider.\n\nI suspect we've only seen the beginning of how Alphabet will make money through AI. The company's Waymo business is a leader in the up-and-coming robotaxi market. Its Android XR operating system sets the stage for Alphabet to be a strong contender in the AI glasses market as well. I believe this company will be significantly larger 10 years from now, with AI serving as one of its biggest growth drivers.\n\nAmazon ( AMZN +1.41% ) recently made headlines with its Amazon Web Services (AWS) outage that impacted many well-known businesses. I doubt many people will remember this public relations black eye a decade from now. Furthermore, I predict that AWS will rake in a lot more revenue than it does today.\n\nIs AWS growing more slowly than its top rivals, such as Google Cloud? Yes. However, its revenue still jumped 17.5% year over year in Q2. And AWS continues to launch new capabilities, including agentic AI products, that should continue to attract new customers.\n\nMeanwhile, Amazon is leveraging AI effectively to increase its overall profitability. For example, the company recently introduced its DeepFleet AI model that controls over 1 million robots and is improving their travel efficiency. It's also using AI-powered demand forecasting to boost accuracy, optimize inventory placement, and reduce delivery times for millions of items purchased on its e-commerce platform.\n\nAmazon is preparing to soon provide satellite internet service to customers using its Project Kuiper satellite network. I have no doubt the company will move into additional new markets over the next 10 years, some AI-related and others not.\n\nMicrosoft ( MSFT +0.00% ) might have made the smartest deal in the age of AI so far with its partnership with OpenAI. As a result, the company has been able to integrate generative AI throughout its software products, making them more valuable than ever to users.\n\nAI has also provided a huge tailwind for Microsoft Azure, which ranks as the second-largest cloud services provider after AWS. Business is booming for Azure, with Microsoft's intelligent cloud segment revenue jumping 27% year over year in its latest quarter.\n\nCould Microsoft's momentum wane? Maybe, but I doubt it will. CEO Satya Nadella noted in the company's recent quarterly update, \"Cloud and AI is [sic] the driving force of business transformation across every industry and sector.\" The transformation he referred to is still in its early innings, in my view.\n\nI think Microsoft's productivity products are ideal for agentic AI to show its value. I'm also glad to see the company expand its umbrella by offering Anthropic's Claude AI models as well as OpenAI's models in Microsoft 365 Copilot. This company, like Alphabet and Amazon, has staying power.",
+  "meta_description": "These AI giants have staying power.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 701,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 18
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 12
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 10
+    }
+  ],
+  "relevance_score": 0.8287292817679558,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

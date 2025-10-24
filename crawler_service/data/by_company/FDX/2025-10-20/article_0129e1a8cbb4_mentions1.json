@@ -1,0 +1,35 @@
+{
+  "url": "https://www.aircargonews.net/news/supply-chains",
+  "fetched_at": "2025-10-24T04:17:41.961911Z",
+  "published_date": "2025-10-20",
+  "published_datetime": "2025-10-20T11:39:00Z",
+  "title": "Air Cargo News | The latest supply chain news",
+  "content": "Bangladesh authorities have launched an investigation into a major cargo area fire at Hazrat Shahjalal International Airport\n\nThreatened 100% tariffs have triggered a surge in air cargo demand from China to the US with strong demand from the technology and e-commerce sectors\n\nDHL will deploy €300m across Sub-Saharan Africa targeting express, forwarding and supply chain capabilities as the region posts 10% trade value growth in H1\n\nDHL Express and NYU Stern have revised down their global trade volume growth expectations to 2.5% annually through 2029, citing US tariff policy impacts\n\nAirfreight rates from China to the US increased 2.5% week-on-week to $5 per kg last week, reaching levels not seen since mid-August as trade tensions escalate\n\nMagma Aviation is set to expand its fleet before year-end while pursuing network growth in underserved Asian and African markets\n\nUS freight forwarders are reporting increased operational costs and compliance complexities following the termination of the de minimis exemption for low-value imports\n\nFreight forwarder Geodis has reached 500 successful flights on its dedicated Asia-Mexico freighter service operated by Atlas Air\n\nKenyan cargo carrier Astral Aviation has commenced operations on a new China-South Africa route, connecting Haikou with Johannesburg using its Boeing 767-300F\n\nIAG Cargo will expand winter capacity across key trade lanes with frequency increases on existing services and new routes between Dublin and Madrid\n\nAir cargo demand growth decelerated to 3% year-on-year in September, down from 5% in August, as frontloading effects from trade uncertainty began to subside\n\n2025-10-03T07:45:00+01:00 By Alexandra Herdman, senior policy manager, Logistics UK\n\nRecent approvals for runway expansion at Heathrow, Gatwick and Luton present opportunities to boost the UK's 2.6m tonne annual airfreight volumes\n\nThe Transpacific trade lane has seen a shake-up this year with the rollout of tariffs and the end of the de minimis exemption, but what are the longer term implications?\n\nFedEx has launched a new weekly service connecting South Korea, Vietnam and China, reducing transit times by one day as intra-Asia trade momentum builds\n\nGround handler secures partnership to operate new 1.2m-tonne capacity facility at PVG, featuring AI-driven systems and automated processing capabilities\n\nHong Kong International has reopened its North Runway following repairs after a 747 freighter veered off the runway into the sea, killing two airport security workers",
+  "meta_description": "Interested in the latest news from the supply chain sector? Air Cargo News is the leading provider of news and analysis on the airfreight industry. Learn more",
+  "status": 200,
+  "source_domain": "www.aircargonews.net",
+  "word_count": 374,
+  "matched_companies": [
+    {
+      "name": "DHL Group",
+      "ticker": "DPW.DE",
+      "sector": "Logistics",
+      "mentions": 3
+    },
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.14634146341463414,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "FedEx Corporation",
+    "ticker": "FDX",
+    "sector": "Logistics",
+    "mentions": 1
+  }
+}

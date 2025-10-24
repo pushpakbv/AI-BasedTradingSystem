@@ -1,0 +1,23 @@
+{
+  "url": "https://www.marketingdive.com/news/elf-cosmetics-first-test-twitch-livestream-shopping-ads/802953/",
+  "fetched_at": "2025-10-24T04:21:50.674567Z",
+  "published_date": "2025-10-16",
+  "published_datetime": "2025-10-16T00:00:00Z",
+  "title": "E.l.f. Cosmetics first to test Twitch’s new livestream shopping ads",
+  "content": "A new integration powered by Amazon Ads’ retail media data is meant to drive “more measurable business outcomes” for E.l.f. on the platform.\n\nE.l.f. Cosmetics wants to inject more performance into its Twitch advertising with the new in-stream shoppable integration. The capability is powered by Amazon Ads, allowing E.l.f. to draw on the e-commerce giant’s troves of retail media data to better target and measure campaigns. The announcement lands ahead of TwitchCon San Diego 2025, where E.l.f. executives will discuss the collaboration in greater detail. The timing also aligns with the gear up to the holiday season, a critical sales window for retail brands.\n\n“Twitch is where communities and creators connect through authentic, live engagement — and now, through shoppable moments,” said Sarah Iooss, head of U.S. agency at Amazon Ads, in a press statement. “We’re thrilled to partner with e.l.f. to test this innovative new format that keeps viewers immersed in the content they love while discovering and purchasing products in real time.”\n\nE.l.f. sees the ad format as a way to drive “more measurable business outcomes” from its creator content without putting off viewers through disruptive messages, per the release. The brand launched on Twitch in 2020 to better connect with subcultures like gaming and empower women creators in the space. E.l.f.YOU! has accrued over 43.3 million cumulative minutes watched and nearly 24,000 followers .\n\nThe news builds on a run of experiments where Amazon has tried to tie livestreaming and commerce closer together, a strategy that has not always panned out despite the company’s considerable scale and sophistication in retail media advertising. Amazon does not publicly share Twitch’s ad revenue, but some streamers claim their earnings from the site have plunged and the platform’s struggles to turn a profit have been well documented .\n\nSocial and livestreaming-enabled commerce broadly have seen sluggish adoption in the U.S., though that’s not for lack of platforms trying to make the idea popular. TikTok, a Twitch rival, is also making commerce a bigger part of its growth agenda through TikTok Shop, an offering that has started to see more traction with consumers.",
+  "meta_description": "A new integration powered by Amazon Ads’ retail media data is meant to drive “more measurable business outcomes” for E.l.f. on the platform.",
+  "status": 200,
+  "source_domain": "www.marketingdive.com",
+  "word_count": 351,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 6
+    }
+  ],
+  "relevance_score": 0.234375,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

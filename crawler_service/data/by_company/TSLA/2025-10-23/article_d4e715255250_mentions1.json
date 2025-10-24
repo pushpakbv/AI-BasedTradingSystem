@@ -1,0 +1,41 @@
+{
+  "url": "https://www.cnbc.com/2025/10/23/microsoft-ai-chief-suleyman-company-wont-build-chatbots-for-erotica.html",
+  "fetched_at": "2025-10-24T04:14:11.650829Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T22:27:26Z",
+  "title": "Microsoft AI chief says company won’t build chatbots for erotica",
+  "content": "Microsoft AI CEO Mustafa Suleyman said the software giant won't build artificial intelligence services that provide \"simulated erotica,\" distancing itself from longtime partner OpenAI.\n\n\"That's just not a service we're going to provide,\" Suleyman said on Thursday at the Paley International Council Summit in Menlo Park, California. \"Other companies will build that.\"\n\nSuleyman's comments come a week after OpenAI CEO Sam Altman said his company plans to allow verified adults to use ChatGPT for erotica. Altman said that OpenAI is \"not the elected moral police of the world.\"\n\nMicrosoft has for years been a major investor and cloud partner to OpenAI, and the two companies have used their respective strengths to build big AI businesses. But the relationship has shown signs of tension of late, with OpenAI partnering with Microsoft rivals like Google and Oracle , and Microsoft focusing more on its own AI services.\n\nEarlier on Thursday, Microsoft announced a series of new features for its Copilot AI chatbot, including an AI companion called Mico that can respond to users through a call feature and express itself by changing its color.\n\nSuleyman in August penned an essay titled \"We must build AI for people; not to be a person.\" He argued that tech companies should not build \"seemingly conscious\" services that can give humans the impression that they may be capable of suffering, and wrote that conscious AIs could create another \"axis of division\" for humanity.\n\nOn Thursday, Suleyman said the creation of seemingly conscious AI is already happening, primarily with erotica-focused services. He referenced Altman's comments as well as Elon Musk's Grok, which in July launched its own companion features, including a female anime character.\n\n\"You can already see it with some of these avatars and people leaning into the kind of sexbot erotica direction,\" Suleyman said. \"This is very dangerous, and I think we should be making conscious decisions to avoid those kinds of things.\"\n\nOpenAI didn't immediately respond to requests for comment, while xAI responded saying, \"Legacy Media Lies.\"\n\nWATCH: Why it's time to take AI-human relationships seriously\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "Microsoft AI CEO Mustafa Suleyman said the software company won't build erotica AI services, the latest break with rival-partner OpenAI.",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 402,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 7
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.3125,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "sector": "Automotive & Manufacturing",
+    "mentions": 1
+  }
+}

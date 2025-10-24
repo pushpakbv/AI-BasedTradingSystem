@@ -1,0 +1,35 @@
+{
+  "url": "https://www.aircargonews.net/news/cargo-airports",
+  "fetched_at": "2025-10-24T04:17:45.123023Z",
+  "published_date": "2025-10-22",
+  "published_datetime": "2025-10-22T08:29:00Z",
+  "title": "Air Cargo News | The latest airport cargo news and updates",
+  "content": "Hong Kong International has reopened its North Runway following repairs after a 747 freighter veered off the runway into the sea, killing two airport security workers\n\nFrankfurt Airport recorded modest cargo growth in September despite regional disparities, with Asia Pacific routes offsetting declines in North America and Latin America\n\nMunich Airport has achieved a 10% increase in air cargo volumes over six months, handling 182,000 tons between March and October\n\nBangladesh authorities have launched an investigation into a major cargo area fire at Hazrat Shahjalal International Airport\n\nBeijing Capital Airlines has commenced A330P2F operations between Zhengzhou Xinzheng International Airport and Glasgow Prestwick Airport\n\nBrussels Airport has officially opened its €70m Brucargo Central redevelopment, delivering 30% increased cargo storage capacity through three modern warehouses\n\nLiège Airport posted a 23% year-on-year increase in cargo volumes during the third quarter, reaching 334,956 tonnes as both import and export flows strengthened\n\nOstend-Bruges Airport has appointed Johan Leunen as cargo development director to strengthen air cargo operations and generate new business\n\nAvianca Cargo has launched twice-weekly A330 freighter flights to Maastricht Aachen Airport, targeting South American flower imports\n\nCincinnati/Northern Kentucky International Airport has marked the first development at its Global Logistics Park with F&F's 80,000 sq ft air cargo facility\n\nFederal Express has launched its first automated sorting facility at Tallinn airport, tripling capacity to 3,000 parcels per hour as Estonia's e-commerce sector grows 20% annually to reach €5 billion turnover.\n\nThe UK Government has approved Gatwick Airport's plans to operationalise its northern runway and Logistics UK has highlighted the benefits for cargo\n\nDHL Express has opened a €80m international hub at Barcelona Airport, featuring automated sorting systems capable of processing 20,000 parcels per hour\n\nFedEx has commissioned a 19,000 sq ft cargo handling facility at East Midlands Airport, operating independently from existing parcel operations\n\nMadrid-based air cargo and wet-lease operator Swiftair Group has agreed to sell a majority stake to investment firm Antin Infrastructure Partners\n\nIATA has reported that air cargo demand increased for the sixth consecutive month, showing \"resilience in a challenging global economic context\"",
+  "meta_description": "Interested in the latest news about cargo airports? Air Cargo News is the leading provider of news and analysis on the airfreight sector. Learn more",
+  "status": 200,
+  "source_domain": "www.aircargonews.net",
+  "word_count": 342,
+  "matched_companies": [
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 2
+    },
+    {
+      "name": "DHL Group",
+      "ticker": "DPW.DE",
+      "sector": "Logistics",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.15873015873015872,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "FedEx Corporation",
+    "ticker": "FDX",
+    "sector": "Logistics",
+    "mentions": 2
+  }
+}

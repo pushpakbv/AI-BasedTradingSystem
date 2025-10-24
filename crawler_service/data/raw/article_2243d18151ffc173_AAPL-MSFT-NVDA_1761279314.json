@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/coverage/filings/2025/10/24/ellis-investment-partners-loads-up-64k-gpix-shares/",
+  "fetched_at": "2025-10-24T04:15:14.348861Z",
+  "published_date": "2025-10-24",
+  "published_datetime": "2025-10-24T02:53:28Z",
+  "title": "This Fund Bet $3.3 Billion on GPIX — Here's Why Income-Focused ETFs Are Gaining Momentum | The Motley Fool",
+  "content": "Ellis Investment Partners disclosed a purchase of Goldman Sachs S&P 500 Premium Income ETF ( GPIX +0.54% ) shares valued at an estimated $3.3 million during the quarter ended September 30, according to an SEC filing released Wednesday.\n\nAccording to an SEC filing on Wednesday, Ellis Investment Partners increased its stake in the Goldman Sachs S&P 500 Premium Income ETF by 64,462 shares during the third quarter. The estimated transaction value was $3.3 million. Following this buy, the fund’s position totals 107,147 shares valued at $5.6 million as of September 30.\n\nThis was a buy; the GPIX stake now represents 1.01% of Ellis Investment Partners’ 13F reportable AUM.\n\nAs of Thursday's market close, GPIX shares were priced at $52.41, up 7% over the past year versus a 16% gain for the S&P 500.\n\nThe fund offers investors a rules-based approach to income generation from S&P 500 equities, maintaining broad market exposure while focusing on yield and diversification.\n\nEllis Investment Partners’ latest investment in the Goldman Sachs S&P 500 Premium Income ETF (GPIX) highlights the continued appeal of income-focused equity strategies among institutional investors seeking steady returns. The ETF, which launched last year, blends traditional S&P 500 exposure with an options overlay that generates monthly income distributions, yielding a roughly 8% 12-month distribution rate as of September 30. That structure has drawn demand from investors looking for yield without leaving equities. GPIX’s assets under management stand $1.95 billion as of late October, underscoring its momentum in the premium-income ETF space. For Ellis, and given the ETF's top holdings in NVIDIA, Microsoft, and Apple, this move complements its growth-heavy investments in VUG, QQQ, and AAPL, adding a more defensive element to the portfolio after a strong year for risk assets. For long-term investors, GPIX offers an alternative to bond-like income with equity participation, even though the options strategy can lag in sharply rising markets.\n\nETF (Exchange-Traded Fund): An investment fund traded on stock exchanges, holding a basket of assets like stocks or bonds.\n\nAUM (Assets Under Management): The total market value of assets an investment firm or fund manages on behalf of clients.\n\n13F reportable: Refers to holdings that must be disclosed in quarterly SEC filings by institutional investment managers with over $100 million in assets.\n\nDividend yield: Annual dividends paid by a fund or stock divided by its current price, shown as a percentage.\n\nTrailing twelve-month: Data measured over the most recent 12 consecutive months, often used for performance or yield.\n\nS&P 500 Index: A stock market index tracking the performance of 500 large U.S. companies, widely used as a benchmark.\n\nBenchmark: A standard against which the performance of a security, fund, or investment manager is measured.\n\nLarge-cap: Refers to companies with a large market capitalization, typically over $10 billion.\n\nSystematic exposure: Investment strategy aiming for consistent, rules-based exposure to a specific market or asset class.\n\nPortfolio composition: The mix and proportion of different assets or securities held within an investment portfolio.\n\nPremium Income: Investment strategy focused on generating additional income, often through options or enhanced yield techniques.\n\nOutperforming: Achieving a higher return than a specific benchmark or comparable investment.",
+  "meta_description": "This Fund Bet $3.3 Billion on GPIX — Here's Why Income-Focused ETFs Are Gaining Momentum",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 519,
+  "matched_companies": [
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 2
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.10849909584086799,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

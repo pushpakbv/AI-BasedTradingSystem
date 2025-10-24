@@ -1,0 +1,35 @@
+{
+  "url": "https://www.supplychaindive.com/news/fedex-network-2-layoffs-closings-status/750513/",
+  "fetched_at": "2025-10-24T04:16:43.647700Z",
+  "published_date": "2025-07-14",
+  "published_datetime": "2025-07-14T00:00:00Z",
+  "title": "FedEx Network 2.0: Tracking closures, layoffs across the US",
+  "content": "The logistics giant is shutting down ship centers as part of its plan to streamline operations. Here’s how the overhaul is progressing.\n\nFedEx is making layoffs and closing facilities across the country as part of a plan to integrate its historically separate Ground and Express networks.\n\nThe yearslong overhaul known as Network 2.0 aims to improve the carrier’s pickup and delivery processes, trim costs and strengthen its position against competitors like UPS.\n\nThrough that plan, FedEx is shuttering ship centers to streamline its operations and move toward a future without overlapping driver routes. The company has shuttered 100 stations as of May 31, and more closures are on the way, President and CEO Raj Subramaniam said on a June 2025 earnings call .\n\nFedEx says the plan won’t hurt transit times and will reduce complexity for shippers, as they won’t have to navigate separate Express and Ground pickups. But with such a wide-ranging initiative, customers still want to know what's changing even if delivery speeds are unaffected, EVP and Chief Customer Officer Brie Carere said in March 2024 .\n\nTo keep FedEx shippers updated on the company's consolidation efforts, Supply Chain Dive has compiled information on which facilities are closing or reducing staff due to Network 2.0, along with the number of employees impacted, in the map and table below. We will continue to update this page as new closures and workforce reductions are confirmed.\n\nEditor’s Note: If you know of a FedEx facility closure due to Network 2.0 that is missing from this list, send us an email at [email protected] .",
+  "meta_description": "The logistics giant is shutting down ship centers as part of its plan to streamline operations. Here&#x27;s how the overhaul is progressing.",
+  "status": 200,
+  "source_domain": "www.supplychaindive.com",
+  "word_count": 263,
+  "matched_companies": [
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 6
+    },
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.35714285714285715,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "FedEx Corporation",
+    "ticker": "FDX",
+    "sector": "Logistics",
+    "mentions": 6
+  }
+}

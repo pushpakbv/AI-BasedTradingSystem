@@ -1,0 +1,358 @@
+{
+  "ticker": "MSFT",
+  "company_sentiment": {
+    "label": "neutral",
+    "average_score": -0.04601614475250244,
+    "article_count": 6
+  },
+  "sentiment_distribution": {
+    "positive": 0,
+    "neutral": 5,
+    "negative": 1
+  },
+  "articles": [
+    {
+      "url": "https://techcrunch.com/2025/10/21/openai-launches-an-ai-powered-browser-chatgpt-atlas/",
+      "fetched_at": "2025-10-24T04:21:20.849316Z",
+      "published_date": "2025-10-21",
+      "published_datetime": "2025-10-21T17:15:40Z",
+      "title": "OpenAI launches an AI-powered browser: ChatGPT Atlas | TechCrunch",
+      "content": "OpenAI announced Tuesday the launch of its AI-powered browser, ChatGPT Atlas, a major step in the company’s quest to unseat Google as the main way people find information online.\n\nThe company says Atlas will first roll out on macOS, with support for Windows, iOS, and Android coming soon. OpenAI says the product will be available to all free users at launch.\n\nBrowsers have quickly become the AI industry’s next battleground. While Google Chrome has long dominated the space, there’s a sense that AI chatbots and agents are fundamentally changing how people get work done online. A handful of startups have tried to capture this by launching AI-powered browsers of their own, such as Perplexity’s Comet and The Browser Company’s Dia . Google and Microsoft have also tried to update Chrome and Edge, respectively, with AI-powered features to make their legacy products stand out.\n\nOpenAI’s Engineering Lead for Atlas, Ben Goodger, said in a livestream Tuesday that ChatGPT is core to the company’s first browser. Users in ChatGPT Atlas can chat with their search results, much like in Perplexity or in Google’s AI Mode.\n\nThe killer feature for other AI-powered browsers has been the built-in chatbot that sits in a side panel and automatically has context for whatever’s on your screen. It may sound minor, but many users spend all day copying and pasting text or dragging files and links into ChatGPT, just to provide context. The sidecar feature removes that friction and makes for a smoother user experience.\n\nOpenAI’s Product Lead, Adam Fry, said during the livestream that ChatGPT Atlas will have the sidecar feature, too. Further, ChatGPT Atlas has “browser history,” meaning that ChatGPT can now log the websites you visit and what you do on them, and use that information to make its answers more personalized.\n\nAI-powered browsers also commonly feature an AI agent that aims to automate web-based tasks on behalf of users. In TechCrunch’s testing, we’ve found the early versions of web-browsing AI agents leave something to be desired. While Perplexity’s Comet and OpenAI’s ChatGPT agent work well for simple tasks, they struggle to reliably automate the more cumbersome problems users might want to offload to an AI system.\n\nSure enough, OpenAI’s browser has a web-browsing agent too. By using “agent mode,” users can ask ChatGPT to complete small tasks in the browser on their behalf. The company says agent mode is only available to ChatGPT users on the Plus, Pro, and Business tier at launch.\n\nIn an interview at OpenAI’s DevDay conference, Head of ChatGPT Nick Turley told TechCrunch that he’s inspired by the way browsers have redefined what an operating system can look like. Turley noted that browsers have revolutionized the way people get work done online, and he thinks ChatGPT is a similar phenomenon.\n\nWhether OpenAI’s browser can put a dent in Google Chrome, which has more than 3 billion users around the globe, remains to be seen. AI browsers are quite buzzy in Silicon Valley today, but their impact in the broader world is limited.",
+      "meta_description": "OpenAI is launching an AI-powered browser, its latest challenge to Google as the main way people find information online.",
+      "status": 200,
+      "source_domain": "techcrunch.com",
+      "word_count": 503,
+      "matched_companies": [
+        {
+          "name": "Alphabet Inc. (Google)",
+          "ticker": "GOOGL",
+          "sector": "Technology",
+          "mentions": 6
+        },
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 2
+        }
+      ],
+      "relevance_score": 0.22598870056497175,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 2
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.656991Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "neutral",
+          "score": 0.0,
+          "confidence": 0.8794562220573425
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.8960355520248413,
+          "confidence": 0.8960355520248413
+        },
+        "content_sentiment": {
+          "label": "neutral",
+          "score": 0.8628768920898438,
+          "confidence": 0.8628768920898438
+        },
+        "analyzed_at": "2025-10-24T04:54:12.813273Z"
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/",
+      "fetched_at": "2025-10-24T04:21:30.829102Z",
+      "published_date": "2025-10-23",
+      "published_datetime": "2025-10-23T18:03:01Z",
+      "title": "Two days after OpenAI's Atlas, Microsoft relaunches a nearly identical AI browser | TechCrunch",
+      "content": "Microsoft released a new batch of features for its AI assistant Thursday, including an ambitious project that builds artificial intelligence directly into one of its most central products. More than a simple extension, the Copilot Mode in Microsoft’s Edge browser is Microsoft’s take on the long-hyped AI browser category — an intelligent and flexible AI assistant that follows you as you browse the web.\n\nMustafa Suleyman, the CEO of Microsoft AI, even described the new product in those terms in the announcement. “Copilot Mode in Edge is evolving into an AI browser that is your dynamic, intelligent companion,” Suleyman wrote in the announcement post. “With your permission, Copilot can see and reason over your open tabs, summarize and compare information, and even take actions like booking a hotel or filling out forms.”\n\nThe official launch for Edge’s Copilot Mode was in July, when it rolled out with basic features like a Search bar on new tabs and natural voice navigation. But the mode was opt-in and didn’t get quite the attention you’d expect. At Thursday’s event, Microsoft got more ambitious, introducing “Actions” that allow Copilot to fill out forms or book hotels and “Journeys” that let Copilot trace connections between your open tabs. It’s not a huge shift in the product, but it was enough to put the idea of the AI browser at center stage in the event.\n\nThe announcement comes just two days after a similar launch from OpenAI, which showed off its new Atlas browser. Of course, Copilot’s release has been scheduled for weeks, and new Copilot Mode has probably been in development for months. Neither company invented the idea of an AI-assisted web browser. But the visual similarity between the two products is hard to ignore.\n\nThese are two very similar pictures. The Copilot for Edge background is a little darker, there’s text instead of a logo, and the close/minimize buttons follow Windows conventions instead of MacOS conventions. Beyond that, Copilot puts its “ride-along” function in a new tab instead of a split-screen … but that’s about it. It’s pretty much the same product.\n\nPart of the similarity is functional: People like clean browsers, and there are only so many ways to integrate a chatbot window into the “new tab” screen. For users, the main difference will come from the underlying models, so maybe a little facial similarity doesn’t make too big a difference.\n\nBrowsers mostly look the same anyway. But given the high stakes of the AI race and the tense state of play between the two companies, it seems significant that we got both of these browsers in the same week.\n\nCorrection: A previous version of this post erroneously referred to the October 23 event as the initial launch of Copilot for Edge. In fact, the feature was launched in July. TechCrunch regrets the error.",
+      "meta_description": "Copilot Mode of Microsoft's Edge browser is the company's take on the long-hyped AI browser category.",
+      "status": 200,
+      "source_domain": "techcrunch.com",
+      "word_count": 471,
+      "matched_companies": [
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 8
+        }
+      ],
+      "relevance_score": 0.23952095808383234,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 8
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.656991Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "neutral",
+          "score": 0.0,
+          "confidence": 0.9252520501613617
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9273271560668945,
+          "confidence": 0.9273271560668945
+        },
+        "content_sentiment": {
+          "label": "neutral",
+          "score": 0.9231769442558289,
+          "confidence": 0.9231769442558289
+        },
+        "analyzed_at": "2025-10-24T04:54:13.072928Z"
+      }
+    },
+    {
+      "url": "https://www.cnbc.com/2025/10/23/microsoft-ai-chief-suleyman-company-wont-build-chatbots-for-erotica.html",
+      "fetched_at": "2025-10-24T04:14:11.650829Z",
+      "published_date": "2025-10-23",
+      "published_datetime": "2025-10-23T22:27:26Z",
+      "title": "Microsoft AI chief says company won’t build chatbots for erotica",
+      "content": "Microsoft AI CEO Mustafa Suleyman said the software giant won't build artificial intelligence services that provide \"simulated erotica,\" distancing itself from longtime partner OpenAI.\n\n\"That's just not a service we're going to provide,\" Suleyman said on Thursday at the Paley International Council Summit in Menlo Park, California. \"Other companies will build that.\"\n\nSuleyman's comments come a week after OpenAI CEO Sam Altman said his company plans to allow verified adults to use ChatGPT for erotica. Altman said that OpenAI is \"not the elected moral police of the world.\"\n\nMicrosoft has for years been a major investor and cloud partner to OpenAI, and the two companies have used their respective strengths to build big AI businesses. But the relationship has shown signs of tension of late, with OpenAI partnering with Microsoft rivals like Google and Oracle , and Microsoft focusing more on its own AI services.\n\nEarlier on Thursday, Microsoft announced a series of new features for its Copilot AI chatbot, including an AI companion called Mico that can respond to users through a call feature and express itself by changing its color.\n\nSuleyman in August penned an essay titled \"We must build AI for people; not to be a person.\" He argued that tech companies should not build \"seemingly conscious\" services that can give humans the impression that they may be capable of suffering, and wrote that conscious AIs could create another \"axis of division\" for humanity.\n\nOn Thursday, Suleyman said the creation of seemingly conscious AI is already happening, primarily with erotica-focused services. He referenced Altman's comments as well as Elon Musk's Grok, which in July launched its own companion features, including a female anime character.\n\n\"You can already see it with some of these avatars and people leaning into the kind of sexbot erotica direction,\" Suleyman said. \"This is very dangerous, and I think we should be making conscious decisions to avoid those kinds of things.\"\n\nOpenAI didn't immediately respond to requests for comment, while xAI responded saying, \"Legacy Media Lies.\"\n\nWATCH: Why it's time to take AI-human relationships seriously\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+      "meta_description": "Microsoft AI CEO Mustafa Suleyman said the software company won't build erotica AI services, the latest break with rival-partner OpenAI.",
+      "status": 200,
+      "source_domain": "www.cnbc.com",
+      "word_count": 402,
+      "matched_companies": [
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 7
+        },
+        {
+          "name": "Alphabet Inc. (Google)",
+          "ticker": "GOOGL",
+          "sector": "Technology",
+          "mentions": 1
+        },
+        {
+          "name": "Tesla, Inc.",
+          "ticker": "TSLA",
+          "sector": "Automotive & Manufacturing",
+          "mentions": 1
+        }
+      ],
+      "relevance_score": 0.3125,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 7
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.658515Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "neutral",
+          "score": 0.0,
+          "confidence": 0.770083099603653
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.8120558261871338,
+          "confidence": 0.8120558261871338
+        },
+        "content_sentiment": {
+          "label": "neutral",
+          "score": 0.7281103730201721,
+          "confidence": 0.7281103730201721
+        },
+        "analyzed_at": "2025-10-24T04:54:13.315573Z"
+      }
+    },
+    {
+      "url": "https://www.pymnts.com/news/retail/2025/walmart-checks-out-with-chat-amazon-chases-75percent-operational-automation/",
+      "fetched_at": "2025-10-24T04:21:52.658442Z",
+      "published_date": "2025-10-23",
+      "published_datetime": "2025-10-23T18:05:36Z",
+      "title": "Update: Amazon and Walmart Race to Build the Self-Driving Store | PYMNTS.com",
+      "content": "Retail is going digital-first as the art of selling becomes the science of systems — data, AI and automation now drive every sale.\n\nWalmart’s ChatGPT-powered shopping and Amazon’s smart glasses show that frictionless, personalized and even voice-driven buying is fast becoming the norm for retail.\n\nA back-end revolution is happening as robots and AI run fulfillment, but the AWS outage proves even the smartest systems are only as strong as their backbone.\n\nRetail is no longer a tale of shelves and sales. It’s a story of systems.\n\nComplete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.\n\nBy completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .\n\nThe industry has evolved from an art of merchandising into a science of experience design and data orchestration. This evolution is being driven not only by changing customer expectations, but by technology’s ability to re-architect both what the customer sees (the “front end”) and what happens behind the scenes (the “back end”).\n\nAmazon , for example, on Wednesday (Oct. 22) announced it is equipping its delivery drivers with artificial intelligence (AI)-powered smart glasses to accelerate last-mile logistics, part of a broader operational overhaul that also includes enhanced delivery networks and seller-facing intelligence tools.\n\nMeanwhile, Walmart ’s earlier announcement of a partnership with OpenAI could potentially open a new chapter for the retailer. Under the deal, Walmart will allow customers to shop via the ChatGPT interface, choosing items simply by conversing with the chatbot and completing transactions in-chat via “Instant Checkout.”\n\nThe announcements underscore the rising trend of frictionless interaction the new baseline in retail, while personalization becomes the organizing principle of the modern shopping journey.\n\nRead also: Walmart and Amazon Race to Merge Physical Scale With Digital Intelligence\n\nAs the Walmart and OpenAI partnership spotlights, checkout is disappearing into the background. Payment, once a potential friction point of every purchase, is now becoming a silent, embedded action that’s executed by tapping a phone, scanning a face, walking out of the store or using artificial intelligence.\n\nWalmart — and the retailer is far from alone in this — has long invested in artificial intelligence across its operations, for example embedding generative AI into its search experience via Microsoft’s Azure OpenAI service, enabling shoppers to ask “Help me plan a unicorn-themed party” and receive a tailored list of items. But the new OpenAI tie-up marks a purposeful pivot: the chatbot becomes not just a helper, but the front door to purchase.\n\nThis initiative raises the bar for rivals, most notably Amazon, in how consumers expect to interact with retail platforms.\n\nStill, important questions linger. The exact launch date remains unspecified. Data privacy, trust and governance will become significant battlegrounds, particularly as the AI begins to anticipate needs (such as “you’re almost out of detergent, shall I reorder?”) rather than respond. The shift may also work to erode traditional browsing and discovery-driven retail dynamics.\n\nAmazon on Thursday (Oct. 23) launched its own AI sally with “Help Me Decide,” an AI shopping tool designed to pair users with personalized products.\n\nData from the PYMNTS Intelligence report, “ The 2025 Global Digital Shopping Index: The Rise of the Mobile Window Shopper and What It Means for Payments ,” found that nearly half of consumers surveyed worldwide used a smartphone in their most recent retail purchase. Ultimately, the frontline of retail engagement as 2026 draws near may no longer be just human but hybrid, and increasingly autonomous and digital.\n\nSee also: Amazon Tests Loyalty as Walmart Tests Gravity\n\nIf checkout is being re-engineered, so too is the supply chain behind it. Contemporary shopping may pivot on chatbots, but the orders must still be picked, packed and delivered.\n\nAmazon, for example, is layering AI and robotics across warehouses and delivery. The company reportedly plans to automate 75% of its operations, replacing up to 600,000 human jobs with robotic alternatives.\n\nStill, amid the flurry of innovation, the week delivered a sobering reminder: no matter how advanced the AI and robotics stack, the underlying infrastructure remains a potential point of systemic fragility. On Monday (Oct. 20), Amazon Web Services (AWS) suffered a major outage that lasted hours, disrupted hundreds of services globally and illustrated how the most heavily relied-upon cloud infrastructure still carries risks.  When many parts of the retail value chain rely on the same cloud backbone, a single failure can become systemic.\n\nWalmart Checks Out With Chat, Amazon Chases 75% Operational Automation\n\nAutoNation Sees Revenues Rise as Tariff Situation ‘Evolves’\n\nAmerican Airlines Leverages Loyalty Program and Co-Branded Cards to Boost Revenue Growth\n\nWorldpay Integrates Affirm Into Embedded Payments Offering for SaaS Firms\n\nWe’re always on the lookout for opportunities to partner with innovators and disruptors.",
+      "meta_description": "As Walmart taps OpenAI and Amazon drivers get smart glasses, the two retailers are leaning on technology to define the future of shopping.",
+      "status": 200,
+      "source_domain": "www.pymnts.com",
+      "word_count": 811,
+      "matched_companies": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 14
+        },
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 2
+        }
+      ],
+      "relevance_score": 0.28368794326241137,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 2
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.659531Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "neutral",
+          "score": 0.0,
+          "confidence": 0.778236448764801
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.6440474987030029,
+          "confidence": 0.6440474987030029
+        },
+        "content_sentiment": {
+          "label": "neutral",
+          "score": 0.9124253988265991,
+          "confidence": 0.9124253988265991
+        },
+        "analyzed_at": "2025-10-24T04:54:13.585569Z"
+      }
+    },
+    {
+      "url": "https://techcrunch.com/2025/10/23/big-tech-is-paying-for-trumps-white-house-ballroom/",
+      "fetched_at": "2025-10-24T04:21:26.609182Z",
+      "published_date": "2025-10-24",
+      "published_datetime": "2025-10-24T02:54:46Z",
+      "title": "Big tech is paying for Trump's White House ballroom | TechCrunch",
+      "content": "While the U.S. government remains in limbo during a shutdown , the White House grounds have been busy this week. Construction workers have begun demolition on the White House’s East Wing, which will be replaced by a 90,000-square-foot ballroom that’s estimated to hold up to 1,000 guests.\n\nTaxpayers are not funding President Donald Trump’s $250 million project. Rather, he is using private donations to construct his lavish addition to the White House.\n\nThe White House released a list of the project’s funders on Thursday, which include some of the most influential American tech companies, like Amazon, Apple, Google, Meta, and Microsoft, as well as defense companies like Palantir and Lockheed Martin and telecom providers like Comcast and T-Mobile. The crypto industry is also represented among the White House ballroom donors, with money coming from Coinbase, Ripple, Tether America, and the Winklevoss twins.\n\nIt is not clear how much each donor has contributed to the project. However, at least $20 million from Google is part of a recent lawsuit settlement over YouTube’s suspension of Trump’s account after the January 6, 2021, riots. TechCrunch asked Google if the money from the settlement represents the full extent of the company’s contributions, but has not yet received an answer.\n\nSilicon Valley’s relationship with Trump has changed markedly. While much of the tech industry initially resisted Trump when he became president for the first time in 2016, it has cozied up to Trump during his second term. Meta, for instance, did not donate to Trump’s first inauguration fund, but contributed $1 million to the president’s second inauguration; Amazon donated $58,000 the first time, but made a heftier $1 million donation this time around.\n\nThese donations reflect a greater alignment between Trump and the tech industry.\n\nThe industry could be more willing to cooperate with Trump’s current administration because many of these major tech companies are facing antitrust litigation. The Trump administration has been much less aggressive in its antitrust enforcement than former President Joe Biden’s FTC was under former FTC Chair Lina Khan.\n\nTrump has also taken a more aggressive approach to AI development than his predecessor, which is a financial boon for the companies building out that technology. In his AI action plan, which was unveiled in July, Trump and his administration outlined a goal to cut red tape and use government funds to support the construction of data centers.",
+      "meta_description": "Trump's $250 million White House ballroom will be funded in part by big tech companies like Amazon, Apple, Google, Meta, and Microsoft.",
+      "status": 200,
+      "source_domain": "techcrunch.com",
+      "word_count": 396,
+      "matched_companies": [
+        {
+          "name": "Alphabet Inc. (Google)",
+          "ticker": "GOOGL",
+          "sector": "Technology",
+          "mentions": 5
+        },
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 3
+        },
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 2
+        },
+        {
+          "name": "Apple Inc.",
+          "ticker": "AAPL",
+          "sector": "Technology & Manufacturing",
+          "mentions": 2
+        }
+      ],
+      "relevance_score": 0.4195804195804196,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 2
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.660533Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "neutral",
+          "score": 0.0,
+          "confidence": 0.9293413162231445
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9334326386451721,
+          "confidence": 0.9334326386451721
+        },
+        "content_sentiment": {
+          "label": "neutral",
+          "score": 0.9252499938011169,
+          "confidence": 0.9252499938011169
+        },
+        "analyzed_at": "2025-10-24T04:54:13.849293Z"
+      }
+    },
+    {
+      "url": "https://www.freightwaves.com/news/category/shared-truckload",
+      "fetched_at": "2025-10-24T04:15:43.626547Z",
+      "published_date": "2025-10-24",
+      "published_datetime": "2025-10-24T04:15:43.625514Z",
+      "title": "Shared Truckload Archives",
+      "content": "E-commerce retailers using programs like Amazon FBA or Walmart Fulfillment Services face mounting logistics challenges that can make or break their success. From rigid delivery windows to seasonal inventory fluctuations, these sellers must navigate a complex shipping environment while maintaining tight margins. In this high-stakes arena, innovative freight solutions like Shared Truckload (STL) are emerging […]",
+      "meta_description": "Shared Truckload News, Freight Information Delivered On Time — Sponsored by Flock Freight",
+      "status": 200,
+      "source_domain": "www.freightwaves.com",
+      "word_count": 56,
+      "matched_companies": [
+        {
+          "name": "Amazon.com, Inc.",
+          "ticker": "AMZN",
+          "sector": "E-commerce",
+          "mentions": 1
+        },
+        {
+          "name": "Microsoft Corporation",
+          "ticker": "MSFT",
+          "sector": "Technology",
+          "mentions": 1
+        }
+      ],
+      "relevance_score": 0.4166666666666667,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Microsoft Corporation",
+        "ticker": "MSFT",
+        "sector": "Technology",
+        "mentions": 1
+      },
+      "classification": "general",
+      "classified_at": "2025-10-24T04:52:31.660533Z",
+      "sentiment_analysis": {
+        "overall": {
+          "label": "negative",
+          "score": -0.27609686851501464,
+          "confidence": 0.6807770431041718
+        },
+        "title_sentiment": {
+          "label": "neutral",
+          "score": 0.9013926386833191,
+          "confidence": 0.9013926386833191
+        },
+        "content_sentiment": {
+          "label": "negative",
+          "score": 0.4601614475250244,
+          "confidence": 0.4601614475250244
+        },
+        "analyzed_at": "2025-10-24T04:54:13.984077Z"
+      }
+    }
+  ],
+  "analyzed_at": "2025-10-24T04:54:13.984077Z"
+}

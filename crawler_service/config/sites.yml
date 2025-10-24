@@ -1,0 +1,133 @@
+# ===============================================
+# WEB CRAWLER CONFIGURATION (EXPANDED VERSION)
+# FREE & Open-Access News Sources
+# Focus: Financial, Logistics, Shipping, Retail, and Rail Sectors
+# ===============================================
+
+sites:
+
+  # ============================
+  # Free Financial & Business News
+  # ============================
+  - https://www.reuters.com/business/
+  - https://www.reuters.com/markets/
+  - https://www.cnbc.com/world/?region=world
+  - https://finance.yahoo.com/
+  - https://www.investing.com/news/
+  - https://www.marketscreener.com/news/
+  - https://www.marketwatch.com/latest-news
+  - https://www.businessinsider.com/business
+  - https://www.businesswire.com/portal/site/home/news/
+  - https://www.prnewswire.com/news-releases/
+  - https://www.fool.com/investing/
+  - https://seekingalpha.com/market-news
+  - https://www.nasdaq.com/news-and-insights
+  - https://www.investors.com/news/
+  - https://www.benzinga.com/news
+  - https://www.zacks.com/stock/news
+  - https://www.fxstreet.com/news
+  - https://www.economictimes.indiatimes.com/markets
+  - https://www.business-standard.com/category/markets-news-1010101.htm
+  - https://www.moneycontrol.com/news/business/
+  - https://www.thehindubusinessline.com/markets/
+
+  # ============================
+  # Supply Chain & Logistics News
+  # ============================
+  - https://www.freightwaves.com/news
+  - https://www.supplychaindigital.com/articles
+  - https://www.supplychaindive.com/news/
+  - https://www.supplychainbrain.com/articles
+  - https://www.globaltrademag.com/
+  - https://www.logisticsmgmt.com/news
+  - https://www.dcvelocity.com/news/
+  - https://www.inboundlogistics.com/articles/
+  - https://www.porttechnology.org/news/
+  - https://www.transportdive.com/news/
+  - https://www.lloydsloadinglist.com/
+  - https://www.freightcomms.net/
+  - https://www.aircargonews.net/
+  - https://www.ajot.com/news/
+  - https://www.airfreight.news/
+  - https://www.freightweek.org/
+  - https://www.automotiveworld.com/news/
+  - https://www.breakbulk.com/news
+
+  # ============================
+  # Shipping & Maritime News
+  # ============================
+  - https://splash247.com/
+  - https://theloadstar.com/
+  - https://www.seatrade-maritime.com/
+  - https://www.maritime-executive.com/
+  - https://www.gcaptain.com/
+  - https://container-news.com/
+  - https://www.marineinsight.com/shipping-news/
+  - https://www.hellenicshippingnews.com/
+  - https://www.offshore-energy.biz/
+  - https://www.ports-europe.com/category/news/
+  - https://www.ship-technology.com/news/
+  - https://shipinsight.com/articles
+  - https://shipmanagementinternational.com/category/news/
+  - https://www.marinelink.com/news
+  - https://www.bairdmaritime.com/
+  - https://www.marineoffshoreinsight.com/news/
+
+  # ============================
+  # Rail & Transportation News
+  # ============================
+  - https://www.railwayage.com/news/
+  - https://www.progressiverailroading.com/news/
+  - https://www.trains.com/trn/news-reviews/
+  - https://www.transportationtodaynews.com/
+  - https://www.railjournal.com/news/
+  - https://www.freightrailworks.org/news
+  - https://www.rtands.com/news/
+  - https://www.internationalrailjournal.com/
+  - https://www.metro-report.com/
+  - https://www.masstransitmag.com/rail/news/
+  - https://www.transportjournal.com/en/news
+  - https://www.globalrailwayreview.com/news/
+  - https://www.americancityandcounty.com/transportation/
+  - https://www.railwaygazette.com/news/
+
+  # ============================
+  # E-Commerce & Retail News
+  # ============================
+  - https://www.retaildive.com/news/
+  - https://www.chainstoreage.com/
+  - https://www.retailtouchpoints.com/
+  - https://www.digitalcommerce360.com/
+  - https://www.theverge.com/ecommerce
+  - https://techcrunch.com/
+  - https://www.ecommercetimes.com/
+  - https://www.internetretailer.com/
+  - https://www.retailwire.com/
+  - https://www.modernretail.co/
+  - https://www.pymnts.com/
+  - https://www.marketingdive.com/news/
+  - https://www.businessoffashion.com/news
+  - https://www.warc.com/news/
+  - https://www.ecommercenews.eu/
+  - https://www.mobilecommercepress.com/
+  - https://www.retail-insight-network.com/news/
+  - https://www.retailgazette.co.uk/
+  - https://www.esmmagazine.com/retail
+  - https://www.nrf.com/blog
+
+  # ============================
+  # Structured RSS / Atom Feeds
+  # ============================
+  - https://www.reutersagency.com/feed/?best-topics=business-and-finance
+  - https://www.prnewswire.com/rss/all-news-releases-list.rss
+  - https://www.businesswire.com/portal/site/home/rss/
+  - https://www.freightwaves.com/feed
+  - https://www.supplychaindive.com/feeds/news/
+  - https://theloadstar.com/feed/
+  - https://www.retaildive.com/feeds/news/
+  - https://www.investing.com/rss/news.rss
+  - https://www.fxstreet.com/rss/news
+  - https://www.hellenicshippingnews.com/feed/
+  - https://www.globaltrademag.com/feed/
+  - https://www.digitalcommerce360.com/feed/
+  - https://www.maritime-executive.com/rss

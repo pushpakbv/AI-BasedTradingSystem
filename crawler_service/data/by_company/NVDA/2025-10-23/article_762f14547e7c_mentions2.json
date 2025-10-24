@@ -1,0 +1,29 @@
+{
+  "url": "https://www.marketwatch.com/story/intels-stock-is-climbing-as-earnings-show-a-turnaround-slowly-taking-hold-017a84c0?mod=newsviewer_click",
+  "fetched_at": "2025-10-24T04:14:19.786079Z",
+  "published_date": "2025-10-23",
+  "published_datetime": "2025-10-23T23:03:00Z",
+  "title": "Intel’s stock is climbing as earnings show a turnaround slowly taking hold",
+  "content": "Intel’s stock is climbing as earnings show a turnaround slowly taking hold\n\nIntel Corp. has the investment backing of the U.S. government and a product partnership with Nvidia Corp. that’s expected to pay off down the road. But Thursday was all about meeting expectations in the present day.\n\nOn that, the company delivered, at least when it came to third-quarter results. Intel posted $13.7 billion in revenue, above the $13.2 billion that analysts tracked by FactSet were expecting and up 3% from a year before.\n\nBritney Nguyen is a tech reporter covering Nvidia, chips and AI. You can find her on X at @britneycath.\n\nEmily Bary is MarketWatch's assistant managing editor, tech. She is based in New York.\n\nCopyright © 2025 MarketWatch, Inc. All rights reserved.",
+  "meta_description": "The company topped revenue expectations and said it’s “having a difficult time meeting all the demand that’s out there” because of supply constraints.",
+  "status": 200,
+  "source_domain": "www.marketwatch.com",
+  "word_count": 126,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.18633540372670807,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 2
+  }
+}
