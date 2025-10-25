@@ -1,0 +1,93 @@
+{
+  "ticker": "NVDA",
+  "article_count": 2,
+  "individual_predictions": [
+    {
+      "article_url": "https://www.marketwatch.com/story/intels-stock-is-climbing-as-earnings-show-a-turnaround-slowly-taking-hold-017a84c0?mod=newsviewer_click",
+      "article_title": "Intel\u2019s stock is climbing as earnings show a turnaround slowly taking hold",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 13700000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": []
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.499202Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Mixed signals"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data",
+          "Limited article content"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.674056Z"
+      }
+    },
+    {
+      "article_url": "https://www.cnbc.com/2025/10/23/stock-market-today-live-updates.html",
+      "article_title": "Stock futures are little changed ahead of highly awaited inflation data: Live updates",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 7000000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": []
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.500200Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Mixed signals"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.674056Z"
+      }
+    }
+  ],
+  "aggregated_prediction": {
+    "direction": "NEUTRAL",
+    "probability": 0.275,
+    "magnitude": "SMALL",
+    "confidence_level": "LOW",
+    "signal_distribution": {
+      "up": 0,
+      "down": 0,
+      "neutral": 2
+    }
+  },
+  "generated_at": "2025-10-24T09:36:25.674056Z"
+}

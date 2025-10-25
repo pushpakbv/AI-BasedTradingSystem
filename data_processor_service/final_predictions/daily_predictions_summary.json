@@ -1,0 +1,417 @@
+{
+  "date": "2025-10-24",
+  "total_companies": 13,
+  "signal_distribution": {
+    "STRONG_BUY": 3,
+    "BUY": 4,
+    "HOLD": 5,
+    "SELL": 0,
+    "STRONG_SELL": 1
+  },
+  "predictions": [
+    {
+      "ticker": "AAPL",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "BUY",
+        "direction": "UP",
+        "combined_score": 0.294,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Positive financial signals (0.42); Event: merger_acquisition",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": 0.145,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "POSITIVE",
+            "score": 0.42,
+            "weight": 0.7,
+            "contribution": 0.294
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 3,
+        "financial_articles": 2
+      },
+      "generated_at": "2025-10-24T09:36:25.739814Z"
+    },
+    {
+      "ticker": "AMKBY",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "HOLD",
+        "direction": "NEUTRAL",
+        "combined_score": 0.086,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Positive general sentiment (0.29)",
+        "components": {
+          "general_sentiment": {
+            "label": "positive",
+            "score": 0.287,
+            "weight": 0.3,
+            "contribution": 0.086
+          },
+          "financial_signal": {
+            "signal": "NEUTRAL",
+            "score": 0.0,
+            "weight": 0.7,
+            "contribution": 0.0
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 2,
+        "financial_articles": 0
+      },
+      "generated_at": "2025-10-24T09:36:25.762044Z"
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "BUY",
+        "direction": "UP",
+        "combined_score": 0.189,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Positive financial signals (0.27); Event: earnings_report",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": -0.047,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "POSITIVE",
+            "score": 0.27,
+            "weight": 0.7,
+            "contribution": 0.189
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 7,
+        "financial_articles": 7
+      },
+      "generated_at": "2025-10-24T09:36:25.784306Z"
+    },
+    {
+      "ticker": "BABA",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "STRONG_BUY",
+        "direction": "UP",
+        "combined_score": 0.324,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Positive general sentiment (0.20); Positive financial signals (0.38); Event: earnings_report",
+        "components": {
+          "general_sentiment": {
+            "label": "positive",
+            "score": 0.204,
+            "weight": 0.3,
+            "contribution": 0.061
+          },
+          "financial_signal": {
+            "signal": "POSITIVE",
+            "score": 0.375,
+            "weight": 0.7,
+            "contribution": 0.262
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 1,
+        "financial_articles": 2
+      },
+      "generated_at": "2025-10-24T09:36:25.807189Z"
+    },
+    {
+      "ticker": "CHRW",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "HOLD",
+        "direction": "NEUTRAL",
+        "combined_score": 0.0,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Neutral signals across the board",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": 0.0,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "NEUTRAL",
+            "score": 0.0,
+            "weight": 0.7,
+            "contribution": 0.0
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 1,
+        "financial_articles": 0
+      },
+      "generated_at": "2025-10-24T09:36:25.829866Z"
+    },
+    {
+      "ticker": "DPW_DE",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "HOLD",
+        "direction": "NEUTRAL",
+        "combined_score": 0.069,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Positive general sentiment (0.23)",
+        "components": {
+          "general_sentiment": {
+            "label": "positive",
+            "score": 0.23,
+            "weight": 0.3,
+            "contribution": 0.069
+          },
+          "financial_signal": {
+            "signal": "NEUTRAL",
+            "score": 0.0,
+            "weight": 0.7,
+            "contribution": 0.0
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 6,
+        "financial_articles": 0
+      },
+      "generated_at": "2025-10-24T09:36:25.849180Z"
+    },
+    {
+      "ticker": "FDX",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "HOLD",
+        "direction": "NEUTRAL",
+        "combined_score": 0.0,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Neutral signals across the board",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": -0.048,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "NEUTRAL",
+            "score": 0.0,
+            "weight": 0.7,
+            "contribution": 0.0
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 7,
+        "financial_articles": 0
+      },
+      "generated_at": "2025-10-24T09:36:25.868523Z"
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "STRONG_BUY",
+        "direction": "UP",
+        "combined_score": 0.315,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Positive financial signals (0.45); Event: earnings_report",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": 0.059,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "POSITIVE",
+            "score": 0.45,
+            "weight": 0.7,
+            "contribution": 0.315
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 6,
+        "financial_articles": 2
+      },
+      "generated_at": "2025-10-24T09:36:25.891363Z"
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "STRONG_BUY",
+        "direction": "UP",
+        "combined_score": 0.332,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Positive financial signals (0.47); Event: earnings_report",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": -0.046,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "POSITIVE",
+            "score": 0.475,
+            "weight": 0.7,
+            "contribution": 0.332
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 6,
+        "financial_articles": 2
+      },
+      "generated_at": "2025-10-24T09:36:25.917278Z"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "BUY",
+        "direction": "UP",
+        "combined_score": 0.198,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Positive financial signals (0.28); Event: earnings_report",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": 0.0,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "POSITIVE",
+            "score": 0.283,
+            "weight": 0.7,
+            "contribution": 0.198
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 1,
+        "financial_articles": 3
+      },
+      "generated_at": "2025-10-24T09:36:25.938596Z"
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "STRONG_SELL",
+        "direction": "DOWN",
+        "combined_score": -0.385,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Negative financial signals (-0.55); Event: earnings_report",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": 0.0,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "NEGATIVE",
+            "score": -0.55,
+            "weight": 0.7,
+            "contribution": -0.385
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 1,
+        "financial_articles": 1
+      },
+      "generated_at": "2025-10-24T09:36:25.959100Z"
+    },
+    {
+      "ticker": "UNP",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "BUY",
+        "direction": "UP",
+        "combined_score": 0.152,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Negative general sentiment (-0.77); Positive financial signals (0.55); Event: merger_acquisition",
+        "components": {
+          "general_sentiment": {
+            "label": "negative",
+            "score": -0.768,
+            "weight": 0.3,
+            "contribution": -0.23
+          },
+          "financial_signal": {
+            "signal": "POSITIVE",
+            "score": 0.547,
+            "weight": 0.7,
+            "contribution": 0.383
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 1,
+        "financial_articles": 3
+      },
+      "generated_at": "2025-10-24T09:36:25.981105Z"
+    },
+    {
+      "ticker": "UPS",
+      "date": "2025-10-24",
+      "prediction": {
+        "final_signal": "HOLD",
+        "direction": "NEUTRAL",
+        "combined_score": 0.0,
+        "confidence": 0.5,
+        "confidence_level": "LOW",
+        "reasoning": "Event: general_financial",
+        "components": {
+          "general_sentiment": {
+            "label": "neutral",
+            "score": 0.123,
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          "financial_signal": {
+            "signal": "NEUTRAL",
+            "score": 0.1,
+            "weight": 0.7,
+            "contribution": 0.0
+          }
+        }
+      },
+      "data_sources": {
+        "general_articles": 5,
+        "financial_articles": 1
+      },
+      "generated_at": "2025-10-24T09:36:26.003040Z"
+    }
+  ],
+  "generated_at": "2025-10-24T09:36:26.004040Z"
+}

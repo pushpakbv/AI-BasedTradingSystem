@@ -40,7 +40,7 @@
         "mentions": 8
       },
       "classification": "general",
-      "classified_at": "2025-10-24T04:52:31.670773Z",
+      "classified_at": "2025-10-24T09:36:10.582779Z",
       "sentiment_analysis": {
         "overall": {
           "label": "negative",
@@ -57,9 +57,9 @@
           "score": 0.8599642515182495,
           "confidence": 0.8599642515182495
         },
-        "analyzed_at": "2025-10-24T04:54:14.794053Z"
+        "analyzed_at": "2025-10-24T09:36:23.889473Z"
       }
     }
   ],
-  "analyzed_at": "2025-10-24T04:54:14.794053Z"
+  "analyzed_at": "2025-10-24T09:36:23.889473Z"
 }

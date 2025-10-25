@@ -1,0 +1,167 @@
+{
+  "ticker": "UNP",
+  "articles": [
+    {
+      "url": "https://www.freightwaves.com/news/first-look-union-pacific-3q-earnings",
+      "fetched_at": "2025-10-24T04:22:45.589995Z",
+      "published_date": "2025-10-23",
+      "published_datetime": "2025-10-23T12:51:04Z",
+      "title": "First look: Union Pacific Q3 earnings",
+      "content": "Union Pacific Corp. (NYSE: UNP ) on Thursday said third-quarter earnings were $1.79 billion on revenue of $6.24 billion.\n\nThe Omaha, Nebraska-based company said per-share profit was $3.01. Adjusted earnings for costs related to its proposed transcontinental merger with Norfolk Southern (NYSE: NSC ) were $3.08 per share.\n\nThe results exceeded expectations of revenue of $6.23 billion and $2.99 EPS of seven analysts surveyed by Zacks Investment Research.\n\nNorfolk Southern reports earnings Thursday after the close of markets.\n\nFind more articles by Stuart Chirls here .\n\nFreight locomotive sales power Wabtec earnings\n\nJust two U.S. makers of critical railroad material left after plant closure\n\nCN announces changes to senior management\n\nThe chemicals industry hates the UP \u2013 NS merger",
+      "meta_description": "Union Pacific third quarter profit beat estimates despite costs related to its proposed merger with Norfolk Southern.",
+      "status": 200,
+      "source_domain": "www.freightwaves.com",
+      "word_count": 119,
+      "matched_companies": [
+        {
+          "name": "Union Pacific Corporation",
+          "ticker": "UNP",
+          "sector": "Rail",
+          "mentions": 4
+        }
+      ],
+      "relevance_score": 0.4225352112676056,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Union Pacific Corporation",
+        "ticker": "UNP",
+        "sector": "Rail",
+        "mentions": 4
+      },
+      "classification": "financial",
+      "classified_at": "2025-10-24T09:36:10.583905Z",
+      "financial_analysis": {
+        "event_type": "earnings_report",
+        "market_signal": "POSITIVE",
+        "confidence": 0.65,
+        "detected_events": [
+          {
+            "type": "earnings_report",
+            "matches": 3,
+            "score": 30
+          },
+          {
+            "type": "earnings_beat",
+            "matches": 1,
+            "score": 8
+          },
+          {
+            "type": "merger_acquisition",
+            "matches": 1,
+            "score": 6
+          }
+        ],
+        "indicators": {
+          "positive": 1,
+          "negative": 0
+        },
+        "extracted_numbers": {
+          "revenue": 1790000000.0,
+          "eps": null,
+          "profit": null,
+          "percentages": []
+        },
+        "analyzed_at": "2025-10-24T09:36:25.322764Z"
+      },
+      "earnings_analysis": {
+        "earnings_status": "BEAT",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 1790000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": []
+        },
+        "overall_signal": "POSITIVE",
+        "confidence": 0.75,
+        "analysis_timestamp": "2025-10-24T09:36:25.542804Z"
+      }
+    },
+    {
+      "url": "https://www.freightwaves.com/news/first-look-norfolk-southern-q3-earnings",
+      "fetched_at": "2025-10-24T04:23:00.442810Z",
+      "published_date": "2025-10-23",
+      "published_datetime": "2025-10-23T17:25:00Z",
+      "title": "First look: Norfolk Southern Q3 earnings",
+      "content": "Norfolk Southern Corp. reported third quarter income of $1.1 billion on revenue that was 2% higher at $3.1 billion despite flat freight volumes.\n\nDiluted earnings per share was $3.16, down from the prior year and short of Wall Street\u2019s forecast range of $3.18 to $3.22.\n\nThe earnings for the Atlanta-based carrier (NYSE: NSC ) came after the close of markets and on the same day proposed merger partner Union Pacific (NYSE: UNP ) reported its earnings.\n\nIncome from railway operations was lower than the previous year\u2019s figure of $1.6 billion (that had included significant railway line sales benefits), and showed a meaningful adjusted increase when excluding merger-related expenses and other charges. On an adjusted basis, the income showed an uptick of $21 million to $1.1 billion, fueled primarily by incremental land sales amounting to $65 million.\n\nThe operating ratio, a critical measure of efficiency, was 64.6% and a significant increase from the 47.7% recorded in the third quarter of 2024. When adjusting for extraordinary items, the current operating ratio presented a slight improvement to 63.3%, comparing favorably to the adjusted 63.4% from the previous year.\n\nExcluding merger-related and other extraordinary charges, diluted earnings per share slightly increased to $3.30, up by 2% from the adjusted result for the third quarter of 2024.\n\n\u201cNorfolk Southern delivered another quarter of strong results on safety, service, and productivity through a dynamic freight market,\u201d said President and Chief Executive Mark George, in a release. \u201cThe entire Thoroughbred team pulled together to serve our customers, achieve an all-time record in fuel efficiency, delivered on key productivity initiatives, and executed a noteworthy land sale that will ultimately deliver rail volumes for years to come. I\u2019m proud of the way our team is performing with discipline and focus \u2014 driving results and strengthening our foundation for long term success.\u201d\n\nFind more articles by Stuart Chirls here .\n\nUnion Pacific profits rise on operational efficiency, pricing gains\n\nFirst look: Union Pacific Q3 earnings\n\nFreight locomotive sales power Wabtec earnings\n\nJust two U.S. makers of critical railroad material left after plant closure",
+      "meta_description": "Norfolk Southern Corp. said third quarter income fell on revenue that was slightly higher than the 2024 period.",
+      "status": 200,
+      "source_domain": "www.freightwaves.com",
+      "word_count": 343,
+      "matched_companies": [
+        {
+          "name": "Union Pacific Corporation",
+          "ticker": "UNP",
+          "sector": "Rail",
+          "mentions": 4
+        }
+      ],
+      "relevance_score": 0.16348773841961853,
+      "article_type": "company_specific",
+      "crawl_mode": "strict_today_only",
+      "primary_company": {
+        "name": "Union Pacific Corporation",
+        "ticker": "UNP",
+        "sector": "Rail",
+        "mentions": 4
+      },
+      "classification": "financial",
+      "classified_at": "2025-10-24T09:36:10.584465Z",
+      "financial_analysis": {
+        "event_type": "earnings_report",
+        "market_signal": "POSITIVE",
+        "confidence": 0.5,
+        "detected_events": [
+          {
+            "type": "earnings_report",
+            "matches": 2,
+            "score": 20
+          },
+          {
+            "type": "merger_acquisition",
+            "matches": 1,
+            "score": 6
+          }
+        ],
+        "indicators": {
+          "positive": 2,
+          "negative": 0
+        },
+        "extracted_numbers": {
+          "revenue": 1100000000.0,
+          "eps": null,
+          "profit": null,
+          "percentages": [
+            2.0,
+            64.6,
+            47.7,
+            63.3,
+            63.4,
+            2.0
+          ]
+        },
+        "analyzed_at": "2025-10-24T09:36:25.322764Z"
+      },
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 1100000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": []
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.543792Z"
+      }
+    }
+  ]
+}

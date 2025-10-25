@@ -1,0 +1,214 @@
+{
+  "ticker": "AMZN",
+  "article_count": 5,
+  "individual_predictions": [
+    {
+      "article_url": "https://www.digitalcommerce360.com/2022/09/13/in-focus-walmart-marketplaces-push-to-grow-third-party-seller-base/",
+      "article_title": "In focus: Walmart Marketplace's push to grow third-party seller base [Member-exclusive content]",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 240000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": [
+            60.0
+          ]
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.397020Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Strong growth rates: 60.0%"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.587853Z"
+      }
+    },
+    {
+      "article_url": "https://www.retaildive.com/news/elf-cosmetics-first-test-twitch-livestream-shopping-ads/803284/",
+      "article_title": "E.l.f. Cosmetics first to test Twitch\u2019s new livestream shopping ads",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 43300000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": []
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.398027Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Mixed signals"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.587853Z"
+      }
+    },
+    {
+      "article_url": "https://www.fool.com/investing/2025/10/23/3-artificial-intelligence-stocks-you-can-buy-and-h/",
+      "article_title": "3 Artificial Intelligence Stocks You Can Buy and Hold for the Next Decade | The Motley Fool",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 1000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": [
+            32.0,
+            17.5,
+            27.0
+          ]
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.399017Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Strong growth rates: 32.0%"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.587853Z"
+      }
+    },
+    {
+      "article_url": "https://www.digitalcommerce360.com/article/ecommerce-stock-index-baird-dc360/",
+      "article_title": "AI lifts leaders in September Ecommerce Stock Index results",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 50000000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": [
+            6.0
+          ]
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.399928Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Mixed signals"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.587853Z"
+      }
+    },
+    {
+      "article_url": "https://www.digitalcommerce360.com/article/amazon-prime-day-sales/",
+      "article_title": "Amazon Prime Day 2025 draws holiday-like US ecommerce sales",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 23800000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": [
+            33.3,
+            300.0
+          ]
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.400923Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Strong growth rates: 300.0%"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.587853Z"
+      }
+    }
+  ],
+  "aggregated_prediction": {
+    "direction": "NEUTRAL",
+    "probability": 0.275,
+    "magnitude": "SMALL",
+    "confidence_level": "LOW",
+    "signal_distribution": {
+      "up": 0,
+      "down": 0,
+      "neutral": 5
+    }
+  },
+  "generated_at": "2025-10-24T09:36:25.587853Z"
+}

@@ -1,0 +1,98 @@
+{
+  "ticker": "BABA",
+  "article_count": 2,
+  "individual_predictions": [
+    {
+      "article_url": "https://www.digitalcommerce360.com/article/ecommerce-stock-index-baird-dc360/",
+      "article_title": "AI lifts leaders in September Ecommerce Stock Index results",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 50000000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": [
+            6.0
+          ]
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.428672Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Mixed signals"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.609693Z"
+      }
+    },
+    {
+      "article_url": "https://www.digitalcommerce360.com/article/alibaba-revenue/",
+      "article_title": "Alibaba posts a 10% gain in ecommerce sales in Q1",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 247650000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": [
+            10.0,
+            10.0,
+            26.0
+          ]
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.428672Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Strong growth rates: 26.0%"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.609693Z"
+      }
+    }
+  ],
+  "aggregated_prediction": {
+    "direction": "NEUTRAL",
+    "probability": 0.275,
+    "magnitude": "SMALL",
+    "confidence_level": "LOW",
+    "signal_distribution": {
+      "up": 0,
+      "down": 0,
+      "neutral": 2
+    }
+  },
+  "generated_at": "2025-10-24T09:36:25.609693Z"
+}

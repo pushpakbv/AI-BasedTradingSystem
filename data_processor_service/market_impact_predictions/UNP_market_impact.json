@@ -1,0 +1,92 @@
+{
+  "ticker": "UNP",
+  "article_count": 2,
+  "individual_predictions": [
+    {
+      "article_url": "https://www.freightwaves.com/news/first-look-union-pacific-3q-earnings",
+      "article_title": "First look: Union Pacific Q3 earnings",
+      "earnings_analysis": {
+        "earnings_status": "BEAT",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 1790000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": []
+        },
+        "overall_signal": "POSITIVE",
+        "confidence": 0.75,
+        "analysis_timestamp": "2025-10-24T09:36:25.542804Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.375,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Earnings beat estimates"
+        ],
+        "risk_factors": [
+          "Unclear earnings or guidance data",
+          "Limited article content"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.715058Z"
+      }
+    },
+    {
+      "article_url": "https://www.freightwaves.com/news/first-look-norfolk-southern-q3-earnings",
+      "article_title": "First look: Norfolk Southern Q3 earnings",
+      "earnings_analysis": {
+        "earnings_status": "UNKNOWN",
+        "guidance_status": "UNKNOWN",
+        "financial_data": {
+          "eps_actual": null,
+          "eps_expected": null,
+          "eps_beat_percent": null,
+          "revenue_actual": 1100000000.0,
+          "revenue_expected": null,
+          "revenue_beat_percent": null,
+          "growth_rates": []
+        },
+        "overall_signal": "NEUTRAL",
+        "confidence": 0.55,
+        "analysis_timestamp": "2025-10-24T09:36:25.543792Z"
+      },
+      "market_impact": {
+        "direction": "NEUTRAL",
+        "probability": 0.275,
+        "expected_change_min": 0.5,
+        "expected_change_max": 1.5,
+        "magnitude": "SMALL",
+        "timeframe": "next_trading_day",
+        "confidence_level": "LOW",
+        "drivers": [
+          "Mixed signals"
+        ],
+        "risk_factors": [
+          "Low confidence in analysis",
+          "Unclear earnings or guidance data"
+        ],
+        "predicted_at": "2025-10-24T09:36:25.715058Z"
+      }
+    }
+  ],
+  "aggregated_prediction": {
+    "direction": "NEUTRAL",
+    "probability": 0.325,
+    "magnitude": "SMALL",
+    "confidence_level": "LOW",
+    "signal_distribution": {
+      "up": 0,
+      "down": 0,
+      "neutral": 2
+    }
+  },
+  "generated_at": "2025-10-24T09:36:25.715058Z"
+}

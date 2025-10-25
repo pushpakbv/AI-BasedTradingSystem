@@ -29,6 +29,32 @@ services:
   #     dockerfile: data_processor_service/Dockerfile
   #   ...
 
+api_service:
+    build: ./api_service
+    container_name: tradesystem_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data_processor_service/final_predictions:/app/data_processor_service/final_predictions:ro
+      - ./data_processor_service/sentiment_results:/app/data_processor_service/sentiment_results:ro
+      - ./data_processor_service/financial_analysis_results:/app/data_processor_service/financial_analysis_results:ro
+    environment:
+      - NODE_ENV=production
+    networks:
+      - tradesystem_network
+
+frontend_service:
+    build: ./frontend_service
+    container_name: tradesystem_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - api_service
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000/api
+    networks:
+      - tradesystem_network
+
 networks:
   tradesystem_network:
     driver: bridge
