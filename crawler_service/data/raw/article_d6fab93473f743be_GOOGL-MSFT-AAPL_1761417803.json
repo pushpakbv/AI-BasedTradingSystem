@@ -1,0 +1,35 @@
+{
+  "url": "https://economictimes.indiatimes.com/markets/stocks/news/us-stocks-notch-record-closing-highs-on-cool-inflation-solid-earnings/articleshow/124799265.cms",
+  "fetched_at": "2025-10-25T18:43:23.962683Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T18:43:23.960627Z",
+  "title": "US stocks notch record closing highs on cool inflation, solid earnings",
+  "content": "Top Trending Stocks: SBI Share Price , Axis Bank Share Price , HDFC Bank Share Price , Infosys Share Price , Wipro Share Price , NTPC Share Price\n\nTop Trending Stocks: SBI Share Price , Axis Bank Share Price , HDFC Bank Share Price , Infosys Share Price , Wipro Share Price , NTPC Share Price\n\nIndian sky wars: As Noida and Adani Airport loom, can GMR keep its altitude?\n\nFrom heirloom to hedge: How India’s love for gold became a trillion-dollar powerhouse\n\nSmall-Midcaps slide shows PMS managers have no magic wand\n\nThe rupee’s fall might just be its rise. Here’s why!\n\nSIPs are thriving, but are they rewarding investors the way they used to?\n\nBuy, Sell or Hold: Morgan Stanley maintains Equal-Weight on Bharat Forge; Citi raises target price on Hindustan Unilever",
+  "meta_description": "Indian markets saw a strong rally. Cooler inflation data and upbeat corporate earnings propelled US stock indexes to record highs. This performance sets a positive tone for upcoming earnings reports and an anticipated interest rate cut by the Federal Reserve. Investors are keenly watching major tech companies like Meta, Microsoft, Alphabet, and Apple for further market direction.",
+  "status": 200,
+  "source_domain": "economictimes.indiatimes.com",
+  "word_count": 133,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.22388059701492538,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

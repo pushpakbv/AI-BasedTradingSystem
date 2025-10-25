@@ -2,22 +2,31 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+# Copy requirements first
+COPY data_processor_service/requirements.txt /app/data_processor_service/
 
-# Copy requirements
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Install PyTorch CPU version (much smaller, faster download)
+RUN pip install --no-cache-dir \
+    --timeout 600 \
+    --default-timeout=600 \
+    --index-url https://download.pytorch.org/whl/cpu \
+    torch>=2.0.0
 
-# Download models ahead of time (optional but recommended)
-RUN python -c "from transformers import AutoTokenizer, AutoModelForSequenceClassification; \
-    AutoTokenizer.from_pretrained('ProsusAI/finbert'); \
-    AutoModelForSequenceClassification.from_pretrained('ProsusAI/finbert')"
+# Install other dependencies
+RUN pip install --no-cache-dir \
+    --timeout 300 \
+    --retries 5 \
+    -r /app/data_processor_service/requirements.txt
 
 # Copy application code
-COPY . /app/data_processor_service/
+COPY data_processor_service/ /app/data_processor_service/
 
-CMD ["python", "/app/data_processor_service/process_pipeline.py"]
+# Create output directories
+RUN mkdir -p /app/data_processor_service/final_predictions \
+    /app/data_processor_service/sentiment_results \
+    /app/data_processor_service/financial_analysis_results \
+    /app/data_processor_service/classified_articles
 
+WORKDIR /app/data_processor_service
+
+CMD ["python", "continuous_processor.py"]

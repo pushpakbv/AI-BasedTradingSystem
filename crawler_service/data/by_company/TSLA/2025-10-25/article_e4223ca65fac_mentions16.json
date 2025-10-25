@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/25/tesla-returns-to-double-digit-revenue-growth-time/",
+  "fetched_at": "2025-10-25T18:42:31.329123Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T09:31:00Z",
+  "title": "Tesla Returns to Double-Digit Revenue Growth. Time to Buy the Stock? | The Motley Fool",
+  "content": "After a rough first two quarters of 2025 in which vehicle deliveries declined in both periods, Tesla ( TSLA 3.36% ) turned a corner in Q3. Not only did vehicle deliveries return to growth, but revenue grew by a double-digit rate. The company's growth story is finally starting to look good again. But there are still two main problems: Profits remain suppressed, and the growth stock 's valuation looks too expensive. Investors don't just need growth. They need the right kind of growth (profitable growth) -- especially considering the stock's sky-high valuation.\n\nSo, with rising sales but strained profitability, is Tesla stock a buy with the company's third-quarter earnings report behind it?\n\nTesla returned to double-digit top-line growth in the third quarter of 2025, with total revenue of $28.1 billion, up 12% year over year. Record deliveries (about 497,100 units) helped, but the mix of sales by product category tells the fuller story. Automotive revenue rose 6%, while non-auto lines grew much faster, led by a 44% jump in energy and reinforced by services growth, which rose 25%. But it's worth noting that this sharp growth could turn back into a decline in Q4. An expiration of a federal electric vehicle tax credit at the end of Q3 helped pull forward demand into the quarter as customers tried to lock in savings.\n\nThird-quarter profitability was more complicated and -- unfortunately -- not as encouraging. GAAP gross margin was 18% versus 19.8% a year ago, and operating margin landed at 5.8%. GAAP earnings per share fell 37% to $0.39, and non-GAAP earnings per share declined 31% to $0.50. Operating expenses increased 50% as Tesla leaned into autonomy and manufacturing investments. The quarter still generated record free cash flow of about $4 billion and pushed cash and investments to $41.6 billion -- useful firepower as the company funds its ambitious growth plans, including an autonomous ride-sharing network and even humanoid robots.\n\nManagement's tone acknowledged the gap between today's hardware profits and tomorrow's software ambition. In its third-quarter update, Tesla wrote that, over time, it expects \"hardware-related profits to be accompanied by an acceleration of AI, software and fleet-based profits.\"\n\nManagement also said its upcoming products -- Cybercab and Megapack 3 -- are on schedule for volume production starting in 2026. These timelines, of course, carry execution risk.\n\nTesla's energy business remains a clear bright spot. Storage deployments hit a record, and revenue in its energy generation and storage segment rose sharply, aided by Megafactory momentum and Powerwall strength. If this cadence holds, energy can help offset some of the pressure in automotive profits during this transition period in which the federal electric vehicle tax credit has expired and the company is waiting on its upcoming Cybercab launch.\n\nThe quarter shows a business that can grow even in the face of high interest rates and macroeconomic uncertainty. That is encouraging. But the investment question is whether profits can scale as fast as revenue from here. The company's bold ambitions for autonomy and robots will require significant capital.\n\nSoftware take-rates for Tesla's self-driving (supervised) technology need to lift for earnings power to inflect meaningfully. Tesla management said during the company's third-quarter call that its paid full self-driving customer base is still small -- at just 12% of its existing vehicle fleet. This could move up materially over time, though,  especially if the software goes from supervised to truly full self-driving.\n\nValuation is the other constraint. At roughly a $1.5 trillion market cap, Tesla trades at a lofty price-to-sales multiple of nearly 17. This is particularly high given the company's recent struggle to grow profits. On the other hand, that valuation could be justified if high-margin software and a rollout of Tesla's autonomous ride-sharing network (Robotaxi) become material soon.\n\nThere are real tailwinds. Energy storage is scaling, and Tesla is making progress on its Robotaxi pilot program. Still, expectations are high.\n\nUltimately, the quarter wasn't bad. It was nice to see revenue growing again, and it helped that energy and services showed up alongside record deliveries. Tesla's profit engine, however, hasn't caught up.\n\nCould software and fleet monetization (via Robotaxi) change that? Yes. But the timing and economics of both Tesla's road map to fully autonomous driving and its ridesharing network are unclear.\n\nSo, is now the time to buy Tesla stock? Unfortunately, the valuation arguably prices in too much, leaving little room for error. I'd stay on the sidelines for now.",
+  "meta_description": "Revenue is rising again, but the investment case still hinges on where profits come from next.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 737,
+  "matched_companies": [
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 16
+    }
+  ],
+  "relevance_score": 0.3125,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "sector": "Automotive & Manufacturing",
+    "mentions": 16
+  }
+}

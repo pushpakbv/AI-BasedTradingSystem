@@ -1,0 +1,29 @@
+{
+  "url": "https://seekingalpha.com/news/4508309-11-out-of-14-consumer-cyclical-stocks-deliver-eps-wins-this-week-earnings-scorecard",
+  "fetched_at": "2025-10-25T18:41:58.956402Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T10:05:12Z",
+  "title": "11 out of 14 consumer cyclical stocks deliver EPS wins this week: Earnings Scorecard",
+  "content": "iQoncept/iStock via Getty Images\n\nThe consumer discretionary/cyclical sector was in focus this week as investors accessed earnings reports from companies including Tesla ( TSLA ) and General Motors ( GM ).\n\nThe consumer discretionary/cyclical sector rose nearly 7% so far this year, compared to the 15% rise in the broader S&P 500",
+  "meta_description": "Get the latest consumer discretionary sector earnings recap, with key insights on Tesla, GM, Ford, and upcoming reports.",
+  "status": 200,
+  "source_domain": "seekingalpha.com",
+  "word_count": 52,
+  "matched_companies": [
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.5357142857142857,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "sector": "Automotive & Manufacturing",
+    "mentions": 3
+  }
+}

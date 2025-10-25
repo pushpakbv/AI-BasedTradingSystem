@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/25/broadcom-stock-the-next-nvidia/",
+  "fetched_at": "2025-10-25T18:42:27.991587Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T17:02:00Z",
+  "title": "Is Broadcom Stock the Next Nvidia? | The Motley Fool",
+  "content": "The current wave of artificial intelligence (AI) adoption began in early 2023, after the introduction of ChatGPT highlighted the vast potential applications involving generative AI . Nvidia ( NVDA +2.26% ) , with its industry-leading graphics processing units (GPUs) , quickly became the standard-bearer for the AI revolution. Its stock has gained 1,160% since then, which has investors eager to find the next Nvidia, and a strong contender could be hiding in plain sight.\n\nWhile Nvidia stock has gained a respectable 33% over the past year, Broadcom ( AVGO +2.91% ) has been on a tear, as its stock has soared 96% (as of this writing). Several recent developments help illustrate why investors are increasingly bullish on Broadcom stock, and why the company could well be the next Nvidia.\n\nGPUs have played a pivotal role in the advancement of AI, providing the computational horsepower required to power the large language models (LLMs) that underpin AI. One of the trade-offs, however, is that these power-hungry chips consume a great deal of energy. Thus far, most hyperscalers have been willing to pay the price to have the most advanced processors with the fastest speeds, not to mention the extreme flexibility offered by GPUs.\n\nSince most AI processing occurs in data centers , Broadcom was already a beneficiary of AI, as management notes that \"99% of all internet traffic crosses through some type of Broadcom technology.\" The company pioneered the Ethernet switching and networking products that have become critical components in most data centers.\n\nHowever, it's Broadcom's application-specific integrated circuits (ASICs) that offer the greatest potential for future growth, thanks to their increasing adoption for AI workloads. The specialized chips are customizable to specific tasks, offering a more energy-efficient alternative. The demand for these chips is evident in Broadcom's most recent results.\n\nIn its fiscal third quarter (ended Aug. 3), Broadcom generated record revenue of $15.9 billion, an increase of 22% year over year, fueling adjusted earnings per share (EPS) of $1.69, which jumped 36%. It was clear that AI was the biggest contributor to its rising fortunes, as AI-specific revenue of $5.2 billion surged 63%.\n\nManagement noted that Broadcom continued to expand its relationships with its three biggest hyperscale customers, widely believed to be Alphabet , Meta Platforms , and TikTok parent ByteDance. CEO Hock Tam said, \"We continue to gain share at our three original customers.\" He also expects growth related to AI to continue to accelerate, outpacing the 50% to 60% the company has forecast for this year.\n\nEarlier this month, the company dropped a bombshell, saying it will help design and deploy 10 gigawatts of its customizable chips for ChatGPT creator OpenAI. The deal is likely incremental to Broadcom's already robust guidance, according to Melius Research analyst Ben Reitzes, who estimates that each gigawatt could translate to $20 billion in additional revenue. Furthermore, the deal serves to validate Broadcom's chips as a viable alternative to Nvidia's GPUs, which might attract additional large-scale users.\n\nReitzes has previously argued that Broadcom should be a \"Magnificent Eight\" stock, an addition to the existing \" Magnificent Seven\" stocks . He estimates that Broadcom will gain ground over time, eventually controlling 30% of the AI compute market.\n\nThe expanding relationships with its existing customers, as well as the addition of OpenAI to its customer rolls, illustrate the path forward for Broadcom to become the next Nvidia. Furthermore, the AI market is expected to grow exponentially. Big Four accounting firm PwC estimates the market could be worth as much as $15.7 trillion annually by 2030, which helps underscore the magnitude of the opportunity.\n\nThere is the matter of valuation to consider. Broadcom stock is currently selling for 38 times next year's earnings, compared to 29 for Nvidia. Both stocks currently fetch a premium, so they won't be a good fit for every investor.\n\nThat said, both companies are at the crossroads of the AI revolution, which could continue to drive these industry pioneers higher in the months and years to come.",
+  "meta_description": "This semiconductor and networking specialist is beginning to expand its influence in the artificial intelligence (AI) space.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 666,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 9
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.21645021645021645,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 9
+  }
+}

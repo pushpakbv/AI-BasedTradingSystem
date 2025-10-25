@@ -12,6 +12,14 @@ const SignalDistribution = ({ data }) => {
     { name: 'Strong Sell', value: data.STRONG_SELL || 0, color: '#ef4444' }
   ].filter(item => item.value > 0);
 
+  if (chartData.length === 0) {
+    return (
+      <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 flex items-center justify-center h-[300px]">
+        <p className="text-gray-500">No signal data available</p>
+      </div>
+    );
+  }
+
   return (
     <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
       <h3 className="text-lg font-semibold text-gray-900 mb-4">Signal Distribution</h3>

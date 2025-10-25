@@ -1,0 +1,35 @@
+{
+  "url": "https://seekingalpha.com/news/4508181-amazon-google-microsoft-likely-to-benefit-from-stable-healthy-cloud-spending-ubs",
+  "fetched_at": "2025-10-25T18:41:57.873971Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T08:00:12Z",
+  "title": "Amazon, Google, Microsoft likely to benefit from 'stable, healthy' cloud spending: UBS (AMZN:NASDAQ)",
+  "content": "With earnings right around the corner, Amazon ( NASDAQ: AMZN ), Google ( NASDAQ: GOOG ) ( NASDAQ: GOOGL ) and Microsoft ( NASDAQ: MSFT ) are likely to benefit from “stable” and “healthy” cloud spending, UBS said.\n\nIn speaking with 11 customers and partners at Oracle's ( ORCL ) AI World event, UBS",
+  "meta_description": "With earnings right around the corner, Amazon (AMZN), Google (GOOG) (GOOGL) and Microsoft (MSFT) are likely to benefit from “stable” and “healthy” cloud spending, UBS said. Read for more.",
+  "status": 200,
+  "source_domain": "seekingalpha.com",
+  "word_count": 54,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 6
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 5
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 5
+    }
+  ],
+  "relevance_score": 1.0,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

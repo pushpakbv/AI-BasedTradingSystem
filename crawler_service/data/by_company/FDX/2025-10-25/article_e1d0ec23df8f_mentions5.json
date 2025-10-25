@@ -1,0 +1,35 @@
+{
+  "url": "https://www.freightwaves.com/news/author/toddmaiden",
+  "fetched_at": "2025-10-25T19:00:50.230161Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T19:00:50.221458Z",
+  "title": "Todd Maiden",
+  "content": "Yellow Corp. has entered agreements to sell four terminals for $6.1 million as its liquidation process nears its end.\n\nDSV announced it will sell USA Truck, an Arkansas-based truckload carrier, as it does not align with the Danish freight forwarder’s asset-light business model.\n\nKnight-Swift Transportation’s third-quarter results and fourth-quarter outlook came in light of expectations on Wednesday.\n\nForward Air’s stock fell sharply on Monday following a report that it hasn’t yet received a satisfactory takeover offer.\n\nOld Dominion Freight Line is the latest less-than-truckload carrier to implement a general rate increase ahead of schedule.\n\nCost reductions at J.B. Hunt more than offset a soft demand environment in the third quarter.\n\nShares of J.B. Hunt surged in after-hours trading on Wednesday after the company posted better-than-expected third-quarter results.\n\nPrologis sees signs that the logistics warehouse market is tightening, with the potential for rents to see outsized growth in the next upcycle.\n\nLogistics real estate investment trust Prologis beat third-quarter consensus expectations amid “record leasing” activity.\n\nLess-than-truckload rates maintain record levels despite softness across the manufacturing complex.\n\nThe truckload market took share for a second straight month in September, but overall freight fundamentals remain weak, according to a report from Cass Information Systems.\n\nIndustry veteran-led startup CoPilot announced its initial acquisition as it works toward establishing a global logistics platform.\n\nHome goods retailer Ikea has acquired U.S.-based logistics technology company Locus to improve its final-mile delivery network.\n\nThird-party logistics provider ATS Logistics Services has agreed to acquire the brokerage operations of Trailer Bridge.\n\nThe September Logistics Managers’ Index signaled a negative freight inversion for the second month in a row.\n\nOld Dominion Freight Line was named as the top national carrier for a 16th straight year by Mastio & Co.\n\nMorgan Stanley lowered earnings expectations for publicly traded truckload and less-than-truckload carriers on Monday.\n\nFedEx Corp. has completed the formation of the leadership team for a standalone FedEx Freight.\n\nTrimac Transportation announced it has acquired Houston-based chemical hauler Service Transport Company.\n\nExpedited carriers C&M Transport and Barrett Directline have entered a merger agreement.\n\nPaschall Truck Lines’ parent Interstate Personnel Services is looking to add temperature-controlled capabilities to its network with the acquisition of J&R Schugel.\n\nArcBest talks up numbers at its first investor day since 2015.\n\nRose Rocket announced Monday that it has acquired Toronto-based technology provider Centro.\n\nAI adoption and data center buildouts have warehouse tenants fretting over energy infrastructure.\n\nSupply chain services provider TIG has agreed to acquire food-grade logistics provider PDM.\n\nSusquehanna analyst Bascome Majors cut earnings forecasts on truckload carriers for the rest of the year as fundamentals remain soft and peak-season expectations are subdued.\n\nLess-than-truckload carrier Dayton Freight Lines announced it has doubled capacity at a terminal serving the Salem, Illinois market.\n\nFedEx Freight’s spinoff is on track to be completed by June of next year.\n\nThe Cass Freight Index showed year-over-year shipment declines widened in August.\n\nYellow Corp. lost an appeal to circumvent the 2021 pension bailout regulations used to calculate its withdrawal liabilities.\n\nBWT Logistics has acquired RAZR Logistics, adding on-demand warehousing to its services.\n\nYellow Corp. has reached a deal to sell a Baltimore terminal, leaving only 11 locations remaining for sale.\n\nRadiant Logistics’ fiscal fourth quarter results came in ahead of analysts’ expectations.\n\nTruckload carrier Werner Enterprises said it’s seeing “positive momentum” in its dedicated and logistics businesses at an investor conference this week.\n\nArcBest lowered third-quarter margin expectations for its asset-based unit, which includes less-than-truckload operations.\n\nFreight broker FitzMark announced it has acquired Hometown Logistics.\n\nLess-than-truckload carrier Dayton Freight reaches further east with its latest terminal opening.\n\nLogistics Plus announced the acquisition of Chicago-based freight brokerage LoadDelivered Logistics.\n\nLess-than-truckload carrier Saia saw tonnage move back into negative territory in August as the manufacturing complex nears a third full year of contraction.\n\nOld Dominion Freight Line reported Thursday that tonnage declines accelerated in August.\n\nDescartes missed fiscal second-quarter expectations Wednesday after the market closed.\n\nLess-than-truckload carrier XPO’s third-quarter update showed a notable moderation in tonnage declines during August.\n\nRadiant Logistics announced it has taken an 80% stake in Weport, a Mexico-based transportation and logistics provider.\n\nYellow’s equipment auctions conclude after nearly two years.\n\nSentiment among supply chain managers regarding transportation capacity and pricing signaled a cooling freight market in August.\n\nPayables automation platform BravoTran announced the addition of receivables capabilities with the acquisition of Keystroke.io.\n\nInfrastructure investment firm Stonepeak has acquired two logistics centers in Fort Worth, Texas.\n\nPrologis Mobility and EV Realty are collaborating to increase electric truck charging capabilities across California.\n\nJ.B. Hunt Transport Services promotes Brad Delco to chief financial officer.\n\nCold storage provider Lineage announced Thursday that its facility at the Port of New Orleans now offers bonded warehouse space in addition to USDA inspections.",
+  "meta_description": "Based in Richmond, VA, Todd is the finance editor at FreightWaves. Prior to joining FreightWaves, he covered the TLs, LTLs, railroads and brokers for RBC Capital Markets and BB&T Capital Markets.",
+  "status": 200,
+  "source_domain": "www.freightwaves.com",
+  "word_count": 786,
+  "matched_companies": [
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 5
+    },
+    {
+      "name": "XPO Inc.",
+      "ticker": "XPO",
+      "sector": "Freight & Logistics",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.10989010989010989,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "FedEx Corporation",
+    "ticker": "FDX",
+    "sector": "Logistics",
+    "mentions": 5
+  }
+}

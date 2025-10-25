@@ -1,50 +1,97 @@
-version: '3.8'
+
 
 services:
+  # Continuous Crawler Service
   crawler_service:
     build:
       context: .
       dockerfile: crawler_service/Dockerfile
-    container_name: crawler_service
+    container_name: tradesystem_crawler
     volumes:
-      # Mount data directory to persist crawled articles
+      # Mount crawler data directory - THIS IS CRITICAL
       - ./crawler_service/data:/app/crawler_service/data
-      # Mount config for easy updates
-      - ./crawler_service/config:/app/crawler_service/config
-      # Mount shared utilities
-      - ./shared:/app/shared
+      # Mount config for live updates
+      - ./crawler_service/config:/app/crawler_service/config:ro
     environment:
       - PYTHONUNBUFFERED=1
+      - CRAWLER_INTERVAL_MINUTES=30
       - LOG_LEVEL=INFO
     networks:
       - tradesystem_network
     restart: unless-stopped
-    # Uncomment to run on a schedule (requires cron or scheduler)
-    # command: ["python", "-m", "crawler_service.main"]
 
-  # Other services...
-  # data_processor_service:
-  #   build:
-  #     context: .
-  #     dockerfile: data_processor_service/Dockerfile
-  #   ...
+  # Continuous Data Processor Service
+  data_processor_service:
+    build:
+      context: .
+      dockerfile: data_processor_service/Dockerfile
+      args:
+        BUILDKIT_STEP_LOG_MAX_SIZE: -1
+        BUILDKIT_STEP_LOG_MAX_SPEED: -1
+    container_name: tradesystem_processor
+    volumes:
+      # Mount processor output directories - BIND MOUNTS for easy access
+      - ./data_processor_service/final_predictions:/app/data_processor_service/final_predictions
+      - ./data_processor_service/sentiment_results:/app/data_processor_service/sentiment_results
+      - ./data_processor_service/financial_analysis_results:/app/data_processor_service/financial_analysis_results
+      - ./data_processor_service/classified_articles:/app/data_processor_service/classified_articles
+      # Mount crawler data as READ-ONLY - SHARED WITH CRAWLER
+      - ./crawler_service/data:/app/crawler_service/data:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PROCESSOR_CHECK_INTERVAL_SECONDS=60
+      - LOG_LEVEL=INFO
+    networks:
+      - tradesystem_network
+    restart: unless-stopped
+    depends_on:
+      - crawler_service
 
-api_service:
-    build: ./api_service
+  # Market Data Service
+  market_data_service:
+    build:
+      context: .
+      dockerfile: market_data_service/Dockerfile
+    container_name: tradesystem_market_data
+    volumes:
+      # Mount market data directory - BIND MOUNT for easy access
+      - ./market_data_service/stock_data:/app/market_data_service/stock_data
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MARKET_DATA_INTERVAL_HOURS=1
+      - LOG_LEVEL=INFO
+    networks:
+      - tradesystem_network
+    restart: unless-stopped
+
+  # API Service with WebSocket
+  api_service:
+    build:
+      context: .
+      dockerfile: api_service/Dockerfile
     container_name: tradesystem_api
     ports:
       - "8000:8000"
     volumes:
-      - ./data_processor_service/final_predictions:/app/data_processor_service/final_predictions:ro
+      # Mount all data directories as READ-ONLY - using bind mounts
+      - ./data_processor_service/final_predictions:/data_processor_service/final_predictions:ro
       - ./data_processor_service/sentiment_results:/app/data_processor_service/sentiment_results:ro
       - ./data_processor_service/financial_analysis_results:/app/data_processor_service/financial_analysis_results:ro
+      - ./market_data_service/stock_data:/app/market_data_service/stock_data:ro
     environment:
       - NODE_ENV=production
     networks:
       - tradesystem_network
+    restart: unless-stopped
+    depends_on:
+      - data_processor_service
+      - market_data_service
 
-frontend_service:
-    build: ./frontend_service
+  # Frontend Service
+  frontend_service:
+    build:
+      context: .
+      dockerfile: frontend_service/Dockerfile
     container_name: tradesystem_frontend
     ports:
       - "3000:80"
@@ -52,13 +99,11 @@ frontend_service:
       - api_service
     environment:
       - REACT_APP_API_URL=http://localhost:8000/api
+      - REACT_APP_WS_URL=ws://localhost:8000
     networks:
       - tradesystem_network
+    restart: unless-stopped
 
 networks:
   tradesystem_network:
     driver: bridge
-
-volumes:
-  crawler_data:
-    driver: local

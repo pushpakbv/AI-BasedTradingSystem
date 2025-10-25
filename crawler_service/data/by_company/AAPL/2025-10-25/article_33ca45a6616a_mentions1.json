@@ -1,0 +1,41 @@
+{
+  "url": "https://economictimes.indiatimes.com/markets/stocks/news/et-prime-special-series-part-3-how-to-think-scan-like-an-auditor-before-investing-assets-a-wall-of-strength-or-just-a-paper-fort/articleshow/124799720.cms",
+  "fetched_at": "2025-10-25T18:54:37.596639Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T18:49:00Z",
+  "title": "ET Prime Special Series - Part 3 - How to think & scan like an auditor before investing: Assets a wall of strength or just a paper fort?",
+  "content": "This series is about gaining a deeper understanding of how companies report numbers and hide the reality of their business. It aims to go beyond the numbers to the decisions, judgements, and assumptions behind them. By following these insights, investors can become better at analysing financial statements (if they even think that is important), spotting risks, and making informed decisions. Why is this important to know? Look at the number of start-ups that, at the time of their IPOs, announce that they have made profits – only to report losses the very next quarter, and justify them. And not only start-ups. There are many in the listed space who do this – again and again.\n\nShare member-only stories with your friends or family and help them read it for free.\n\nIt seems like you're already an ETPrime member with\n\nLogin using your ET Prime credentials to enjoy all member benefits\n\nLog out of your current logged-in account and log in again using your ET Prime credentials  to enjoy all member benefits.\n\nGrow your wealth with stock ideas & sectoral trends.\n\nBuy low & sell high with access to Stock Score, Upside potential & more.\n\nGet to know where the market bulls are investing to identify the right stocks.\n\nCheck the score based on the company's fundamentals, solvency, growth, risk & ownership to decide the right stocks.\n\nAnalyze the market sentiments & identify the trend reversal for strategic decisions.\n\nAsk your stock queries & get assured replies by ET appointed, SEBI registered experts.\n\nRead the PDF version of ET newspaper. Download & access it offline anytime.\n\nRead your daily newspaper in Digital View & get it delivered to your inbox everyday.\n\nManage your money efficiently with this weekly money management guide.\n\nTrump temper on H-1B visas is forcing Indians to do these things to stay put in US\n\nWhat Adani’s US indictment means for India Inc’s overseas fundraising\n\nWhy veterans like Reliance, L&T are on acquisition spree? Aswath Damodaran has an answer.\n\nWill China’s dollar bond sale in Saudi Arabia trump the US in financial world?\n\nHuawei launches its own OS to compete with Google and Apple. But can it win beyond China?\n\nWhy a falling rupee is a better option for the economy\n\nA list of top 20 momentum stocks that have delivered massive returns in one year\n\nRead the PDF version of TOI newspaper. Download & access it offline anytime.\n\nExplore the In-depth explanation of complex topics for everyday life decisions.\n\nGet fitter with daily health insights committed to your well-being.\n\nManage your wealth better with in-depth insights & updates on finance.\n\nStay globally informed  with exclusive story from New York Times.\n\nStream new documentaries from all across the world every day.",
+  "meta_description": "This series is about gaining a deeper understanding of how companies report numbers and hide the reality of their business. It aims to go beyond the numbers to the decisions, judgements, and assumptions behind them. By following these insights, investors can become better at analysing financial statements (if they even think that is important), spotting risks, and making informed decisions. Why is this important to know? Look at the number of start-ups that, at the time of their IPOs, announce that they have made profits – only to report losses the very next quarter, and justify them. And not only start-ups. There are many in the listed space who do this – again and again.",
+  "status": 200,
+  "source_domain": "economictimes.indiatimes.com",
+  "word_count": 453,
+  "matched_companies": [
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 4
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.15100671140939598,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "sector": "Technology & Manufacturing",
+    "mentions": 1
+  }
+}

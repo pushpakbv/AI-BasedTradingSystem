@@ -1,0 +1,41 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/25/best-automation-stock-to-buy-now-tesla-or-amazon/",
+  "fetched_at": "2025-10-25T18:42:25.468516Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T17:45:00Z",
+  "title": "Best Automation Stock to Buy Now: Tesla or Amazon | The Motley Fool",
+  "content": "Electric vehicle (EV) company Tesla ( TSLA 3.36% ) , and delivery and cloud computing company Amazon ( AMZN +1.43% ) are driving major advances in automation . Each megacap company is marrying AI with robotics. The goal: total automation.\n\nBut is one stock a better buy now? Let's find out.\n\nTesla has an ambitious roadmap for full automation of vehicles and Optimus, the company's humanoid robot  . CEO Elon Musk has predicted there will be millions of Teslas operating fully autonomously by the end of 2026. He has set an ambitious production target of 1,000,000 Optimus robots per year by 2030. Elon Musk has a history of missing deadlines -- take these with a tablespoon of salt.\n\nTesla's CEO is right to champion Full Self-Driving (FSD). By many metrics, the self-driving technology has made massive leaps recently:\n\nOne thing that worries me is timelines. Despite the Austin robotaxi rollout, Tesla has yet to put unsupervised cars on the road. With fewer than 100 vehicles in its fleet and fragmented U.S. regulations, operating state-by-state, delays could allow competitors like Waymo and BYD time to gain market share. I'm also not convinced Optimus will make a meaningful difference in the next five years.\n\nAnother worry is expectations. As of writing, Tesla trades at a forward price-to-earnings (P/E) ratio of 175x, much higher than the average tech stock. FSD's success is partly baked into Tesla's valuation, leaving less room for upside should the company execute. Despite Amazon's massive push into automation, it operates at a much more modest 28x forward multiple.\n\nI think Tesla has the technology and leadership to bring self-driving cars, and eventually humanoid robots, to market -- but when, and at what price?\n\nAmazon has been rolling out robots for years in an all-out effort to deliver more, faster. Amazon has already scaled up to over 1,000,000 robots deployed across more than 300 facilities. The pace of Amazon's rollout has been rapid since buying Kiva Systems, a robotic fulfillment systems manufacturer, in 2012:\n\nSource: ARK Invest publications, Amazon blog, Amazon About page\n\nAmazon's massive robotic fleet generates valuable, real-world data that AI can use to make the collective smarter. In fact, Amazon recently announced that the generative AI model, DeepFleet, is expected to improve the robot's travel time by 10%, speeding up delivery times. The model is also expected to learn and improve over time, snowballing into ever-better bots.\n\nIn a twist of fate, Amazon is executing on Tesla's core promise: a data-to-robot flywheel.  Amazon is deploying bots en masse, collecting data, and using it to make bots more valuable... ad infinitum. It doesn't need to overcome regulatory hurdles or market sentiment to capture massive upside. It just needs to scale what it's already doing -- something right up Amazon's wheelhouse.\n\nI do wonder about Amazon CEO Andy Jassy. His expertise is in cloud services and operations, not engineering.  I also worry about internal pushback. Amazon has made major layoffs, and Jassy has admitted that many employees are likely to be laid off. Amazon laid off 27,000 employees between 2022–2023, its largest cuts ever. Employee pushback could potentially stall or automation efforts.\n\nDespite icebergs, I think Amazon has enough momentum behind it to ride the automation wave for the next five-plus years. Automation progress looks promising -- but as promising as Tesla?\n\nIt's hard to say which company will profit most from automation. The serviceable markets for automated cars, humanoid robots, manufacturing, and logistics are huge -- and both companies are casting wide nets. That said, one company may be the better buy right now.\n\nIn my view, Amazon is the one to buy now. It's quietly executing on several fronts: rapidly scaling bot production, real-world usage, and smart software that scales. It's spinning a flywheel with results being delivered right now. Sure, Tesla promises a dramatic payoff should FSD take off. But unlike Tesla, Amazon doesn't need to shoot the moon to win big, and it trades at a reasonable price.",
+  "meta_description": "The battle of the bots has begun. One company is the better buy right now.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 663,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 21
+    },
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 15
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.8031837916063675,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Amazon.com, Inc.",
+    "ticker": "AMZN",
+    "sector": "E-commerce",
+    "mentions": 21
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "url": "https://techcrunch.com/2025/10/24/musks-ad-chief-at-x-departs-after-just-10-months/",
+  "fetched_at": "2025-10-25T18:59:29.273202Z",
+  "published_date": "2025-10-25",
+  "published_datetime": "2025-10-25T06:46:38Z",
+  "title": "Musk's ad chief at X departs after just 10 months | TechCrunch",
+  "content": "John Nitti has left his position as X’s advertising chief after just ten months, reports the Financial Times .\n\nNitti, who joined as global head of revenue operations and advertising innovation, was considered a potential successor to former CEO Linda Yaccarino, who resigned in July. His exit adds to a string of high-level departures from Elon Musk’s increasingly turbulent executive suite. Among others, X’s CFO Mahmoud Reza Banki left in October after less than a year, while xAI’s CFO and general counsel both departed over the summer.\n\nThe revolving door reportedly reflects deeper tensions. Sources tell the FT that execs have grown frustrated with Musk’s abrupt strategy shifts and unilateral decision-making, including banning hashtags from advertising without discussing the move first with his own advertising team.\n\nThe pressure on advertising leadership has grown as Musk funnels billions into AI development to compete with OpenAI and DeepMind. While some brands have returned after being told by Musk in late 2023 to “ go fuck yourself ” and xAI has secured partnerships with companies like Disney, others privately complain of feeling forced to advertise after X sued brands including Shell and Pinterest for alleged boycotts.\n\nBefore joining X, Nitti had spent roughly nine years with Verizon and another long stretch with American Express.",
+  "meta_description": "The revolving door reportedly reflects deeper tensions.",
+  "status": 200,
+  "source_domain": "techcrunch.com",
+  "word_count": 211,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.13043478260869565,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}
