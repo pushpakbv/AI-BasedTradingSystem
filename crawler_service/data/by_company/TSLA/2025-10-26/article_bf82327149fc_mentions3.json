@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/if-invest-rivian-stock-4-years-ago-how-much/",
+  "fetched_at": "2025-10-26T08:30:26.743405Z",
+  "published_date": "2025-10-26",
+  "published_datetime": "2025-10-26T08:20:00Z",
+  "title": "If You'd Invested $150 in Rivian Stock 4 Years Ago, Here's How Much You'd Have Today | The Motley Fool",
+  "content": "Rivian Automotive ( RIVN 0.84% ) , a producer of electric vehicles, attracted a lot of attention when it went public in November 2021 at an IPO price of $78 per share. It opened trading at $106.75 and closed at its record high of $172.01 just a week later.\n\nThree tailwinds fueled that rally. First, Rivian generated a lot of buzz because it was backed by Amazon ( AMZN +1.43% ) and Ford Motor Company ( F +11.95% ) . Second, it had already started mass-producing its first vehicles. Lastly, the buying frenzy around hypergrowth and meme stocks in late 2021 helped inflate its valuations.\n\nBut today, Rivian shares trade at about $13. A $150 investment made at its IPO price (including fractional shares) would have shrunk to a value of around $25. That same investment in an S&P 500 exchange-traded fund ( ETF ) would have grown to be worth roughly $230 with reinvested dividends . Let's see why Rivian underperformed the market -- and consider if it's worth buying today.\n\nRivian currently produces three types of EVs: the R1T pickup truck, the R1S SUV, and electric delivery vans (EDVs) for Amazon and other businesses. When Rivian went public, it forecast that it would be able to produce 50,000 vehicles in 2022. It also planned to co-develop an electric pickup with Ford.\n\nBut in 2022, Rivian grappled with supply chain constraints and intermittent factory shutdowns, and as a result, it only produced 24,337 vehicles and delivered 20,332 of them to customers. In addition, Ford scrapped its plans for an electric pickup to be built on the \"skateboard\" platform that sits at the heart of Rivian's EVs, and sold off most of its 12% stake in the automaker throughout 2022. On the bright side, Amazon -- which placed a long-term order for 100,000 EDVs to be delivered through 2030 -- retained its 17% stake.\n\nIn 2023, Rivian more than doubled its production to 57,232 vehicles and delivered 50,122. It resolved most of its supply chain issues and rolled out its own Enduro drive unit for its R1 and EDVs to reduce its dependence on third-party suppliers. It also strengthened its relationships with its suppliers and improved the efficiency of its factories.\n\nBut over the past year and a half, Rivian's production and delivery rates slowed down again. It only expects to deliver 40,000 to 46,000 vehicles this year.\n\nThat slowdown wasn't disastrous, but rising interest rates crushed the company's valuations as its growth cooled off. At its post-IPO peak, Rivian's market cap reached $153.3 billion, or 92 times the revenue it would go on to generate in 2022. The business simply couldn't support that type of meme-stock valuation, and the stock crashed.\n\nRivian mainly attributed its deceleration to inflation, high interest rates, and lower EV subsidies -- all of which curbed consumers' appetite for new EVs. Intense competition from other EV makers exacerbated the pressure on Rivian. It also temporarily shut down its main Illinois plant for upgrades to prepare for the launch of its lower-priced R2 SUV in 2026.\n\nIts gross margin briefly turned positive in the first quarter of 2025 as those higher-margin strategies kicked in, but it turned negative again in the second quarter. Nevertheless, analysts still expect it to narrow its net loss to $3.71 billion for the year.\n\nFor 2026, the consensus expectation among analysts is for Rivian's revenue to rise by 32% to nearly $7 billion as it narrows its net loss to $3.65 billion. That acceleration is anticipated to be driven by the rollout of the R2 SUV, a stabilization in the sales of its other vehicles, and its joint venture with Volkswagen (OTC: VWAP.Y) for the co-development of new EV architecture and software.\n\nIn 2027, analysts expect Rivian's revenue to surge by 62% to $11.32 billion and for its net loss to narrow further to $3.23 billion. That relatively rosy outlook assumes it can scale up its production of the R2, stabilize its sales of other vehicles, and finally start production at its new plant in Georgia, which could triple its annual EV manufacturing capacity by 2028.\n\nWith a market cap of $15.9 billion, Rivian trades at just over 2 times next year's expected sales . Tesla ( TSLA 3.36% ) , which is much bigger and firmly profitable, trades at 13 times its expected 2026 sales. Rivian certainly won't evolve into the next Tesla anytime soon, but any positive news about the business could push its valuations higher. The stock is still worth nibbling on as a speculative play, but investors should keep a close eye on how the upcoming launch of the R2 plays out. This could be the model that either makes or breaks the upstart EV maker.",
+  "meta_description": "This upstart EV maker has not been impressing its early investors.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 789,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 4
+    },
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.12804878048780488,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "sector": "Automotive & Manufacturing",
+    "mentions": 3
+  }
+}

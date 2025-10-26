@@ -1,5 +1,4 @@
-// ...existing imports...
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   ArrowLeft, TrendingUp, TrendingDown, Calendar,
@@ -11,11 +10,13 @@ import NewsTimeline from '../components/NewsTimeline';
 import PredictionCard from '../components/PredictionCard';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+const WS_BASE_URL = process.env.REACT_APP_WS_URL || 'ws://localhost:8000';
 
 const StockDetail = () => {
   const { ticker } = useParams();
   const navigate = useNavigate();
-  
+  const wsRef = useRef(null);
+
   const [companyData, setCompanyData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -37,6 +38,34 @@ const StockDetail = () => {
 
   useEffect(() => {
     fetchCompanyData();
+
+    // Setup WebSocket for live updates
+    const ws = new WebSocket(WS_BASE_URL);
+    wsRef.current = ws;
+
+    ws.onmessage = (event) => {
+      try {
+        const message = JSON.parse(event.data);
+        // Listen for file_added events for this ticker's news files
+        if (
+          message.type === 'file_added' &&
+          message.data &&
+          message.data.path &&
+          (
+            message.data.path.includes(`/general/${ticker}_general.json`) ||
+            message.data.path.includes(`/financial/${ticker}_financial.json`)
+          )
+        ) {
+          fetchCompanyData();
+        }
+      } catch (err) {
+        // Ignore parse errors
+      }
+    };
+
+    return () => {
+      ws.close();
+    };
     // eslint-disable-next-line
   }, [ticker]);
 
@@ -67,7 +96,7 @@ const StockDetail = () => {
     );
   }
 
-  const { prediction, sentiment, financial, stockData, company_name } = companyData;
+  const { prediction, sentiment, financial, stockData, company_name, general_articles = [], financial_articles = [] } = companyData;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -83,7 +112,6 @@ const StockDetail = () => {
                 <ArrowLeft className="w-5 h-5" />
               </button>
               <div>
-                {/* Show full company name and ticker */}
                 <h1 className="text-2xl font-bold text-gray-900">{company_name || ticker}</h1>
                 <p className="text-sm text-gray-500">{ticker}</p>
                 <p className="text-xs text-gray-400">
@@ -95,7 +123,7 @@ const StockDetail = () => {
               {stockData && (
                 <div className="text-right">
                   <div className="text-2xl font-bold text-gray-900">
-                    ${stockData.current_price.toFixed(2)}
+                    ${stockData.current_price?.toFixed(2)}
                   </div>
                   <div className="text-sm text-gray-500">Current Price</div>
                 </div>
@@ -132,7 +160,7 @@ const StockDetail = () => {
             )}
 
             {/* Financial News Timeline */}
-            {financial && (
+            {financial && financial.articles && (
               <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                   <DollarSign className="w-5 h-5 text-blue-600" />
@@ -177,7 +205,6 @@ const StockDetail = () => {
                       {sentiment.company_sentiment.article_count}
                     </span>
                   </div>
-                  
                   {/* Distribution */}
                   <div className="pt-4 border-t">
                     <div className="text-sm font-medium text-gray-700 mb-2">Distribution</div>
@@ -195,7 +222,7 @@ const StockDetail = () => {
             )}
 
             {/* General News Timeline */}
-            {sentiment && (
+            {sentiment && sentiment.articles && (
               <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                   <Calendar className="w-5 h-5 text-purple-600" />
@@ -205,6 +232,48 @@ const StockDetail = () => {
               </div>
             )}
           </div>
+        </div>
+
+        {/* General News Feed */}
+        <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 mt-8">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">General News Feed</h3>
+          {general_articles.length === 0 ? (
+            <div className="text-gray-500">No general news articles available.</div>
+          ) : (
+            <ul className="space-y-4">
+              {general_articles.map((article, idx) => (
+                <li key={idx} className="border-b pb-2">
+                  <div className="font-bold">{article.title}</div>
+                  <div className="text-xs text-gray-500">{article.published_date || article.date}</div>
+                  <div className="text-sm text-gray-700">{article.summary || (article.content ? article.content.slice(0, 200) + '...' : '')}</div>
+                  {article.url && (
+                    <a href={article.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xs">Read more</a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {/* Financial News Feed */}
+        <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 mt-8">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">Financial News Feed</h3>
+          {financial_articles.length === 0 ? (
+            <div className="text-gray-500">No financial news articles available.</div>
+          ) : (
+            <ul className="space-y-4">
+              {financial_articles.map((article, idx) => (
+                <li key={idx} className="border-b pb-2">
+                  <div className="font-bold">{article.title}</div>
+                  <div className="text-xs text-gray-500">{article.published_date || article.date}</div>
+                  <div className="text-sm text-gray-700">{article.summary || (article.content ? article.content.slice(0, 200) + '...' : '')}</div>
+                  {article.url && (
+                    <a href={article.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xs">Read more</a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </div>

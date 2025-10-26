@@ -21,22 +21,35 @@ const SENTIMENT_DIR = path.join(__dirname, '..', 'data_processor_service', 'sent
 const FINANCIAL_DIR = path.join(__dirname, '..', 'data_processor_service', 'financial_analysis_results');
 const STOCK_DATA_DIR = path.join(__dirname, '..', 'market_data_service', 'stock_data');
 const CRAWLER_DATA_DIR = path.join(__dirname, '..', 'crawler_service', 'data', 'by_company');
+const GENERAL_ARTICLES_DIR = path.join(__dirname, '..', 'data_processor_service', 'classified_articles', 'general');
+const FINANCIAL_ARTICLES_DIR = path.join(__dirname, '..', 'data_processor_service', 'classified_articles', 'financial');
+
+
+
 
 // --- Company name mapping ---
 const COMPANY_MAP = {
   MSFT: "Microsoft Corporation",
   AAPL: "Apple Inc.",
-  GOOGL: "Alphabet Inc.",
+  GOOGL: "Alphabet Inc. (Google)",
   AMZN: "Amazon.com, Inc.",
   TSLA: "Tesla, Inc.",
-  META: "Meta Platforms, Inc.",
   NVDA: "NVIDIA Corporation",
+  BABA: "Alibaba Group Holding Limited",
+  JD: "JD.com, Inc.",
+  META: "Meta Platforms, Inc.",
   NFLX: "Netflix, Inc.",
-  BABA: "Alibaba Group",
   AMD: "Advanced Micro Devices, Inc.",
   INTC: "Intel Corporation",
   CRM: "Salesforce, Inc.",
-  UNP: "Union Pacific Corporation"
+  UNP: "Union Pacific Corporation",
+  FDX: "FedEx Corporation",
+  UPS: "United Parcel Service",
+  DPW_DE: "DHL Group",
+  XPO: "XPO Inc.",
+  GXO: "GXO Logistics",
+  CHRW: "C.H. Robinson Worldwide",
+  AMKBY: "A.P. Moller – Maersk"
 };
 // --- End company name mapping ---
 
@@ -86,7 +99,15 @@ function broadcastUpdate(type, data) {
 }
 
 // Watch for file changes
-const watchDirectories = [PREDICTIONS_DIR, SENTIMENT_DIR, FINANCIAL_DIR, STOCK_DATA_DIR];
+const watchDirectories = [
+  PREDICTIONS_DIR,
+  SENTIMENT_DIR,
+  FINANCIAL_DIR,
+  STOCK_DATA_DIR,
+  GENERAL_ARTICLES_DIR,
+  FINANCIAL_ARTICLES_DIR
+];
+
 
 watchDirectories.forEach(dir => {
   if (fs.access(dir).catch(() => false)) {
@@ -138,7 +159,15 @@ app.get('/api/predictions/daily', async (req, res) => {
     const summaryPath = path.join(PREDICTIONS_DIR, 'daily_predictions_summary.json');
     const data = await fs.readFile(summaryPath, 'utf8');
     const summary = JSON.parse(data);
-    
+
+    // Add company_name to each prediction if missing
+    if (Array.isArray(summary.predictions)) {
+      summary.predictions = summary.predictions.map(pred => ({
+        ...pred,
+        company_name: pred.company_name || (pred.ticker ? COMPANY_MAP[pred.ticker] || pred.ticker : undefined)
+      }));
+    }
+
     res.json(summary);
   } catch (error) {
     console.error('Error reading daily summary:', error);
@@ -219,10 +248,12 @@ app.get('/api/stock/:ticker', async (req, res) => {
 });
 
 // Get complete company data (all in one)
+// ...existing code...
+
 app.get('/api/company/:ticker', async (req, res) => {
   try {
     const { ticker } = req.params;
-    
+
     // Fetch all data for this company
     const [prediction, sentiment, financial, stockData] = await Promise.allSettled([
       fs.readFile(path.join(PREDICTIONS_DIR, `${ticker}_prediction.json`), 'utf8'),
@@ -230,7 +261,20 @@ app.get('/api/company/:ticker', async (req, res) => {
       fs.readFile(path.join(FINANCIAL_DIR, `${ticker}_financial_analysis.json`), 'utf8'),
       fs.readFile(path.join(STOCK_DATA_DIR, `${ticker}_stock_data.json`), 'utf8')
     ]);
-    
+
+    // --- Add: Load general and financial articles ---
+    let generalArticles = [];
+    let financialArticles = [];
+    try {
+      const generalPath = path.join(__dirname, '..', 'data_processor_service', 'classified_articles', 'general', `${ticker}_general.json`);
+      const financialPath = path.join(__dirname, '..', 'data_processor_service', 'classified_articles', 'financial', `${ticker}_financial.json`);
+      generalArticles = JSON.parse(await fs.readFile(generalPath, 'utf8'));
+      financialArticles = JSON.parse(await fs.readFile(financialPath, 'utf8'));
+    } catch (e) {
+      // If files not found, leave arrays empty
+    }
+    // --- End Add ---
+
     const result = {
       ticker,
       company_name: COMPANY_MAP[ticker] || ticker,
@@ -238,14 +282,18 @@ app.get('/api/company/:ticker', async (req, res) => {
       sentiment: sentiment.status === 'fulfilled' ? { ...JSON.parse(sentiment.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
       financial: financial.status === 'fulfilled' ? { ...JSON.parse(financial.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
       stockData: stockData.status === 'fulfilled' ? { ...JSON.parse(stockData.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
+      general_articles: generalArticles,
+      financial_articles: financialArticles
     };
-    
+
     res.json(result);
   } catch (error) {
     console.error(`Error reading company data for ${req.params.ticker}:`, error);
     res.status(500).json({ error: 'Failed to load company data' });
   }
 });
+
+// ...existing code...
 
 // Get list of available companies
 app.get('/api/companies', async (req, res) => {

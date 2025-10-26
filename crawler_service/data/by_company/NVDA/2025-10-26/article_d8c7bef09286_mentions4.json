@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/nvidia-shared-crucial-information-with-investors/",
+  "fetched_at": "2025-10-26T08:30:19.457595Z",
+  "published_date": "2025-10-26",
+  "published_datetime": "2025-10-26T08:02:00Z",
+  "title": "Nvidia Shared Crucial Information With Investors | The Motley Fool",
+  "content": "In today's video, I discuss recent updates impacting Nvidia ( NVDA +2.26% ) and other artificial intelligence (AI) companies. To learn more, check out the short video, consider subscribing, and click the special offer link below.\n\n*Stock prices used were the after-market prices of Oct. 24, 2025. The video was published on Oct. 24, 2025.",
+  "meta_description": "Nvidia released a new presentation outlining its trillion-dollar market opportunity.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 55,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 4
+    }
+  ],
+  "relevance_score": 0.8,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 4
+  }
+}

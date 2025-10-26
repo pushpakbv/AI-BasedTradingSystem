@@ -1,15 +1,23 @@
 COMPANIES = [
     {"ticker": "MSFT", "name": "Microsoft Corporation"},
     {"ticker": "AAPL", "name": "Apple Inc."},
-    {"ticker": "GOOGL", "name": "Alphabet Inc."},
+    {"ticker": "GOOGL", "name": "Alphabet Inc. (Google)"},
     {"ticker": "AMZN", "name": "Amazon.com, Inc."},
     {"ticker": "TSLA", "name": "Tesla, Inc."},
-    {"ticker": "META", "name": "Meta Platforms, Inc."},
     {"ticker": "NVDA", "name": "NVIDIA Corporation"},
+    {"ticker": "BABA", "name": "Alibaba Group Holding Limited"},
+    {"ticker": "JD", "name": "JD.com, Inc."},
+    {"ticker": "META", "name": "Meta Platforms, Inc."},
     {"ticker": "NFLX", "name": "Netflix, Inc."},
-    {"ticker": "BABA", "name": "Alibaba Group"},
     {"ticker": "AMD", "name": "Advanced Micro Devices, Inc."},
     {"ticker": "INTC", "name": "Intel Corporation"},
     {"ticker": "CRM", "name": "Salesforce, Inc."},
-    {"ticker": "UNP", "name": "Union Pacific Corporation"}
+    {"ticker": "UNP", "name": "Union Pacific Corporation"},
+    {"ticker": "FDX", "name": "FedEx Corporation"},
+    {"ticker": "UPS", "name": "United Parcel Service"},
+    {"ticker": "DPW.DE", "name": "DHL Group"},
+    {"ticker": "XPO", "name": "XPO Inc."},
+    {"ticker": "GXO", "name": "GXO Logistics"},
+    {"ticker": "CHRW", "name": "C.H. Robinson Worldwide"},
+    {"ticker": "AMKBY", "name": "A.P. Moller – Maersk"}
 ]

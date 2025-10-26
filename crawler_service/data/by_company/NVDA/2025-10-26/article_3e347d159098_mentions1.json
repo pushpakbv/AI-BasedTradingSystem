@@ -1,0 +1,41 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/2-best-ai-stocks-to-buy-before-2026-wall-street/",
+  "fetched_at": "2025-10-26T08:30:24.550619Z",
+  "published_date": "2025-10-26",
+  "published_datetime": "2025-10-26T07:55:00Z",
+  "title": "The 2 Best Artificial Intelligence (AI) Stocks to Buy Before 2026, According to Certain Wall Street Analysts | The Motley Fool",
+  "content": "Morningstar analysts earlier this month published a list of the best artificial intelligence (AI) stocks to buy now. The top two spots were awarded to Microsoft ( MSFT +0.56% ) and Taiwan Semiconductor Manufacturing ( TSM +1.46% ) . Other analysts may not classify them as the \"best\" AI stocks to buy now, but Wall Street is generally bullish.\n\nHere's what investors should know about Microsoft and Taiwan Semiconductor.\n\nMicrosoft is the largest enterprise software company in the world. While best known for its office productivity suite, the company also enjoys a leadership position in several other verticals, including business intelligence, cybersecurity, and enterprise resource planning. Microsoft is leaning into that strength to monetize artificial intelligence (AI) .\n\nThe company has introduced generative AI copilots for many of its software products. For instance, Microsoft 365 Copilot automates tasks across applications such as Word, Excel, and PowerPoint. In total, its family of copilot applications topped 100 million monthly active users in the most recent quarter, according to CEO Satya Nadella.\n\nAlso, Microsoft Azure is the second-largest public cloud , which leaves the company well positioned to benefit from demand for AI infrastructure. Indeed, cloud revenue increased by more than 30% in each of the last eight quarters, and growth accelerated to 39% in the most recent quarter, representing the fastest sales increase in the last two years.\n\nInvestors have good reason to believe Microsoft can maintain that momentum. Azure has been capacity-constrained throughout the AI boom, meaning demand for AI infrastructure has exceeded the available supply. But Microsoft is building out its data center capacity faster than any other cloud provider, according to Satya Nadella.\n\nWall Street expects Microsoft's earnings to increase at 12% annually over the next three years, which roughly matches forecasted sales growth in enterprise software. That makes the current valuation of 38 times earnings look expensive. Personally, I would wait for a better entry point before buying shares of Microsoft.\n\nTaiwan Semiconductor Manufacturing Company (TSMC) is the largest contract chipmaker, or semiconductor foundry, in the world as measured by revenue. Its market share climbed 6 percentage points to 71% over the past year, and more than 90% of the most advanced chips are made at its fabrication facilities.\n\nChip manufacturing is a very capital-intensive industry. But TSMC's leading revenue share lets it outspend its competitors, which has historically kept the company on the leading edge of process technology. For instance, in 2022, TSMC became the first foundry to move to a 3-nanometer fabrication process, and it will begin making 2-nanometer chips in volume by year's end.\n\nTSMC's ability to consistently deliver smaller, more powerful, and more power-efficient chips not only affords the company pricing power but has also made it the manufacturer of choice for technology companies like Apple , Broadcom , Nvidia , and Qualcomm . In turn, TSMC has been a major winner from demand for artificial intelligence infrastructure, and barring serious execution mistakes, no company is likely to challenge its dominance in the near future.\n\nWall Street expects earnings to increase at 21% annually through 2026. That makes the current valuation of 30 times earnings look reasonable, especially since TSMC beat the consensus estimate by an average of 5% over the last six quarters. Investors who want exposure to the AI hardware industry should consider buying a small position today.",
+  "meta_description": "Most Wall Street analysts see material upside in Microsoft and Taiwan Semiconductor Manufacturing Company.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 556,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 16
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.45685279187817257,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 1
+  }
+}
