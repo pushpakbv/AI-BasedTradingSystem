@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/nvidia-stock-vs-tesla-stock-certain-wall-street-an/",
+  "fetched_at": "2025-10-26T11:45:26.292469Z",
+  "published_date": "2025-10-26",
+  "published_datetime": "2025-10-26T10:45:00Z",
+  "title": "Nvidia Stock vs. Tesla Stock: Certain Wall Street Analysts Say Buy One and Sell the Other | The Motley Fool",
+  "content": "The market is often skeptical of Wall Street analyst ratings because many of these analysts work at investment banks hoping to get business from the companies they cover.\n\nThis is why it's more rare than not for analysts to assign sell ratings to stocks they cover unless there is a very clear reason or the analyst has a very clear thesis. But the power of Wall Street analysts becomes more apparent when you look at the consensus, which is an average of their collective ratings and price targets. This can provide investors with a clearer picture of what sentiment is really like.\n\nTwo of the most heavily covered stocks on Wall Street are the artificial intelligence chip king Nvidia ( NVDA +2.26% ) and the electric vehicle and robotaxi company Tesla ( TSLA 3.36% ) . Certain Wall Street analysts say buy one and sell the other.\n\nGiven Nvidia's margins, performance over the last three years, and importance in the AI revolution (which some are calling the fourth industrial revolution), it's easy to see why Wall Street is so bullish, despite the stock trading at a roughly $4.4 trillion market cap.\n\nAccording to TipRanks, 37 Wall Street analysts issued a research report over the past three months with one-year price targets. Of those, 35 analysts have a buy on the stock, one says hold, and one says sell, according to TipRanks. The average price target implies about 23% upside from current levels and the stock is up about 35% this year. The highest price target of $320 per share implies 75% upside.\n\nHSBC analyst Frank Lee assigned a Street-high $320 price target based on the idea that AI demand will begin to move beyond hyperscalers like companies in the \"Magnificent Seven\" to emerging AI players like OpenAI -- and Nvidia actually recently announced a $100 billion investment in OpenAI. Lee also thinks that data center demand in fiscal year 2027 will far eclipse current estimates and surpass over $350 billion.\n\nNvidia currently trades at 40 times forward earnings , and so far it's been able to generate the results to back up that valuation. In its most recent quarter, the company grew revenue 56% year over year, while diluted earnings per share surged over 60%. The bigger -- and harder-to-figure out questions -- are whether AI infrastructure demand can keep growing like it has been and whether competitors can challenge Nvidia's position and erode its massive margins. Bears are also concerned about how the company continues to invest in some of its big customers, creating what some investors view as a circular flow of money.\n\nWhile I do think AI and Nvidia will be relevant for decades to come, I'm not sure that it will be in a straight line and there could be pullbacks along the way. The company now trades at a valuation above its five-year average and has grown so much over the years, which makes driving the same kind of massive growth harder. You can continue to buy the stock as a long-term investment, but I'd recommend that investors use the strategy of dollar-cost averaging right now.\n\nTesla ( TSLA 3.36% ) continues to be the biggest battleground stock on Wall Street. Of the 37 analysts that have issued research reports over the past three months, 14 have a buy rating on the stock, 13 say hold, and 10 say sell, according to TipRanks.\n\nBut remember, a sell on Wall Street carries more weight than a buy, so to see that many sell ratings suggests there is a lot of bearish sentiment toward the stock. The average analyst price target implies roughly 18% downside from current levels. The highest price target implies 33% upside, while the low on Wall Street implies 96% downside, highlighting the divergence among analysts.\n\nThe bears would tell you that Tesla's core electric vehicle business is struggling and is operating in a tough environment for the sector in general. While Tesla has begun to get its autonomous robotaxi fleet up and running, it's still early and the bears would also say the stock price reflects too much optimism based on what the company has done so far.\n\nThe bulls, like Wedbush analyst Dan Ives, call Tesla one of, if not the most revolutionary AI business on the planet right now. Ives believes Tesla's robotaxi business could gobble up 70% of the global autonomous market over the next decade, and he also thinks Tesla's full self-driving software adoption will be very significant. Ives is also bullish on Tesla's Optimus humanoid robots, which he expects to be very popular. The longtime tech bull believes Tesla could hit a $2 trillion to $3 trillion market cap by next year in a bull-case scenario. Tesla's current market cap is roughly $1.4 trillion.\n\nTesla is a difficult stock to gauge because the valuation is not particularly meaningful right now at a whopping 240 times forward earnings. Clearly, the bet is on Tesla deploying robotaxis and humanoid robots that win significant market share in what's likely to be a massive, new market.\n\nPersonally, I tend to stay away from stocks like this because so much success is baked into the stock price already and it is still unclear what exactly will happen. This makes the risk-reward proposition unattractive in my opinion.",
+  "meta_description": "Nvidia and Tesla are two of the most covered stocks on Wall Street.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 883,
+  "matched_companies": [
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 16
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 9
+    }
+  ],
+  "relevance_score": 0.4093886462882096,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 9
+  }
+}

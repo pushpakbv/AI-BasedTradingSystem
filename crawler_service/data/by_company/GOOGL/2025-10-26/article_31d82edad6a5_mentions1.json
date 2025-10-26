@@ -1,0 +1,47 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/is-this-ai-rally-sustainable-or-just-another-bubbl/",
+  "fetched_at": "2025-10-26T11:45:24.049335Z",
+  "published_date": "2025-10-26",
+  "published_datetime": "2025-10-26T10:30:00Z",
+  "title": "Is This AI Rally Sustainable or Just Another Bubble in Disguise? | The Motley Fool",
+  "content": "The race for leadership in artificial intelligence (AI) has been ongoing since the start of 2023. As we get closer to 2026, many investors are trying to figure out how to shift their portfolio to keep up with a potentially shifting investment landscape.\n\nOne notion that emerged over the past month is that we could be in an AI-triggered stock market bubble. That's a scary notion, especially since a large chunk of the S&P 500 is made up of AI hyperscalers.\n\nAs we approach 2026, investors are wondering if this AI rally is sustainable or if this is a true bubble. I think a few easy checks can show what's going on and give investors an idea of what the market could do next year.\n\nThe AI investment trend has benefited multiple companies: construction businesses, energy companies, and AI computing providers among them. However, there's one that has benefited more than any other: Nvidia ( NVDA +2.25% ) . It makes graphics processing units (GPUs) that are widely used to train and run AI workloads.\n\nNvidia believes that capital expenditures (capex) on AI data centers will reach $600 billion this year, and rise to $3 trillion to $4 trillion by 2030. While some investors may balk at that projection, I think they need to check their ego at the door.\n\nNvidia obviously benefits from stating that there is a huge AI computing market emerging, but it also has far more information than the average investor. The chipmaker still cannot get enough hardware out the door fast enough to satisfy the demand of AI hyperscalers, so these companies are likely in contact with Nvidia years in advance of when they'll actually need the chips.\n\nThese aren't guaranteed sales, but they do provide the company with more information than the investing community has. As a result, I think investors also need to consider the case of what happens if we're not in an AI bubble and there is more room for AI-related companies to run over the next five years.\n\nNonetheless, a growing concern is that some of this promised money may not be real, and that can be traced back to one company.\n\nOpenAI, the maker of ChatGPT, has announced several landmark deals, including with Nvidia and others with its competitors, Advanced Micro Devices and Broadcom . The issue here is that the financing of these deals is murky, with some pointing toward a circular economy where each company invests in the others to fund equipment purchases. This was a huge contributing factor to the dot-com bubble that burst in the early 2000s, so investors are rightly concerned about this being an issue.\n\nHowever, they fail to realize that these are just announcements. When hardware actually starts changing hands, investors need to scrutinize financial statements to ensure that cash is actually making it to the bottom line.\n\nAnd OpenAI is just one player in this field. Other AI hyperscalers like Meta Platforms , Alphabet , Microsoft , and Amazon have real cash flow from viable businesses to fund their AI investments. All four of these companies get most of their money from non-AI businesses, so this decreases the concern about a circular economy. Furthermore, these four are the ones that are spending the most to build out AI computing capacity, and they're the ones for investors to look out for, not OpenAI.\n\nIf any of these four companies start to meaningfully pull back on AI spending, investors need to start being concerned. But with all of them either announcing or warning of impending record-setting capex for 2026, I think it's fair to say that we're not in a bubble and that AI spending will continue through 2026 (and likely beyond).",
+  "meta_description": "OpenAI's recent announcement spree has caused the market to worry about a bubble.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 619,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 6
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 1
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.20865533230293662,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Alphabet Inc. (Google)",
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "mentions": 1
+  }
+}

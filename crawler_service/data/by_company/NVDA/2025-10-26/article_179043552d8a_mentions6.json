@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/is-broadcom-stock-the-smartest-way-to-invest-in-ai/",
+  "fetched_at": "2025-10-26T11:45:28.907458Z",
+  "published_date": "2025-10-26",
+  "published_datetime": "2025-10-26T10:53:00Z",
+  "title": "Is Broadcom Stock the Smartest Way to Invest in AI Infrastructure? | The Motley Fool",
+  "content": "The artificial intelligence arms race is waging on, but in reality, the only place investors are seeing any real benefits is by investing in the AI infrastructure plays. These are areas where real money is being spent, and that's where I think most investors should be picking stocks. Since the AI arms race began in 2023, the top investment pick in this space has been Nvidia .\n\nHowever, other viable alternatives are popping up, including Broadcom ( AVGO +2.91% ) . Broadcom's product line is quite attractive and offers a viable alternative to Nvidia's chips. But is it the smartest way to invest in AI? Let's take a look.\n\nBroadcom is a much larger business than just AI. While Nvidia is focused on building its graphics processing units (GPUs) and the hardware and software to support them, Broadcom has multiple other business wings. Broadcom's product lineup includes mainframe hardware and software, virtual desktop software via its acquisition of VMware, cybersecurity software, and many other product lines. However, these divisions aren't driving Broadcom's growth; its AI division is.\n\nBroadcom has two primary AI infrastructure products: connectivity switches and custom AI accelerator chips. Connectivity switches are deployed in data centers to stitch information back together after a workload has been split up to be run on different computing units. These are critical pieces of hardware for an artificial intelligence data center, but they aren't used in as large quantities as some of Broadcom's custom AI accelerators.\n\nThe chips, which Broadcom calls XPUs, are an alternative to Nvidia's GPUs. Currently, Nvidia's GPUs are the undisputed king of accelerated computing, as they are highly flexible for multiple workloads. However, most AI data centers only see one type of workload, which means this flexibility is a wasted cost. Still, the AI hyperscalers aren't running their AI models the same way, so this flexibility is needed, even if it drives up costs for the industry.\n\nBroadcom solved this problem by directly partnering with AI hyperscalers to design a chip with the specific workload in mind. This allows Broadcom to produce more powerful and cheaper chips for its clients, which is a win-win. Not every company has signed on to this approach, so Nvidia will still be a dominant force in this industry, but Broadcom could take more market share as more AI companies deploy Broadcom's chips.\n\nOpenAI and Broadcom recently announced a 10-gigawatt deal, which showcases that Broadcom's chips are starting to become more popular. Broadcom doesn't normally announce who its clients are, but many have linked its other customers to Alphabet , Meta Platforms , and ByteDance, TikTok's parent company. However, there's also a mystery fifth customer that placed a $10 billion order for chips that many assumed to be OpenAI, which turned out to be incorrect.\n\nAs the AI arms race heats up, limited energy resources will require companies to turn to more powerful solutions at cheaper price points so that the capital pool can be spent in other places, such as building electricity capacity. This bodes well for Broadcom, but is the stock a top one to buy now?\n\nThe market is well aware of Broadcom's recent success and has bid the stock up as a result. It now trades for over 50 times forward earnings despite growing at a relatively slow 22% rate.\n\nAVGO PE Ratio (Forward) data by YCharts\n\nThis makes Broadcom's stock seem speculative, but that narrative could flip in 2026. Broadcom generated $16 billion in revenue during the third quarter of its fiscal 2025 (ended Aug. 3), with $5.2 billion coming from its AI product lineup. AI revenue increased at a 63% pace, so this is clearly the growth driver for the company. As Broadcom's business grows to become further concentrated into AI, this could accelerate its companywide growth rate and justify its current premium valuation.\n\nBroadcom is a smart way to invest in the AI arms race, as it's going to benefit from a strategy shift from some of the biggest spenders in this space . This makes it an excellent stock pick, and I think it could outperform its peers significantly over the next few years.",
+  "meta_description": "Broadcom's custom AI accelerator chips are starting to become more popular.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 689,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 6
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.14685314685314685,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 6
+  }
+}

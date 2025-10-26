@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/billionaires-bill-ackman-izzy-englander-and-david/",
+  "fetched_at": "2025-10-26T11:45:24.628017Z",
+  "published_date": "2025-10-26",
+  "published_datetime": "2025-10-26T10:32:00Z",
+  "title": "Billionaires Bill Ackman, Izzy Englander, and David Tepper Own These 2 Quantum Computing Stocks. Should You? | The Motley Fool",
+  "content": "You might have heard the phrase \"smart money.\" The idea is that knowledgeable people are collectively making similar decisions. For example, someone could say, \"The smart money is betting big on [fill in the blank with an up-and-coming technology].\"\n\nIs the smart money investing in quantum computing these days? In a sense, they are. As a case in point, billionaires Bill Ackman , Israel \"Izzy\" Englander , and David Tepper own the same two quantum computing stocks.\n\nNo, you won't find up-and-coming quantum computing stars such as D-Wave Quantum , IonQ , or Rigetti Computing among the holdings of these three billionaire investors. However, they do hold stakes in two quantum computing giants.\n\nAckman's Pershing Square Capital Management hedge fund owns only 12 stocks, representing 11 companies. His portfolio includes two share classes of Google parent Alphabet ( GOOG +2.67% ) ( GOOGL +2.73% ) . In the second quarter of 2025, Ackman also loaded up on Amazon ( AMZN +1.43% ) .\n\nEnglander's Millennium Management portfolio is much more diversified, with 3,928 holdings. Included in the long list of stocks and exchange-traded funds (ETFs) owned by Englander are Alphabet's class A and class C shares and Amazon.\n\nTepper's Appaloosa hedge fund is more focused than Millennium Management, but not to the same extent as Pershing Square. It owns 38 stocks. Both Alphabet class C shares and Amazon rank in Tepper's top eight positions.\n\nAlphabet's Google Quantum AI recently announced that its Willow quantum chip achieved \"verifiable quantum advantage\" on hardware for the first time ever. Quantum advantage is a term used to describe when a quantum computer can perform a task that the most powerful classical supercomputers couldn't handle in a reasonable timeframe.\n\nEarlier this year, Amazon Web Services (AWS) unveiled its new prototype Ocelot quantum computing chip. The company said that Ocelot can cut the costs of quantum error correction by up to 90% versus current methods. AWS believes its new chip could speed up the development of quantum computing applications for real-world use cases.\n\nOf course, Alphabet and Amazon offer a lot more than quantum computing. It's probably fair to say that Ackman, Englander, and Tepper focused on the two companies' other businesses much more than they did on quantum computing when they bought the stocks.\n\nAWS is the top cloud services provider. Alphabet's Google Cloud ranks No. 3, but it's the fastest-growing major cloud unit. Both Amazon and Alphabet are leaders in artificial intelligence (AI). Both have self-driving car units.\n\nEach of these two companies also dominates its initial core markets. Alphabet's Google Search reigns as the king of search engines. Amazon is the 800-pound gorilla in e-commerce .\n\nI don't know if either Alphabet or Amazon will become the biggest winners in quantum computing. There's significant competition in this space. One of the smaller players could end up topping all of the big contenders.\n\nHowever, I think Ackman, Englander, and Tepper are smart to invest in Alphabet and Amazon. Both companies should have tremendous growth prospects. Their cloud businesses are already enjoying a strong AI tailwind that I expect will continue for years to come.\n\nAlphabet and Amazon should have more room to run in their other core businesses as well. Despite worries that generative AI could present a huge threat to Google Search, the unit's advertising revenue continues to grow robustly. Amazon still has significant growth potential in e-commerce as it chips away at the market share of brick-and-mortar stores.\n\nNew markets also present growth opportunities for each company. For example, Alphabet's Waymo unit is already the leader in the robotaxi market. Amazon plans to soon launch a new satellite internet service using its Project Kuiper satellite network. And maybe, just maybe, one or both of these companies could emerge as a huge winner in quantum computing down the road.\n\nShould you own Alphabet and Amazon, too? I think so.",
+  "meta_description": "These giant companies offer quantum computing and much more.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 646,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 21
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 18
+    }
+  ],
+  "relevance_score": 0.8666666666666667,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Alphabet Inc. (Google)",
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "mentions": 21
+  }
+}
