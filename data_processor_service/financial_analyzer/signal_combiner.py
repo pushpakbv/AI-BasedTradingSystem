@@ -230,6 +230,7 @@ class SignalCombiner:
                 # Add metadata
                 full_prediction = {
                     'ticker': ticker,
+                    'company_name': ticker_to_name.get(ticker, ticker),
                     'date': datetime.utcnow().strftime('%Y-%m-%d'),
                     'prediction': prediction,
                     'data_sources': {

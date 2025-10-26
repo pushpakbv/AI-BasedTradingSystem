@@ -1,3 +1,4 @@
+// ...existing imports...
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
@@ -24,19 +25,19 @@ const StockDetail = () => {
     try {
       setLoading(true);
       setError(null);
-      
       const response = await axios.get(`${API_BASE_URL}/company/${ticker}`);
       setCompanyData(response.data);
       setLastUpdate(new Date());
       setLoading(false);
     } catch (err) {
-      setError(err.message);
+      setError(err.message || 'Failed to fetch company data');
       setLoading(false);
     }
   };
 
   useEffect(() => {
     fetchCompanyData();
+    // eslint-disable-next-line
   }, [ticker]);
 
   if (loading) {
@@ -44,7 +45,7 @@ const StockDetail = () => {
       <div className="flex items-center justify-center h-screen">
         <div className="text-center">
           <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading {ticker} data...</p>
+          <p className="text-gray-600">Loading company data...</p>
         </div>
       </div>
     );
@@ -66,7 +67,7 @@ const StockDetail = () => {
     );
   }
 
-  const { prediction, sentiment, financial, stockData } = companyData;
+  const { prediction, sentiment, financial, stockData, company_name } = companyData;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -82,8 +83,10 @@ const StockDetail = () => {
                 <ArrowLeft className="w-5 h-5" />
               </button>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">{ticker}</h1>
-                <p className="text-sm text-gray-500">
+                {/* Show full company name and ticker */}
+                <h1 className="text-2xl font-bold text-gray-900">{company_name || ticker}</h1>
+                <p className="text-sm text-gray-500">{ticker}</p>
+                <p className="text-xs text-gray-400">
                   Last updated: {lastUpdate?.toLocaleString()}
                 </p>
               </div>

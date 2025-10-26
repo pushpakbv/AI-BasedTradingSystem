@@ -51,48 +51,34 @@ const PredictionCard = ({ prediction }) => {
 
   return (
     <div className={`${config.bg} border-2 ${config.border} rounded-lg p-6`}>
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <div className={`${config.text} p-4 bg-white rounded-lg shadow-sm`}>
-            <Icon className="w-8 h-8" />
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900">{config.label}</h2>
-            <p className="text-gray-600 mt-1">AI Trading Signal</p>
-          </div>
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          {/* Show full company name and ticker */}
+          <span className="text-lg font-bold text-gray-900">
+            {prediction.company_name || prediction.ticker}
+          </span>
+          <span className="ml-2 text-xs text-gray-500">{prediction.ticker}</span>
         </div>
-        
-        <div className="text-right">
-          <div className={`text-4xl font-bold ${config.text}`}>
-            {pred.combined_score > 0 ? '+' : ''}
-            {(pred.combined_score * 100).toFixed(1)}%
-          </div>
-          <p className="text-sm text-gray-600 mt-1">Signal Strength</p>
+        <div className={`${config.text} p-2 bg-white rounded-lg shadow-sm`}>
+          <Icon className="w-8 h-8" />
         </div>
       </div>
-
-      <div className="mt-6 pt-6 border-t border-gray-300">
-        <div className="grid grid-cols-3 gap-4">
-          <div>
-            <p className="text-sm text-gray-600 mb-1">Direction</p>
-            <p className={`text-lg font-bold ${config.text}`}>{pred.direction}</p>
-          </div>
-          <div>
-            <p className="text-sm text-gray-600 mb-1">Confidence</p>
-            <p className="text-lg font-bold text-gray-900">{pred.confidence_level}</p>
-          </div>
-          <div>
-            <p className="text-sm text-gray-600 mb-1">Date</p>
-            <p className="text-lg font-bold text-gray-900">{prediction.date}</p>
-          </div>
-        </div>
+      <h2 className={`text-2xl font-bold mb-2 ${config.text}`}>{config.label}</h2>
+      <div className="mb-2">
+        <span className="text-xs text-gray-500 mr-2">Direction:</span>
+        <span className={`font-semibold ${config.text}`}>{pred.direction}</span>
       </div>
-
-      <div className="mt-4 p-4 bg-white rounded-lg">
-        <p className="text-sm text-gray-700 leading-relaxed">
-          <span className="font-semibold">Analysis: </span>
-          {pred.reasoning}
-        </p>
+      <div className="mb-2">
+        <span className="text-xs text-gray-500 mr-2">Confidence:</span>
+        <span className="font-semibold">{pred.confidence_level}</span>
+      </div>
+      <div className="mb-2">
+        <span className="text-xs text-gray-500 mr-2">Score:</span>
+        <span className="font-semibold">{(pred.combined_score * 100).toFixed(1)}</span>
+      </div>
+      <div className="mb-2">
+        <span className="text-xs text-gray-500 mr-2">Reasoning:</span>
+        <span className="text-sm text-gray-700">{pred.reasoning}</span>
       </div>
     </div>
   );

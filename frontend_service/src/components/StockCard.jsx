@@ -7,7 +7,7 @@ import {
 
 const StockCard = ({ stock }) => {
   const [expanded, setExpanded] = useState(false);
-  const { ticker, prediction, data_sources } = stock;
+  const { ticker, prediction, data_sources, company_name } = stock;
 
   const signalConfig = {
     'STRONG_BUY': {
@@ -65,10 +65,16 @@ const StockCard = ({ stock }) => {
             <Icon className="w-6 h-6" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-gray-900">{ticker}</h3>
-            <span className={`text-sm font-semibold ${config.text}`}>
-              {config.label}
-            </span>
+            {/* Show full company name and ticker */}
+            <h3 className="text-lg font-bold text-gray-900">
+              {company_name || ticker}
+            </h3>
+            <span className="text-xs text-gray-500">{ticker}</span>
+            <div>
+              <span className={`text-sm font-semibold ${config.text}`}>
+                {config.label}
+              </span>
+            </div>
           </div>
         </div>
         <div className="text-right">

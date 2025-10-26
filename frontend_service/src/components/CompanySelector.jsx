@@ -15,6 +15,7 @@ const CompanySelector = ({ currentTicker }) => {
     const fetchCompanies = async () => {
       try {
         const response = await axios.get(`${API_BASE_URL}/companies`);
+        // Expecting response.data.companies to be array of { ticker, company_name }
         setCompanies(response.data.companies);
       } catch (error) {
         console.error('Failed to fetch companies:', error);
@@ -24,8 +25,9 @@ const CompanySelector = ({ currentTicker }) => {
     fetchCompanies();
   }, []);
 
-  const filteredCompanies = companies.filter(ticker =>
-    ticker.toLowerCase().includes(search.toLowerCase())
+  const filteredCompanies = companies.filter(company =>
+    company.ticker.toLowerCase().includes(search.toLowerCase()) ||
+    (company.company_name && company.company_name.toLowerCase().includes(search.toLowerCase()))
   );
 
   const handleSelect = (ticker) => {
@@ -34,13 +36,18 @@ const CompanySelector = ({ currentTicker }) => {
     setSearch('');
   };
 
+  const getCurrentCompanyName = () => {
+    const found = companies.find(c => c.ticker === currentTicker);
+    return found ? found.company_name : currentTicker;
+  };
+
   return (
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 flex items-center gap-2 min-w-[150px]"
       >
-        <span className="font-semibold">{currentTicker || 'Select Company'}</span>
+        <span className="font-semibold">{getCurrentCompanyName() || 'Select Company'}</span>
         <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
@@ -63,15 +70,16 @@ const CompanySelector = ({ currentTicker }) => {
           {/* Company List */}
           <div className="max-h-64 overflow-y-auto">
             {filteredCompanies.length > 0 ? (
-              filteredCompanies.map(ticker => (
+              filteredCompanies.map(company => (
                 <button
-                  key={ticker}
-                  onClick={() => handleSelect(ticker)}
+                  key={company.ticker}
+                  onClick={() => handleSelect(company.ticker)}
                   className={`w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${
-                    ticker === currentTicker ? 'bg-blue-50 text-blue-600 font-semibold' : ''
+                    company.ticker === currentTicker ? 'bg-blue-50 text-blue-600 font-semibold' : ''
                   }`}
                 >
-                  {ticker}
+                  <span className="font-bold">{company.company_name}</span>
+                  <span className="ml-2 text-xs text-gray-500">{company.ticker}</span>
                 </button>
               ))
             ) : (

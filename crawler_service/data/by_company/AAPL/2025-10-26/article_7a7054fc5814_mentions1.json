@@ -1,0 +1,53 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/nvidia-has-95-of-portfolio-invested-in-2-ai-stocks/",
+  "fetched_at": "2025-10-26T07:57:36.323685Z",
+  "published_date": "2025-10-26",
+  "published_datetime": "2025-10-26T07:35:00Z",
+  "title": "Nvidia Has 95% of Its Portfolio Invested in 2 Artificial Intelligence (AI) Stocks | The Motley Fool",
+  "content": "Nvidia ( NVDA +2.25% ) is the industry standard in artificial intelligence (AI) infrastructure. The chipmaker not only leads the market for AI accelerators with its graphics processing units (GPUs), but also leads the market for generative AI networking equipment.\n\nForrester Research analysts write, \"Nvidia sets the pace for AI infrastructure worldwide. Without Nvidia's GPUs, modern AI wouldn't be possible.\" So, the chipmaker presumably has a good read on how the industry will evolve and it has chosen to back CoreWeave ( CRWV +7.33% ) and Arm Holdings ( ARM +2.45% ) .\n\nSpecifically, Nvidia reported owning $4.3 billion in stocks on its most recent Form 13F . Of that total, 91% was invested in data center operator CoreWeave, and 4% was invested in semiconductor company Arm. Nvidia also works with both companies in some capacity, which further underscores its conviction.\n\nHere's what investors should know about CoreWeave and Arm.\n\nCoreWeave provides cloud infrastructure and software services from data centers purpose-built for artificial intelligence (AI) workloads. Its platform, known as a graphics processing unit (GPU) cloud, is built exclusively on Nvidia accelerators. But the relationship is mutually beneficial; CoreWeave gets early access to Nvidia chips and is often the first cloud to deploy the latest products.\n\nAdditionally, CoreWeave has also established itself as a highly adept data center operator. Traditional data centers lose as much as 65% of GPU compute capacity to system inefficiencies, whereas CoreWeave delivers up to 20% better performance than alternative clouds. Also, the company frequently submits top results at the MLPerfs, objective tests that grade AI systems across training and inference.\n\nSemiconductor-focused research firm SemiAnalysis recently ranked CoreWeave as the best AI cloud platform on the market, awarding it a higher score than Amazon , Microsoft , and Alphabet . Chief analyst Dylan Patel wrote, \"CoreWeave's product offerings set a new standard across the GPU cloud industry.\" He also said the company was a \"clear leader in GPU cloud reliability.\"\n\nCoreWeave stock currently trades at 15 times sales , a relatively reasonable valuation for a company whose revenue is forecast to increase at 127% annually through 2026. Nvidia has a great deal of conviction in the data center operator -- it recently agreed to purchase any unsold compute capacity from CoreWeave through 2032 -- so patient investors should consider buying a small position in this stock.\n\nArm is a semiconductor company that designs central processing units (CPUs) and related technologies like compute subsystems and software development tools. However, rather than selling chips, the company licenses its intellectual property to other companies that want to build custom CPUs for personal computers, data center servers, and automotive systems.\n\nArm CPUs have long been the industry standard in mobile devices due to power-efficient architecture. The company holds 99% market share in smartphone processors. However, Arm has more recently become a major player in data centers, partially for the same reason. That is, power efficient hardware helps reduce the cost of artificial intelligence .\n\nHowever, Arm also has an attractive business model. By licensing blueprints rather than selling chips, Arm gives clients the flexibility to design custom solutions. Many of the largest technology companies have found that value proposition very compelling; Apple , Amazon, Microsoft, Alphabet, and Nvidia have all designed data center server processors on Arm architecture.\n\nIn turn, the company has gained more than 10 percentage points of market share in the data center in the last three years. Importantly, more than 70,000 enterprises now run AI workloads on Arm architecture, up 14-fold since 2021. Shareholders should find that trend encouraging. Arm is clearly benefiting from increased demand for AI infrastructure, which hints at a long runway for future growth.\n\nWall Street estimates Arm's earnings will increase at 45% annually through the fiscal year that ends in March 2027. That makes the current valuation of 110 times earnings look rich, but not absurdly expensive. Investors comfortable with volatility can buy a small position today, but it would be more prudent to wait for a slightly better entry point.",
+  "meta_description": "Nvidia owns substantial positions in data center operator CoreWeave and semiconductor company Arm.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 670,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 13
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 2
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 2
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 2
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.42857142857142855,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "sector": "Technology & Manufacturing",
+    "mentions": 1
+  }
+}

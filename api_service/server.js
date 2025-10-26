@@ -22,6 +22,24 @@ const FINANCIAL_DIR = path.join(__dirname, '..', 'data_processor_service', 'fina
 const STOCK_DATA_DIR = path.join(__dirname, '..', 'market_data_service', 'stock_data');
 const CRAWLER_DATA_DIR = path.join(__dirname, '..', 'crawler_service', 'data', 'by_company');
 
+// --- Company name mapping ---
+const COMPANY_MAP = {
+  MSFT: "Microsoft Corporation",
+  AAPL: "Apple Inc.",
+  GOOGL: "Alphabet Inc.",
+  AMZN: "Amazon.com, Inc.",
+  TSLA: "Tesla, Inc.",
+  META: "Meta Platforms, Inc.",
+  NVDA: "NVIDIA Corporation",
+  NFLX: "Netflix, Inc.",
+  BABA: "Alibaba Group",
+  AMD: "Advanced Micro Devices, Inc.",
+  INTC: "Intel Corporation",
+  CRM: "Salesforce, Inc.",
+  UNP: "Union Pacific Corporation"
+};
+// --- End company name mapping ---
+
 // WebSocket clients
 const clients = new Set();
 
@@ -136,6 +154,9 @@ app.get('/api/predictions/:ticker', async (req, res) => {
     const data = await fs.readFile(filePath, 'utf8');
     const prediction = JSON.parse(data);
     
+    // Add company name
+    prediction.company_name = COMPANY_MAP[ticker] || ticker;
+
     res.json(prediction);
   } catch (error) {
     console.error(`Error reading ${req.params.ticker}:`, error);
@@ -151,6 +172,9 @@ app.get('/api/sentiment/:ticker', async (req, res) => {
     const data = await fs.readFile(sentimentPath, 'utf8');
     const sentiment = JSON.parse(data);
     
+    // Add company name
+    sentiment.company_name = COMPANY_MAP[ticker] || ticker;
+
     res.json(sentiment);
   } catch (error) {
     console.error(`Error reading sentiment for ${req.params.ticker}:`, error);
@@ -166,6 +190,9 @@ app.get('/api/financial/:ticker', async (req, res) => {
     const data = await fs.readFile(financialPath, 'utf8');
     const financial = JSON.parse(data);
     
+    // Add company name
+    financial.company_name = COMPANY_MAP[ticker] || ticker;
+
     res.json(financial);
   } catch (error) {
     console.error(`Error reading financial for ${req.params.ticker}:`, error);
@@ -181,6 +208,9 @@ app.get('/api/stock/:ticker', async (req, res) => {
     const data = await fs.readFile(stockPath, 'utf8');
     const stockData = JSON.parse(data);
     
+    // Add company name
+    stockData.company_name = COMPANY_MAP[ticker] || ticker;
+
     res.json(stockData);
   } catch (error) {
     console.error(`Error reading stock data for ${req.params.ticker}:`, error);
@@ -203,10 +233,11 @@ app.get('/api/company/:ticker', async (req, res) => {
     
     const result = {
       ticker,
-      prediction: prediction.status === 'fulfilled' ? JSON.parse(prediction.value) : null,
-      sentiment: sentiment.status === 'fulfilled' ? JSON.parse(sentiment.value) : null,
-      financial: financial.status === 'fulfilled' ? JSON.parse(financial.value) : null,
-      stockData: stockData.status === 'fulfilled' ? JSON.parse(stockData.value) : null,
+      company_name: COMPANY_MAP[ticker] || ticker,
+      prediction: prediction.status === 'fulfilled' ? { ...JSON.parse(prediction.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
+      sentiment: sentiment.status === 'fulfilled' ? { ...JSON.parse(sentiment.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
+      financial: financial.status === 'fulfilled' ? { ...JSON.parse(financial.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
+      stockData: stockData.status === 'fulfilled' ? { ...JSON.parse(stockData.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
     };
     
     res.json(result);
@@ -222,8 +253,10 @@ app.get('/api/companies', async (req, res) => {
     const files = await fs.readdir(PREDICTIONS_DIR);
     const companies = files
       .filter(f => f.endsWith('_prediction.json'))
-      .map(f => f.replace('_prediction.json', ''));
-    
+      .map(f => {
+        const ticker = f.replace('_prediction.json', '');
+        return { ticker, company_name: COMPANY_MAP[ticker] || ticker };
+      });
     res.json({ companies });
   } catch (error) {
     console.error('Error reading companies:', error);
