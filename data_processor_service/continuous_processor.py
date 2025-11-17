@@ -12,8 +12,14 @@ import json
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# Add parent directory to path
-sys.path.insert(0, str(Path(__file__).parent))
+# --- BEGIN: Robust sys.path handling for Docker and local runs ---
+CUR_DIR = Path(__file__).parent.resolve()
+PROJECT_ROOT = CUR_DIR.parent
+if str(CUR_DIR) not in sys.path:
+    sys.path.insert(0, str(CUR_DIR))
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+# --- END: sys.path handling ---
 
 from article_classifier import ArticleClassifier
 from sentiment_analysis import SentimentAnalyzer
@@ -46,8 +52,8 @@ class ArticleProcessor(FileSystemEventHandler):
         self.last_processed = {}
         
         # Paths
-        self.crawler_data_dir = Path(__file__).parent.parent / "crawler_service" / "data" / "by_company"
-        self.output_dir = Path(__file__).parent / "final_predictions"
+        self.crawler_data_dir = PROJECT_ROOT / "crawler_service" / "data" / "by_company"
+        self.output_dir = CUR_DIR / "final_predictions"
         self.output_dir.mkdir(exist_ok=True)
         
     def on_created(self, event):
@@ -158,6 +164,28 @@ class ArticleProcessor(FileSystemEventHandler):
                 
             except Exception as e:
                 logger.error(f"❌ Error processing {ticker}: {e}")
+
+# --- ADDITION: Expose a function for direct triggering from other services ---
+def process_new_articles(ticker):
+    """
+    Public function to process new articles for a given ticker.
+    This can be called directly from other services (e.g., crawler).
+    """
+    try:
+        processor = ArticleProcessor()
+        logger.info(f"🔔 [External Trigger] Processing new articles for {ticker}...")
+        processor.classifier.classify_company_articles(ticker)
+        processor.sentiment_analyzer.analyze_company_sentiment(ticker)
+        processor.financial_classifier.classify_company_financial_events(ticker)
+        processor.earnings_parser.parse_company_earnings(ticker)
+        prediction = processor.signal_combiner.combine_signals(ticker)
+        output_file = processor.output_dir / f"{ticker}_prediction.json"
+        with open(output_file, 'w') as f:
+            json.dump(prediction, f, indent=2)
+        logger.info(f"✅ [External Trigger] {ticker}: Prediction saved - {prediction['prediction']['final_signal']}")
+    except Exception as e:
+        logger.error(f"❌ [External Trigger] Error processing {ticker}: {e}", exc_info=True)
+# --- END ADDITION ---
 
 
 class ContinuousProcessor:

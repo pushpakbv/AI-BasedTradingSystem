@@ -1,0 +1,23 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/27/could-amd-be-the-nvidia-of-2026/",
+  "fetched_at": "2025-10-27T10:17:45.372462Z",
+  "published_date": "2025-10-27",
+  "published_datetime": "2025-10-27T10:00:00Z",
+  "title": "Could AMD Be the Nvidia of 2026? | The Motley Fool",
+  "content": "Advanced Micro Devices ( AMD +7.62% ) hasn't fared well in the artificial intelligence (AI) race so far. It has been beaten out by one of its rivals, Nvidia ( NVDA +2.26% ) . Nvidia has captured a huge chunk of the AI computing market, with AMD only being around as a much cheaper alternative. Almost nobody was using AMD's platform.\n\nBut all that changed with the OpenAI partnership announced a few weeks ago. This announcement gave AMD a huge vote of confidence from one of the leading generative AI players, and could have a massive effect on AMD's business. But is this enough to transform AMD into the next Nvidia in 2026?\n\nOne of the reasons why Nvidia established such a massive lead over AMD is its technology stack. While Nvidia makes graphics processing units (GPUs) that are arguably better than what AMD has offered to date, this will always be a point of contention. What isn't a point of contention is Nvidia's software, which allows GPUs to achieve better performance. Nvidia's CUDA software was one of the primary reasons for its success, and AMD will need to create something to rival it.\n\nAMD's current alternative is ROCm, but it hasn't had nearly the same success as CUDA. However, OpenAI and AMD are partnering to improve this software, which could boost AMD's market position. AMD's products are known to be cheaper than Nvidia's, and if AMD can close the gap with operating software, it could be a viable alternative to Nvidia's products.\n\nTime will tell how this partnership pans out, but if it works, AMD has a ton of business to steal from Nvidia.\n\nAMD and Nvidia are on two separate quarterly calendars, with AMD operating on the standard calendar and Nvidia operating one year ahead. Although this messes with some dates, the results reported are within one month of each other, so they're close enough for comparison purposes. In second-quarter its fiscal 2026 (ended July 27), Nvidia's data center business generated $41.1 billion in revenue, up 56% year over year. This trounced AMD's data center performance, which only saw 14% year-over-year growth to $3.2 billion.\n\nAMD doesn't need to steal any of Nvidia's current AI business to be successful, either. Nvidia projects that global data center capital expenditures will reach $600 billion this year, but end up at $3 trillion to $4 trillion by 2030. That's a huge amount of growth still to come if Nvidia is right, and if AMD can win 20% of new business instead of the less than 10% it has recently won, it could easily outgrow Nvidia based on its smaller starting point.\n\nThis is a key part of the analysis of Nvidia vs. AMD. AMD doesn't necessarily need to be better than Nvidia. It just needs to be better than it has been in the past. If AMD can deliver strong growth thanks to its innovative technology stack, it could turn into one of the best-performing stocks in the market. The only problem is that AMD's stock has already baked in this growth.\n\nDuring Nvidia's run starting in 2023, it has never traded for more than 50 times forward earnings. However, following the OpenAI partnership announcement, AMD is already valued at 60 times forward earnings and doesn't have any growth to show for it.\n\nAMD PE Ratio (Forward) data by YCharts.\n\nWhen real money starts getting spent and we see this affect AMD's finances, I'll convert into a believer in AMD's stock. It may be several quarters before we see this happen, although AMD could report some positive news when it announces third-quarter earnings on Nov. 4.\n\nWith how highly valued the stock is, I think investors are OK being patient and waiting to take a position until after Q3 results are reported. There's a lot of hype surrounding AMD's stock and what it could look like a few years from now. But until actual results are experienced, I'm not confident in proclaiming AMD the next Nvidia. Nvidia is still the leader in this race by far.",
+  "meta_description": "AMD's recent OpenAI partnership has turned around AMD sentiment.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 675,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 24
+    }
+  ],
+  "relevance_score": 0.5179856115107914,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

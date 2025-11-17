@@ -2,10 +2,10 @@
 scrapy>=2.11.0
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
-
+watchdog
 # HTTP and requests
 requests>=2.31.0
-
+transformers
 # Configuration
 pyyaml>=6.0
 
@@ -13,7 +13,7 @@ pyyaml>=6.0
 html5lib>=1.1
 cssselect>=1.2.0
 parsel>=1.8.0
-
+torch
 # Date parsing
 python-dateutil>=2.8.2
 

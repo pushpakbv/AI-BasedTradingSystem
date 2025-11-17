@@ -1,0 +1,35 @@
+{
+  "url": "https://www.cnbc.com/2025/11/11/european-markets-on-novpoint11-stoxx-600-ftse-cac-dax.html",
+  "fetched_at": "2025-11-11T15:19:35.825983Z",
+  "published_date": "2025-11-11",
+  "published_datetime": "2025-11-11T06:18:56Z",
+  "title": "Europe stocks higher; Swiss stocks rise on optimism over possible reduction in U.S. tariffs",
+  "content": "LONDON — European stocks maintained their positive momentum on Tuesday as an end to the U.S. government shutdown is in sight.\n\nThe pan-European Stoxx 600 index was up 0.6% by 12:20 p.m. in London (7:20 a.m. ET), with most major bourses and sectors in positive territory.\n\nThe U.K.'s FTSE index hit a new record high on Monday, up 0.8% for the session, while Germany's DAX was last seen trading just below the flatline. France's CAC 40 gained 0.7% and Italy's FTSE MIB stood 0.8% higher.\n\nShares of Swiss companies traded higher as the country appeared to be close to clinching a deal with the U.S. to lower tariffs. Switzerland's luxury sector saw initial gains, with Richemont up 1.5%, while Swatch Group advanced 4.6% and Givaudan rose 1.6%. Overall, Switzerland's SMI was up 1.1% in early afternoon trade.\n\nIn earnings news, Vodafone gained 5.5% after reporting total revenues of 19.6 billion euros ($22.7 billion) for the first half of the fiscal year 2026, reflecting a 7.3% increase. The London-listed telecoms group said it was increasing its dividend, and would reach the upper end of fiscal year 2026 profit guidance, boosted in part by growth in Germany, its largest market.\n\nMeanwhile, the pound fell against the dollar after a surprise slowdown in U.K. wage growth to 4.6% in the third quarter. Sterling was last seen down 0.17% against the greenback at $1.315. Yields in U.K. government bonds, known as gilts, also fell across all maturities, with the 10-year benchmark falling more than 6 basis points to 4.398%.\n\nOn Monday night, the U.S. Senate passed a bill to fund the federal government through January and end the longest shutdown in U.S. history.\n\nThe bill, which passed 60-40 with support from a handful of Democratic senators and nearly all Republicans, will be sent to the House of Representatives . If it passes the House, the bill will head to President Donald Trump to be signed into law.\n\nU.S. stock futures were near the flatline on Tuesday while Asia-Pacific markets traded mixed, boosted by gains on Wall Street on Monday amid revived optimism around artificial intelligence that prompted Nvidia , Google parent Alphabet and Microsoft stocks to rally.\n\nEarnings reports in Europe on Tuesday come from Softbank , Nebius , Munich Re, and CEZ Group.\n\n— CNBC's Dan Mangan and Kevin Breuninger contributed to this market report.\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "European stocks maintained their positive momentum as an end to the U.S. government shutdown is in sight.",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 452,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 2
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.12422360248447205,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

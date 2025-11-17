@@ -1,0 +1,23 @@
+{
+  "url": "https://www.cnbc.com/2025/11/11/stocks-making-the-biggest-moves-premarket-nvda-psky-rgti.html",
+  "fetched_at": "2025-11-11T15:19:13.359531Z",
+  "published_date": "2025-11-11",
+  "published_datetime": "2025-11-11T13:27:06Z",
+  "title": "Stocks making the biggest moves premarket: Nvidia, Paramount Skydance, Rigetti Computing & more",
+  "content": "Got a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "These are the stocks posting the largest moves in the premarket.",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 60,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.17857142857142858,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

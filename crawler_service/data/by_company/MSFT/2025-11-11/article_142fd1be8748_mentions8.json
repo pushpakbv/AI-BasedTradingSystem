@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2025/11/11/what-one-best-tech-stocks-own-next-5-years/",
+  "fetched_at": "2025-11-11T15:19:48.619442Z",
+  "published_date": "2025-11-11",
+  "published_datetime": "2025-11-11T15:06:33Z",
+  "title": "What Is One of the Best Tech Stocks to Own for the Next 5 Years? | The Motley Fool",
+  "content": "Investors don't need to chase risky small-cap stocks to ride the artificial intelligence (AI) boom. Big tech companies are the ones driving the adoption of artificial intelligence . Microsoft ( MSFT 0.08% ) stock has offered a total return of 150% over the last five years, outperforming the S&P 500 's 108% return. The stock can beat the index again over the next five years due to the momentum in its cloud computing business.\n\nMicrosoft's Azure enterprise cloud business is a key catalyst for its stock right now, mostly due to surging demand for AI cloud services. Growth in Azure was the primary contributor to Microsoft's cloud revenue growth last quarter, which grew 26% year over year to $49 billion. Total revenue grew 18% over the year-ago quarter, reaching nearly $78 billion.\n\nThis is impressive growth considering that Microsoft may have left some revenue on the table due to limited data center capacity. As more capacity comes online, Microsoft could see accelerating growth in its cloud business. Management said it is on track to increase total capacity by 80% this year.",
+  "meta_description": "This well-known computing brand can help you profit off of the next industrial revolution.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 181,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 8
+    }
+  ],
+  "relevance_score": 0.5607476635514018,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "sector": "Technology",
+    "mentions": 8
+  }
+}

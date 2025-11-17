@@ -1,0 +1,23 @@
+{
+  "url": "https://www.cnbc.com/2025/11/11/big-short-investor-michael-burry-accuses-ai-hyperscalers-of-artificially-boosting-earnings.html",
+  "fetched_at": "2025-11-11T15:19:27.259230Z",
+  "published_date": "2025-11-11",
+  "published_datetime": "2025-11-11T14:26:22Z",
+  "title": "'Big Short' investor Michael Burry accuses AI hyperscalers of artificially boosting earnings",
+  "content": "Michael Burry, the investor made famous by \"The Big Short\" who recently roiled the market with a tech short bet, is accusing some of America's largest technology companies of using aggressive accounting to pad their profits from the artificial intelligence boom.\n\nIn a post on X Monday , the Scion Asset Management founder alleged that \"hyperscalers\" — the major cloud and AI infrastructure providers — are understating depreciation expenses by estimating that chips will have a longer life cycle than is realistic.\n\n\"Understating depreciation by extending useful life of assets artificially boosts earnings - one of the more common frauds of the modern era,\" Burry wrote. \"Massively ramping capex through purchase of Nvidia chips/servers on a 2-3 yr product cycle should not result in the extension of useful lives of compute equipment. Yet this is exactly what all the hyperscalers have done.\"\n\nBurry estimated that from 2026 through 2028, the accounting maneuver would understate depreciation by about $176 billion, inflating reported earnings across the industry. He singled out Oracle and Meta Platforms, saying their profits could be overstated by roughly 27% and 21%, respectively, by 2028.\n\nCNBC has reached out to Oracle and Meta for comments. Nvidia declined to comment. Burry's accusation is a serious one, but could be hard to prove because of the leeway companies are given in estimating depreciation. CNBC was not independently able to confirm this practice was being done by the companies.\n\nWhen paying for a large asset upfront — like semiconductors, servers, etc — a company is then allowed under generally accepted accounting principles (GAAP) to spread out the cost of that asset as a yearly expense that is based on the company's estimate of how rapidly that asset depreciates in value. If companies estimate a longer life cycle for the asset, they can then lower the yearly depreciation expense that hits the bottom line.\n\nBurry, who famously bet against subprime mortgages before the 2008 financial crisis, has warned this year that AI enthusiasm resembles the late-1990s tech bubble.\n\nBurry last week revealed seemingly fresh wagers against AI favorites Nvidia and Palantir Technologies . He disclosed put options with a notional value of about $187 million against Nvidia and $912 million against Palantir as of Sept. 30, according to a regulatory filing. The filing didn't specify the strike prices or expiration dates of the contracts.\n\nThe disclosure prompted a sharp reaction from Palantir CEO Alex Karp, who called Burry's wagers \"super weird\" and \"batsh-- crazy.\" It's not clear whether he still holds those positions or whether they were just a hedge.\n\nShares of Nvidia rebounded nearly 6% Monday after dropping 7% last week. Palantir saw shares pop almost 9% Monday following a 11% sell-off last week. Nvidia was lower again on Tuesday.\n\nBurry said in his X post that \"more detail\" was coming on Nov. 25 and that readers should \"stay tuned.\"\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "Burry alleged that \"hyperscalers\" are artificially boosting earnings by extending the useful life of their computer equipment.",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 538,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 7
+    }
+  ],
+  "relevance_score": 0.18518518518518517,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

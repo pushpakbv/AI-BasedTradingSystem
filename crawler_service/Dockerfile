@@ -2,23 +2,14 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Copy requirements first
-COPY crawler_service/requirements.txt /app/
+# Copy crawler_service code
+COPY crawler_service/ ./crawler_service
 
-# Install dependencies
-RUN pip install --no-cache-dir \
-    --timeout 300 \
-    --retries 5 \
-    -r requirements.txt
-
-# Copy application code
-COPY crawler_service/ /app/crawler_service/
-
-# Create data directories
-RUN mkdir -p /app/crawler_service/data/by_company \
-    /app/crawler_service/data/by_date \
-    /app/crawler_service/config
+# Copy data_processor_service code so it can be imported
+COPY data_processor_service/ ./data_processor_service
 
 WORKDIR /app/crawler_service
+
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["python", "continuous_crawler.py"]

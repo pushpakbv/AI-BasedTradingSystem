@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/27/3-artificial-intelligence-stocks-to-buy-and-hold-t/",
+  "fetched_at": "2025-10-27T10:17:37.892968Z",
+  "published_date": "2025-10-27",
+  "published_datetime": "2025-10-27T09:45:00Z",
+  "title": "3 Artificial Intelligence Stocks to Buy and Hold Through 2035 | The Motley Fool",
+  "content": "If you're looking for artificial intelligence (AI) stocks to hold for the next decade, you're going to want to find ones with leadership positions and strong moats. Let's look at three stocks that fit that bill.\n\nWhen looking for market leaders with wide moats, it would be foolish not to start with Nvidia ( NVDA +2.25% ) . The company captured an incredible 94% market share in its fiscal second quarter with its graphics processing units (GPUs) , which are the primary chips being used to power AI infrastructure.\n\nNvidia's moat comes not from having the most powerful chips, but from the ecosystem it has designed around them. This starts with its CUDA software platform, which it created as a way to let developers easily program its chips for tasks outside their original purpose. GPUs were actually developed to help speed up graphics rendering in video games, hence the name, but early on, Nvidia saw they had potential beyond this market.\n\nWhile other markets were admittedly slow to develop for GPUs, the company smartly seeded CUDA into universities and research labs that were doing early work on AI. This led to most foundational AI code being written on CUDA for its chips, and most developers having been trained on CUDA. This dynamic not only helps its chips' performance, but also makes it extremely difficult to switch.\n\nNvidia didn't stop there, though. It created a proprietary interconnect system called NVLink that allows its chips to essentially act as a single unit, making them more powerful. Through its acquisition of Mellanox, meanwhile, it added important networking components, which now let it provide end-to-end solutions it calls AI factories. Networking has actually been a huge growth driver for the company, with its data center networking revenue nearly doubling last quarter.\n\nWith AI infrastructure spending expected to continue to rise over the next decade, Nvidia remains very well positioned to be a big winner.\n\nPerhaps no stock has built as wide a moat in the tech space as ASML ( ASML 0.32% ) . The company has a true monopoly on extreme ultraviolet lithography (EUV), which is the technology used to make advanced chips. Without EUV, there would be no Nvidia GPUs powering the AI revolution, or even smartphones.\n\nSemiconductor equipment manufacturing can be a lumpy business quarter to quarter because ASML's machines are pricey and it only has a handful of customers for its most advanced machines. However, over the next 10 years, ASML is poised to see strong growth, both from the continued proliferation of advanced chips and the introduction of its newest technology, high numerical aperture (high-NA) EUV.\n\nAI should continue to power chip growth over the next decade, but new applications such as robotaxis, robotics, and quantum computing could also add to this growth during this time. Meanwhile, to shrink node sizes even further, foundries will eventually need to turn to ASML's high-NA EUV platform, which costs nearly double its EUV machines. That makes ASML an intriguing stock to own over the next decade.\n\nFoundry Taiwan Semiconductor Manufacturing ( TSM +1.46% ) is another company with a wide moat that looks poised to benefit from increasing chip demand. Today, most chipmakers don't actually manufacture their own chips. Not only is it very capital-intensive to build a fab, but it is also very technically challenging to produce advanced chips with high yields at scale.\n\nTSMC's ability to shrink nodes (the amount of transistors that fit on a chip) while maintaining high yields has set it apart in the industry. With rivals struggling with yields, TSMC has become the go-to partner for chipmakers making advanced chips. The keyword is \"partner,\" as companies like Nvidia and Apple rely on TSMC for both their chip roadmaps and to build out their future capacity needs. Its importance in the semiconductor ecosystem should not be underestimated, as it has given it strong pricing power and allowed it to expand its gross margin .\n\nAs chip demand continued to grow over the next decade, TSMC is one of the best stocks to own.",
+  "meta_description": "These three stocks have wide moats that should make them AI winners over the next decade.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 676,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 8
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.19121813031161472,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 8
+  }
+}

@@ -2,31 +2,16 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Copy requirements first
-COPY data_processor_service/requirements.txt /app/data_processor_service/
+# Copy only requirements.txt first to leverage Docker cache
+COPY requirements.txt ./
 
-# Install PyTorch CPU version (much smaller, faster download)
-RUN pip install --no-cache-dir \
-    --timeout 600 \
-    --default-timeout=600 \
-    --index-url https://download.pytorch.org/whl/cpu \
-    torch>=2.0.0
+# Install dependencies (this will be cached unless requirements.txt changes)
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install other dependencies
-RUN pip install --no-cache-dir \
-    --timeout 300 \
-    --retries 5 \
-    -r /app/data_processor_service/requirements.txt
+# Now copy the rest of your code
+COPY . .
 
-# Copy application code
-COPY data_processor_service/ /app/data_processor_service/
-
-# Create output directories
-RUN mkdir -p /app/data_processor_service/final_predictions \
-    /app/data_processor_service/sentiment_results \
-    /app/data_processor_service/financial_analysis_results \
-    /app/data_processor_service/classified_articles
-
-WORKDIR /app/data_processor_service
+# Expose a volume for final_predictions
+VOLUME ["/app/final_predictions"]
 
 CMD ["python", "continuous_processor.py"]

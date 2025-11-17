@@ -1,0 +1,23 @@
+{
+  "url": "https://www.marketwatch.com/story/a-global-polycrisis-is-looming-sparked-by-china-taiwan-and-ai-say-these-researchers-3b409cd0?mod=newsviewer_click",
+  "fetched_at": "2025-10-27T10:17:17.443941Z",
+  "published_date": "2025-10-27",
+  "published_datetime": "2025-10-27T08:40:00Z",
+  "title": "A global ‘polycrisis’ is looming, sparked by China, Taiwan and AI, say these researchers",
+  "content": "A global ‘polycrisis’ is looming, sparked by China, Taiwan and AI, say these researchers\n\nThe world is heading toward a simultaneous convergence of geopolitical, technological and economic shocks combining to bring about a system-wide global crisis around 2027, says a research paper put forward by a London-based strategic research firm.\n\nAt the center of what it calls a “polycrisis” is the fate of Taiwan control of Taiwan Semiconductor TSM , which makes chips for Nvidia NVDA and other companies on a contract basis.\n\nJules Rimmer is a markets reporter in London.Rimmer spent more than 30 years as a trader and stockbroker in financial markets, starting at Salomon Brothers in the Liar's Poker era, taking in ING Barings, Jefferies and ending it in emerging markets at Investec. He hung up his headset and pivoted to journalism in 2021.\n\nCopyright © 2025 MarketWatch, Inc. All rights reserved.",
+  "meta_description": "TSMC’s advanced semiconductors are the crux of a brewing crisis, says this intelligence firm.",
+  "status": 200,
+  "source_domain": "www.marketwatch.com",
+  "word_count": 145,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.17341040462427745,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/27/prediction-nvidia-will-form-the-5-trillion-club-be/",
+  "fetched_at": "2025-10-27T06:14:19.684464Z",
+  "published_date": "2025-10-27",
+  "published_datetime": "2025-10-27T04:00:00Z",
+  "title": "Prediction: Nvidia Will Form the $5 Trillion Club Before 2026, Followed by This \"Ten Titans\" Growth Stock in 2027 | The Motley Fool",
+  "content": "In July, Nvidia ( NVDA +2.25% ) became the first company to surpass $4 trillion in market cap , followed by Microsoft ( MSFT +0.59% ) in August . Nvidia has added to those gains, sporting a $4.46 trillion market cap at the time of this writing, but Microsoft has fallen to $3.82 trillion.\n\nNvidia, Microsoft, Apple , Alphabet , Amazon , Broadcom , Meta Platforms , Tesla , Oracle , and Netflix form the \"Ten Titans,\" which make up a staggering 39% of the S&P 500 . The \"Ten Titans\" have produced monster returns in recent years, stretching valuations. But there's still room to run for many of the Titans , including Nvidia and Microsoft.\n\nDespite its seemingly lofty valuation, Nvidia is one of the most grounded investment opportunities in today's premium-priced market . Investors often focus on Nvidia's story as a stock and the potentially life-changing gains it has delivered to long-term shareholders. But what Nvidia (the company) has done will likely be talked about in financial and tech circles for generations.\n\nIn just a few years, Nvidia went from earning a few billion in profit to $86.6 billion in trailing-12-month net income. The earnings growth has been so fast and so unexpected that the stock price has seemingly never had time to catch up. This is a drastically different dynamic from growth stocks that go up in price in anticipation of future earnings growth. And it's one that should be very encouraging for long-term investors.\n\nNvidia achieved exponential earnings growth by leveraging its expertise in gaming and data visualization for data center applications -- namely graphics processing units (GPUs) and associated software that are needed for logic and parallel processing for artificial intelligence (AI) models.\n\nGoing into 2026, the investment thesis for Nvidia is beautifully simple. Nvidia's largest customers are the hyperscalers -- companies like Amazon Web Services (AWS), Microsoft, Alphabet, OpenAI , Meta Platforms, and Oracle. As long as these companies keep accelerating spending on AI, Nvidia's earnings are sure to go up.\n\nNvidia reports third-quarter fiscal 20226 earnings on Nov. 19. Analyst consensus estimates for fiscal 2026 earnings are $4.51 and $6.43 for fiscal 2027. Based on the fiscal 2027 forecast and a stock price at the time of this writing of $184.44, Nvidia would have a price-to-earnings (P/E) ratio of just 28.7, which is more than reasonable if that forecast comes true. Slap a 40 P/E ratio on those results, and Nvidia's stock price would be $257.20, resulting in a market cap of around $6.22 trillion.\n\nNvidia hasn't stumbled in years, and there's every reason it can continue delivering on expectations with AI capital expenditures on the rise. There's always risk, but the potential reward seems worth it.\n\nMicrosoft is in a similar boat to Nvidia. Earnings are driving the stock price. And earnings are being driven by expansion into new markets. Microsoft has transitioned from a legacy software and personal computing company to arguably the single most diversified tech giant.\n\nAzure is the No. 2 cloud provider behind AWS. It has leveraged AI to improve its legacy Microsoft 365 software suite and its cloud-based applications through Dynamics, and grow GitHub and LinkedIn. Microsoft is a leader in personal computing hardware. And it no longer just sells Xbox gaming consoles. Microsoft is a gaming giant, with consoles and cross-platform content creation fueled by its $69 billion acquisition of Activision-Blizzard in 2023. The acquisition gave Microsoft highly valuable franchises, from Call of Duty to World of Warcraft and even Candy Crush .\n\nIn short, Microsoft is monetizing AI across its diversified business . And despite aggressive capital expenditures, Microsoft is proving that those investments are paying off through solid earnings and free-cash-flow growth.\n\nFor Microsoft to reach $5 trillion in market cap, the stock would have to go up around 32% from its current price. Given the valuation is reasonable, Microsoft could reach that market cap milestone simply by growing its earnings by 10% to 15% per year through 2027.\n\nWhile investors should be selective when approaching premium-priced AI growth stocks for 2026, it could be a mistake to avoid a stock just because it's expensive. The higher a stock's valuation, the more pressure there is to deliver on investor expectations. So instead of looking at a stock's price as a yardstick for whether it's overvalued or not, a better approach is to ask what could go wrong that would lead a company to fall short of expectations.\n\nNvidia and Microsoft aren't cheap, but they also seem like two of the best-positioned companies to endure a cyclical slowdown in AI, an economic downturn, or competition. I could even see Nvidia and Microsoft taking market share under these conditions or even getting the opportunity to make acquisitions at bargain-bin prices.\n\nBoth companies have high margins and rock-solid balance sheets, with significantly more cash, cash equivalents, and marketable securities than debt, providing them with the dry powder needed to navigate challenges without derailing long-term projects.\n\nAll told, long-term investors looking for well-rounded growth stocks to buy in 2026 should take a closer look at these leaders.",
+  "meta_description": "Nvidia and Microsoft are terrific buys for 2026 that are hiding in plain sight.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 849,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 22
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 20
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 5
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 2
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    },
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.863431151241535,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "sector": "Technology & Manufacturing",
+    "mentions": 1
+  }
+}

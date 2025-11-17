@@ -1,0 +1,29 @@
+{
+  "url": "https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html",
+  "fetched_at": "2025-11-11T15:19:30.672881Z",
+  "published_date": "2025-11-11",
+  "published_datetime": "2025-11-11T07:25:49Z",
+  "title": "SoftBank sells its entire stake in Nvidia for $5.83 billion",
+  "content": "SoftBank said Tuesday it has sold its entire stake in U.S. chipmaker Nvidia for $5.83 billion as the Japanese giant looks to capitalize on its \"all in\" bet on ChatGPT maker OpenAI.\n\nThe firm said in its earnings statement that it sold 32.1 million Nvidia shares in October. It also disclosed that it sold part of its T-Mobile stake for $9.17 billion.\n\n\"We want to provide a lot of investment opportunities for investors, while we can still maintain financial strength,\" said SoftBank's chief financial officer, Yoshimitsu Goto, during an investor presentation.\n\n\"So through those options and tools we make sure that we are ready for funding in a very safe manner,\" he said in comments translated by the company, adding that the stake sales were part of the firm's strategy for \"asset monetization.\"\n\nThe sale of Nvidia shares, partial sale of T-Mobile shares and the margin loan on SoftBank's holding in Arm , are all \"sources of cash that will be used to fund the $22.5 billion investment in OpenAI,\" a person familiar with the matter told CNBC. They added that this cash will fund other projects the firm is working on such as its acquisition of ABB 's robotics unit.\n\nThe offloading of the Nvidia stake had nothing to do with concerns about artificial intelligence valuations, the person said.\n\nWhile the Nvidia exit may come as a surprise to some investors, it's not the first time SoftBank has cashed out of the American AI chip darling.\n\nSoftBank's Vision Fund was an early backer of Nvidia, reportedly amassing a $4 billion stake in 2017 before selling all of its holdings in January 2019. Despite its latest sale, SoftBank's business interests remain heavily intertwined with Nvidia's.\n\nThe Tokyo-based company is involved in a number of AI ventures that rely on Nvidia's technology, including the $500 billion Stargate project for data centers in the U.S.\n\n\"This should not be seen, in our view, as a cautious or negative stance on Nvidia, but rather in the context of SoftBank needing at least $30.5bn of capital for investments in the Oct-Dec quarter, including $22.5bn for OpenAI and $6.5bn for Ampere,\" Rolf Bulk, equity research analyst at New Street Research, told CNBC.\n\nThat amounts to \"more in a single quarter than it has invested in aggregate over the two prior years combined,\" Bulk said.\n\nMorningstar's Dan Baker added that he doesn't see the move as representing a fundamental shift in strategy for the company.\n\n\"[SoftBank] made a point of saying that it wasn't any view on NVIDIA. ... At the end of the day, they are using the money to invest in other AI related companies,\" he said.\n\nThe stake sales and a blowout gain of $19 billion from SoftBank's Vision Fund helped the company double its profit in its fiscal second quarter.\n\nThe Vision Fund has been aggressively pushing into artificial intelligence, investing and acquiring firms throughout the AI value chain from chips to large language models and robotics.\n\n\"The reason we were able to have this result is because of September last year, that was the first time we invested in OpenAI,\" said SoftBank's Goto. He added that OpenAI's latest valuation milestone of $500 billion marks one of the largest valuations in the world, according to fair value.\n\nFollowing the recapitalization and SoftBank's $22.5 billion investment into the ChatGPT maker, the Japanese firm's 4% ownership of OpenAI will increase to 11%.\n\nSoftBank could \"potentially\" increase its investment in OpenAI further depending on the performance of the ChatGPT maker and the valuation of further rounds, the person familiar with the matter told CNBC.\n\nGenerally, SoftBank wouldn't want to go beyond a 40% equity ownership that would amount to a controlling stake, they said.\n\nThe Japanese conglomerate's stock has slumped in the past week as concerns of an AI bubble sent jitters through global markets.\n\n\"Our share price recently has been going up and down dynamically … we want to provide as many invest opportunities as possible,\" said Goto on Tuesday, adding that the company's announced four-for-one stock split is part of its strategy to provide as many investment opportunities for shareholders as possible.\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "SoftBank is looking to capitalize on its \"all in\" bet on ChatGPT maker OpenAI.",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 749,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 11
+    }
+  ],
+  "relevance_score": 0.21345407503234154,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 11
+  }
+}

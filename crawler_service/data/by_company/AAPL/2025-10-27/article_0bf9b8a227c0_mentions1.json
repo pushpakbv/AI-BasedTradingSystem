@@ -1,0 +1,35 @@
+{
+  "url": "https://economictimes.indiatimes.com/markets/stocks/news/asian-stocks-rally-as-trade-tensions-ease-gold-drops/articleshow/124837368.cms",
+  "fetched_at": "2025-10-27T06:14:39.835919Z",
+  "published_date": "2025-10-27",
+  "published_datetime": "2025-10-27T06:14:39.832479Z",
+  "title": "Asian stocks rally as trade tensions ease, gold drops",
+  "content": "Apple Inc. and Microsoft Corp. are among megacap tech companies reporting earnings this week.\n\nTop Trending Stocks: SBI Share Price , Axis Bank Share Price , HDFC Bank Share Price , Infosys Share Price , Wipro Share Price , NTPC Share Price\n\nTop Trending Stocks: SBI Share Price , Axis Bank Share Price , HDFC Bank Share Price , Infosys Share Price , Wipro Share Price , NTPC Share Price\n\nFrom Colaba to Crocs, a Bata rival rises. But is the lofty valuation justified?\n\nIndia’s IPO market is sizzling hot, but the message is worrisome\n\nWhat will it take for the AI bubble to pop?\n\nAir India wanted to create an IndiGo rival, instead it landed in an INR6k crore mess\n\nStock Radar: Bharat Forge stock completes classic Cup and Handle pattern; what should investors do?\n\nFor real wealth creation, just one word: Hold; 13 large- and mid-cap stocks from different sectors with upside potential of up to 42%",
+  "meta_description": "Signs of a nearing US-China trade deal sparked a broad market rally, boosting stocks, oil, and copper, while Treasuries and gold declined. Investors are anticipating a potential accord, with top negotiators reporting progress on contentious issues. This development is seen as a short-term risk-on cue, though sustainability hinges on fundamental backing.",
+  "status": 200,
+  "source_domain": "economictimes.indiatimes.com",
+  "word_count": 159,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.136986301369863,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "sector": "Technology & Manufacturing",
+    "mentions": 1
+  }
+}

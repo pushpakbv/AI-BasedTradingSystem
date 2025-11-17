@@ -1,5 +1,3 @@
-
-
 services:
   # Continuous Crawler Service
   crawler_service:
@@ -23,8 +21,8 @@ services:
   # Continuous Data Processor Service
   data_processor_service:
     build:
-      context: .
-      dockerfile: data_processor_service/Dockerfile
+      context: ./data_processor_service
+      dockerfile: Dockerfile
       args:
         BUILDKIT_STEP_LOG_MAX_SIZE: -1
         BUILDKIT_STEP_LOG_MAX_SPEED: -1
@@ -37,6 +35,8 @@ services:
       - ./data_processor_service/classified_articles:/app/data_processor_service/classified_articles
       # Mount crawler data as READ-ONLY - SHARED WITH CRAWLER
       - ./crawler_service/data:/app/crawler_service/data:ro
+      # ADD: Share final_predictions at root for API compatibility
+      - ./data_processor_service/final_predictions:/app/final_predictions
     environment:
       - PYTHONUNBUFFERED=1
       - PROCESSOR_CHECK_INTERVAL_SECONDS=60
@@ -78,6 +78,10 @@ services:
       - ./data_processor_service/sentiment_results:/app/data_processor_service/sentiment_results:ro
       - ./data_processor_service/financial_analysis_results:/app/data_processor_service/financial_analysis_results:ro
       - ./market_data_service/stock_data:/app/market_data_service/stock_data:ro
+      # ADD: Mount final_predictions at /app/data_processor_service/final_predictions for Python API compatibility
+      - ./data_processor_service/final_predictions:/app/data_processor_service/final_predictions:ro
+      # ADD: Mount final_predictions at /app/final_predictions for direct access if needed
+      - ./data_processor_service/final_predictions:/app/final_predictions:ro
     environment:
       - NODE_ENV=production
     networks:

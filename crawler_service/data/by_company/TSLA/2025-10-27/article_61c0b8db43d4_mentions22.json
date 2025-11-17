@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/27/the-secret-to-finding-the-next-tesla-is-hiding-in/",
+  "fetched_at": "2025-10-27T10:17:39.195966Z",
+  "published_date": "2025-10-27",
+  "published_datetime": "2025-10-27T09:45:00Z",
+  "title": "The Secret to Finding the Next Tesla Is Hiding in Plain Sight | The Motley Fool",
+  "content": "Every investor should want to find the next Tesla ( TSLA 3.36% ) . Even though Tesla stock still has plenty of long-term upside, its biggest days of growth are likely behind it. That's simply due to the law of large numbers.\n\nSince 2010, Tesla shares have risen in value by roughly 27,100%. If shares were to rise a similar amount starting today, the company would be worth more than $392 trillion -- several times bigger than the entire world's GDP . In other words, another rise of this magnitude is very unlikely for Tesla.\n\nFortunately, investors can replicate this rise by identifying smaller electric vehicle stocks with the potential to become the next Tesla. When conducting your search, look for one obvious characteristic that signals a company's ability to grow rapidly, just like Tesla did earlier in its history.\n\nTesla's massive growth didn't come out of nowhere. For decades, countless efforts were made to bring electric cars to market. Manufacturers ran into a litany of challenges, including high manufacturing costs, limited charging infrastructure, and lackluster consumer demand. When Tesla was founded in 2003, therefore, it was reasonable to be skeptical. Elon Musk joined a funding round in 2004, making him the company's largest shareholder.\n\nMusk was largely in charge when the company released its first car in 2009 -- a luxury sports car dubbed the Roadster that had a starting price well above $100,000. Sales were limited, with only 2,450 units sold until the model was discontinued in 2012.\n\nStill, the car attracted a slew of high-profile celebrity buyers including George Clooney, Matt Damon, and Arnold Schwarzenegger. These celebrity buyers had the funds to invest in a speculative and niche vehicle like the Roadster, which was one of the first \"cool\" electric vehicles ever produced, with performance statistics that rivaled or even succeeded other high-performance vehicles in its class.\n\nMaking a car that sells less than 3,000 units may not sound like a giant success. But it was. That's because Tesla finally made electric cars cool to own, as evidenced by its celebrity buyer list. Instead of making a practical vehicle, Musk and his team decided to simply make one that would wow people, even if the vast majority of people couldn't afford one.\n\nThe Roadster, while not generating a ton of revenue , generated a massive amount of hype. That helped Tesla raise additional funds, which it then poured into new manufacturing facilities to produce two new models: the Model X and Model S. These models were also luxury vehicles, with prices starting above $100,000. But millions of potential new buyers finally found that they could afford a Tesla. The success of these models then allowed Tesla to reinvest the proceeds into even cheaper models like the Model Y and Model 3, which have starting prices under $50,000.\n\nToday, more than 90% of Tesla's vehicle revenue comes from just two vehicles: the affordable Model 3 and Model Y. But Tesla didn't go straight to releasing those models. It first built a reputation for quality, slowly ramping up its ability to produce low-cost vehicles at a profit. And that's exactly the strategy that one small EV competitor is about to replicate.\n\nThere are many reasons to believe Rivian ( RIVN 0.84% ) is an attractive buy right now . But the biggest is that the company seems to be following Tesla's growth strategy nearly to perfection.\n\nWhen it comes to low-priced EVs, Tesla still faces very little competition in the U.S. The Model 3 and Model Y have been the best-selling EVs nationally for many years. But Rivian could soon add significant competition.\n\nThe company only has two luxury models in its lineup: the R1T and R1S. Like Tesla, these higher-priced models established a reputation of quality for the company. Last year, Rivian topped a survey done by Consumer Reports for highest owner satisfaction -- a list that included both EV and conventional automakers.\n\nOver the next few quarters, Rivian expects to begin production of its R2 model: a cheaper model with an expected price under $50,000. Two additional affordable models are expected to follow. When looking at Tesla's history, establishing a reputation for quality followed by the launch of several cheap mass market models was the secret to explosive growth . Rivian seems on track to repeat that feat.",
+  "meta_description": "One small EV maker is replicating Tesla's growth strategy.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 721,
+  "matched_companies": [
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 22
+    }
+  ],
+  "relevance_score": 0.44235924932975873,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "sector": "Automotive & Manufacturing",
+    "mentions": 22
+  }
+}

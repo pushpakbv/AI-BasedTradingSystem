@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2025/10/26/without-question-these-are-the-2-safest-quantum-co/",
+  "fetched_at": "2025-10-27T06:13:59.078580Z",
+  "published_date": "2025-10-27",
+  "published_datetime": "2025-10-27T01:18:00Z",
+  "title": "Without Question, These Are the 2 Safest Quantum Computing Stocks to Buy (Hint: Not Rigetti Computing) | The Motley Fool",
+  "content": "A small group of quantum computing stocks has taken the market by storm. For instance, one of these stocks, like Rigetti Computing , is up over 2,880% over the past year. Even in this inflated stock market, returns like this are simply unheard of. But now, after such a big run, companies like Rigetti are inherently risky because they lack material revenue and earnings right now and are a pure bet on the commercialization of quantum computers.\n\nIf it happens, Rigetti shareholders will do well. If it doesn't, then who knows? For this reason, investors should tread carefully when approaching the pure-play quantum computing stocks. However, if they want exposure to the sector in a much more conservative manner, they can buy these two quantum computing stocks instead.\n\nFor those who are unaware, quantum computing seeks to be the next evolution of the computer. While computers are built on bits, the smallest unit of digital information, quantum computers are built on qubits, which are in a state of superposition and can therefore compute solutions to problems simultaneously to come up with better answers to problems. They will also supposedly be able to solve more complex problems beyond what even some of the most powerful supercomputers are currently capable of. Of course, it's hard to tell how close the industry is to achieving the desired technology and eventual commercialization.\n\nIn February, Microsoft ( MSFT +0.59% ) unveiled its first-ever quantum computing chip, called Majorana 1. Interestingly, unlike some of its peers, the chip had eight topological qubits, which use indium arsenide, a semiconductor , and aluminum, a superconductor. Some researchers hailed Microsoft's chip as a breakthrough in the industry because the process with which Microsoft built its quantum chip makes it easier to prevent interference from noise, or errors, with the qubits, which is one of the main issues in the industry.\n\nNow, in gate-based quantum computing, the more qubits a quantum system has, the more powerful it can become, although it also becomes more prone to errors because it's hard for the qubits to maintain a state of stability. While the pure-play quantum computers have developed quantum systems with far more qubits, Microsoft said the chip it released is built to eventually fit 1 million qubits.\n\nOf course, it is very difficult for the average investor to parse through available information on Majorana and make a call about how close the system is to achieving its desired state, let alone commercialization. But that's what's great about owning Microsoft. The company has so many other strong tech businesses that have made it one of the largest companies and stocks in the world. These include Microsoft's cloud business, artificial intelligence, gaming, social media, hardware, and its suite of office tools, devices, and hardware that powers the business world. Microsoft is also expected to be a prime beneficiary of the artificial intelligence revolution , so if quantum doesn't work out, that's OK.\n\nMicrosoft and other tech stocks trade at elevated valuations, driven by AI hype, so pullbacks are always possible. But in the long term, Microsoft certainly isn't going anywhere and will likely be a part of any tech or AI revolution down the road. It's also one of the only companies with a higher bond rating than that of the U.S. government.\n\nGoogle, which is owned by parent company Alphabet ( GOOG +2.67% ) ( GOOGL +2.73% ) , released its latest quantum system, called Willow, at the end of 2024.\n\nThe system boasted an impressive 105 qubits. But perhaps the more impressive feat is Willow's ability to reduce its error rate as it scales qubits higher. At the time, researchers and scientists praised the error rates Google released to the public, but there was still skepticism regarding what real-world use cases Willow is capable of.\n\nVery recently, Willow began to show more progress. Google, in a recently released research paper, said Willow ran an algorithm on its quantum computing chip that was able to detail the structure of a molecule, which could be key for further discoveries in the medical field. Furthermore, Willow performed this task 13,000 times faster than a classic supercomputer, according to Google, the first time any quantum system has run an algorithm more powerful than what supercomputers are capable of.\n\nNow, this doesn't mean quantum computers will be in every household tomorrow, or even years from now. But the more success quantum developers show, the more funding they are likely to get, which will help the sector advance.\n\nAlphabet is another stock you can buy that will do just fine with or without quantum. While facing challenges from conversational chatbots like ChatGPT, Google is still the leader in the search space, and I suspect the company will fight hard to keep it this way. Alphabet also owns many other strong businesses with massive growth potential, like its autonomous driving business Waymo, YouTube, and Google Cloud, just to name a few. Like Microsoft, the company is also expected to benefit heavily from the AI boom.",
+  "meta_description": "Some quantum computing stocks have generated unimaginable returns over the past year.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 837,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 13
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 11
+    }
+  ],
+  "relevance_score": 0.4142692750287687,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "sector": "Technology",
+    "mentions": 11
+  }
+}
