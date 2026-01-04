@@ -8,6 +8,7 @@ import axios from 'axios';
 import StockChart from '../components/StockChart';
 import NewsTimeline from '../components/NewsTimeline';
 import PredictionCard from '../components/PredictionCard';
+import StockGraphCard from '../components/StockGraphCard';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
 const WS_BASE_URL = process.env.REACT_APP_WS_URL || 'ws://localhost:8000';
@@ -146,8 +147,9 @@ const StockDetail = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Prediction Summary */}
         {prediction && (
-          <div className="mb-8">
+          <div className="mb-8 space-y-6">
             <PredictionCard prediction={prediction} />
+            <StockGraphCard ticker={ticker} />
           </div>
         )}
 

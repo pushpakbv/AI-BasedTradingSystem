@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/3-cybersecurity-stocks-you-can-buy-and-hold-for-th/",
+  "fetched_at": "2026-01-04T14:40:16.643643Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T14:15:00Z",
+  "title": "3 Cybersecurity Stocks You Can Buy and Hold for the Next Decade | The Motley Fool",
+  "content": "A data breach can cost a company millions of dollars in damages. And the arrival of artificial intelligence (AI) increases the pressure on businesses, which could face increasingly advanced cyber threats in the future.\n\nThat's why cybersecurity has become a top spending priority for enterprises, and it's likely to remain so. Experts estimate that the global cybersecurity market, valued at about $208 billion in 2024, will swell to nearly $352 billion by 2030.\n\nAs a result, the industry presents a lucrative hunting ground for investors seeking growth stocks that can be game changers for a portfolio over the next decade or so.\n\nHere are three top cybersecurity stocks you'll want to consider buying and holding.\n\nPalo Alto Networks ( PANW 2.62% ) specializes in network security, where it's a market leader in next-generation firewalls. You could think of networks as doorways between a company's precious internal data and operations, and the outside cyberworld. A firewall sits at the door, screening all incoming and outgoing traffic for anything that looks suspicious.\n\nThe company provides security services across three primary areas: network security, security for cloud-native applications, and AI-powered security automation. It has more than 70,000 customers.\n\nPalo Alto Networks recently restructured its go-to-market strategy, shifting from selling products and services à la carte to grouping them into platforms, essentially selling them as bundles. It seems that this strategy is working well .\n\nOver the summer, the company agreed to acquire CyberArk Software for $25 billion, and it hopes to close the deal in the second half of 2026. CyberArk is a leader in identity security, providing Palo Alto Networks with a new security niche to cross-sell to its huge customer base.\n\nThe stock's price-to-earnings ratio (P/E) isn't cheap at 48 times 2025 earnings estimates. However, analysts think Palo Alto Networks will grow its earnings at an annualized rate of 19% over the long term, so it should more than grow into its valuation over the coming years.\n\nMicrosoft ( MSFT 2.28% ) may not be the first name that comes to mind when thinking about cybersecurity since the multitrillion-dollar tech company is known for so many things . Yet, it is also one of the world's leading cybersecurity providers. Its Windows and Microsoft 365 are installed on millions of computers and devices worldwide, and within that is Microsoft Defender, its cybersecurity software.\n\nAccording to Security.org, Microsoft Defender is the market's leading antivirus software with an estimated market share of 23%. Cybersecurity isn't Microsoft's top focus, but its large market footprint demonstrates the benefits of having such a deeply entrenched and widespread customer base. The company's market share in this area has declined somewhat in recent years, but it's likely to remain a key player in cybersecurity for the foreseeable future.\n\nPerhaps the best thing about Microsoft is that it's a rare tech stock that you can buy and hold without losing sleep at night. It's as blue chip as a stock as can be. Analysts anticipate that the company's earnings will grow at an annualized rate of 13% to 14% over the long term, as AI and cloud computing continue to fuel growth . That makes the stock a steady producer and a no-brainer for buy-and-hold investors.\n\nCrowdStrike Holdings ( CRWD 3.26% ) has emerged as one of the top cybersecurity companies, following a rapid trajectory over the past decade. It's one of the first next-generation cybersecurity players, providing advanced protection through the cloud rather than an installed program. The advantage is that cloud-native software can be updated and improved in real time.\n\nCrowdStrike began in endpoint security, but its Falcon platform has evolved steadily into a comprehensive one-stop shop. The company offers various products and services as modules, allowing customers to tailor the platform to their specific needs. Its technology also integrates AI and machine learning , earning it industrywide recognition for performance and leadership.\n\nThe company suffered an embarrassing outage in 2024, but despite the industry's competitive nature, it lost very little business following the incident. That shows just how sticky its services have become.\n\nAs with Palo Alto Networks, the stock isn't cheap, trading at a forward P/E of 128. That said, Wall Street anticipates 22% annualized long-term earnings growth, so the shares could still deliver strong returns over the next 10 years, especially if investors buy the dips along the way.",
+  "meta_description": "These best-of-breed stocks should deliver the goods as the cybersecurity industry enters the artificial intelligence era.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 724,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 8
+    }
+  ],
+  "relevance_score": 0.15873015873015872,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "sector": "Technology",
+    "mentions": 8
+  }
+}

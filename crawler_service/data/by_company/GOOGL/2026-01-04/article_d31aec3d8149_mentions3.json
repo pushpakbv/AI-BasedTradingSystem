@@ -1,0 +1,41 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/2-leading-tech-stocks-to-buy-in-2026/",
+  "fetched_at": "2026-01-04T15:52:50.955138Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T15:34:00Z",
+  "title": "2 Leading Tech Stocks to Buy in 2026 | The Motley Fool",
+  "content": "The stock market can be irrational at times but is generally quite good at identifying top-notch companies. That's why it's usually rare to see stocks in industry leaders trading at cheap valuations .\n\nHowever, as the old saying goes, you often get what you pay for. Except, paying out the nose for even the best stocks can lead to disappointing investment returns.\n\nOften, the best way to strike it big on obvious winners is to wait and buy when they fall out of favor with Wall Street, often due to some sort of drama or temporary adversity. Here are two prime examples.\n\nThese leading tech stocks have dominant businesses and bright growth prospects. Yet, both face some rare doubts from the broader market that have priced them as bargains that should headline your 2026 stock ideas.\n\nNow, the company is placing its most expensive bet to date. Netflix recently announced an agreement to acquire Warner Bros. from Warner Bros. Discovery in an $82.7 billion deal. It would give Netflix ownership of the Warner Bros. film and television studios, as well as the HBO channel and HBO Max streaming service .\n\nThe acquisition must still pass through regulatory review, but if it closes, it would make Netflix arguably the world's most powerful entertainment media company. Yet the stock has declined since the announcement and currently sits 30% off its all-time high. Why? Look to Netflix's post-acquisition debt, which would rise to roughly $75 billion.\n\nThe stock has dropped to a price-to-earnings ratio (P/E) of 37x full-2025 earnings estimates. Meanwhile, analysts estimate that Netflix will grow earnings at a compound annual growth rate ( CAGR ) of 24% over the long term.\n\nThat growth makes Netflix a bargain at its current price, and adding the Warner Bros. assets would further enhance Netflix's monetization possibilities. The stock seems likely to rebound once investors come around to the idea that its valuation is attractive right now.\n\nUber Technologies ( UBER +1.41% ) is another industry pioneer. These days, people don't share rides -- they call an Uber. Today, Uber is the leading ride-sharing company in the United States. It operates in a duopoly with Lyft , though Uber controls roughly three-quarters of the market. Additionally, Uber operates in approximately 70 countries worldwide.\n\nThe company continues to grow at a sizzling pace. Its revenue grew by 20% year over year in the third quarter, bringing trailing-12-month revenue to nearly $50 billion. Its profit margins are soaring as the business becomes larger. Uber has generated $8.6 billion in free cash flow over the past four quarters, more than 17% of its sales.\n\nUber's stock has increased by more than 30% over the past year, which makes it harder to argue that the stock is unpopular. Yet here I am. I'll rest my case on the stock's very cheap valuation, a price-to-earnings ratio of just 13x full-year earnings. It's hard to fathom such a low valuation for a business with Uber's highly profitable double-digit growth.\n\nWhat's going on? The market views emerging autonomous ride-sharing services, such as Tesla 's Robotaxi and Alphabet 's Waymo, as serious threats. However, Tesla's Robotaxi service has faced challenges since its launch over the summer, and Waymo, despite its impressive progress , remains relatively small, compared to Uber, which performed 3.5 billion trips in the third quarter alone.\n\nBeyond all of that, Uber is well aware of autonomous vehicles. Rather than running from a threat, Uber is embracing it as an opportunity.\n\nThe company is partnering with Nvidia and automotive companies to develop its own autonomous technology. If investors warm up to Uber, the stock, it could deliver some breathtaking returns.",
+  "meta_description": "These two winners are down, but nowhere close to out, and are two smoking-hot deals to ring in the New Year.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 609,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 3
+    },
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 2
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.14018691588785046,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Alphabet Inc. (Google)",
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "mentions": 3
+  }
+}

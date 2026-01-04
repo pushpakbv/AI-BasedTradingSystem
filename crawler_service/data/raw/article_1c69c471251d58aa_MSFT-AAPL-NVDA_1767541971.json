@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/coverage/etfs/2026/01/04/better-broad-market-etf-schwab-s-schb-vs-ishares-itot/",
+  "fetched_at": "2026-01-04T15:52:51.248874Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T15:38:03Z",
+  "title": "Better Broad-Market ETF: Schwab's SCHB vs. iShares' ITOT | The Motley Fool",
+  "content": "The Schwab U.S. Broad Market ETF ( SCHB +0.30% ) and iShares Core S&P Total U.S. Stock Market ETF ( ITOT +0.24% ) are both low-cost, ultra-diversified U.S. equity ETFs with virtually identical performance, yield, and sector allocations, but ITOT is larger and trades more heavily.\n\nBoth SCHB and ITOT aim to give investors broad exposure to the entire U.S. stock market, including large-, mid-, and small-cap companies. This comparison looks at their cost, performance, portfolio breakdown, and trading details to help investors decide which ETF may align better with their needs.\n\nBeta measures price volatility relative to the S&P 500; beta is calculated from five-year weekly returns. The 1-yr return represents total return over the trailing 12 months.\n\nSCHB and ITOT cost the same to own, each charging a minimal 0.03% expense ratio, and both offer a 1.1% dividend yield — so neither stands out on fees or payout.\n\nITOT seeks to mirror the entire U.S. equity market, holding 2,498 stocks as of late 2025. Its sector allocation is led by technology at 33%, financial services at 13%, and consumer cyclical at 10%. Top positions include Nvidia Corp ( NVDA +1.14% ) at 6.91%, Apple Inc ( AAPL 0.31% ) at 6.03%, and Microsoft Corp ( MSFT 2.28% ) at 5.41%. The fund has a long track record, with 21.9 years since inception, and no unusual strategies or quirks.\n\nSCHB tracks a similarly broad universe, with 2,408 holdings and nearly identical sector tilts — technology at 34%, financial services at 13%, and consumer cyclical at 10%. Its top three positions are also Nvidia, Apple, and Microsoft, in slightly different weights. Neither fund layers on leverage, ESG screens, or currency hedging, so their exposures are straightforward and closely aligned.\n\nFor more guidance on ETF investing, check out the full guide at this link .\n\nThe differences between the Schwab U.S. Broad Market ETF (SCHB) and iShares Core S&P Total U.S. Stock Market ETF (ITOT) are minimal, which can make choosing between them a challenge. Both are ultra-low-cost, highly diversified ETFs tracking the total U.S. stock market. In terms of performance, SCHB and ITOT offer the same dividend yield although SCHB delivered a tad bit better growth over the past five years.\n\nThe biggest difference is ITOT's larger assets under management of $80.4 billion compared to SCHB's $38.3 billion. This gives ITOT slightly more liquidity than SCHB. However, since both possess large AUMs, they are already very liquid.\n\nITOT's holdings are a bit more comprehensive, since its fund contains more holdings, but again, the difference is minimal. This makes both good broad-market ETFs, and excellent choices for a long-term, passive investment strategy.\n\nThe bottom line is that these funds are nearly identical. A key difference between ITOT and SCHB comes down to investor preference over who manages the fund, Schwab or iShares.\n\nETF: Exchange-traded fund that holds a basket of securities and trades on an exchange like a stock. Expense ratio: Annual fund fee, expressed as a percentage of assets, deducted from returns to cover operating costs. Diversified: Investing in many different securities or sectors to reduce the impact of any single holding’s performance. Dividend yield: Annual dividends per share divided by share price, showing income produced by an investment. Total return: Investment performance including price changes plus all dividends and distributions, assuming payouts are reinvested. Beta: Measure of an investment’s volatility compared with the overall market, often using the S&P 500 as benchmark. AUM (Assets under management): Total market value of all assets that a fund or manager oversees for investors. Max drawdown: Largest peak-to-trough decline in an investment’s value over a specific period, showing worst historical loss. Sector allocation: How a fund’s assets are distributed across different parts of the economy, such as technology or financials. Holdings: Individual securities, like stocks or bonds, that a fund owns within its portfolio. Trading volume: Number of shares bought and sold for a security during a given period, usually one trading day. Inception (fund inception date): The date a fund first began operating and became available for investors to buy.",
+  "meta_description": "With similar holdings and costs, the real differences between these two broad-market ETFs come down to scale and trading activity.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 678,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 3
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 3
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.19014084507042253,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

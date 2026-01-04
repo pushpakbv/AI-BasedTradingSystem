@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   # Continuous Crawler Service
   crawler_service:
@@ -53,16 +55,26 @@ services:
       context: .
       dockerfile: market_data_service/Dockerfile
     container_name: tradesystem_market_data
+    ports:
+      - "8001:8001"
     volumes:
       # Mount market data directory - BIND MOUNT for easy access
       - ./market_data_service/stock_data:/app/market_data_service/stock_data
     environment:
       - PYTHONUNBUFFERED=1
-      - MARKET_DATA_INTERVAL_HOURS=1
+      - FLASK_ENV=production
+      - FLASK_DEBUG=False
+      - PORT=8001
       - LOG_LEVEL=INFO
     networks:
       - tradesystem_network
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
   # API Service with WebSocket
   api_service:
@@ -83,7 +95,9 @@ services:
       # ADD: Mount final_predictions at /app/final_predictions for direct access if needed
       - ./data_processor_service/final_predictions:/app/final_predictions:ro
     environment:
-      - NODE_ENV=production
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+      - MARKET_DATA_SERVICE_URL=http://market_data_service:8001/api
     networks:
       - tradesystem_network
     restart: unless-stopped
@@ -101,9 +115,15 @@ services:
       - "3000:80"
     depends_on:
       - api_service
+      - market_data_service
     environment:
+      # These are for browser-side API calls (localhost works because browser is on host machine)
       - REACT_APP_API_URL=http://localhost:8000/api
+      - REACT_APP_MARKET_DATA_API=http://localhost:8001/api
       - REACT_APP_WS_URL=ws://localhost:8000
+      # IMPORTANT: For build-time API calls within container, use service names
+      - REACT_APP_INTERNAL_API_URL=http://api_service:8000/api
+      - REACT_APP_INTERNAL_MARKET_DATA_API=http://market_data_service:8001/api
     networks:
       - tradesystem_network
     restart: unless-stopped
