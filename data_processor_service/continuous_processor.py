@@ -1,32 +1,21 @@
-"""
-Continuous Data Processor
-Monitors for new articles and processes them immediately
-"""
 import os
 import sys
+import json
 import time
 import logging
 from pathlib import Path
-from datetime import datetime
-import json
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# --- BEGIN: Robust sys.path handling for Docker and local runs ---
+# Setup paths
 CUR_DIR = Path(__file__).parent.resolve()
 PROJECT_ROOT = CUR_DIR.parent
 if str(CUR_DIR) not in sys.path:
     sys.path.insert(0, str(CUR_DIR))
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-# --- END: sys.path handling ---
 
-from article_classifier import ArticleClassifier
-from sentiment_analysis import SentimentAnalyzer
-from financial_analyzer.financial_event_classifier import FinancialEventClassifier
-from financial_analyzer.earnings_parser import EarningsParser
-from financial_analyzer.market_predictor import MarketImpactPredictor
-from financial_analyzer.signal_combiner import SignalCombiner
+from process_pipeline import ProcessingPipeline
 
 logging.basicConfig(
     level=logging.INFO,
@@ -41,22 +30,20 @@ class ArticleProcessor(FileSystemEventHandler):
     """Process articles as they arrive"""
     
     def __init__(self):
-        self.classifier = ArticleClassifier()
-        self.sentiment_analyzer = SentimentAnalyzer()
-        self.financial_classifier = FinancialEventClassifier()
-        self.earnings_parser = EarningsParser()
-        self.market_predictor = MarketImpactPredictor()
-        self.signal_combiner = SignalCombiner()
+        self.pipeline = ProcessingPipeline()
         
         self.processing_queue = set()
         self.last_processed = {}
 
         crawler_data_env = os.getenv('CRAWLER_DATA_DIR')
-        if crawler_data_env:
+        if crawler_data_env and os.path.exists(crawler_data_env):
             self.crawler_data_dir = Path(crawler_data_env)
         else:
-            self.crawler_data_dir = PROJECT_ROOT / "crawler_service" / "data" / "by_company"
-
+            # In Docker, use /app path; locally use relative path
+            if os.path.exists('/app/crawler_service'):
+                self.crawler_data_dir = Path('/app/crawler_service/data/by_company')
+            else:
+                self.crawler_data_dir = PROJECT_ROOT / "crawler_service" / "data" / "by_company"
 
         # Paths
         self.output_dir = CUR_DIR / "final_predictions"
@@ -90,9 +77,15 @@ class ArticleProcessor(FileSystemEventHandler):
             path_parts = Path(file_path).parts
             ticker = None
             
+            # List of known company tickers
+            known_tickers = [
+                'MSFT', 'AAPL', 'GOOGL', 'AMZN', 'TSLA', 'META', 
+                'NVDA', 'NFLX', 'BABA', 'AMD', 'INTC', 'CRM', 'UNP',
+                'FDX', 'UPS', 'CHRW', 'XPO', 'GXO'
+            ]
+            
             for part in path_parts:
-                if part in ['MSFT', 'AAPL', 'GOOGL', 'AMZN', 'TSLA', 'META', 
-                           'NVDA', 'NFLX', 'BABA', 'AMD', 'INTC', 'CRM', 'UNP']:
+                if part in known_tickers:
                     ticker = part
                     break
             
@@ -109,33 +102,8 @@ class ArticleProcessor(FileSystemEventHandler):
             logger.info(f"🔄 PROCESSING: {ticker}")
             logger.info(f"{'='*60}")
             
-            # Step 1: Classify articles
-            logger.info(f"[1/5] Classifying articles...")
-            self.classifier.classify_company_articles(ticker)
-            
-            # Step 2: Sentiment analysis on general articles
-            logger.info(f"[2/5] Analyzing sentiment...")
-            self.sentiment_analyzer.analyze_company_sentiment(ticker)
-            
-            # Step 3: Financial event classification
-            logger.info(f"[3/5] Classifying financial events...")
-            self.financial_classifier.classify_company_financial_events(ticker)
-            
-            # Step 4: Earnings parsing
-            logger.info(f"[4/5] Parsing earnings data...")
-            self.earnings_parser.parse_company_earnings(ticker)
-            
-            # Step 5: Generate final prediction
-            logger.info(f"[5/5] Generating prediction...")
-            prediction = self.signal_combiner.combine_signals(ticker)
-            
-            # Save prediction
-            output_file = self.output_dir / f"{ticker}_prediction.json"
-            with open(output_file, 'w') as f:
-                json.dump(prediction, f, indent=2)
-            
-            logger.info(f"✅ {ticker}: Prediction saved - {prediction['prediction']['final_signal']}")
-            logger.info(f"{'='*60}\n")
+            # Use the ProcessingPipeline to handle all steps
+            self.pipeline.process_company(ticker)
             
             self.last_processed[ticker] = current_time
             
@@ -157,85 +125,69 @@ class ArticleProcessor(FileSystemEventHandler):
             logger.info(f"Processing existing data for {ticker}...")
             
             try:
-                # Process this company
-                self.classifier.classify_company_articles(ticker)
-                self.sentiment_analyzer.analyze_company_sentiment(ticker)
-                self.financial_classifier.classify_company_financial_events(ticker)
-                self.earnings_parser.parse_company_earnings(ticker)
-                prediction = self.signal_combiner.combine_signals(ticker)
-                
-                # Save prediction
-                output_file = self.output_dir / f"{ticker}_prediction.json"
-                with open(output_file, 'w') as f:
-                    json.dump(prediction, f, indent=2)
-                
-                logger.info(f"✅ {ticker}: Processed")
-                
+                # Use the ProcessingPipeline to handle all steps
+                self.pipeline.process_company(ticker)
             except Exception as e:
-                logger.error(f"❌ Error processing {ticker}: {e}")
+                logger.error(f"❌ Error processing {ticker}: {e}", exc_info=True)
 
-# --- ADDITION: Expose a function for direct triggering from other services ---
+
+class ContinuousProcessor:
+    """Manages continuous file watching and processing"""
+    
+    def __init__(self):
+        self.processor = ArticleProcessor()
+        self.observer = Observer()
+        
+        # Watch the crawler data directory
+        self.observer.schedule(
+            self.processor,
+            str(self.processor.crawler_data_dir),
+            recursive=True
+        )
+    
+    def start(self):
+        """Start watching for new files"""
+        logger.info(f"👀 Watching: {self.processor.crawler_data_dir}")
+        
+        # Process all existing data first
+        self.processor.process_all_existing()
+        
+        # Start watching for new files
+        logger.info("👀 Now watching for new articles...")
+        logger.info("Press Ctrl+C to stop")
+        
+        self.observer.start()
+        
+        try:
+            while True:
+                time.sleep(CHECK_INTERVAL)
+        except KeyboardInterrupt:
+            logger.info("⏹️  Stopping processor...")
+            self.observer.stop()
+        
+        self.observer.join()
+
+
 def process_new_articles(ticker):
     """
     Public function to process new articles for a given ticker.
     This can be called directly from other services (e.g., crawler).
     """
     try:
-        processor = ArticleProcessor()
+        pipeline = ProcessingPipeline()
         logger.info(f"🔔 [External Trigger] Processing new articles for {ticker}...")
-        processor.classifier.classify_company_articles(ticker)
-        processor.sentiment_analyzer.analyze_company_sentiment(ticker)
-        processor.financial_classifier.classify_company_financial_events(ticker)
-        processor.earnings_parser.parse_company_earnings(ticker)
-        prediction = processor.signal_combiner.combine_signals(ticker)
-        output_file = processor.output_dir / f"{ticker}_prediction.json"
-        with open(output_file, 'w') as f:
-            json.dump(prediction, f, indent=2)
-        logger.info(f"✅ [External Trigger] {ticker}: Prediction saved - {prediction['prediction']['final_signal']}")
+        pipeline.process_company(ticker)
+        logger.info(f"✅ [External Trigger] {ticker}: Processing complete")
+        return True
     except Exception as e:
         logger.error(f"❌ [External Trigger] Error processing {ticker}: {e}", exc_info=True)
-# --- END ADDITION ---
-
-
-class ContinuousProcessor:
-    """Manages continuous processing"""
-    
-    def __init__(self):
-        self.processor = ArticleProcessor()
-        self.observer = Observer()
-        
-    def start(self):
-        """Start continuous processing"""
-        logger.info("🚀 Starting Continuous Data Processor")
-        logger.info(f"Watching: {self.processor.crawler_data_dir}")
-        logger.info("")
-        
-        # Process all existing data first
-        self.processor.process_all_existing()
-        
-        # Start watching for new files
-        self.observer.schedule(
-            self.processor,
-            str(self.processor.crawler_data_dir),
-            recursive=True
-        )
-        self.observer.start()
-        
-        logger.info("👀 Now watching for new articles...")
-        logger.info("Press Ctrl+C to stop\n")
-        
-        try:
-            while True:
-                time.sleep(CHECK_INTERVAL)
-        except KeyboardInterrupt:
-            logger.info("\n🛑 Processor stopped by user")
-            self.observer.stop()
-        
-        self.observer.join()
+        return False
 
 
 def main():
     """Main entry point"""
+    logger.info("🚀 Starting Continuous Data Processor")
+    
     processor = ContinuousProcessor()
     processor.start()
 

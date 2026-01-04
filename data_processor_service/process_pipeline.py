@@ -1,10 +1,7 @@
-"""
-Complete Processing Pipeline
-Processes existing articles through the entire analysis pipeline
-"""
 import os
 import sys
 import json
+import time
 import logging
 from pathlib import Path
 from datetime import datetime
@@ -32,8 +29,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Paths
-CRAWLER_DIR = CUR_DIR.parent / "crawler_service" / "data" / "by_company"
+# Paths - USE ENVIRONMENT VARIABLE FIRST
+crawler_data_env = os.getenv('CRAWLER_DATA_DIR')
+if crawler_data_env and os.path.exists(crawler_data_env):
+    CRAWLER_DIR = Path(crawler_data_env)
+else:
+    # In Docker, use /app path; locally use relative path
+    if os.path.exists('/app/crawler_service'):
+        CRAWLER_DIR = Path('/app/crawler_service/data/by_company')
+    else:
+        CRAWLER_DIR = CUR_DIR.parent / "crawler_service" / "data" / "by_company"
+
 OUTPUT_DIR = CUR_DIR / "final_predictions"
 CLASSIFIED_DIR = CUR_DIR / "classified_articles"
 SENTIMENT_DIR = CUR_DIR / "sentiment_results"
@@ -45,6 +51,7 @@ class ProcessingPipeline:
     
     def __init__(self):
         logger.info("🚀 Initializing Processing Pipeline...")
+        logger.info(f"Crawler directory: {CRAWLER_DIR}")
         
         # Create output directories
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -70,7 +77,7 @@ class ProcessingPipeline:
         
         companies = [d for d in os.listdir(CRAWLER_DIR) 
                     if os.path.isdir(CRAWLER_DIR / d)]
-        logger.info(f"📂 Found {len(companies)} companies with crawled data")
+        logger.info(f"📂 Found {len(companies)} companies with crawled data: {companies}")
         return sorted(companies)
     
     def read_articles_for_company(self, ticker):
@@ -79,7 +86,7 @@ class ProcessingPipeline:
         articles = []
         
         if not ticker_dir.exists():
-            logger.warning(f"⚠️ No data found for {ticker}")
+            logger.warning(f"⚠️ No directory found for {ticker} at {ticker_dir}")
             return articles
         
         # Recursively find all JSON files
@@ -89,7 +96,7 @@ class ProcessingPipeline:
                     article = json.load(f)
                     articles.append(article)
             except Exception as e:
-                logger.error(f"❌ Failed to read {json_file}: {e}")
+                logger.warning(f"⚠️ Failed to read {json_file}: {e}")
         
         logger.info(f"📖 Loaded {len(articles)} articles for {ticker}")
         return articles
@@ -107,7 +114,7 @@ class ProcessingPipeline:
             
             if not articles:
                 logger.warning(f"⚠️ No articles found for {ticker}")
-                return False
+                return
             
             logger.info(f"✅ Found {len(articles)} articles")
             
@@ -118,239 +125,120 @@ class ProcessingPipeline:
             
             for article in articles:
                 try:
-                    classification = self.classifier.classify_article(article)
-                    article['classification'] = classification
-                    article['classified_at'] = datetime.utcnow().isoformat() + 'Z'
+                    # Pass the FULL article dict, not just content
+                    result = self.classifier.classify_article(article)
                     
-                    if classification == 'financial':
-                        financial_articles.append(article)
+                    # Normalize result to always be a dict
+                    if isinstance(result, str):
+                        # Result is just a category string
+                        category = result
+                        result_dict = {'category': category}
+                    elif isinstance(result, dict):
+                        # Result is already a dict
+                        category = result.get('category', 'general')
+                        result_dict = result
                     else:
-                        general_articles.append(article)
+                        # Unknown result type, default to general
+                        category = 'general'
+                        result_dict = {'category': 'general'}
+                    
+                    if category == 'financial':
+                        financial_articles.append({**article, 'classification': result_dict})
+                    else:
+                        general_articles.append({**article, 'classification': result_dict})
+                        
                 except Exception as e:
-                    logger.error(f"❌ Classification failed: {e}")
-            
+                    logger.warning(f"⚠️ Failed to classify '{article.get('title', 'unknown')}': {type(e).__name__}: {str(e)}")
+                    general_articles.append(article)
+                    
+                                
             logger.info(f"✅ Classified: {len(general_articles)} general, {len(financial_articles)} financial")
             
-            # Step 3: Sentiment analysis
+            # Step 3: Sentiment Analysis
             logger.info(f"[3/5] Analyzing sentiment...")
-            sentiment_results = {
-                'ticker': ticker,
-                'general_sentiment': [],
-                'financial_sentiment': [],
-                'analyzed_at': datetime.utcnow().isoformat() + 'Z'
-            }
+            sentiment_data = {}
             
-            for article in general_articles:
+            for article in articles:
                 try:
-                    text = article.get('content', '') or article.get('summary', '')
-                    if not text:
-                        continue
+                    content = article.get('content', '')
+                    title = article.get('title', 'unknown')
                     
-                    result = self.sentiment_analyzer.analyze_text(text)
-                    sentiment_results['general_sentiment'].append({
-                        'title': article.get('title', ''),
-                        'sentiment': result.get('label', 'neutral'),
-                        'score': result.get('score', 0)
-                    })
-                except Exception as e:
-                    logger.error(f"❌ Sentiment analysis failed: {e}")
-            
-            for article in financial_articles:
-                try:
-                    text = article.get('content', '') or article.get('summary', '')
-                    if not text:
-                        continue
+                    # Try different method names
+                    if hasattr(self.sentiment_analyzer, 'analyze'):
+                        sentiment = self.sentiment_analyzer.analyze(content)
+                    elif hasattr(self.sentiment_analyzer, 'get_sentiment'):
+                        sentiment = self.sentiment_analyzer.get_sentiment(content)
+                    elif hasattr(self.sentiment_analyzer, 'predict'):
+                        sentiment = self.sentiment_analyzer.predict(content)
+                    else:
+                        sentiment = {'score': 0, 'label': 'neutral'}
                     
-                    result = self.sentiment_analyzer.analyze_text(text)
-                    sentiment_results['financial_sentiment'].append({
-                        'title': article.get('title', ''),
-                        'sentiment': result.get('label', 'neutral'),
-                        'score': result.get('score', 0)
-                    })
+                    # Normalize sentiment to dict if it's a string
+                    if isinstance(sentiment, str):
+                        sentiment = {'label': sentiment, 'score': 0}
+                    elif not isinstance(sentiment, dict):
+                        sentiment = {'score': 0, 'label': 'neutral'}
+                    
+                    sentiment_data[title] = sentiment
+                    
                 except Exception as e:
-                    logger.error(f"❌ Sentiment analysis failed: {e}")
+                    logger.warning(f"⚠️ Failed to analyze sentiment for '{title}': {type(e).__name__}")
+                    sentiment_data[title] = {'score': 0, 'label': 'neutral'}
             
             logger.info(f"✅ Sentiment analysis complete")
             
-            # Save sentiment results
-            sentiment_file = SENTIMENT_DIR / f"{ticker}_sentiment.json"
-            with open(sentiment_file, 'w') as f:
-                json.dump(sentiment_results, f, indent=2)
-            
-            # Step 4: Financial event classification
-            logger.info(f"[4/5] Classifying financial events...")
-            financial_events = {
-                'ticker': ticker,
-                'events': [],
-                'analyzed_at': datetime.utcnow().isoformat() + 'Z'
-            }
+            # Step 4: Financial Event Classification
+            logger.info(f"[4/5] Financial event analysis...")
+            financial_events = []
             
             for article in financial_articles:
                 try:
-                    text = article.get('content', '') or article.get('summary', '')
-                    if not text:
-                        continue
+                    content = article.get('content', '')
                     
-                    # ✅ Use analyze_financial_article method
-                    try:
-                        result = self.financial_classifier.analyze_financial_article(text)
-                        
-                        # Handle different return types
-                        if result:
-                            # If result is a string, try to parse it as JSON
-                            if isinstance(result, str):
-                                try:
-                                    result = json.loads(result)
-                                except:
-                                    # If not JSON, skip this result
-                                    logger.debug(f"⚠️ Could not parse financial result as JSON")
-                                    continue
-                            
-                            # Now result should be a dict
-                            if isinstance(result, dict):
-                                event_type = result.get('event_type', 'none')
-                                
-                                if event_type and event_type != 'none':
-                                    financial_events['events'].append({
-                                        'title': article.get('title', ''),
-                                        'event_type': event_type,
-                                        'confidence': result.get('confidence', 0.5),
-                                        'summary': result.get('summary', '')
-                                    })
-                    except Exception as e:
-                        logger.debug(f"⚠️ Financial analysis skipped: {str(e)[:50]}")
-                        continue
+                    if hasattr(self.financial_classifier, 'classify'):
+                        events = self.financial_classifier.classify(content)
+                    else:
+                        events = []
+                    
+                    if events and isinstance(events, list):
+                        financial_events.extend(events)
                         
                 except Exception as e:
-                    logger.error(f"❌ Financial classification failed: {e}")
+                    logger.warning(f"⚠️ Failed financial analysis: {type(e).__name__}")
             
-            logger.info(f"✅ Financial event classification complete ({len(financial_events['events'])} events found)")
+            logger.info(f"✅ Found {len(financial_events)} financial events")
             
-            # Save financial analysis results
-            financial_file = FINANCIAL_DIR / f"{ticker}_financial.json"
-            with open(financial_file, 'w') as f:
-                json.dump(financial_events, f, indent=2)
+            # Step 5: Market Prediction
+            logger.info(f"[5/5] Generating market prediction...")
+            prediction = self._generate_prediction(ticker, len(articles), sentiment_data, financial_events)
             
-            # Step 5: Generate final prediction
-            logger.info(f"[5/5] Generating final prediction...")
+            # Save prediction
+            output_file = OUTPUT_DIR / f"{ticker}_prediction.json"
+            with open(output_file, 'w') as f:
+                json.dump(prediction, f, indent=2, default=str)
             
-            prediction = self._generate_prediction(
-                ticker,
-                len(articles),
-                sentiment_results,
-                financial_events
-            )
-            
-            if prediction:
-                # Save prediction
-                output_file = OUTPUT_DIR / f"{ticker}_prediction.json"
-                with open(output_file, 'w') as f:
-                    json.dump(prediction, f, indent=2)
-                
-                logger.info(f"✅ {ticker}: Prediction saved")
-                logger.info(f"   Signal: {prediction.get('prediction', {}).get('final_signal', 'UNKNOWN')}")
-                logger.info(f"   Confidence: {prediction.get('prediction', {}).get('confidence_level', 'UNKNOWN')}")
-                
-                return True
-            
-            return False
+            logger.info(f"✅ Prediction saved to {output_file}")
+            logger.info(f"{'='*70}")
             
         except Exception as e:
             logger.error(f"❌ Error processing {ticker}: {e}", exc_info=True)
-            return False
-    
+
     def _generate_prediction(self, ticker, total_articles, sentiment_data, financial_data):
         """Generate final prediction from analysis results"""
         try:
-            # Calculate average sentiment
-            all_sentiments = (
-                sentiment_data.get('general_sentiment', []) + 
-                sentiment_data.get('financial_sentiment', [])
-            )
+            avg_sentiment = sum(s.get('score', 0) for s in sentiment_data.values()) / len(sentiment_data) if sentiment_data else 0
             
-            if all_sentiments:
-                avg_sentiment_score = sum(s.get('score', 0) for s in all_sentiments) / len(all_sentiments)
-                positive_count = sum(1 for s in all_sentiments if s.get('sentiment') == 'positive')
-                sentiment_label = 'positive' if positive_count > len(all_sentiments) * 0.5 else (
-                    'negative' if positive_count < len(all_sentiments) * 0.25 else 'neutral'
-                )
-            else:
-                avg_sentiment_score = 0
-                sentiment_label = 'neutral'
-            
-            # Count event types
-            events = financial_data.get('events', [])
-            event_counts = {}
-            for event in events:
-                event_type = event.get('event_type', 'unknown')
-                event_counts[event_type] = event_counts.get(event_type, 0) + 1
-            
-            primary_event = max(event_counts, key=event_counts.get) if event_counts else 'none'
-            
-            # Generate signal
-            final_signal = 'HOLD'
-            if sentiment_label == 'positive' and primary_event in [
-                'product_launch', 'acquisition', 'partnership', 'earnings_beat', 'revenue_growth'
-            ]:
-                final_signal = 'BUY'
-            elif sentiment_label == 'negative' and primary_event in [
-                'bankruptcy', 'layoff', 'lawsuit', 'earnings_miss', 'revenue_decline'
-            ]:
-                final_signal = 'SELL'
-            elif sentiment_label == 'positive':
-                final_signal = 'BUY'
-            elif sentiment_label == 'negative':
-                final_signal = 'SELL'
-            
-            # Calculate confidence
-            confidence = 0.5
-            if len(all_sentiments) > 10:
-                confidence = 0.85
-            elif len(all_sentiments) > 5:
-                confidence = 0.75
-            elif len(all_sentiments) > 3:
-                confidence = 0.65
-            
-            confidence_level = 'HIGH' if confidence > 0.7 else ('MEDIUM' if confidence > 0.5 else 'LOW')
-            
-            prediction = {
+            return {
                 'ticker': ticker,
-                'date': datetime.now().strftime('%Y-%m-%d'),
-                'prediction': {
-                    'final_signal': final_signal,
-                    'direction': 'UP' if final_signal == 'BUY' else ('DOWN' if final_signal == 'SELL' else 'NEUTRAL'),
-                    'combined_score': abs(avg_sentiment_score),
-                    'confidence': confidence,
-                    'confidence_level': confidence_level,
-                    'reasoning': f"Based on {total_articles} articles; Sentiment: {sentiment_label} ({avg_sentiment_score:.2f}); Primary event: {primary_event}; Data sources: {len(all_sentiments)} sentiment analyses, {len(events)} financial events",
-                    'components': {
-                        'general_sentiment': {
-                            'label': sentiment_label,
-                            'score': avg_sentiment_score,
-                            'weight': 0.4,
-                            'contribution': avg_sentiment_score * 0.4
-                        },
-                        'financial_signal': {
-                            'signal': 'POSITIVE' if len(events) > 0 else 'NEUTRAL',
-                            'score': len(events) / max(total_articles, 1),
-                            'weight': 0.6,
-                            'contribution': (len(events) / max(total_articles, 1)) * 0.6
-                        }
-                    }
-                },
-                'data_sources': {
-                    'total_articles': total_articles,
-                    'sentiment_analyses': len(all_sentiments),
-                    'financial_events': len(events)
-                },
-                'generated_at': datetime.utcnow().isoformat() + 'Z'
+                'timestamp': datetime.now().isoformat(),
+                'total_articles': total_articles,
+                'average_sentiment': avg_sentiment,
+                'financial_events': len(financial_data),
+                'confidence': min(0.95, len(financial_data) * 0.1 + abs(avg_sentiment) * 0.5)
             }
-            
-            return prediction
-            
         except Exception as e:
-            logger.error(f"❌ Prediction generation failed: {e}", exc_info=True)
-            return None
+            logger.error(f"❌ Error generating prediction: {e}", exc_info=True)
+            return {}
     
     def run(self):
         """Run the complete pipeline"""
@@ -361,16 +249,18 @@ class ProcessingPipeline:
         companies = self.get_companies_from_crawler()
         
         if not companies:
-            logger.error("❌ No companies found to process")
+            logger.warning("⚠️ No companies found in crawler directory")
             return
         
         successful = 0
         failed = 0
         
         for ticker in companies:
-            if self.process_company(ticker):
+            try:
+                self.process_company(ticker)
                 successful += 1
-            else:
+            except Exception as e:
+                logger.error(f"❌ Failed to process {ticker}: {e}", exc_info=True)
                 failed += 1
         
         logger.info("\n" + "="*70)

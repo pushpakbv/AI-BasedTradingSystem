@@ -1,31 +1,8 @@
 {
   "ticker": "UPS",
-  "date": "2025-10-24",
-  "prediction": {
-    "final_signal": "HOLD",
-    "direction": "NEUTRAL",
-    "combined_score": 0.0,
-    "confidence": 0.5,
-    "confidence_level": "LOW",
-    "reasoning": "Event: general_financial",
-    "components": {
-      "general_sentiment": {
-        "label": "neutral",
-        "score": 0.123,
-        "weight": 0.3,
-        "contribution": 0.0
-      },
-      "financial_signal": {
-        "signal": "NEUTRAL",
-        "score": 0.1,
-        "weight": 0.7,
-        "contribution": 0.0
-      }
-    }
-  },
-  "data_sources": {
-    "general_articles": 5,
-    "financial_articles": 1
-  },
-  "generated_at": "2025-10-24T09:36:26.003040Z"
+  "timestamp": "2026-01-04T17:51:08.365647",
+  "total_articles": 9,
+  "average_sentiment": 0.0,
+  "financial_events": 0,
+  "confidence": 0.0
 }

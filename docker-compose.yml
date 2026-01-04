@@ -40,9 +40,10 @@ services:
       # ADD: Share final_predictions at root for API compatibility
       - ./data_processor_service/final_predictions:/app/final_predictions
     environment:
-      - PYTHONUNBUFFERED=1
-      - PROCESSOR_CHECK_INTERVAL_SECONDS=60
-      - LOG_LEVEL=INFO
+    - PYTHONUNBUFFERED=1
+    - PROCESSOR_CHECK_INTERVAL_SECONDS=60
+    - LOG_LEVEL=INFO
+    - CRAWLER_DATA_DIR=/app/crawler_service/data/by_company
     networks:
       - tradesystem_network
     restart: unless-stopped
