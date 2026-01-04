@@ -282,6 +282,19 @@ app.get('/api/stock/:ticker', async (req, res) => {
   try {
     const { ticker } = req.params;
     const stockPath = path.join(STOCK_DATA_DIR, `${ticker}_stock_data.json`);
+    
+    console.log(`📍 Fetching stock data from: ${stockPath}`);
+    
+    // Check if file exists before reading
+    if (!fs.existsSync(stockPath)) {
+      console.warn(`⚠️ Stock file not found: ${stockPath}`);
+      return res.status(404).json({ 
+        error: 'Stock data not found',
+        path: stockPath,
+        ticker: ticker
+      });
+    }
+    
     const data = await fs.readFile(stockPath, 'utf8');
     const stockData = JSON.parse(data);
     
@@ -291,7 +304,11 @@ app.get('/api/stock/:ticker', async (req, res) => {
     res.json(stockData);
   } catch (error) {
     console.error(`Error reading stock data for ${req.params.ticker}:`, error);
-    res.status(404).json({ error: 'Stock data not found' });
+    res.status(500).json({ 
+      error: 'Failed to load stock data',
+      details: error.message,
+      ticker: req.params.ticker
+    });
   }
 });
 

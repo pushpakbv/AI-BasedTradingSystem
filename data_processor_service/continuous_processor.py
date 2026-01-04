@@ -50,12 +50,21 @@ class ArticleProcessor(FileSystemEventHandler):
         
         self.processing_queue = set()
         self.last_processed = {}
-        
+
+        crawler_data_env = os.getenv('CRAWLER_DATA_DIR')
+        if crawler_data_env:
+            self.crawler_data_dir = Path(crawler_data_env)
+        else:
+            self.crawler_data_dir = PROJECT_ROOT / "crawler_service" / "data" / "by_company"
+
+
         # Paths
-        self.crawler_data_dir = PROJECT_ROOT / "crawler_service" / "data" / "by_company"
         self.output_dir = CUR_DIR / "final_predictions"
-        self.output_dir.mkdir(exist_ok=True)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         
+        logger.info(f"Crawler data directory: {self.crawler_data_dir}")
+        logger.info(f"Output directory: {self.output_dir}")
+
     def on_created(self, event):
         """Handle new file creation"""
         if event.is_directory:
