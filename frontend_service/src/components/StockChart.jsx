@@ -85,14 +85,6 @@ const StockChart = ({ ticker, stockData }) => {
     );
   }
 
-  if (!chartData || chartData.length === 0) {
-    return (
-      <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 flex items-center justify-center h-96">
-        <p className="text-gray-500">No stock data available</p>
-      </div>
-    );
-  }
-
   const isPositive = parseFloat(stats.change) >= 0;
   const changeColor = isPositive ? 'text-green-600' : 'text-red-600';
   const bgColor = isPositive ? 'bg-green-50' : 'bg-red-50';

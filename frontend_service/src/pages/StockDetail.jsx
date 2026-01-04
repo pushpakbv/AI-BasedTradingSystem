@@ -131,16 +131,6 @@ const StockDetail = () => {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              {stockData && stockData.historical_data && stockData.historical_data.length > 0 ? (
-                  <StockChart 
-                    ticker={ticker}
-                    stockData={stockData}
-                  />
-                ) : (
-                  <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 flex items-center justify-center h-96">
-                    <p className="text-gray-500">No stock data available for {ticker}</p>
-                  </div>
-                )}
               <button
                 onClick={fetchCompanyData}
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2"

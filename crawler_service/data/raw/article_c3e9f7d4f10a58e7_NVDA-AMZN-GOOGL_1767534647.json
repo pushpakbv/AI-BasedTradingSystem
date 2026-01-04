@@ -1,0 +1,53 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/buy-stocks-january-nvidia-1-trillion-club-2030/",
+  "fetched_at": "2026-01-04T13:50:47.194440Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T13:09:00Z",
+  "title": "4 Stocks to Buy in January That Could Join Nvidia in the $1 Trillion Club by 2030 | The Motley Fool",
+  "content": "Nvidia ( NVDA +1.14% ) ended 2025 as the most valuable company in the world. It is one of nine S&P 500 ( ^GSPC +0.19% ) stocks with market capitalizations exceeding $1 trillion -- the others being Apple , Alphabet , Microsoft , Amazon , Meta Platforms , Broadcom , Tesla , and Berkshire Hathaway .\n\nEli Lilly , Walmart , and JPMorgan Chase only need to rise 14% or less to expand the list to 12 companies.\n\nHere's why Visa ( V 1.28% ) , ExxonMobil ( XOM +1.92% ) , Oracle ( ORCL +0.41% ) , and Netflix ( NFLX 3.01% ) have what it takes to be winning investments over the next five years and join the $1 trillion club by 2030.\n\nVisa's path to $1 trillion is fairly straightforward. The payment processor has high margins, a reasonable valuation , and steady earnings growth, and returns tons of capital to shareholders through buybacks and dividends .\n\nVisa can generate high single-digit or double-digit earnings growth even during challenging periods.\n\nDespite slowdowns in consumer spending, Visa grew non-generally accepted accounting principles ( non-GAAP ) earnings per share by 14% in 2025. If Visa can maintain that growth rate going forward, it could reach a market cap well beyond $1 trillion by 2030.\n\nExxonMobil will need to double in five years to surpass $1 trillion in market cap. It absolutely has what it takes.\n\nExxonMobil is generating gobs of free cash flow (FCF) and high earnings, even though oil prices are hovering around four-year lows. It has reduced its production costs and can break even at low oil prices, and has plenty of upside potential during a higher-price environment. It also has a growing low-carbon business and a massive refining and marketing segment.\n\nExxonMobil's corporate plan through 2030 forecasts double-digit earnings growth even if oil and gas prices are mediocre. Although the U.S. Energy Information Administration is only forecasting $55 per Brent crude oil barrel in 2026, oil prices could rise in the coming years due to economic demand fueled by artificial intelligence (AI) , as well as overall economic growth and geopolitical tensions.\n\nEither way, ExxonMobil doesn't need a lot of help from oil prices to grow earnings at a solid pace. A 15% annual growth rate, compounded over five years, would double earnings. Given the stock's reasonable volatility, it could double as well, pole-vaulting ExxonMobil over the $1 trillion bar.\n\nIn the meantime, ExxonMobil investors will benefit from its stable and growing 3.4% dividend, which ExxonMobil has increased for 43 consecutive years.\n\nOracle almost surpassed $1 trillion in market cap in September before falling over 40% from that high due to concerns about its AI spending and mounting debt.\n\nOracle is ramping up spending to build out data center infrastructure to grow its cloud computing market share , especially for high-performance computing workflows. It exited its most recent quarter with $523 billion in remaining performance obligations, signaling demand is high for its infrastructure. But Oracle needs to convert capital expenditures into earnings. In the meantime, it is FCF negative, making Oracle a leveraged bet on increased AI adoption .\n\nDespite its risks, Oracle's potential is impossible to ignore . Oracle is a great buy for investors who agree that its aggressive AI investments are the right long-term move and are willing to endure what will likely be a highly volatile period in the stock price.\n\nOver the last six months, Netflix's market cap has slipped from over $560 billion to under $400 billion due to a mix of valuation concerns and uncertainties regarding its planned acquisition of Warner Bros. Discovery ( WBD 1.08% ) . Netflix will probably receive regulatory approval for the acquisition , but still faces challenges from Paramount Skydance ( PSKY 1.79% ) , which is attempting a hostile takeover of Warner Bros. Discovery.\n\nNetflix has already demonstrated impeccable pricing power with multiple price increases in a relatively short amount of time and a crackdown on password sharing that was largely accepted by users -- even during a period when people are pulling back on discretionary spending . So even if it doesn't quite crack the $1 trillion club, I still fully expect Netflix to be a winning investment and outperform the S&P 500 over the next five years.\n\nWith the broader indexes around all-time highs, it's easy to get enamored by the companies that could surge in value in the coming months or in 2026. But a far more rewarding approach is to invest in companies that have what it takes to compound in value over the long term.\n\nVisa, ExxonMobil, Oracle, and Netflix certainly fit that mold. That's why I expect all four stocks to outperform the S&P 500 and join the $1 trillion club over the next five years, even though they are currently far from reaching that milestone.",
+  "meta_description": "Visa, ExxonMobil, Oracle, and Netflix have multi-year compounding potential for patient investors.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 808,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 3
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 1
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    },
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.1426872770511296,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}
