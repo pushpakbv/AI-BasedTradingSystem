@@ -1,132 +1,141 @@
 """
-Stock Market Data Fetcher
-Continuously fetches historical and current stock prices
+Stock Data Fetcher
+Fetches real-time and historical stock data using yfinance
 """
-import os
-import sys
-import time
-import logging
-from datetime import datetime, timedelta
-from pathlib import Path
-import json
 import yfinance as yf
-import pandas as pd
+import json
+import os
+from pathlib import Path
+from datetime import datetime, timedelta
+import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-UPDATE_INTERVAL = int(os.getenv('MARKET_DATA_INTERVAL_HOURS', 1)) * 3600
+# Companies to fetch data for
+COMPANIES = [
+    'MSFT', 'AAPL', 'GOOGL', 'AMZN', 'TSLA', 'META', 'NVDA', 'NFLX', 'BABA', 'AMD', 
+    'INTC', 'CRM', 'UNP', 'FDX', 'UPS', 'CHRW', 'XPO', 'GXO', 'JD'
+]
 
-# Companies to track
-COMPANIES = ['MSFT', 'AAPL', 'GOOGL', 'AMZN', 'TSLA', 'META', 'NVDA', 'NFLX', 'BABA', 'AMD', 'INTC', 'CRM', 'UNP']
+# Output directory
+OUTPUT_DIR = Path(__file__).parent / 'stock_data'
+OUTPUT_DIR.mkdir(exist_ok=True)
 
-
-class StockDataFetcher:
-    """Fetches and stores stock market data"""
-    
-    def __init__(self):
-        self.output_dir = Path(__file__).parent / "stock_data"
-        self.output_dir.mkdir(exist_ok=True)
+def fetch_stock_data(ticker, period='1y'):
+    """
+    Fetch historical stock data for a ticker
+    period: '1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max'
+    """
+    try:
+        logger.info(f"📊 Fetching stock data for {ticker}...")
         
-    def fetch_stock_data(self, ticker, period='7d'):
-        """Fetch historical stock data"""
-        try:
-            logger.info(f"📈 Fetching data for {ticker}...")
-            
-            stock = yf.Ticker(ticker)
-            
-            # Get historical data (past week)
-            hist = stock.history(period=period)
-            
-            if hist.empty:
-                logger.warning(f"No data available for {ticker}")
-                return None
-            
-            # Convert to dict
-            data = {
-                'ticker': ticker,
-                'last_updated': datetime.now().isoformat(),
-                'current_price': float(hist['Close'].iloc[-1]),
-                'historical_data': []
-            }
-            
-            # Add historical prices
-            for date, row in hist.iterrows():
-                data['historical_data'].append({
-                    'date': date.strftime('%Y-%m-%d'),
-                    'open': float(row['Open']),
-                    'high': float(row['High']),
-                    'low': float(row['Low']),
-                    'close': float(row['Close']),
-                    'volume': int(row['Volume'])
-                })
-            
-            # Save to file
-            output_file = self.output_dir / f"{ticker}_stock_data.json"
-            with open(output_file, 'w') as f:
-                json.dump(data, f, indent=2)
-            
-            logger.info(f"✅ {ticker}: Saved {len(data['historical_data'])} data points")
-            return data
-            
-        except Exception as e:
-            logger.error(f"❌ Error fetching {ticker}: {e}")
+        # Download data
+        stock = yf.Ticker(ticker)
+        hist = stock.history(period=period)
+        
+        if hist.empty:
+            logger.warning(f"⚠️ No data found for {ticker}")
             return None
-    
-    def fetch_all_stocks(self):
-        """Fetch data for all companies"""
-        logger.info("=" * 80)
-        logger.info(f"FETCHING STOCK DATA FOR {len(COMPANIES)} COMPANIES")
-        logger.info("=" * 80)
         
-        successful = 0
-        failed = []
+        # Get current price info
+        info = stock.info
         
-        for ticker in COMPANIES:
-            result = self.fetch_stock_data(ticker)
-            if result:
-                successful += 1
-            else:
-                failed.append(ticker)
+        # Convert to list format
+        historical_data = []
+        for date, row in hist.iterrows():
+            historical_data.append({
+                'date': date.strftime('%Y-%m-%d'),
+                'open': round(float(row['Open']), 2),
+                'high': round(float(row['High']), 2),
+                'low': round(float(row['Low']), 2),
+                'close': round(float(row['Close']), 2),
+                'volume': int(row['Volume']),
+                'adjClose': round(float(row.get('Adj Close', row['Close'])), 2)
+            })
+        
+        # Get current price and stats
+        current_price = info.get('currentPrice', hist['Close'].iloc[-1])
+        
+        stock_data = {
+            'ticker': ticker,
+            'company_name': info.get('longName', ticker),
+            'current_price': round(float(current_price), 2),
+            'previous_close': round(float(info.get('previousClose', hist['Close'].iloc[-1])), 2),
+            'day_high': round(float(info.get('dayHigh', hist['High'].iloc[-1])), 2),
+            'day_low': round(float(info.get('dayLow', hist['Low'].iloc[-1])), 2),
+            'fifty_two_week_high': round(float(info.get('fiftyTwoWeekHigh', hist['High'].max())), 2),
+            'fifty_two_week_low': round(float(info.get('fiftyTwoWeekLow', hist['Low'].min())), 2),
+            'volume': int(info.get('volume', hist['Volume'].iloc[-1])),
+            'avg_volume': int(info.get('averageVolume', hist['Volume'].mean())),
+            'market_cap': info.get('marketCap', 'N/A'),
+            'pe_ratio': info.get('trailingPE', 'N/A'),
+            'dividend_yield': info.get('dividendYield', 'N/A'),
+            'historical_data': historical_data,
+            'last_updated': datetime.now().isoformat()
+        }
+        
+        # Calculate change
+        if len(historical_data) > 1:
+            first_price = historical_data[0]['close']
+            last_price = historical_data[-1]['close']
+            change = last_price - first_price
+            change_percent = (change / first_price) * 100
             
-            time.sleep(1)  # Rate limiting
+            stock_data['change'] = round(change, 2)
+            stock_data['change_percent'] = round(change_percent, 2)
         
-        logger.info("\n" + "=" * 80)
-        logger.info(f"COMPLETED: {successful}/{len(COMPANIES)} successful")
-        if failed:
-            logger.info(f"Failed: {', '.join(failed)}")
-        logger.info("=" * 80 + "\n")
+        logger.info(f"✅ {ticker}: ${stock_data['current_price']} | {len(historical_data)} data points")
+        
+        return stock_data
+        
+    except Exception as e:
+        logger.error(f"❌ Error fetching {ticker}: {str(e)[:100]}")
+        return None
+
+
+def save_stock_data(stock_data, ticker):
+    """Save stock data to JSON file"""
+    if not stock_data:
+        return False
     
-    def start(self):
-        """Start continuous fetching"""
-        logger.info("🚀 Starting Stock Data Fetcher")
-        logger.info(f"Interval: Every {UPDATE_INTERVAL / 3600:.0f} hour(s)")
-        logger.info(f"Companies: {len(COMPANIES)}")
-        logger.info("")
+    try:
+        output_file = OUTPUT_DIR / f'{ticker}_stock_data.json'
+        with open(output_file, 'w') as f:
+            json.dump(stock_data, f, indent=2)
         
-        while True:
-            try:
-                self.fetch_all_stocks()
-                
-                logger.info(f"⏳ Sleeping for {UPDATE_INTERVAL / 3600:.0f} hour(s)...")
-                time.sleep(UPDATE_INTERVAL)
-                
-            except KeyboardInterrupt:
-                logger.info("\n🛑 Stock data fetcher stopped by user")
-                break
-            except Exception as e:
-                logger.error(f"❌ Error: {e}", exc_info=True)
-                logger.info("⏳ Waiting 5 minutes before retry...")
-                time.sleep(300)
+        logger.info(f"💾 Saved {ticker}")
+        return True
+    except Exception as e:
+        logger.error(f"❌ Error saving {ticker}: {e}")
+        return False
 
 
 def main():
-    """Main entry point"""
-    fetcher = StockDataFetcher()
-    fetcher.start()
+    """Fetch and save stock data for all companies"""
+    logger.info("\n" + "="*70)
+    logger.info("🚀 STARTING STOCK DATA FETCH")
+    logger.info("="*70)
+    
+    successful = 0
+    failed = 0
+    
+    for ticker in COMPANIES:
+        # Fetch 1 year of historical data
+        stock_data = fetch_stock_data(ticker, period='1y')
+        
+        if stock_data and save_stock_data(stock_data, ticker):
+            successful += 1
+        else:
+            failed += 1
+    
+    logger.info("\n" + "="*70)
+    logger.info("✅ STOCK DATA FETCH COMPLETE")
+    logger.info(f"Successful: {successful}")
+    logger.info(f"Failed: {failed}")
+    logger.info(f"Total: {successful + failed}")
+    logger.info(f"Output: {OUTPUT_DIR}")
+    logger.info("="*70 + "\n")
 
 
 if __name__ == "__main__":

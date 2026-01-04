@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
-  ArrowLeft, TrendingUp, TrendingDown, Calendar,
-  DollarSign, Activity, RefreshCw, ExternalLink
+  ArrowLeft, DollarSign, Activity, RefreshCw, ExternalLink
 } from 'lucide-react';
 import axios from 'axios';
 import StockChart from '../components/StockChart';
@@ -23,41 +22,35 @@ const StockDetail = () => {
   const [lastUpdate, setLastUpdate] = useState(null);
 
   const fetchCompanyData = async () => {
-  try {
-    setLoading(true);
-    setError(null);
-    const response = await axios.get(`${API_BASE_URL}/company/${ticker}`);
-    
-    console.log('Company data response:', response.data);
-    
-    // Ensure stockData is properly set
-    const dataToSet = {
-      ...response.data,
-      stockData: response.data.stockData || null
-    };
-    
-    console.log('Setting company data:', dataToSet);
-    setCompanyData(dataToSet);
-    setLastUpdate(new Date());
-    setLoading(false);
-  } catch (err) {
-    console.error('Error fetching company data:', err);
-    setError(err.message || 'Failed to fetch company data');
-    setLoading(false);
-  }
-};
+    try {
+      setLoading(true);
+      setError(null);
+      const response = await axios.get(`${API_BASE_URL}/company/${ticker}`);
+      
+      const dataToSet = {
+        ...response.data,
+        stockData: response.data.stockData || null
+      };
+      
+      setCompanyData(dataToSet);
+      setLastUpdate(new Date());
+      setLoading(false);
+    } catch (err) {
+      console.error('Error fetching company data:', err);
+      setError(err.message || 'Failed to fetch company data');
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
     fetchCompanyData();
 
-    // Setup WebSocket for live updates
     const ws = new WebSocket(WS_BASE_URL);
     wsRef.current = ws;
 
     ws.onmessage = (event) => {
       try {
         const message = JSON.parse(event.data);
-        // Listen for file_added events for this ticker's news files
         if (
           message.type === 'file_added' &&
           message.data &&
@@ -77,7 +70,6 @@ const StockDetail = () => {
     return () => {
       ws.close();
     };
-    // eslint-disable-next-line
   }, [ticker]);
 
   if (loading) {
@@ -130,25 +122,13 @@ const StockDetail = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              {stockData && stockData.historical_data && stockData.historical_data.length > 0 ? (
-                  <StockChart 
-                    ticker={ticker}
-                    stockData={stockData}
-                  />
-                ) : (
-                  <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 flex items-center justify-center h-96">
-                    <p className="text-gray-500">No stock data available for {ticker}</p>
-                  </div>
-                )}
-              <button
-                onClick={fetchCompanyData}
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2"
-              >
-                <RefreshCw className="w-4 h-4" />
-                Refresh
-              </button>
-            </div>
+            <button
+              onClick={fetchCompanyData}
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center gap-2"
+            >
+              <RefreshCw className="w-4 h-4" />
+              Refresh
+            </button>
           </div>
         </div>
       </header>
@@ -162,18 +142,18 @@ const StockDetail = () => {
         )}
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left Column - Chart */}
+          {/* Left Column - Chart & Financial News */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Stock Price Chart */}
-            {stockData && (
+            {/* Stock Price Chart - Only render if data exists */}
+            {stockData && stockData.historical_data && stockData.historical_data.length > 0 && (
               <StockChart 
-                stockData={stockData} 
-                prediction={prediction}
+                ticker={ticker}
+                stockData={stockData}
               />
             )}
 
             {/* Financial News Timeline */}
-            {financial && financial.articles && (
+            {financial && financial.articles && financial.articles.length > 0 && (
               <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                   <DollarSign className="w-5 h-5 text-blue-600" />
@@ -196,7 +176,7 @@ const StockDetail = () => {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-600">Overall Sentiment</span>
-                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                       sentiment.company_sentiment.label === 'positive'
                         ? 'bg-green-100 text-green-700'
                         : sentiment.company_sentiment.label === 'negative'
@@ -236,59 +216,31 @@ const StockDetail = () => {
               </div>
             )}
 
-            {/* General News Timeline */}
-            {sentiment && sentiment.articles && (
+            {/* General News Feed */}
+            {general_articles && general_articles.length > 0 && (
               <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                  <Calendar className="w-5 h-5 text-purple-600" />
-                  General News
-                </h3>
-                <NewsTimeline articles={sentiment.articles} type="general" />
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Latest News</h3>
+                <div className="space-y-4">
+                  {general_articles.slice(0, 5).map((article, idx) => (
+                    <div key={idx} className="border-b pb-3 last:border-b-0">
+                      <h4 className="font-semibold text-sm text-gray-900 mb-1">{article.title}</h4>
+                      <p className="text-xs text-gray-500 mb-2">{article.published_date || article.date}</p>
+                      {article.url && (
+                        <a 
+                          href={article.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-blue-600 text-xs hover:text-blue-700 flex items-center gap-1"
+                        >
+                          Read more <ExternalLink className="w-3 h-3" />
+                        </a>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>
-        </div>
-
-        {/* General News Feed */}
-        <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 mt-8">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">General News Feed</h3>
-          {general_articles.length === 0 ? (
-            <div className="text-gray-500">No general news articles available.</div>
-          ) : (
-            <ul className="space-y-4">
-              {general_articles.map((article, idx) => (
-                <li key={idx} className="border-b pb-2">
-                  <div className="font-bold">{article.title}</div>
-                  <div className="text-xs text-gray-500">{article.published_date || article.date}</div>
-                  <div className="text-sm text-gray-700">{article.summary || (article.content ? article.content.slice(0, 200) + '...' : '')}</div>
-                  {article.url && (
-                    <a href={article.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xs">Read more</a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-
-        {/* Financial News Feed */}
-        <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 mt-8">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Financial News Feed</h3>
-          {financial_articles.length === 0 ? (
-            <div className="text-gray-500">No financial news articles available.</div>
-          ) : (
-            <ul className="space-y-4">
-              {financial_articles.map((article, idx) => (
-                <li key={idx} className="border-b pb-2">
-                  <div className="font-bold">{article.title}</div>
-                  <div className="text-xs text-gray-500">{article.published_date || article.date}</div>
-                  <div className="text-sm text-gray-700">{article.summary || (article.content ? article.content.slice(0, 200) + '...' : '')}</div>
-                  {article.url && (
-                    <a href={article.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xs">Read more</a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          )}
         </div>
       </div>
     </div>

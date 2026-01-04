@@ -306,7 +306,6 @@ app.get('/api/company/:ticker', async (req, res) => {
     // Read prediction file
     const predictionFile = path.join(PREDICTIONS_DIR, `${ticker}_prediction.json`);
     let prediction = null;
-    
     try {
       const data = await fs.readFile(predictionFile, 'utf8');
       prediction = JSON.parse(data);
@@ -314,33 +313,25 @@ app.get('/api/company/:ticker', async (req, res) => {
       console.warn(`⚠️ No prediction found for ${ticker}`);
     }
     
-    // Read sentiment file
-    const sentimentFile = path.join(SENTIMENT_DIR, `${ticker}_sentiment.json`);
-    let sentiment = null;
+    // Read stock data file
+    let stockData = null;
+    const stockFile = path.join(STOCK_DATA_DIR, `${ticker}_stock_data.json`);
+    try {
+      const data = await fs.readFile(stockFile, 'utf8');
+      stockData = JSON.parse(data);
+      console.log(`✅ Loaded stock data for ${ticker}: ${stockData.historical_data?.length || 0} data points`);
+    } catch (e) {
+      console.warn(`⚠️ No stock data found for ${ticker}`);
+    }
     
+    // Read sentiment file
+    let sentiment = null;
+    const sentimentFile = path.join(SENTIMENT_DIR, `${ticker}_sentiment.json`);
     try {
       const data = await fs.readFile(sentimentFile, 'utf8');
       sentiment = JSON.parse(data);
     } catch (e) {
       console.warn(`⚠️ No sentiment data found for ${ticker}`);
-    }
-    
-    // Read financial data file (check both naming conventions)
-    let financial = null;
-    let financialFile = path.join(FINANCIAL_DIR, `${ticker}_financial_analysis.json`);
-    
-    try {
-      let data = await fs.readFile(financialFile, 'utf8');
-      financial = JSON.parse(data);
-    } catch (e) {
-      // Try alternative naming
-      financialFile = path.join(FINANCIAL_DIR, `${ticker}_financial.json`);
-      try {
-        const data = await fs.readFile(financialFile, 'utf8');
-        financial = JSON.parse(data);
-      } catch (e2) {
-        console.warn(`⚠️ No financial data found for ${ticker}`);
-      }
     }
     
     // Return aggregated data
@@ -349,8 +340,7 @@ app.get('/api/company/:ticker', async (req, res) => {
       company_name: COMPANY_MAP[ticker] || ticker,
       prediction: prediction?.prediction || null,
       sentiment: sentiment || null,
-      financial: financial || null,
-      stockData: {},
+      stockData: stockData || null,  // ✅ Include stock data
       general_articles: [],
       financial_articles: [],
       timestamp: new Date().toISOString()
