@@ -1,31 +1,32 @@
 {
   "ticker": "DPW_DE",
-  "date": "2025-10-24",
+  "date": "2026-01-04",
   "prediction": {
     "final_signal": "HOLD",
     "direction": "NEUTRAL",
-    "combined_score": 0.069,
-    "confidence": 0.5,
-    "confidence_level": "LOW",
-    "reasoning": "Positive general sentiment (0.23)",
+    "combined_score": 0.8683132358959743,
+    "confidence": 0.75,
+    "confidence_level": "HIGH",
+    "reasoning": "Based on 7 articles; Sentiment: neutral (0.87); Primary event: none; Data sources: 7 sentiment analyses, 0 financial events",
     "components": {
       "general_sentiment": {
-        "label": "positive",
-        "score": 0.23,
-        "weight": 0.3,
-        "contribution": 0.069
+        "label": "neutral",
+        "score": 0.8683132358959743,
+        "weight": 0.4,
+        "contribution": 0.34732529435838977
       },
       "financial_signal": {
         "signal": "NEUTRAL",
         "score": 0.0,
-        "weight": 0.7,
+        "weight": 0.6,
         "contribution": 0.0
       }
     }
   },
   "data_sources": {
-    "general_articles": 6,
-    "financial_articles": 0
+    "total_articles": 7,
+    "sentiment_analyses": 7,
+    "financial_events": 0
   },
-  "generated_at": "2025-10-24T09:36:25.849180Z"
+  "generated_at": "2026-01-04T11:58:50.133718Z"
 }

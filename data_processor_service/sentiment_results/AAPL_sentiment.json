@@ -1,181 +1,103 @@
 {
   "ticker": "AAPL",
-  "company_sentiment": {
-    "label": "neutral",
-    "average_score": 0.14528621435165404,
-    "article_count": 3
-  },
-  "sentiment_distribution": {
-    "positive": 1,
-    "neutral": 2,
-    "negative": 0
-  },
-  "articles": [
+  "general_sentiment": [
     {
-      "url": "https://techcrunch.com/2025/10/23/openai-buys-sky-an-ai-interface-for-mac/",
-      "fetched_at": "2025-10-24T04:21:29.938810Z",
-      "published_date": "2025-10-23",
-      "published_datetime": "2025-10-23T20:53:02Z",
       "title": "OpenAI buys Sky, an AI interface for Mac | TechCrunch",
-      "content": "OpenAI announced on Thursday it has acquired Software Applications, Inc., the makers of an AI-powered natural language interface for Mac computers called Sky.\n\nThe software product, which had not been released to the public, is designed to work alongside you throughout your day, as you use apps on the computer, writing, planning, coding, and more. Similar to AI browsers, Sky can see what’s on the your screen and take action in your apps for you.\n\nThe move is a significant step toward embedding OpenAI’s technology into consumers’ everyday lives and within businesses that run on Mac.\n\n“We’ve always wanted computers to be more empowering, customizable, and intuitive. With LLMs, we can finally put the pieces together. That’s why we built Sky, an AI experience that floats over your desktop to help you think and create. We’re thrilled to join OpenAI to bring that vision to hundreds of millions of people,” Software Applications co-founder and CEO Ari Weinstein said in a statement.\n\nNotably, the team behind Sky had another prominent exit before this.\n\nWeinstein and Conrad Kramer previously co-founded Workflow, which they sold to Apple , where it became the technology now known as Shortcuts. Both continued to work at Apple for several years before leaving to found Software Applications in August 2023. Sky’s third co-founder and COO, Kim Beverett , was a senior program and product manager at Apple, where she spent nearly 10 years working on technology like Safari, WebKit, Privacy, Messages, Mail, Phone, FaceTime, and SharePlay.\n\nApple, which has so far been behind on AI, is expected to launch an overhauled Siri with AI smarts next year . Apple has already shipped other features that use its AI tech known as Apple Intelligence, including writing helpers, live translation, image creation, visual search, and more. It’s also working with OpenAI to shuffle off queries Siri can’t answer to ChatGPT. Apple Intelligence works across platforms, including Mac.\n\nIn addition, Apple offers a Foundation Models framework that provides access to local AI models, allowing developers to build AI into their apps directly.\n\nHowever, Apple values privacy as a core part of its AI offering, and an agentic system that views your screen and takes action on your behalf could raise concerns for some of its more security-minded customers. Agentic AI is still in its early days, and recent reviews indicate that AI browsers have a lot of safety risks . It could take Apple time to launch a Mac AI system comparable to Sky, as a result.\n\nDeal terms for OpenAI’s acquistion were not revealed, but Sky’s maker had raised $6.5 million from investors, including OpenAI CEO Sam Altman, Figma CEO Dylan Field, Context Ventures, and Stellation Capital, according to data from Pitchbook . OpenAI disclosed that Altman held a passive interest in the startup through an investment fund.\n\nThe deal was led by Head of ChatGPT Nick Turley and OpenAI’s CEO of Applications, Fidji Simo, and approved by OpenAI’s board.",
-      "meta_description": "OpenAI has acquired Software Applications, Inc., the startup behind Sky — an AI-powered natural language interface for Mac that can view your screen and take actions in your apps.",
-      "status": 200,
-      "source_domain": "techcrunch.com",
-      "word_count": 490,
-      "matched_companies": [
-        {
-          "name": "Apple Inc.",
-          "ticker": "AAPL",
-          "sector": "Technology & Manufacturing",
-          "mentions": 16
-        }
-      ],
-      "relevance_score": 0.45368620037807184,
-      "article_type": "company_specific",
-      "crawl_mode": "strict_today_only",
-      "primary_company": {
-        "name": "Apple Inc.",
-        "ticker": "AAPL",
-        "sector": "Technology & Manufacturing",
-        "mentions": 16
-      },
-      "classification": "general",
-      "classified_at": "2025-10-24T09:36:10.509502Z",
-      "sentiment_analysis": {
-        "overall": {
-          "label": "neutral",
-          "score": 0.0,
-          "confidence": 0.8034729957580566
-        },
-        "title_sentiment": {
-          "label": "neutral",
-          "score": 0.7843223214149475,
-          "confidence": 0.7843223214149475
-        },
-        "content_sentiment": {
-          "label": "neutral",
-          "score": 0.8226236701011658,
-          "confidence": 0.8226236701011658
-        },
-        "analyzed_at": "2025-10-24T09:36:13.793960Z"
-      }
+      "sentiment": "neutral",
+      "score": 0.8582932353019714
     },
     {
-      "url": "https://www.cnbc.com/2025/10/23/apple-american-made-ai-servers-texas.html",
-      "fetched_at": "2025-10-24T04:14:07.748750Z",
-      "published_date": "2025-10-23",
-      "published_datetime": "2025-10-23T21:26:11Z",
       "title": "Apple begins shipping American-made AI servers from Texas",
-      "content": "Apple has started shipping advanced servers for artificial intelligence applications out of a factory in Houston, Texas, the company announced on Thursday.\n\nThese servers are a core part of Apple's commitment to spend $600 billion in the U.S . on advanced manufacturing, suppliers, and other initiatives, and the milestone could please President Donald Trump , who has called for Apple and other technology companies to do more manufacturing on U.S. shores.\n\nApple's plan to assemble servers in the U.S. was first revealed in February.\n\nApple Chief Operating Officer Sabih Khan said on Thursday that the servers will power the company's Apple Intelligence and Private Cloud Compute services. Apple is using its own silicon in its Apple Intelligence servers.\n\n\"Our teams have done an incredible job accelerating work to get the new Houston factory up and running ahead of schedule and we plan to continue expanding the facility to increase production next year,\" Khan said in a statement.\n\nThe Houston factory is on track to create thousands of jobs, Apple said. The Apple servers were previously manufactured overseas.\n\nIn August, Apple CEO Tim Cook met with Trump to announce additional U.S. spending , especially on semiconductor companies under a program it calls the American Manufacturing Program.\n\nCook gave Trump a gift based on the U.S.-made Corning glass used on iPhones and Apple Watches.\n\nApple also opened a manufacturing academy in partnership with Michigan State in July .\n\nWhile Trump has praised Cook and Apple for its U.S. spending commitments, he has also at times pushed Apple to make its iPhones in the U.S ., a process that experts say could take years and would be costly.\n\nThe Trump administration has separately called for and cancelled tariffs that could hurt Apple, which imports its computers and phones to the U.S. from China, India, and Vietnam.\n\nIn September, Cook said in a CNBC interview that Apple is contributing to U.S. manufacturing by doing business with U.S.-based semiconductor suppliers, and that its spending and expertise is enabling chips to be fabricated and packaged entirely in the U.S.\n\n\"You can add a lot by making it global and then stitching together the end-to-end supply chain in semiconductors,\" Cook said. \"I can't stress how important this is and how much that will add to what we're doing.\"\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2025 CNBC LLC. All Rights Reserved. A Division of NBCUniversal\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
-      "meta_description": "The milestone could please President Donald Trump, who has called for Apple to do more manufacturing on U.S. shores.",
-      "status": 200,
-      "source_domain": "www.cnbc.com",
-      "word_count": 441,
-      "matched_companies": [
-        {
-          "name": "Apple Inc.",
-          "ticker": "AAPL",
-          "sector": "Technology & Manufacturing",
-          "mentions": 20
-        }
-      ],
-      "relevance_score": 0.6410256410256411,
-      "article_type": "company_specific",
-      "crawl_mode": "strict_today_only",
-      "primary_company": {
-        "name": "Apple Inc.",
-        "ticker": "AAPL",
-        "sector": "Technology & Manufacturing",
-        "mentions": 20
-      },
-      "classification": "general",
-      "classified_at": "2025-10-24T09:36:10.510505Z",
-      "sentiment_analysis": {
-        "overall": {
-          "label": "positive",
-          "score": 0.43585864305496214,
-          "confidence": 0.7946495413780212
-        },
-        "title_sentiment": {
-          "label": "neutral",
-          "score": 0.8628680109977722,
-          "confidence": 0.8628680109977722
-        },
-        "content_sentiment": {
-          "label": "positive",
-          "score": 0.7264310717582703,
-          "confidence": 0.7264310717582703
-        },
-        "analyzed_at": "2025-10-24T09:36:13.998478Z"
-      }
+      "sentiment": "neutral",
+      "score": 0.6237643361091614
     },
     {
-      "url": "https://techcrunch.com/2025/10/23/big-tech-is-paying-for-trumps-white-house-ballroom/",
-      "fetched_at": "2025-10-24T04:21:26.609182Z",
-      "published_date": "2025-10-24",
-      "published_datetime": "2025-10-24T02:54:46Z",
       "title": "Big tech is paying for Trump's White House ballroom | TechCrunch",
-      "content": "While the U.S. government remains in limbo during a shutdown , the White House grounds have been busy this week. Construction workers have begun demolition on the White House’s East Wing, which will be replaced by a 90,000-square-foot ballroom that’s estimated to hold up to 1,000 guests.\n\nTaxpayers are not funding President Donald Trump’s $250 million project. Rather, he is using private donations to construct his lavish addition to the White House.\n\nThe White House released a list of the project’s funders on Thursday, which include some of the most influential American tech companies, like Amazon, Apple, Google, Meta, and Microsoft, as well as defense companies like Palantir and Lockheed Martin and telecom providers like Comcast and T-Mobile. The crypto industry is also represented among the White House ballroom donors, with money coming from Coinbase, Ripple, Tether America, and the Winklevoss twins.\n\nIt is not clear how much each donor has contributed to the project. However, at least $20 million from Google is part of a recent lawsuit settlement over YouTube’s suspension of Trump’s account after the January 6, 2021, riots. TechCrunch asked Google if the money from the settlement represents the full extent of the company’s contributions, but has not yet received an answer.\n\nSilicon Valley’s relationship with Trump has changed markedly. While much of the tech industry initially resisted Trump when he became president for the first time in 2016, it has cozied up to Trump during his second term. Meta, for instance, did not donate to Trump’s first inauguration fund, but contributed $1 million to the president’s second inauguration; Amazon donated $58,000 the first time, but made a heftier $1 million donation this time around.\n\nThese donations reflect a greater alignment between Trump and the tech industry.\n\nThe industry could be more willing to cooperate with Trump’s current administration because many of these major tech companies are facing antitrust litigation. The Trump administration has been much less aggressive in its antitrust enforcement than former President Joe Biden’s FTC was under former FTC Chair Lina Khan.\n\nTrump has also taken a more aggressive approach to AI development than his predecessor, which is a financial boon for the companies building out that technology. In his AI action plan, which was unveiled in July, Trump and his administration outlined a goal to cut red tape and use government funds to support the construction of data centers.",
-      "meta_description": "Trump's $250 million White House ballroom will be funded in part by big tech companies like Amazon, Apple, Google, Meta, and Microsoft.",
-      "status": 200,
-      "source_domain": "techcrunch.com",
-      "word_count": 396,
-      "matched_companies": [
-        {
-          "name": "Alphabet Inc. (Google)",
-          "ticker": "GOOGL",
-          "sector": "Technology",
-          "mentions": 5
-        },
-        {
-          "name": "Amazon.com, Inc.",
-          "ticker": "AMZN",
-          "sector": "E-commerce",
-          "mentions": 3
-        },
-        {
-          "name": "Microsoft Corporation",
-          "ticker": "MSFT",
-          "sector": "Technology",
-          "mentions": 2
-        },
-        {
-          "name": "Apple Inc.",
-          "ticker": "AAPL",
-          "sector": "Technology & Manufacturing",
-          "mentions": 2
-        }
-      ],
-      "relevance_score": 0.4195804195804196,
-      "article_type": "company_specific",
-      "crawl_mode": "strict_today_only",
-      "primary_company": {
-        "name": "Apple Inc.",
-        "ticker": "AAPL",
-        "sector": "Technology & Manufacturing",
-        "mentions": 2
-      },
-      "classification": "general",
-      "classified_at": "2025-10-24T09:36:10.512506Z",
-      "sentiment_analysis": {
-        "overall": {
-          "label": "neutral",
-          "score": 0.0,
-          "confidence": 0.9293413162231445
-        },
-        "title_sentiment": {
-          "label": "neutral",
-          "score": 0.9334326386451721,
-          "confidence": 0.9334326386451721
-        },
-        "content_sentiment": {
-          "label": "neutral",
-          "score": 0.9252499938011169,
-          "confidence": 0.9252499938011169
-        },
-        "analyzed_at": "2025-10-24T09:36:14.220984Z"
-      }
+      "sentiment": "neutral",
+      "score": 0.8545395731925964
+    },
+    {
+      "title": "Is Apple Going to Be Hit Hard by President Trump's Tariffs? | The Motley Fool",
+      "sentiment": "positive",
+      "score": 0.772678017616272
     }
   ],
-  "analyzed_at": "2025-10-24T09:36:14.220984Z"
+  "financial_sentiment": [
+    {
+      "title": "Apple To Buy Warner Bros. Discovery? Could Be A Streaming Power Move - Apple (NASDAQ:AAPL), Amazon.com (NASDAQ:AMZN)",
+      "sentiment": "neutral",
+      "score": 0.6273185014724731
+    },
+    {
+      "title": "This Fund Bet $3.3 Billion on GPIX \u2014 Here's Why Income-Focused ETFs Are Gaining Momentum | The Motley Fool",
+      "sentiment": "positive",
+      "score": 0.8697285056114197
+    },
+    {
+      "title": "ET Prime Special Series - Part 3 - How to think & scan like an auditor before investing: Assets a wall of strength or just a paper fort?",
+      "sentiment": "neutral",
+      "score": 0.9370238780975342
+    },
+    {
+      "title": "Warren Buffett's Berkshire is lagging the S&P 500 by the largest gap so far this year",
+      "sentiment": "negative",
+      "score": 0.9176055788993835
+    },
+    {
+      "title": "5 Things to Know About Amazon Stock Before You Buy | The Motley Fool",
+      "sentiment": "neutral",
+      "score": 0.6500689387321472
+    },
+    {
+      "title": "AI spending is boosting the economy, but many businesses are in survival mode",
+      "sentiment": "negative",
+      "score": 0.8784040808677673
+    },
+    {
+      "title": "US stocks notch record closing highs on cool inflation, solid earnings",
+      "sentiment": "neutral",
+      "score": 0.8620508909225464
+    },
+    {
+      "title": "The 2 Best Artificial Intelligence (AI) Stocks to Buy Before 2026, According to Certain Wall Street Analysts | The Motley Fool",
+      "sentiment": "positive",
+      "score": 0.917853593826294
+    },
+    {
+      "title": "Nvidia Has 95% of Its Portfolio Invested in 2 Artificial Intelligence (AI) Stocks | The Motley Fool",
+      "sentiment": "positive",
+      "score": 0.7381389141082764
+    },
+    {
+      "title": "Asian stocks rally as trade tensions ease, gold drops",
+      "sentiment": "neutral",
+      "score": 0.8753049373626709
+    },
+    {
+      "title": "Is Union Pacific Trump ballroom donation Vena's merger knockout punch?",
+      "sentiment": "negative",
+      "score": 0.7336803078651428
+    },
+    {
+      "title": "3 Artificial Intelligence Stocks to Buy and Hold Through 2035 | The Motley Fool",
+      "sentiment": "positive",
+      "score": 0.5106174945831299
+    },
+    {
+      "title": "Prediction: Nvidia Will Form the $5 Trillion Club Before 2026, Followed by This \"Ten Titans\" Growth Stock in 2027 | The Motley Fool",
+      "sentiment": "neutral",
+      "score": 0.7778896689414978
+    },
+    {
+      "title": "3 Artificial Intelligence Stocks to Buy in 2026 That Could Be Better Picks Than Palantir | The Motley Fool",
+      "sentiment": "neutral",
+      "score": 0.7996033430099487
+    },
+    {
+      "title": "The 5 Hottest Robinhood Stocks to Kick Off 2026 | The Motley Fool",
+      "sentiment": "negative",
+      "score": 0.44433727860450745
+    }
+  ],
+  "analyzed_at": "2026-01-04T12:00:37.080876Z"
 }

@@ -116,11 +116,11 @@ const StockCard = ({ stock }) => {
         <div className="flex items-center gap-4 text-xs text-gray-500 pb-3 border-b">
           <div className="flex items-center gap-1">
             <Activity className="w-3 h-3" />
-            <span>{data_sources.general_articles} general</span>
+            <span>{data_sources?.general_articles || 0} general</span>
           </div>
           <div className="flex items-center gap-1">
             <DollarSign className="w-3 h-3" />
-            <span>{data_sources.financial_articles} financial</span>
+            <span>{data_sources?.financial_articles || 0} financial</span>
           </div>
         </div>
 
@@ -144,26 +144,32 @@ const StockCard = ({ stock }) => {
 
         {/* Expanded Details */}
         {expanded && (
-          <div className="mt-4 pt-4 border-t space-y-3 animate-fadeIn">
-            {/* Component Breakdown */}
-            <div>
-              <div className="text-xs font-semibold text-gray-700 mb-2">Signal Components</div>
-              <div className="space-y-2">
-                <ComponentBar
-                  label="General Sentiment"
-                  value={prediction.components.general_sentiment.score}
-                  contribution={prediction.components.general_sentiment.contribution}
-                  weight={prediction.components.general_sentiment.weight}
-                />
-                <ComponentBar
-                  label="Financial Signal"
-                  value={prediction.components.financial_signal.score}
-                  contribution={prediction.components.financial_signal.contribution}
-                  weight={prediction.components.financial_signal.weight}
-                />
-              </div>
-            </div>
-
+            <div className="mt-4 pt-4 border-t space-y-3 animate-fadeIn">
+              {/* Component Breakdown */}
+              {prediction.components && (
+                <div>
+                  <div className="text-xs font-semibold text-gray-700 mb-2">Signal Components</div>
+                  <div className="space-y-2">
+                    {prediction.components.general_sentiment && (
+                      <ComponentBar
+                        label="General Sentiment"
+                        value={prediction.components.general_sentiment.score || 0}
+                        contribution={prediction.components.general_sentiment.contribution || 0}
+                        weight={prediction.components.general_sentiment.weight || 0.3}
+                      />
+                    )}
+                    {prediction.components.financial_signal && (
+                      <ComponentBar
+                        label="Financial Signal"
+                        value={prediction.components.financial_signal.score || 0}
+                        contribution={prediction.components.financial_signal.contribution || 0}
+                        weight={prediction.components.financial_signal.weight || 0.7}
+                      />
+                    )}
+                  </div>
+                </div>
+              )}
+              
             {/* Actions */}
             <div className="flex gap-2 pt-2">
               <button className="flex-1 px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium flex items-center justify-center gap-2 transition-colors">

@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/5-predictions-for-the-stock-market-in-2026-and-whi/",
+  "fetched_at": "2026-01-04T09:21:12.457046Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T08:45:00Z",
+  "title": "5 Predictions for the Stock Market in 2026 -- and Which Stocks Will Soar the Most If They're Right | The Motley Fool",
+  "content": "A year ago, I made five predictions for the stock market in 2025 . Some came true (at least partially), while others didn't.\n\nFor example, I predicted agentic AI would be a big thing, and that Google parent Alphabet 's ( GOOG +0.48% ) ( GOOGL +0.69% ) stock would soar. Both happened.\n\nOn the other hand, I thought that stubbornly high inflation would cause angst for investors, benefiting Costco Wholesale ( COST 0.91% ) . Inflation remained high, but investors largely shrugged it off. And Costco's share price fell in 2025. I'm clearly no Nostradamus.\n\nDespite my mixed record last year, I've decided to step out on a limb with more predictions for the stock market in 2026. Here they are – and which stocks will soar the most if they're right.\n\nI predict that the third time will be the charm for the S&P 500 ( ^GSPC +0.19% ) . The index has delivered double-digit gains for three consecutive years, but I expect this streak will end in 2026.\n\nDo I forecast a major market sell-off? Nope. The economy and corporate earnings seem to remain strong enough to avoid such a calamity. Instead, my hunch is that we'll see the S&P 500 deliver single-digit gains this year.\n\nInvestors should be happy with additional positive returns. However, I suspect many have been spoiled by the strong bull market that began in late 2022 and will be disappointed in 2026.\n\nThe ginormous \"Magnificent Seven\" stocks have been the stars of the stock market in recent years. In 2025, international stocks were the biggest winners. I predict, though, that small- and mid-cap stocks will, at long last, take the torch in 2026.\n\nIt's difficult to predict which small- or mid-cap stocks will be the biggest winners, but I'll highlight one that I really like. Mirum Pharmaceuticals ' ( MIRM 1.17% ) share price nearly doubled in 2025. I predict another great year for the small drugmaker in 2026.\n\nMirum's flagship product, Livmarli, appears likely to continue gaining momentum in the new year. I expect the company to report positive results from a Phase 2 clinical study evaluating volixibat for the treatment of primary sclerosing cholangitis in 2026. In addition, Mirum's acquisition of Bluejay Therapeutics could begin to bear fruit quickly, with positive results from a Phase 3 study of brelovitug in treating chronic hepatitis delta virus likely in the second half of the year.\n\nSome predict that there's an \"AI bubble\" and that it's poised to burst at any moment. Not me. However, I think we could see a shift from hype to harvest. In other words, investors will expect companies to deliver solid returns from AI investments in 2026.\n\nLast year, I picked Alphabet as a likely AI winner. I'm sticking with that choice again for 2026. The company's Google Cloud unit will continue gaining ground on its top rivals this year, in my view. I even predict that more customers will choose Google's Tensor Processing Units (TPUs) over Nvidia 's ( NVDA +1.14% ) GPUs over the next 12 months.\n\nAnd, yes, I predict that agentic AI will be a key growth driver for Alphabet. I expect the technology to help increase tangible returns on AI investments in 2026, with Google Cloud likely to be a primary beneficiary.\n\nRenewable energy doesn't enjoy the favor with the Trump administration as it did when Joe Biden was president. However, that didn't stop renewable energy stocks such as Brookfield Renewable ( BEP +3.56% ) ( BEPC +4.04% ) and Clearway Energy ( CWEN +2.10% ) from rising in 2025. I predict this renewables rebound will continue in 2026.\n\nWhat's my reasoning for this prediction? Because I expect AI growth to remain strong, I think that the demand for energy to power data centers will increase. Even with an administration that isn't exactly a fan of renewable energy, solar and wind will still be viewed as attractive sources of much-needed power. I look for the good times to keep rolling for Brookfield Renewable and Clearway Energy this year.\n\nPolitics and investing often intersect. I anticipate we'll see such an intersection in 2026, which is a mid-term election year.\n\nHistorically, the stock market is more volatile during mid-term election years than in other years. However, once the uncertainty about the makeup of the incoming Congress fades, the volatility disappears with stocks moving higher. I predict that's what will happen in 2026.\n\nTypically, the political party not in control gains seats during midterm elections. That seems likely to happen again this year. If Democrats retake control of the House of Representatives (and possibly the Senate as well), I doubt that much legislation will pass that President Trump will sign. One potential exception, though, could be with easing restrictions on access to banking services for cannabis operators.\n\nMany Democrats have supported legislation aimed at achieving this goal in the past. Based on his recent executive order related to rescheduling marijuana, President Trump appears to be open to signing a bill that would reduce financial restrictions for the cannabis industry. If Democrats win in November, Green Thumb Industries ( GTBIF +0.67% ) and Trulieve Cannabis ( TCNNF +0.11% ) could be big winners in the final months of 2026.",
+  "meta_description": "Not all of these predictions may come true. But at least a few of them will likely do so.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 872,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 10
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.19693654266958424,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 2
+  }
+}

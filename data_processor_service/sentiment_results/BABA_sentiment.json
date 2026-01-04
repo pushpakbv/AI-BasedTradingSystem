@@ -1,65 +1,23 @@
 {
   "ticker": "BABA",
-  "company_sentiment": {
-    "label": "positive",
-    "average_score": 0.2044994354248047,
-    "article_count": 1
-  },
-  "sentiment_distribution": {
-    "positive": 1,
-    "neutral": 0,
-    "negative": 0
-  },
-  "articles": [
+  "general_sentiment": [
     {
-      "url": "https://www.digitalcommerce360.com/2025/10/23/alibaba-expands-consumer-ai-strategy-quark-chatbot/",
-      "fetched_at": "2025-10-24T04:23:16.703804Z",
-      "published_date": "2025-10-23",
-      "published_datetime": "2025-10-23T20:25:11Z",
       "title": "Alibaba expands consumer AI strategy",
-      "content": "Alibaba Group has unveiled a new consumer-facing AI chatbot and a line of smart glasses under its Quark brand, marking the company’s latest move to extend artificial intelligence from enterprise applications into daily consumer use.\n\nAlibaba launched the Quark AI Chat Assistant on Oct. 23. It introduces a conversational mode powered by Alibaba’s Qwen3 large language models (LLMs) within the Quark app. This feature lets users toggle between text- or voice-based dialogue and traditional search, creating a unified interface for accessing information, performing tasks, and holding natural conversations.\n\nAlibaba owns the world’s two largest online marketplaces by gross merchandise value (GMV), Taobao and Tmall. Taobao ranks No. 1 in the Global Online Marketplaces Database , Digital Commerce 360’s ranking of the largest such marketplaces by GMV. Tmall ranks No. 2. Both platforms operate in China and primarily serve the Chinese market. Among Alibaba’s other marketplaces is the global B2B marketplace Alibaba.com .\n\nAlibaba posts a 10% gain in ecommerce sales in Q1\n\nThe assistant supports multimodal interactions — including photo-based problem solving, AI writing, photo editing and voice calling. Consumers can access it by selecting “assistant” in the Quark AI Super Box. Alternatively, they can swipe right on the app’s home screen.\n\n“With the newly added feature, Quark provides a dual engine of AI search and conversation, delivering a complete AI experience that both gets you straight to the information you need and enables deeper exploration,” Alibaba said.\n\nAccording to Alibaba, the chatbot is powered by the company’s Qwen3 models, which deliver stronger reasoning and execution capabilities than previous generations. Future updates will integrate Model Context Protocol (MCP) tools from across Alibaba’s ecosystem to enhance task automation and third-party connectivity.\n\nAlongside the chatbot debut, Alibaba announced the Quark AI Glasses, its first self-developed smart eyewear powered by Qwen and Quark’s multimodal AI engine. Pre-sales begin Oct. 24 on Tmall, Alibaba’s flagship ecommerce marketplace, with shipments scheduled to start in December.",
-      "meta_description": "Alibaba's Quark AI Chat Assistant, launched Oct. 23, introduces a conversational mode for consumers powered by Qwen3 LLMs.",
-      "status": 200,
-      "source_domain": "www.digitalcommerce360.com",
-      "word_count": 320,
-      "matched_companies": [
-        {
-          "name": "Alibaba Group Holding Limited",
-          "ticker": "BABA",
-          "sector": "E-commerce",
-          "mentions": 19
-        }
-      ],
-      "relevance_score": 0.8309037900874635,
-      "article_type": "company_specific",
-      "crawl_mode": "strict_today_only",
-      "primary_company": {
-        "name": "Alibaba Group Holding Limited",
-        "ticker": "BABA",
-        "sector": "E-commerce",
-        "mentions": 19
-      },
-      "classification": "general",
-      "classified_at": "2025-10-24T09:36:10.533951Z",
-      "sentiment_analysis": {
-        "overall": {
-          "label": "positive",
-          "score": 0.2044994354248047,
-          "confidence": 0.6747204959392548
-        },
-        "title_sentiment": {
-          "label": "positive",
-          "score": 0.5112485885620117,
-          "confidence": 0.5112485885620117
-        },
-        "content_sentiment": {
-          "label": "neutral",
-          "score": 0.8381924033164978,
-          "confidence": 0.8381924033164978
-        },
-        "analyzed_at": "2025-10-24T09:36:16.704191Z"
-      }
+      "sentiment": "neutral",
+      "score": 0.6867687106132507
     }
   ],
-  "analyzed_at": "2025-10-24T09:36:16.704191Z"
+  "financial_sentiment": [
+    {
+      "title": "AI lifts leaders in September Ecommerce Stock Index results",
+      "sentiment": "positive",
+      "score": 0.9346781969070435
+    },
+    {
+      "title": "Alibaba posts a 10% gain in ecommerce sales in Q1",
+      "sentiment": "positive",
+      "score": 0.9596005082130432
+    }
+  ],
+  "analyzed_at": "2026-01-04T11:58:46.338303Z"
 }

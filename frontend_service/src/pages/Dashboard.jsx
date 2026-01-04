@@ -10,11 +10,7 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   // Always use the predictions array from the API response
-  const predictionList = Array.isArray(predictions)
-    ? predictions
-    : (predictions && Array.isArray(predictions.predictions))
-      ? predictions.predictions
-      : [];
+  const predictionList = Array.isArray(predictions) ? predictions : [];
 
   if (loading) {
     return (

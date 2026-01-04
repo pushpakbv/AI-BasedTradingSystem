@@ -1,0 +1,23 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/03/2-genius-stocks-this-billionaire-is-loading-up-on/",
+  "fetched_at": "2026-01-04T05:32:36.182200Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T02:14:00Z",
+  "title": "2 Genius Stocks This Billionaire Is Loading Up on for 2026 | The Motley Fool",
+  "content": "Daniel Loeb and Third Point Management have posted an impressive track record since the company's founding in 1995. When they make moves in the market, investors should pay attention, and two stocks they bought in the third quarter look like great investment picks.\n\nThanks to Securities and Exchange Commission (SEC) reporting requirements, we know that Third Point added to its Microsoft ( MSFT 2.21% ) and Meta Platforms ( META 1.47% ) positions during Q3. Both moves are significant and indicate that the hedge fund believes these two stocks have strong upside.\n\nFrom the second quarter to Q3, Third Point added 700,000 shares of Microsoft. That nearly tripled its position in the stock, indicating huge confidence. Microsoft is a key player in the artificial intelligence realm, and this addition shouldn't come as a surprise to anyone.\n\nWhile Third Point could be buying Microsoft for its underlying business, it could also be adding shares as a way of proxy-investing in OpenAI . Because OpenAI, the maker of ChatGPT, isn't a public company, owning Microsoft is one of the ways investors can gain OpenAI exposure. Microsoft reportedly owns about 27% of OpenAI, and with rumors swirling that OpenAI could go public sometime in 2026, that could result in Microsoft's stock spiking if OpenAI goes public.\n\nEven without that catalyst, Microsoft's base business is thriving, with its Office products seeing strong growth due to Copilot adoption and its cloud computing business, Azure, being a top option to build AI models in.\n\nWall Street analysts expect Microsoft to post solid gains over the next few years, with fiscal year 2026 (ending June 30, 2026) and FY 2027 revenue growth expected to be about 16% and 15%, respectively. That's market-beating growth, making it fairly obvious why Daniel Loeb and Third Point want exposure to Microsoft.\n\nI think Microsoft will continue to be a strong AI pick, and investors can follow Loeb's trade with confidence.\n\nMoney managers aren't required to report their end-of-quarter holdings until 45 days after the quarter closes, so the information we are dealing with from Third Point is as of Sept. 30, the end of the third quarter.\n\nUnfortunately for Meta shareholders, the stock is down around 10% since then. This sell-off occurred because of a poorly received Q3 earnings report, highlighting how much money Meta plans to spend on data center capital expenditures during 2026.\n\nIt wouldn't surprise me if Third Point loaded up on the stock in the fourth quarter, though we won't know until it submits its next filing. The reason I think Third Point likely added to its position during Q4 is that Meta's core business was quite strong during that time frame. Despite the stock plummeting following the Q3 earnings announcement, Meta's revenue rose an impressive 26% year over year. This shows the strength of its underlying ads business in the social media space , and is a trend that likely won't slow down anytime soon.\n\nAfter the sell-off, Meta trades for an attractive 22 times 2026 earning estimates.\n\nMETA PE Ratio (Forward 1y) data by YCharts.\n\nFor comparison, the S&P 500 ( ^GSPC +0.19% ) trades for 22.3 times forward earnings estimates. With Meta trading at a discount to the broader market, I think that this indicates it's a great time to buy the stock. After all, it's putting up market-beating growth quarter after quarter, so this decline should be temporary.",
+  "meta_description": "Daniel Loeb bought Microsoft and Meta Platforms during the third quarter.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 565,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 14
+    }
+  ],
+  "relevance_score": 0.3553299492385787,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

@@ -1,31 +1,32 @@
 {
   "ticker": "CHRW",
-  "date": "2025-10-24",
+  "date": "2026-01-04",
   "prediction": {
-    "final_signal": "HOLD",
-    "direction": "NEUTRAL",
-    "combined_score": 0.0,
+    "final_signal": "SELL",
+    "direction": "DOWN",
+    "combined_score": 0.8309594392776489,
     "confidence": 0.5,
     "confidence_level": "LOW",
-    "reasoning": "Neutral signals across the board",
+    "reasoning": "Based on 1 articles; Sentiment: negative (0.83); Primary event: none; Data sources: 1 sentiment analyses, 0 financial events",
     "components": {
       "general_sentiment": {
-        "label": "neutral",
-        "score": 0.0,
-        "weight": 0.3,
-        "contribution": 0.0
+        "label": "negative",
+        "score": 0.8309594392776489,
+        "weight": 0.4,
+        "contribution": 0.3323837757110596
       },
       "financial_signal": {
         "signal": "NEUTRAL",
         "score": 0.0,
-        "weight": 0.7,
+        "weight": 0.6,
         "contribution": 0.0
       }
     }
   },
   "data_sources": {
-    "general_articles": 1,
-    "financial_articles": 0
+    "total_articles": 1,
+    "sentiment_analyses": 1,
+    "financial_events": 0
   },
-  "generated_at": "2025-10-24T09:36:25.829866Z"
+  "generated_at": "2026-01-04T11:58:47.697783Z"
 }

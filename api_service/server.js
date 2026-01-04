@@ -144,7 +144,7 @@ watchDirectories.forEach(dir => {
 
 // ============ API ROUTES ============
 
-// Health check
+
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'healthy',
@@ -154,24 +154,89 @@ app.get('/api/health', (req, res) => {
 });
 
 // Get daily predictions summary
+// Get daily predictions summary
 app.get('/api/predictions/daily', async (req, res) => {
   try {
-    const summaryPath = path.join(PREDICTIONS_DIR, 'daily_predictions_summary.json');
-    const data = await fs.readFile(summaryPath, 'utf8');
-    const summary = JSON.parse(data);
-
-    // Add company_name to each prediction if missing
-    if (Array.isArray(summary.predictions)) {
-      summary.predictions = summary.predictions.map(pred => ({
-        ...pred,
-        company_name: pred.company_name || (pred.ticker ? COMPANY_MAP[pred.ticker] || pred.ticker : undefined)
-      }));
+    console.log('📍 Fetching predictions from:', PREDICTIONS_DIR);
+    
+    // Ensure directory exists
+    try {
+      await fs.mkdir(PREDICTIONS_DIR, { recursive: true });
+    } catch (err) {
+      console.error('❌ Failed to access predictions directory');
     }
-
-    res.json(summary);
+    
+    const files = await fs.readdir(PREDICTIONS_DIR);
+    console.log(`📂 Files in directory (${files.length}):`, files);
+    
+    const predictionFiles = files.filter(f => f.endsWith('_prediction.json'));
+    console.log(`🔍 Prediction files found (${predictionFiles.length}):`, predictionFiles);
+    
+    if (predictionFiles.length === 0) {
+      console.warn('⚠️ No prediction files found');
+      return res.json({ 
+        predictions: [],
+        timestamp: new Date().toISOString()
+      });
+    }
+    
+    const predictions = [];
+    
+    for (const file of predictionFiles) {
+      try {
+        const ticker = file.replace('_prediction.json', '');
+        const filePath = path.join(PREDICTIONS_DIR, file);
+        console.log(`📄 Reading: ${filePath}`);
+        
+        const data = await fs.readFile(filePath, 'utf8');
+        const predictionObj = JSON.parse(data);
+        
+        // Validate structure
+        if (!predictionObj.prediction || !predictionObj.prediction.final_signal) {
+          console.warn(`⚠️ Invalid prediction structure for ${ticker}:`, predictionObj);
+          continue;
+        }
+        
+        // Ensure proper structure
+        const validPrediction = {
+          ticker: predictionObj.ticker || ticker,
+          company_name: COMPANY_MAP[ticker] || ticker,
+          prediction: {
+            final_signal: predictionObj.prediction.final_signal,
+            direction: predictionObj.prediction.direction || 'NEUTRAL',
+            combined_score: predictionObj.prediction.combined_score || 0,
+            confidence: predictionObj.prediction.confidence || 0.5,
+            confidence_level: predictionObj.prediction.confidence_level || 'LOW',
+            reasoning: predictionObj.prediction.reasoning || 'No reasoning available',
+            components: predictionObj.prediction.components || {}
+          },
+          data_sources: predictionObj.data_sources || {  // ✅ Add this
+            general_articles: 0,
+            financial_articles: 0,
+            total_articles: 0
+          },
+          generated_at: predictionObj.generated_at || new Date().toISOString()
+        };
+        
+        predictions.push(validPrediction);
+        console.log(`✅ Loaded ${ticker}: ${validPrediction.prediction.final_signal}`);
+      } catch (e) {
+        console.error(`❌ Error loading ${file}:`, e.message);
+      }
+    }
+    
+    console.log(`✅ Returning ${predictions.length} valid predictions`);
+    res.json({ 
+      predictions,
+      timestamp: new Date().toISOString(),
+      count: predictions.length
+    });
   } catch (error) {
-    console.error('Error reading daily summary:', error);
-    res.status(500).json({ error: 'Failed to load predictions' });
+    console.error('❌ Error in /api/predictions/daily:', error);
+    res.status(500).json({ 
+      error: 'Failed to load predictions',
+      details: error.message
+    });
   }
 });
 
@@ -182,32 +247,15 @@ app.get('/api/predictions/:ticker', async (req, res) => {
     const filePath = path.join(PREDICTIONS_DIR, `${ticker}_prediction.json`);
     const data = await fs.readFile(filePath, 'utf8');
     const prediction = JSON.parse(data);
-    
-    // Add company name
-    prediction.company_name = COMPANY_MAP[ticker] || ticker;
 
-    res.json(prediction);
+    res.json({
+      ticker,
+      company_name: COMPANY_MAP[ticker] || ticker,
+      prediction
+    });
   } catch (error) {
     console.error(`Error reading ${req.params.ticker}:`, error);
     res.status(404).json({ error: 'Stock not found' });
-  }
-});
-
-// Get sentiment results
-app.get('/api/sentiment/:ticker', async (req, res) => {
-  try {
-    const { ticker } = req.params;
-    const sentimentPath = path.join(SENTIMENT_DIR, `${ticker}_sentiment.json`);
-    const data = await fs.readFile(sentimentPath, 'utf8');
-    const sentiment = JSON.parse(data);
-    
-    // Add company name
-    sentiment.company_name = COMPANY_MAP[ticker] || ticker;
-
-    res.json(sentiment);
-  } catch (error) {
-    console.error(`Error reading sentiment for ${req.params.ticker}:`, error);
-    res.status(404).json({ error: 'Sentiment data not found' });
   }
 });
 
@@ -253,47 +301,66 @@ app.get('/api/stock/:ticker', async (req, res) => {
 app.get('/api/company/:ticker', async (req, res) => {
   try {
     const { ticker } = req.params;
-
-    // Fetch all data for this company
-    const [prediction, sentiment, financial, stockData] = await Promise.allSettled([
-      fs.readFile(path.join(PREDICTIONS_DIR, `${ticker}_prediction.json`), 'utf8'),
-      fs.readFile(path.join(SENTIMENT_DIR, `${ticker}_sentiment.json`), 'utf8'),
-      fs.readFile(path.join(FINANCIAL_DIR, `${ticker}_financial_analysis.json`), 'utf8'),
-      fs.readFile(path.join(STOCK_DATA_DIR, `${ticker}_stock_data.json`), 'utf8')
-    ]);
-
-    // --- Add: Load general and financial articles ---
-    let generalArticles = [];
-    let financialArticles = [];
+    console.log(`📍 Fetching company data for ${ticker}`);
+    
+    // Read prediction file
+    const predictionFile = path.join(PREDICTIONS_DIR, `${ticker}_prediction.json`);
+    let prediction = null;
+    
     try {
-      const generalPath = path.join(__dirname, '..', 'data_processor_service', 'classified_articles', 'general', `${ticker}_general.json`);
-      const financialPath = path.join(__dirname, '..', 'data_processor_service', 'classified_articles', 'financial', `${ticker}_financial.json`);
-      generalArticles = JSON.parse(await fs.readFile(generalPath, 'utf8'));
-      financialArticles = JSON.parse(await fs.readFile(financialPath, 'utf8'));
+      const data = await fs.readFile(predictionFile, 'utf8');
+      prediction = JSON.parse(data);
     } catch (e) {
-      // If files not found, leave arrays empty
+      console.warn(`⚠️ No prediction found for ${ticker}`);
     }
-    // --- End Add ---
-
-    const result = {
+    
+    // Read sentiment file
+    const sentimentFile = path.join(SENTIMENT_DIR, `${ticker}_sentiment.json`);
+    let sentiment = null;
+    
+    try {
+      const data = await fs.readFile(sentimentFile, 'utf8');
+      sentiment = JSON.parse(data);
+    } catch (e) {
+      console.warn(`⚠️ No sentiment data found for ${ticker}`);
+    }
+    
+    // Read financial data file (check both naming conventions)
+    let financial = null;
+    let financialFile = path.join(FINANCIAL_DIR, `${ticker}_financial_analysis.json`);
+    
+    try {
+      let data = await fs.readFile(financialFile, 'utf8');
+      financial = JSON.parse(data);
+    } catch (e) {
+      // Try alternative naming
+      financialFile = path.join(FINANCIAL_DIR, `${ticker}_financial.json`);
+      try {
+        const data = await fs.readFile(financialFile, 'utf8');
+        financial = JSON.parse(data);
+      } catch (e2) {
+        console.warn(`⚠️ No financial data found for ${ticker}`);
+      }
+    }
+    
+    // Return aggregated data
+    res.json({
       ticker,
       company_name: COMPANY_MAP[ticker] || ticker,
-      prediction: prediction.status === 'fulfilled' ? { ...JSON.parse(prediction.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
-      sentiment: sentiment.status === 'fulfilled' ? { ...JSON.parse(sentiment.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
-      financial: financial.status === 'fulfilled' ? { ...JSON.parse(financial.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
-      stockData: stockData.status === 'fulfilled' ? { ...JSON.parse(stockData.value), company_name: COMPANY_MAP[ticker] || ticker } : null,
-      general_articles: generalArticles,
-      financial_articles: financialArticles
-    };
-
-    res.json(result);
+      prediction: prediction?.prediction || null,
+      sentiment: sentiment || null,
+      financial: financial || null,
+      stockData: {},
+      general_articles: [],
+      financial_articles: [],
+      timestamp: new Date().toISOString()
+    });
   } catch (error) {
-    console.error(`Error reading company data for ${req.params.ticker}:`, error);
+    console.error(`❌ Error fetching company data for ${ticker}:`, error);
     res.status(500).json({ error: 'Failed to load company data' });
   }
 });
 
-// ...existing code...
 
 // Get list of available companies
 app.get('/api/companies', async (req, res) => {

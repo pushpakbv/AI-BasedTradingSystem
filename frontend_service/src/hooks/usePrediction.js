@@ -15,18 +15,37 @@ export const usePredictions = () => {
   const reconnectTimeoutRef = useRef(null);
 
   const fetchPredictions = useCallback(async () => {
-    try {
-      setError(null);
-      const response = await axios.get(`${API_BASE_URL}/predictions/daily`);
-      setPredictions(response.data);
-      setLastUpdate(new Date());
-      setLoading(false);
-    } catch (err) {
-      setError(err.message || 'Failed to fetch predictions');
-      setLoading(false);
-      console.error('Error fetching predictions:', err);
-    }
-  }, []);
+  try {
+    setError(null);
+    console.log(`📡 Fetching from: ${API_BASE_URL}/predictions/daily`);
+    const response = await axios.get(`${API_BASE_URL}/predictions/daily`);
+    console.log('✅ Response received:', response.data);
+    
+    // Validate response structure
+    const predictionsArray = response.data.predictions || [];
+    
+    // Filter out any invalid predictions
+    const validPredictions = predictionsArray.filter(p => {
+      const isValid = p && p.ticker && p.prediction && p.prediction.final_signal;
+      if (!isValid) {
+        console.warn('⚠️ Skipping invalid prediction:', p);
+      }
+      return isValid;
+    });
+    
+    console.log(`✅ Loaded ${validPredictions.length} valid predictions`);
+    
+    setPredictions(validPredictions);
+    setLastUpdate(new Date());
+    setLoading(false);
+  } catch (err) {
+    console.error('❌ Error fetching predictions:', err);
+    setError(err.message);
+    setPredictions([]);
+    setLoading(false);
+  }
+}, []);
+
 
   // WebSocket connection
   const connectWebSocket = useCallback(() => {

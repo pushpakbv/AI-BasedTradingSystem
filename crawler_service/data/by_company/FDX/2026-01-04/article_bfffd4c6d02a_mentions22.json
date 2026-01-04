@@ -1,0 +1,35 @@
+{
+  "url": "https://www.logisticsmgmt.com/article/fedex_posts_fiscal_first_quarter_earnings_growth",
+  "fetched_at": "2026-01-04T06:20:33.982138Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T06:20:33.974656Z",
+  "title": "FedEx posts fiscal first quarter earnings growth",
+  "content": "Memphis-based global freight transportation and logistics services provider FedEx reported late yesterday that fiscal first quarter earnings saw growth.\n\nQuarterly revenue, at $23.5 billion, increased 7% annually, and operating income, at $1.38 billion, was up 31%. Earnings per share, at $4.82, beat Wall Street expectations, at $4.02.\n\n“FedEx delivered an outstanding second quarter as we successfully executed our growth strategy and advanced our network transformation, while navigating a highly challenging external environment,” said Raj Subramaniam, FedEx Corp. president and chief executive officer. “I am extremely proud of our team members worldwide for their commitment to make every FedEx experience outstanding this Peak season.”\n\nFedEx Express revenue, at $20.4 billion, was up 8% annually. The company said the revenue gain was paced by higher U.S. domestic and International Priority package yields, continued cost savings from transformation initiatives, lower business optimization costs, and increased U.S. package volume. And it added that these drivers were partially offset by the financial impact of global trade policy changes, higher wage rates, and variable incentive compensation expenses, increased purchased transportation rates, and the grounding of the MD11 aircraft fleet.\n\nFedEx Freight revenue, $2.13 billion, was off 2% annually, with operating results impacted by lower shipments, higher wage rates, and the hiring of dedicated LTL sales professionals in advance of the planned spin-off of FedEx Freight, which was partially spun off by increased yield. And it added that FedEx Freight incurred one-time spin-off costs of $152 million in the quarter.\n\nRegarding the spin-off of FedEx Freight into a new publicly traded company, the company said that “it continues to advance and is expected to be achieved in a tax-efficient manner for FedEx stockholders and executed on June 1, 2026,” and when the separation is complete, FedEx Freight will be a separately traded public company, listed on the New York Stock Exchange (NYSE) under the ticker symbol FDXF.\n\n“In Q2, we provided excellent service to our customers, won new business in high-value verticals, and delivered strong results, high single-digit revenue growth, margin expansion, and high teens adjusted EPS growth,” said Subramaniam on the company’s earnings call.  “Quite remarkably, we did this while navigating multiple external headwinds, including the unexpected grounding of our MD-11 fleet, nationwide air traffic constraints, weakness in the industrial economy, and of course, the impact of global trade policy changes. We're extremely pleased with our Q2 performance, especially in the face of these challenges. It's a direct effect of the rigor we have embedded into our culture over the past several years and the resulting transformation from Network 2.0, Tricolor, and structural cost reductions, all enabled by data and technology.”\n\nBrie Carere, FedEx EVP and Chief Customer Officer, said on the call that the quarterly performance is a function of momentum FedEx has been building over the past year, managing key performance indicators to ensure a focus on high-quality revenue growth.\n\n“We grew average daily domestic volume by 6%,” she said. “Our recent B2B healthcare win supported robust growth in the United States priority and deferred express services. The onboarding of our new Amazon business, which is focused on large and heavyweight shipments, is also going well. As expected, international export volumes declined, driven again by lower volumes on the China to U.S. lane.”\n\nFedEx said it expects fiscal 2026 revenue to be up 5%-to-6% annually, above its previous forecast of 4%-to-6% revenue growth.\n\nStifel analyst Bruce Chan wrote in a research note that FedEx delivered a solid and reassuring performance for F2Q26, supported by healthy peak-to-date demand, despite a tenuous macro backdrop and mixed consumer signals.\n\n“Activity was supported by the continued onboarding of the company's new-for-2025 contract with Amazon, with ADV that came in above our expectations,” wrote Chan. While demand remains uncertain, the company has executed well on self-directed opportunities, including strong yield discipline, which helped push International Priority yields up nearly 10% y/y.”",
+  "meta_description": "Quarterly revenue, at $23.5 billion, increased 7% annually, and operating income, at $1.38 billion, was up 31%. Earnings per share, at $4.82, beat Wall Street expectations, at $4.02.",
+  "status": 200,
+  "source_domain": "www.logisticsmgmt.com",
+  "word_count": 642,
+  "matched_companies": [
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 22
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.5317577548005908,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "FedEx Corporation",
+    "ticker": "FDX",
+    "sector": "Logistics",
+    "mentions": 22
+  }
+}

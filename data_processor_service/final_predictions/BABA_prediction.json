@@ -1,31 +1,32 @@
 {
   "ticker": "BABA",
-  "date": "2025-10-24",
+  "date": "2026-01-04",
   "prediction": {
-    "final_signal": "STRONG_BUY",
+    "final_signal": "BUY",
     "direction": "UP",
-    "combined_score": 0.324,
+    "combined_score": 0.8603491385777792,
     "confidence": 0.5,
     "confidence_level": "LOW",
-    "reasoning": "Positive general sentiment (0.20); Positive financial signals (0.38); Event: earnings_report",
+    "reasoning": "Based on 3 articles; Sentiment: positive (0.86); Primary event: none; Data sources: 3 sentiment analyses, 0 financial events",
     "components": {
       "general_sentiment": {
         "label": "positive",
-        "score": 0.204,
-        "weight": 0.3,
-        "contribution": 0.061
+        "score": 0.8603491385777792,
+        "weight": 0.4,
+        "contribution": 0.3441396554311117
       },
       "financial_signal": {
-        "signal": "POSITIVE",
-        "score": 0.375,
-        "weight": 0.7,
-        "contribution": 0.262
+        "signal": "NEUTRAL",
+        "score": 0.0,
+        "weight": 0.6,
+        "contribution": 0.0
       }
     }
   },
   "data_sources": {
-    "general_articles": 1,
-    "financial_articles": 2
+    "total_articles": 3,
+    "sentiment_analyses": 3,
+    "financial_events": 0
   },
-  "generated_at": "2025-10-24T09:36:25.807189Z"
+  "generated_at": "2026-01-04T11:58:47.457662Z"
 }

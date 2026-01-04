@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/is-this-a-rare-buying-opportunity-for-amzn-stock/",
+  "fetched_at": "2026-01-04T09:21:04.934888Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T06:13:00Z",
+  "title": "Is This a Rare Buying Opportunity for Amazon Stock? | The Motley Fool",
+  "content": "Amazon ( AMZN 1.93% ) has been a reliable long-term performer, but the growth stock didn't have a spectacular 2025. The growth stock only gained 5% despite strong financial results throughout the year, and this mismatch makes Amazon look promising.\n\nIt has made great strides in e-commerce, online advertising, cloud computing, and artificial intelligence (AI), four industries that are poised for long-term growth. That's enough to warrant a closer look, and when you dig into recent results, Amazon's stock seems undervalued at current levels.\n\nAmazon's margins have received a massive boost in recent years as its business diversifies beyond online retail. While Amazon Web Services has taken center stage in the company's long-term plans, investors should also consider the growth in Amazon's online advertising segment.\n\nThat part of the business was up by 24% year over year in Q3, reaching $17.7 billion. Although ad revenue is a little less than 10% of Amazon's total revenue, it is a high-margin business. Amazon is also competing with tech giants Meta Platforms ( META 1.47% ) and Alphabet ( GOOG +0.48% ) ( GOOGL +0.69% ) with online ads. Meta Platforms earned $51.2 billion in Q3, while Alphabet brought in $65.9 billion from ads.\n\nAmazon's ad business is catching up to the two adtech leaders. It's still growing at a great pace despite the one-year stock gains not reflecting that.\n\nWhile some AI stocks are speculative, Amazon is already making money with this technology. Amazon Web Services revenue growth has accelerated and achieved a 20% year-over-year growth rate, returning to 2022 growth levels, according to Amazon CEO Andy Jassy.\n\nArtificial intelligence requires more cloud computing, and that has resulted in more companies turning to Amazon Web Services. Amazon's cloud platform also lets businesses build AI agents.\n\nAmazon is also using internal Trainium2 chips to power parts of its cloud platform. Trainium2 AI chips can reduce Amazon's chip costs, making it easier for the company to expand its AI presence. These same AI chips are generating strong demand and can become another valuable segment under Amazon's corporate umbrella. For instance, Trainium2 AI chips grew by 150% sequentially and are now a multibillion-dollar business.\n\nAmazon is also using AI to enhance its offerings, such as its online marketplace . AI lets Amazon present personalized product recommendations and display ads that are more likely to get clicks.\n\nThe tech giant's stock price movements over the past year do not reflect the quality of the business. Amazon's overall revenue increased by 13% year-over-year in Q3, while net income rose by 38% year-over-year. Both of those rates are higher than the stock's one-year return, which may set the stage for a 2026 rally.",
+  "meta_description": "Amazon stock might be the biggest bargain of the new year.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 445,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 27
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.9594882729211087,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

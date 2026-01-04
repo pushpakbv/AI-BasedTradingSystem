@@ -174,7 +174,7 @@ const StockDetail = () => {
           {/* Right Column - Sentiment & General News */}
           <div className="space-y-6">
             {/* Sentiment Summary */}
-            {sentiment && (
+            {sentiment && sentiment.company_sentiment && (
               <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                   <Activity className="w-5 h-5 text-green-600" />
@@ -196,27 +196,29 @@ const StockDetail = () => {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-600">Score</span>
                     <span className="text-lg font-bold">
-                      {sentiment.company_sentiment.average_score.toFixed(2)}
+                      {(sentiment.company_sentiment.average_score || 0).toFixed(2)}
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-600">Articles Analyzed</span>
                     <span className="font-semibold">
-                      {sentiment.company_sentiment.article_count}
+                      {sentiment.company_sentiment.article_count || 0}
                     </span>
                   </div>
                   {/* Distribution */}
-                  <div className="pt-4 border-t">
-                    <div className="text-sm font-medium text-gray-700 mb-2">Distribution</div>
-                    <div className="space-y-2">
-                      {Object.entries(sentiment.sentiment_distribution).map(([key, value]) => (
-                        <div key={key} className="flex items-center justify-between text-sm">
-                          <span className="text-gray-600 capitalize">{key}</span>
-                          <span className="font-semibold">{value}</span>
-                        </div>
-                      ))}
+                  {sentiment.sentiment_distribution && (
+                    <div className="pt-4 border-t">
+                      <div className="text-sm font-medium text-gray-700 mb-2">Distribution</div>
+                      <div className="space-y-2">
+                        {Object.entries(sentiment.sentiment_distribution).map(([key, value]) => (
+                          <div key={key} className="flex items-center justify-between text-sm">
+                            <span className="text-gray-600 capitalize">{key}</span>
+                            <span className="font-semibold">{value}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             )}

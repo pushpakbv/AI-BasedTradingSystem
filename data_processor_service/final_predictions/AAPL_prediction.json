@@ -1,31 +1,32 @@
 {
   "ticker": "AAPL",
-  "date": "2025-10-24",
+  "date": "2026-01-04",
   "prediction": {
-    "final_signal": "BUY",
-    "direction": "UP",
-    "combined_score": 0.294,
-    "confidence": 0.5,
-    "confidence_level": "LOW",
-    "reasoning": "Positive financial signals (0.42); Event: merger_acquisition",
+    "final_signal": "HOLD",
+    "direction": "NEUTRAL",
+    "combined_score": 0.7709947934276179,
+    "confidence": 0.85,
+    "confidence_level": "HIGH",
+    "reasoning": "Based on 19 articles; Sentiment: neutral (0.77); Primary event: none; Data sources: 19 sentiment analyses, 0 financial events",
     "components": {
       "general_sentiment": {
         "label": "neutral",
-        "score": 0.145,
-        "weight": 0.3,
-        "contribution": 0.0
+        "score": 0.7709947934276179,
+        "weight": 0.4,
+        "contribution": 0.30839791737104716
       },
       "financial_signal": {
-        "signal": "POSITIVE",
-        "score": 0.42,
-        "weight": 0.7,
-        "contribution": 0.294
+        "signal": "NEUTRAL",
+        "score": 0.0,
+        "weight": 0.6,
+        "contribution": 0.0
       }
     }
   },
   "data_sources": {
-    "general_articles": 3,
-    "financial_articles": 2
+    "total_articles": 19,
+    "sentiment_analyses": 19,
+    "financial_events": 0
   },
-  "generated_at": "2025-10-24T09:36:25.739814Z"
+  "generated_at": "2026-01-04T12:00:45.225086Z"
 }

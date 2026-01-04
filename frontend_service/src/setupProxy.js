@@ -4,9 +4,11 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:8000',
+      target: 'http://localhost:8000',  // ✅ Must be 8000, NOT 3000
       changeOrigin: true,
-      ws: true, // Proxy websockets as well
+      pathRewrite: {
+        '^/api': '/api'  // Keep /api prefix
+      }
     })
   );
 };

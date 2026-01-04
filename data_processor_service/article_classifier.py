@@ -175,6 +175,8 @@ class ArticleClassifier:
                     json.dump(company_financial, f, indent=2, ensure_ascii=False)
                 logger.info(f"💰 {ticker}: {len(company_financial)} financial articles")
         
+        
+
         logger.info("=" * 70)
         logger.info(f"CLASSIFICATION COMPLETE")
         logger.info(f"General articles: {general_count}")

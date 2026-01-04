@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/my-3-favorite-artificial-intelligence-stocks-to/",
+  "fetched_at": "2026-01-04T11:18:47.044530Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T10:35:00Z",
+  "title": "My 3 Favorite Artificial Intelligence Stocks to Buy Right Now | The Motley Fool",
+  "content": "Artificial intelligence (AI) is arguably the most significant advance in our society since the smartphone essentially put the internet in everyone's pocket, giving rise to the app economy, mobile payments, on-demand videos and music, and mobile commerce. Smartphones have changed the world -- and completely altered both the stock market and the companies whose stocks are traded daily.\n\nAI is bringing a similar sort of disruptive change as computers become increasingly powerful, incorporating machine learning , large language models , and deep reasoning. AI is changing how we work, think, and entertain ourselves. Companies are working overtime to launch new AI features that help them operate more efficiently, as well as to captivate users with innovative services and products.\n\nThere are a lot of different ways to invest in AI -- you can buy stock in companies that are using AI inside their own operations (enterprise AI), those that make consumer-facing products (applied AI), or those that are taking big swings at making entire full-stack products.\n\nHere are three AI plays, each name representing one of those three themes.\n\nPalantir Technologies ( PLTR 5.56% ) is taking AI and running with it. The company operates powerful platforms that provide government agencies and commercial clients with insights that help them run better. It took off in April 2023 when it launched its Artificial Intelligence Platform (AIP). The platform is integrated into Palantir's vaunted Foundry and Gotham software, allowing users to build workflows, perform actions, and get real-time data.\n\nPalantir is now securing new work at a rapid pace and with a diverse range of clients. It recently announced a deal with sports and entertainment company TWG Global to incorporate AI into the sport of rodeo to improve athlete performance and create new fan experiences. It also signed a deal with the U.S. Navy to help improve shipbuilding and manage its supply chain and with France's domestic intelligence agency to improve that nation's national security.\n\nThat's why Palantir's stock is up more than 960% since Jan. 1, 2024 -- and there appears to be much more runway ahead.\n\nSoundHound AI ( SOUN +6.32% ) works at the intersection of artificial intelligence and voice recognition. Its AI platform is designed to allow users to have conversations with voice-enabled services and apps. It also has an app that recognizes music, whether it's being played by a live band, broadcast over the radio, or hummed by the user.\n\nSoundHound has a lot of customers, including White Castle, which uses SoundHound in its drive-thru kiosks; Square, which incorporates SoundHound's platform in its point-of-sale systems; Motorola Solutions , which uses SoundHound to power its Hello Moto voice assistant; and Snap , which uses SoundHound to add voice AI to Snapchat's voice scan camera search feature.\n\nSoundHound isn't profitable, but it's scaling up. Revenue in the third quarter was $42.05 million, up 68% from the year-ago quarter, and the company has $269 million in cash or cash equivalents with no debt.  The stock is up 141% in 2025.\n\nTesla ( TSLA 2.62% ) is on the surface an electric vehicle company, but the work that it's doing with AI goes far beyond automobiles. CEO Elon Musk has Tesla investing heavily in its AI platform, which runs its self-driving software and trains its networks to recognize things from road layouts to driving conditions and predict the paths of other vehicles. Tesla has now made its Robotaxi app available throughout the U.S. and Canada, and the company seems to be on track to eventually rolling it out so Tesla users can monetize their vehicles by making them available as autonomous taxis.\n\nBut that's just scratching the surface. Tesla is also working on Optimus, its general-purpose humanoid robot. Optimus is a long way from reality, but Musk is highly incentivized to make it happen, considering that his new $1 trillion incentive plan includes a goal that Tesla successfully build and deploy 1 million Optimus robots.\n\nTesla stock is up only 14% in 2025. But it could be on the verge of a huge gain, making this \"Magnificent Seven\" stock a compelling name to watch in 2026.",
+  "meta_description": "Each provides a different path toward success.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 685,
+  "matched_companies": [
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 9
+    }
+  ],
+  "relevance_score": 0.19121813031161472,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "sector": "Automotive & Manufacturing",
+    "mentions": 9
+  }
+}

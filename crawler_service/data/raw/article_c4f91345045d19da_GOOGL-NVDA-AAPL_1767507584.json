@@ -1,0 +1,41 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/3-artificial-intelligence-stocks-to-buy-in-2026-th/",
+  "fetched_at": "2026-01-04T11:49:44.717234Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T11:45:00Z",
+  "title": "3 Artificial Intelligence Stocks to Buy in 2026 That Could Be Better Picks Than Palantir | The Motley Fool",
+  "content": "Few stocks received more buzz in 2025 than Palantir Technologies ( PLTR 5.68% ) . Such attention is to be expected when a stock soars nearly 140% after skyrocketing 340% in the previous year.\n\nPalantir CEO Alex Karp wrote to shareholders in November, \"This remains the beginning, the first moment of a first chapter.\" If he's right, Palantir is undoubtedly one of the best artificial intelligence (AI) stocks to buy as the new year begins. However, I think there are three AI stocks to buy in 2026 that could be better picks than Palantir.\n\nPalantir focuses on one area of AI – software. Google parent Alphabet ( GOOG +0.48% ) ( GOOGL +0.69% ) covers nearly every base. I view that as a major advantage in 2026 and beyond.\n\nAlphabet's Google Cloud is the fastest-growing of the \"big three\" cloud service providers. It's a top choice for AI start-ups, with nearly all of the AI \" unicorns \" (start-ups that have a market cap of $1 billion or more) using Google Cloud.\n\nGoogle Gemini 3.0 Pro ranks as the top large language model (LLM) currently available, according to LMArena's Leaderboard. Gemini 3.0 Flash is No. 2. Google has also integrated Gemini into its search engine, Workspace productivity suite, Chrome browser, Antigravity platform for developing AI agents , and other applications.\n\nThe company is making waves in the AI chip market as well. Google's Tensor Processing Units (TPUs). For example, Apple ( AAPL 0.31% ) used TPUs to train the generative AI models for its Apple Intelligence functionality. AI leader Anthropic keeps its costs lower by using TPUs rather than GPUs . Meta Platforms ( META 1.47% ) is reportedly in discussions with Google regarding the use of TPUs in its data centers.\n\nMicron Technology ( MU +10.52% ) is a member of what some refer to as the \"memory oligarchy.\" Only three companies in the world supply high-bandwidth memory (HBM). Micron is one of them – and it's the only HBM manufacturer that's based in the U.S.\n\nPalantir's AI software wouldn't be able to run without powerful chips. Those chips wouldn't be able to function without high-bandwidth, low-latency memory. You could make a pretty good case that Micron, therefore, is more important to the AI space than Palantir.\n\nI don't think we have to use that argument to view Micron as the better pick for 2026, though. Instead, we only need to consider the valuations of the two stocks.\n\nPalantir's forward price-to-earnings multiple is 181.8. Micron's forward earnings multiple is 9.2. Granted, Palantir's earnings are growing at a much faster rate. However, Micron's stock is more attractively valued, even when factoring in five-year earnings growth projections. Its price-to-earnings-to-growth (PEG) ratio is a low 0.5 compared to Palantir's PEG ratio of 2.8.\n\nThen there's Nvidia ( NVDA +1.14% ) . The company reigns as the king of AI. Its GPUs remain the most popular (and most powerful) chips for AI processing.\n\nNvidia might be the best stock to go head-to-head with Palantir. The two companies' recent growth rates are almost identical. Palantir reported that its revenue soared 63% year-over-year in the third quarter of 2025. Nvidia's revenue grew by 62% year-over-year.\n\nHowever, Nvidia appears to have an even greater wind at its back than Palantir. The GPU maker's quarter-over-quarter revenue growth in Q3 was 22%, compared to 18% for Palantir. Also, Nvidia's guidance projects revenue will increase by 14% quarter-over-quarter in Q4. Palantir expects revenue will increase by 12.5% in Q4.\n\nYou might guess that Nvidia's and Palantir's valuations would be similar based on their growth rates. Nope. Nvidia is cheaper using pretty much any valuation metric chosen. Perhaps Palantir will deliver higher gains in 2026, but I think Nvidia offers the better risk-reward proposition.",
+  "meta_description": "These three AI winners appear to be safer bets than Palantir in the new year.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 624,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 12
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 9
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 3
+    },
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.5927051671732523,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}
