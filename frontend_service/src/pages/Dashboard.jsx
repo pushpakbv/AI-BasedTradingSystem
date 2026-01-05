@@ -1,53 +1,64 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { RefreshCw, TrendingUp, TrendingDown, Activity } from 'lucide-react';
 import { usePredictions } from '../hooks/usePrediction';
 import PredictionCard from '../components/PredictionCard';
 import PerformanceChart from '../components/PerformanceChart';
 
 const Dashboard = () => {
-  const { predictions, loading, error, lastUpdate, refresh } = usePredictions();
+  const { predictions, loading, error, lastUpdate, connected, refresh } = usePredictions();
   const navigate = useNavigate();
 
   // Ensure predictions is always an array
   const predictionList = Array.isArray(predictions) ? predictions : [];
 
-  console.log('Dashboard received predictions:', predictionList);
+  useEffect(() => {
+    console.log('📊 Dashboard re-rendered');
+    console.log('   - Predictions count:', predictionList.length);
+    console.log('   - Loading:', loading);
+    console.log('   - Connected:', connected);
+    console.log('   - Last update:', lastUpdate);
+    console.log('   - Full predictions:', predictionList);
+  }, [predictionList, loading, connected, lastUpdate]);
 
-  if (loading) {
+  if (loading && predictionList.length === 0) {
     return (
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen bg-gray-50">
         <div className="text-center">
           <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading predictions...</p>
+          <p className="text-gray-600 text-lg">Loading predictions...</p>
         </div>
       </div>
     );
   }
 
-  if (error) {
+  if (error && predictionList.length === 0) {
     return (
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen bg-gray-50">
         <div className="text-center">
-          <p className="text-red-600 mb-4">{error}</p>
-          <button
-            onClick={refresh}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-          >
-            Retry
-          </button>
+          <div className="bg-red-50 border border-red-200 rounded-lg p-6 inline-block">
+            <p className="text-red-600 mb-4 text-lg">⚠️ {error}</p>
+            <button
+              onClick={refresh}
+              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            >
+              Retry
+            </button>
+          </div>
         </div>
       </div>
     );
   }
 
-  if (!predictionList || predictionList.length === 0) {
+  if (predictionList.length === 0) {
     return (
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen bg-gray-50">
         <div className="text-center">
-          <p className="text-gray-600 mb-4">No predictions available yet.</p>
+          <Activity className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+          <p className="text-gray-600 text-lg mb-4">No predictions available yet.</p>
           <button
             onClick={refresh}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
           >
             Refresh
           </button>
@@ -56,42 +67,124 @@ const Dashboard = () => {
     );
   }
 
+  // Calculate statistics
+  const buySignals = predictionList.filter(p => p.prediction?.final_signal?.includes('BUY')).length;
+  const sellSignals = predictionList.filter(p => p.prediction?.final_signal?.includes('SELL')).length;
+  const holdSignals = predictionList.filter(p => p.prediction?.final_signal === 'HOLD').length;
+  const avgSentiment = (
+    predictionList.reduce((sum, p) => sum + (p.average_sentiment || 0), 0) / predictionList.length
+  ).toFixed(3);
+
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-gray-900">AI Trading Dashboard</h1>
-          <div className="flex items-center gap-4">
-            <span className="text-sm text-gray-500">
-              Last updated: {lastUpdate?.toLocaleString()}
-            </span>
-            <button
-              onClick={refresh}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-            >
-              Refresh
-            </button>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-3xl font-bold text-gray-900">AI Trading Dashboard</h1>
+              <p className="text-sm text-gray-600 mt-1">Real-time market predictions and analysis</p>
+            </div>
+            <div className="flex items-center gap-6">
+              {/* Status */}
+              <div className="text-right">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className={`w-3 h-3 rounded-full ${connected ? 'bg-green-500' : 'bg-red-500'}`}></div>
+                  <span className="text-sm font-medium text-gray-700">
+                    {connected ? 'Live' : 'Offline'}
+                  </span>
+                </div>
+                <p className="text-xs text-gray-500">
+                  {lastUpdate ? `Updated ${lastUpdate.toLocaleTimeString()}` : 'Never updated'}
+                </p>
+              </div>
+              
+              {/* Refresh Button */}
+              <button
+                onClick={refresh}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium flex items-center gap-2"
+              >
+                <RefreshCw className="w-4 h-4" />
+                Refresh
+              </button>
+            </div>
           </div>
         </div>
       </header>
 
+      {/* Error Banner (if any) */}
+      {error && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-yellow-700 flex items-center gap-3">
+            <Activity className="w-5 h-5 flex-shrink-0" />
+            <p className="text-sm">{error}</p>
+          </div>
+        </div>
+      )}
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Statistics Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+          {/* Total Predictions */}
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <p className="text-gray-600 text-sm font-medium">Total Predictions</p>
+            <p className="text-3xl font-bold text-gray-900 mt-2">{predictionList.length}</p>
+          </div>
+
+          {/* Buy Signals */}
+          <div className="bg-white rounded-lg shadow-sm border border-green-200 p-6">
+            <div className="flex items-center gap-2">
+              <TrendingUp className="w-4 h-4 text-green-600" />
+              <p className="text-gray-600 text-sm font-medium">Buy Signals</p>
+            </div>
+            <p className="text-3xl font-bold text-green-600 mt-2">{buySignals}</p>
+          </div>
+
+          {/* Sell Signals */}
+          <div className="bg-white rounded-lg shadow-sm border border-red-200 p-6">
+            <div className="flex items-center gap-2">
+              <TrendingDown className="w-4 h-4 text-red-600" />
+              <p className="text-gray-600 text-sm font-medium">Sell Signals</p>
+            </div>
+            <p className="text-3xl font-bold text-red-600 mt-2">{sellSignals}</p>
+          </div>
+
+          {/* Hold Signals */}
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <p className="text-gray-600 text-sm font-medium">Hold Signals</p>
+            <p className="text-3xl font-bold text-gray-600 mt-2">{holdSignals}</p>
+          </div>
+
+          {/* Average Sentiment */}
+          <div className="bg-white rounded-lg shadow-sm border border-blue-200 p-6">
+            <p className="text-gray-600 text-sm font-medium">Avg Sentiment</p>
+            <p className={`text-3xl font-bold mt-2 ${avgSentiment > 0 ? 'text-green-600' : avgSentiment < 0 ? 'text-red-600' : 'text-gray-600'}`}>
+              {(avgSentiment * 100).toFixed(1)}%
+            </p>
+          </div>
+        </div>
+
         {/* Performance Chart */}
         {predictionList.length > 0 && (
-          <PerformanceChart predictions={predictionList} />
+          <div className="mb-8">
+            <PerformanceChart predictions={predictionList} />
+          </div>
         )}
 
         {/* Predictions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-          {predictionList.map((stock) => (
-            <div
-              key={stock.ticker}
-              className="cursor-pointer"
-              onClick={() => navigate(`/stock/${stock.ticker}`)}
-            >
-              <PredictionCard prediction={stock} />
-            </div>
-          ))}
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Stock Predictions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {predictionList.map((stock) => (
+              <div
+                key={stock.ticker}
+                className="cursor-pointer transform transition-transform hover:scale-105"
+                onClick={() => navigate(`/stock/${stock.ticker}`)}
+              >
+                <PredictionCard prediction={stock} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

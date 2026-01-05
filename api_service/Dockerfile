@@ -2,6 +2,18 @@ FROM node:18-alpine
 
 WORKDIR /app
 
+# Copy api_service code
+COPY api_service/ ./
+
+# Copy crawler_service so articleReader can access crawler data
+COPY crawler_service/ ../crawler_service
+
+WORKDIR /app
+
+RUN npm install
+
+EXPOSE 8000
+
 # Copy package files from correct path
 COPY api_service/package*.json ./
 

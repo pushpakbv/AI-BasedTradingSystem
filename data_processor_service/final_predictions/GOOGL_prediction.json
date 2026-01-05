@@ -1,21 +1,21 @@
 {
   "ticker": "GOOGL",
-  "timestamp": "2026-01-05T05:13:47.107987",
-  "total_articles": 33,
-  "average_sentiment": 0.025,
+  "timestamp": "2026-01-05T09:52:49.928378",
+  "total_articles": 35,
+  "average_sentiment": 0.024,
   "financial_events": 0,
-  "confidence": 0.415,
+  "confidence": 0.414,
   "prediction": {
     "final_signal": "HOLD",
     "direction": "NEUTRAL",
-    "combined_score": 0.025,
+    "combined_score": 0.024,
     "confidence_level": "MEDIUM",
-    "reasoning": "Neutral sentiment | Based on 33 articles"
+    "reasoning": "Neutral sentiment | Based on 35 articles"
   },
   "components": {
     "general_sentiment": {
-      "score": 0.025,
-      "contribution": 0.015,
+      "score": 0.024,
+      "contribution": 0.014,
       "weight": 0.6
     },
     "financial_signal": {
@@ -25,8 +25,8 @@
     }
   },
   "data_sources": {
-    "general_articles": 33,
+    "general_articles": 35,
     "financial_articles": 0,
-    "total_articles": 33
+    "total_articles": 35
   }
 }

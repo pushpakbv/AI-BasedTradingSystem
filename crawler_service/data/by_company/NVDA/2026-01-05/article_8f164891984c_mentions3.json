@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/prediction-these-mid-cap-ai-stocks-could-outperf/",
+  "fetched_at": "2026-01-05T06:45:25.953710Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T06:00:00Z",
+  "title": "Prediction: These Mid-Cap AI Stocks Could Outperform the \"Magnificent Seven\" by 2030 | The Motley Fool",
+  "content": "Artificial intelligence has minted many millionaires, and picking the right mid-cap stocks can lead to additional riches as the AI boom continues. Those gains can happen quickly, based on Nvidia 's ( NVDA +1.14% ) 1,300% gain over the past five years. Investing in Nvidia stock a few years ago could have made you a millionaire, and some AI stocks present that opportunity right now. These are some of the top mid-cap AI stocks to monitor.\n\nCipher Mining ( CIFR +9.62% ) is one of the crypto miners that pivoted to AI infrastructure. It was one of the best-performing growth stocks of the year, more than tripling in value in 2025. Bullish investors view those gains as the beginning of something grand as more tech companies rush to make deals with Cipher Mining.\n\nThe AI data center provider sells megawatts and advanced AI infrastructure to tech leaders. For instance, Cipher Mining recently closed a 15-year deal with Amazon Web Services for $5.5 billion. The deal gives Amazon access to 300 megawatts of capacity.\n\nCipher Mining is fully capitalizing on strong demand by building its energy pipeline. For instance, the company acquired a 200-megawatt site in Ohio, bringing its total pipeline to 3.4 gigawatts. Each gigawatt is 1,000 megawatts, so the 3.4-gigawatt pipeline gives Cipher Mining the ability to support 10 additional deals like the Amazon one. That deal generates approximately $367 million per year.\n\nAnnual recurring revenue can add up quickly as AI demand soars. It's realistic for Cipher Mining to potentially generate billions of dollars in annual recurring revenue by the end of 2026. Cipher Mining touted the Ohio site as \"demonstrating the company's ability to source high-quality opportunities nationwide.\" It's Cipher Mining's first site outside of Texas, and this verbiage indicates that the entire country is fair game. That's a lot of AI data centers and substantial annual recurring revenue if big tech needs them all.\n\nOndas Holdings ( ONDS +12.91% ) is a mid-cap stock to watch due to its AI-powered drones, which are gaining momentum. Investors are starting to take notice of this stock after it nearly quadrupled in 2025, with strong momentum to close out the year. The stock is akin to a hyper-growth opportunity with a high valuation. It made $10.1 million in the third quarter and has a $3 billion market cap, so value investors may not like this pick. However, the revenue scaling and forecast make it look more promising.\n\nThe drone maker is aiming for $36 million in 2025 revenue thanks to substantial acceleration. The $10.1 million figure from Q3 is a 60% quarter-over-quarter gain. However, Ondas Holdings delighted investors even more by setting $110 million as the preliminary 2026 target. The company expects to more than triple its revenue in 2026.\n\nOndas Holdings has acquired and invested in several companies to gain market share and establish itself as a leading drone maker. The company is working with multiple governments and ended 2025 strongly with $10 million in new autonomous systems orders. Commercial demand is growing quickly, and if it delivers on 2026 guidance, then future years may be even more exciting.\n\nAI data centers are different from traditional data centers. They require more intricate setups and can handle intense AI workloads that traditional data centers can't do as well. While AI data centers have become an attractive investment opportunity, someone has to build those data centers.\n\nArgan ( AGX +3.78% ) builds the infrastructure that is needed for AI data centers. The company is sitting on a record $3 billion backlog and is under contract for the construction of roughly 6 gigawatts of power-generating assets. Argan has a market cap of only $4.3 billion, which is valuable context in light of its $3 billion backlog.\n\nAlthough revenue slightly dipped year over year in for its fiscal 2026 third quarter (ending Oct. 31, 2025), that backlog should support accelerated revenue growth in future quarters. Argan CEO David Watson told investors that the company expects to periodically add new projects to its backlog while making progress with that backlog.\n\nAs AI infrastructure demands grow, Argan will likely find itself busier than ever. The AI stock more than doubled in 2025 and is up by roughly 600% over the past five years.",
+  "meta_description": "Mid-cap AI stocks may be the path to riches, so it's worth doing some digging in the industry.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 709,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 4
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.14131897711978467,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 3
+  }
+}

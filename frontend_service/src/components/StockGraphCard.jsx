@@ -11,11 +11,8 @@ import {
 import { TrendingUp, TrendingDown, AlertCircle } from 'lucide-react';
 import axios from 'axios';
 
-const MARKET_DATA_API = process.env.REACT_APP_INTERNAL_MARKET_DATA_API || 
-                        process.env.REACT_APP_MARKET_DATA_API || 
-                        'http://localhost:8001/api';
-
 const StockGraphCard = ({ ticker, stockData: initialStockData }) => {
+  const POLYGON_API_KEY = '4GRu2rLV1D6q7ZcPj33L0bw72YmZNAdN';
   const [chartData, setChartData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -28,147 +25,89 @@ const StockGraphCard = ({ ticker, stockData: initialStockData }) => {
   });
   const [stockData, setStockData] = useState(initialStockData);
 
-  // Fetch from Alpha Vantage (free stock API with no CORS issues)
-  const fetchFromAlphaVantage = async (tickerSymbol) => {
+  // Fetch from Polygon.io API
+  const fetchFromPolygon = async (tickerSymbol) => {
     try {
-      console.log(`📊 Fetching from Alpha Vantage API for ${tickerSymbol}...`);
+      console.log(`📊 Fetching from Polygon.io for ${tickerSymbol}...`);
       
-      // Using demo API key (limited but works)
-      const apiKey = 'demo'; // Replace with your own from https://www.alphavantage.co/
-      const response = await axios.get('https://www.alphavantage.co/query', {
-        params: {
-          function: 'TIME_SERIES_DAILY',
-          symbol: tickerSymbol,
-          outputsize: 'full',
-          apikey: apiKey
-        },
-        timeout: 15000
-      });
-
-      if (response.data['Time Series (Daily)']) {
-        const timeSeries = response.data['Time Series (Daily)'];
-        const historicalData = [];
-        let count = 0;
-
-        // Get last 180 days
-        for (const [date, values] of Object.entries(timeSeries)) {
-          if (count >= 180) break;
-          
-          historicalData.push({
-            date: date,
-            open: parseFloat(values['1. open']),
-            high: parseFloat(values['2. high']),
-            low: parseFloat(values['3. low']),
-            close: parseFloat(values['4. close']),
-            volume: parseInt(values['5. volume'])
-          });
-          count++;
-        }
-
-        if (historicalData.length > 0) {
-          // Reverse to get chronological order
-          historicalData.reverse();
-          
-          const processedData = {
-            ticker: tickerSymbol,
-            company_name: tickerSymbol,
-            historical_data: historicalData,
-            lastUpdated: new Date().toISOString()
-          };
-          setStockData(processedData);
-          console.log(`✅ Data fetched from Alpha Vantage for ${tickerSymbol}`);
-          return processedData;
-        }
-      }
-    } catch (err) {
-      console.warn(`⚠️ Alpha Vantage fetch failed:`, err.message);
-    }
-    return null;
-  };
-
-  // Fetch from Finnhub (alternative, requires API key)
-  const fetchFromFinnhub = async (tickerSymbol) => {
-    try {
-      console.log(`📊 Fetching from Finnhub API for ${tickerSymbol}...`);
+      // Get 90 days of data
+      const today = new Date();
+      const ninetyDaysAgo = new Date(today.getTime() - 90 * 24 * 60 * 60 * 1000);
       
-      // Using free tier - replace with your key from https://finnhub.io/
-      const apiKey = 'demo'; // Replace with your own
-      const response = await axios.get('https://finnhub.io/api/v1/quote', {
+      const fromDate = ninetyDaysAgo.toISOString().split('T')[0];
+      const toDate = today.toISOString().split('T')[0];
+      
+      const response = await axios.get('https://api.polygon.io/v2/aggs/ticker/' + tickerSymbol + '/range/1/day/' + fromDate + '/' + toDate, {
         params: {
-          symbol: tickerSymbol,
-          token: apiKey
+          apikey: POLYGON_API_KEY
         },
         timeout: 10000
       });
 
-      if (response.data && response.data.c) {
-        // Generate mock historical data based on current price
-        const currentPrice = response.data.c;
-        const historicalData = [];
+      if (response.data && response.data.results && response.data.results.length > 0) {
+        console.log(`✅ Data from Polygon.io for ${tickerSymbol}`);
         
-        for (let i = 180; i >= 0; i--) {
-          const variance = (Math.random() - 0.5) * 10;
-          const price = currentPrice + variance;
-          
-          const date = new Date();
-          date.setDate(date.getDate() - i);
-          
-          historicalData.push({
-            date: date.toISOString().split('T')[0],
-            open: parseFloat((price + (Math.random() - 0.5) * 2).toFixed(2)),
-            high: parseFloat((price + Math.abs(Math.random() * 2)).toFixed(2)),
-            low: parseFloat((price - Math.abs(Math.random() * 2)).toFixed(2)),
-            close: parseFloat(price.toFixed(2)),
-            volume: Math.floor(Math.random() * 50000000)
-          });
-        }
+        const historicalData = response.data.results.map(item => ({
+          date: new Date(item.t).toISOString().split('T')[0],
+          open: parseFloat(item.o.toFixed(2)),
+          high: parseFloat(item.h.toFixed(2)),
+          low: parseFloat(item.l.toFixed(2)),
+          close: parseFloat(item.c.toFixed(2)),
+          volume: item.v || 0
+        }));
 
-        const processedData = {
+        const currentPrice = historicalData[historicalData.length - 1].close;
+
+        return {
           ticker: tickerSymbol,
           company_name: tickerSymbol,
-          current_price: currentPrice,
           historical_data: historicalData,
-          lastUpdated: new Date().toISOString()
+          current_price: currentPrice,
+          last_updated: new Date().toISOString()
         };
-        setStockData(processedData);
-        console.log(`✅ Data fetched from Finnhub for ${tickerSymbol}`);
-        return processedData;
       }
     } catch (err) {
-      console.warn(`⚠️ Finnhub fetch failed:`, err.message);
+      console.warn(`⚠️ Polygon.io fetch failed:`, err.message);
     }
     return null;
   };
 
-  // Generate sample data (fallback when APIs are unavailable)
-  const generateSampleData = (tickerSymbol) => {
-    console.log(`📦 Generating sample data for ${tickerSymbol}...`);
+  // Fallback: Generate mock data
+  const generateMockData = (tickerSymbol) => {
+    console.log(`📊 Generating mock data for ${tickerSymbol}...`);
+    const today = new Date();
+    const mockData = [];
     
-    const historicalData = [];
-    let basePrice = Math.random() * 200 + 50; // Random price 50-250
+    let price = 100 + Math.random() * 50;
     
-    for (let i = 180; i >= 0; i--) {
-      const variance = (Math.random() - 0.5) * 10;
-      basePrice = Math.max(basePrice + variance, 10); // Ensure positive
-      
-      const date = new Date();
+    for (let i = 89; i >= 0; i--) {
+      const date = new Date(today);
       date.setDate(date.getDate() - i);
       
-      historicalData.push({
+      // Simulate realistic price movement
+      price += (Math.random() - 0.48) * 2;
+      price = Math.max(price, 50); // Don't go below 50
+      
+      const open = price + (Math.random() - 0.5) * 1;
+      const close = price;
+      const high = Math.max(open, close) + Math.random() * 0.5;
+      const low = Math.min(open, close) - Math.random() * 0.5;
+      
+      mockData.push({
         date: date.toISOString().split('T')[0],
-        open: parseFloat((basePrice + (Math.random() - 0.5) * 2).toFixed(2)),
-        high: parseFloat((basePrice + Math.abs(Math.random() * 3)).toFixed(2)),
-        low: parseFloat((basePrice - Math.abs(Math.random() * 3)).toFixed(2)),
-        close: parseFloat(basePrice.toFixed(2)),
-        volume: Math.floor(Math.random() * 50000000)
+        open: parseFloat(open.toFixed(2)),
+        close: parseFloat(close.toFixed(2)),
+        high: parseFloat(high.toFixed(2)),
+        low: parseFloat(low.toFixed(2)),
+        volume: Math.floor(Math.random() * 5000000)
       });
     }
     
     return {
       ticker: tickerSymbol,
-      company_name: tickerSymbol,
-      historical_data: historicalData,
-      lastUpdated: new Date().toISOString()
+      current_price: price,
+      historical_data: mockData,
+      last_updated: new Date().toISOString()
     };
   };
 
@@ -180,52 +119,23 @@ const StockGraphCard = ({ ticker, stockData: initialStockData }) => {
 
         let data = null;
 
-        // Try 1: Fetch from local market data service
-        try {
-          const apiUrl = `${MARKET_DATA_API}/stock/${ticker}`;
-          console.log(`🔄 Attempting local API: ${apiUrl}`);
+        if (ticker) {
+          data = await fetchFromPolygon(ticker);
           
-          const response = await axios.get(apiUrl, {
-            timeout: 5000
-          });
-          
-          if (response.data && response.data.historical_data && response.data.historical_data.length > 0) {
-            data = response.data;
-            console.log(`✅ Data from local API for ${ticker}`);
+          // Fallback to mock data if API fails
+          if (!data) {
+            console.log(`⚠️ Falling back to mock data for ${ticker}`);
+            data = generateMockData(ticker);
           }
-        } catch (localErr) {
-          console.warn(`⚠️ Local API failed, trying Alpha Vantage...`);
-        }
-
-        // Try 2: Alpha Vantage API
-        if (!data) {
-          data = await fetchFromAlphaVantage(ticker);
-        }
-
-        // Try 3: Finnhub API
-        if (!data) {
-          data = await fetchFromFinnhub(ticker);
-        }
-
-        // Try 4: Use provided initial data
-        if (!data && initialStockData && initialStockData.historical_data) {
-          data = initialStockData;
-          console.log(`📦 Using provided stock data for ${ticker}`);
-        }
-
-        // Try 5: Generate sample data as last resort
-        if (!data) {
-          data = generateSampleData(ticker);
-          console.log(`🎲 Generated sample data for ${ticker}`);
         }
 
         if (data) {
           setStockData(data);
         } else {
-          setError('Unable to fetch stock data from all sources');
+          setError('Unable to fetch stock data');
         }
       } catch (err) {
-        console.error(`❌ Error in fetch chain for ${ticker}:`, err.message);
+        console.error(`❌ Error fetching data for ${ticker}:`, err.message);
         setError(`Failed to load data: ${err.message}`);
       } finally {
         setLoading(false);
@@ -235,7 +145,7 @@ const StockGraphCard = ({ ticker, stockData: initialStockData }) => {
     if (ticker) {
       fetchData();
     }
-  }, [ticker, initialStockData]);
+  }, [ticker]);
 
   useEffect(() => {
     if (stockData && stockData.historical_data && stockData.historical_data.length > 0) {
@@ -250,13 +160,12 @@ const StockGraphCard = ({ ticker, stockData: initialStockData }) => {
       
       setChartData(data);
       
-      // Calculate stats
       if (data.length > 0) {
         const closes = data.map(d => d.close);
-        const currentPrice = closes[closes.length - 1];
-        const previousPrice = closes[0];
-        const change = currentPrice - previousPrice;
-        const changePercent = (change / previousPrice) * 100;
+        const currentPrice = stockData.current_price || closes[closes.length - 1];
+        const previousClose = closes[0];
+        const change = currentPrice - previousClose;
+        const changePercent = (change / previousClose) * 100;
         
         setStats({
           currentPrice: currentPrice.toFixed(2),
@@ -383,7 +292,7 @@ const StockGraphCard = ({ ticker, stockData: initialStockData }) => {
 
       {/* Footer */}
       <p className="text-xs text-gray-400 mt-4 text-center">
-        {chartData.length} trading days | Updated: {stockData?.lastUpdated ? new Date(stockData.lastUpdated).toLocaleDateString() : 'N/A'}
+        {chartData.length} trading days | Updated: {stockData?.last_updated ? new Date(stockData.last_updated).toLocaleDateString() : 'N/A'}
       </p>
     </div>
   );

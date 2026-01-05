@@ -13,70 +13,41 @@ export const usePredictions = () => {
   
   const wsRef = useRef(null);
   const reconnectTimeoutRef = useRef(null);
+  const updateTimeoutRef = useRef(null);
 
   const fetchPredictions = useCallback(async () => {
     try {
-      setError(null);
-      console.log(`📡 Fetching predictions from: ${API_BASE_URL}/predictions/daily`);
-      
-      const response = await axios.get(`${API_BASE_URL}/predictions/daily`);
-      console.log('✅ API Response:', response.data);
-      
-      // Handle both response formats
-      let predictionsData = [];
-      
-      if (response.data.predictions) {
-        // Format: { predictions: [...] }
-        predictionsData = response.data.predictions;
-      } else if (Array.isArray(response.data)) {
-        // Format: [...]
-        predictionsData = response.data;
-      } else if (response.data.companies) {
-        // Format: { companies: [...] }
-        predictionsData = response.data.companies;
-      } else {
-        console.warn('Unexpected response format:', response.data);
-        predictionsData = [];
-      }
-      
-      console.log(`📊 Parsed ${predictionsData.length} predictions`);
-      
-      // Filter and validate predictions
+      console.log('📡 Fetching predictions...');
+      const response = await axios.get(`${API_BASE_URL}/predictions/daily`, {
+        timeout: 5000
+      });
+
+      let predictionsData = response.data.predictions || [];
+      console.log(`✅ Received ${predictionsData.length} predictions`);
+
+      // Filter valid predictions
       const validPredictions = predictionsData
-        .filter(p => {
-          const isValid = p && p.ticker && (p.prediction || p.final_signal);
-          if (!isValid) {
-            console.warn('⚠️ Invalid prediction structure:', p);
-          }
-          return isValid;
-        })
-        .map(p => {
-          // Normalize the structure
-          if (!p.prediction && p.final_signal) {
-            // Flatten nested prediction
-            return {
-              ...p,
-              prediction: {
-                final_signal: p.final_signal || 'HOLD',
-                direction: p.direction || 'NEUTRAL',
-                combined_score: p.combined_score || 0,
-                confidence_level: p.confidence_level || 'LOW',
-                reasoning: p.reasoning || 'No reasoning available'
-              }
-            };
-          }
-          return p;
-        });
-      
+        .filter(p => p && p.ticker && p.prediction)
+        .map(p => ({
+          ...p,
+          company_name: p.company_name || p.ticker
+        }));
+
       console.log(`✅ Loaded ${validPredictions.length} valid predictions`);
       
-      setPredictions(validPredictions);
+      // Log a sample prediction to verify data structure
+      if (validPredictions.length > 0) {
+        console.log('📊 Sample prediction:', validPredictions[0]);
+      }
+      
+      // Force a new reference to trigger re-render
+      setPredictions([...validPredictions]);
       setLastUpdate(new Date());
+      setError(null);
       setLoading(false);
     } catch (err) {
-      console.error('❌ Error fetching predictions:', err);
-      setError(err.response?.data?.message || err.message || 'Failed to load predictions');
-      setPredictions([]);
+      console.error('❌ Error fetching predictions:', err.message);
+      setError(err.message);
       setLoading(false);
     }
   }, []);
@@ -84,6 +55,7 @@ export const usePredictions = () => {
   // WebSocket connection
   const connectWebSocket = useCallback(() => {
     if (wsRef.current?.readyState === WebSocket.OPEN) {
+      console.log('✅ WebSocket already connected');
       return;
     }
 
@@ -102,17 +74,37 @@ export const usePredictions = () => {
         try {
           const message = JSON.parse(event.data);
           console.log('📨 WebSocket message received:', message.type);
-          
-          if (
-            message.type === 'predictions_updated' || 
-            message.type === 'prediction_updated' ||
-            message.type === 'predictions_refresh'
-          ) {
-            console.log('🔄 Predictions updated, refreshing data...');
-            fetchPredictions();
+
+          // Handle different message types
+          if (message.type === 'prediction_updated') {
+            // Single prediction updated
+            console.log(`🔄 Updated prediction for ${message.ticker}`);
+            setPredictions(prev => {
+              const updated = prev.map(p =>
+                p.ticker === message.ticker
+                  ? { ...message.prediction, company_name: message.company_name }
+                  : p
+              );
+              // If ticker not found, add it
+              if (!updated.find(p => p.ticker === message.ticker)) {
+                updated.push(message.prediction);
+              }
+              console.log(`📊 Updated predictions array:`, updated);
+              // Force new reference
+              return [...updated];
+            });
+            setLastUpdate(new Date());
+          } 
+          else if (message.type === 'predictions_refresh') {
+            // All predictions refreshed
+            console.log(`🔄 Refreshed all predictions (${message.predictions.length})`);
+            console.log('📊 First refreshed prediction:', message.predictions[0]);
+            // Force new reference
+            setPredictions([...message.predictions]);
+            setLastUpdate(new Date());
           }
         } catch (err) {
-          console.error('Error parsing WebSocket message:', err);
+          console.error('Error parsing message:', err);
         }
       };
       
@@ -122,7 +114,7 @@ export const usePredictions = () => {
       };
       
       ws.onclose = () => {
-        console.log('🔌 WebSocket disconnected, attempting to reconnect in 5s...');
+        console.log('🔌 WebSocket disconnected, reconnecting in 5s...');
         setConnected(false);
         
         reconnectTimeoutRef.current = setTimeout(() => {
@@ -131,34 +123,35 @@ export const usePredictions = () => {
       };
       
       wsRef.current = ws;
-      
     } catch (err) {
       console.error('Failed to create WebSocket:', err);
       setError('WebSocket connection failed');
     }
-  }, [fetchPredictions]);
+  }, []);
 
+  // Setup polling and WebSocket
   useEffect(() => {
+    // Initial fetch
+    console.log('🔧 Setting up predictions hook...');
     fetchPredictions();
+    
+    // Connect WebSocket
     connectWebSocket();
     
-    // Poll every 30 seconds for fresh data
-    const pollInterval = setInterval(fetchPredictions, 30 * 1000);
-    
-    // Monitor WebSocket connection status
-    const wsCheckInterval = setInterval(() => {
-      if (connected) {
-        console.log('✅ WebSocket connected, relying on push updates');
-      } else {
-        console.warn('⚠️ WebSocket disconnected, using polling fallback');
-      }
-    }, 60 * 1000);
-    
+    // Poll every 30 seconds (for redundancy)
+    const pollInterval = setInterval(() => {
+      console.log('⏱️ Polling for updates...');
+      fetchPredictions();
+    }, 30 * 1000);
+
     return () => {
+      console.log('🧹 Cleaning up predictions hook...');
       clearInterval(pollInterval);
-      clearInterval(wsCheckInterval);
       if (reconnectTimeoutRef.current) {
         clearTimeout(reconnectTimeoutRef.current);
+      }
+      if (updateTimeoutRef.current) {
+        clearTimeout(updateTimeoutRef.current);
       }
       if (wsRef.current) {
         wsRef.current.close();

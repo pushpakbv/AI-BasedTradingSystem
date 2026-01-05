@@ -1,0 +1,41 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/3-best-artificial-intelligence-stocks-to-buy-in-ja/",
+  "fetched_at": "2026-01-05T05:46:59.295190Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T05:00:00Z",
+  "title": "3 Best Artificial Intelligence Stocks to Buy in January | The Motley Fool",
+  "content": "The hottest trend in the stock market remains artificial intelligence (AI) , and there are several excellent stocks in this space that investors can add to their portfolios in January. Let's look at the three best AI stocks to buy this month.\n\nNvidia ( NVDA +1.14% ) remains the king of AI infrastructure, as its graphics processing units (GPU) are the primary chips powering the AI data center buildout. With cloud computing companies, large language model (LLM ) makers, and other hyperscalers (owners of large data centers) continuing to increase AI infrastructure spending, the company is well-positioned for 2026 and beyond.\n\nThe company's secret sauce is the ecosystem it has built around its chips. Before AI went mainstream, the company smartly seeded its CUDA software platform into universities and research labs that were conducting early work on the technology. This has led to a generation of developers being trained on its software and most foundational AI code being written on its platform, optimized for its chips.\n\nNvidia's recent acquisition of SchedMD will only widen its software moat as it gives it control over the open-source platform Slurm, which is used to help manage GPUs. Meanwhile, the company's proprietary interconnect system, NVLink, which lets its chips act as a single powerful unit, gives the company a networking edge, as well.\n\nAs companies look for some cheaper alternatives to Nvidia's GPUs, they are increasingly turning to Broadcom ( AVGO +0.44% ) to help them design custom AI chips. Broadcom is at the forefront of ASIC (application-specific integrated circuit) technology, which are pre-programmed chips that are hardwired to perform specific tasks. They lack the flexibility and adaptability of GPUs, but can have performance and cost efficiency advantages.\n\nBroadcom helped Alphabet develop its highly successful tensor processing units (TPUs), which has led to other companies flocking to its services, including such notable names as Meta Platforms and OpenAI , among others. This is expected to lead to huge growth in the coming years.\n\nFor example, analysts at Citigroup forecast the company will generate just over $50 billion in AI revenue in fiscal 2026 and $100 billion in fiscal 2027, up from $20.2 billion in fiscal 2025. That's huge growth, and the fiscal 2027 number is more than the $63.9 billion in total revenue Broadcom produced last fiscal year.\n\nMeanwhile, the Citi number could even be low as it doesn't include any contribution from Apple in either year, and it sees a big step-down in Anthropic's revenue in fiscal 2027. Anthropic is scheduled to deploy $21 billion worth of Alphabet TPUs in fiscal 2026.\n\nThe one company that is poised to benefit from increasing demand for both GPUs and AI ASICs is Taiwan Semiconductor Manufacturing ( TSM +5.17% ) . The company has a near monopoly on making advanced logic chips, and it manufactures chips for both Nvidia and Broadcom. Meanwhile, it sees demand for AI chips growing at a mid-40% pace over the next several years.\n\nTSMC is currently the only foundry that can manufacture smaller node chips at high yields (minimal defects) at scale. Nodes refer to the density of transistors in a chip, and chip designers are constantly trying to shrink node sizes to make more powerful and energy-efficient chips.\n\nBoth rivals Intel and Samsung have struggled with yields for smaller node chips. Nvidia recently decided not to proceed with Intel after testing its newest technology, while Samsung has started to turn more of its focus to high-bandwidth memory (HBM) solutions, where TSMC does not compete.\n\nGiven its status as the go-to chip manufacturer for advanced chips with no real challengers, TSMC has seen strong pricing power. It's increased its prices by more than 15% on average since 2019, and has reportedly told customers it will continue to hike its prices over the next four years, starting in 2026.",
+  "meta_description": "AI stocks are set to continue to power the market in 2026.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 637,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 6
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 2
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.2039274924471299,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "sector": "Technology & Manufacturing",
+    "mentions": 1
+  }
+}

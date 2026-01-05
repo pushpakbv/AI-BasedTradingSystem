@@ -1,0 +1,23 @@
+{
+  "url": "https://seekingalpha.com/news/4536517-alibabas-challenges-meituan-with-new-ai-tool-for-3d-restaurant-tours-via-amap--report",
+  "fetched_at": "2026-01-05T07:18:52.783265Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T01:38:07Z",
+  "title": "Alibaba’s challenges Meituan with new AI tool for 3D restaurant tours",
+  "content": "maybefalse/iStock Unreleased via Getty Images\n\nTech giant Alibaba Group Holding ( BABA ) is launching a new artificial intelligence tool designed to help restaurants create 3D virtual tours of their interiors and dining atmospheres, according to a report by Bloomberg.\n\nAccording to the report , Alibaba’s mapping giant, AutoNavi (Amap) will",
+  "meta_description": "Tech giant Alibaba Group Holding (BABA) is launching a new artificial intelligence tool designed to help restaurants create 3D virtual tours of their interiors and dining atmospheres, according to a report by Bloomberg.",
+  "status": 200,
+  "source_domain": "seekingalpha.com",
+  "word_count": 51,
+  "matched_companies": [
+    {
+      "name": "Alibaba Group Holding Limited",
+      "ticker": "BABA",
+      "sector": "E-commerce",
+      "mentions": 6
+    }
+  ],
+  "relevance_score": 0.9473684210526315,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}
