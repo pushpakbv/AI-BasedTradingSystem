@@ -1,0 +1,29 @@
+{
+  "url": "https://techcrunch.com/2026/01/05/google-previews-new-gemini-features-for-tv-at-ces-2026/",
+  "fetched_at": "2026-01-05T14:11:31.876705Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T14:00:00Z",
+  "title": "Google previews new Gemini features for TV at CES 2026 | TechCrunch",
+  "content": "Google believes AI can improve the TV-watching experience, which is why it brought its Gemini AI to Google TV devices in November. At the Consumer Electronics Show (CES 2026) in Las Vegas, the company is now showing off a series of new Gemini features that will soon arrive on the TV, making it possible for viewers to deep dive into topics, search for and “reimagine” their personal photos and videos with AI, and, perhaps best of all, tell the TV what to do instead of having to navigate through complicated settings.\n\nThe company is first bringing these Gemini features and others to select TCL televisions before rolling them out more broadly to other Google TV devices in the months ahead.\n\nDesigned for large-screen experiences, Gemini for Google TV will allow users to talk to their TV to find something to watch, catch up on a favorite series by getting a recap of the plot, or get recommendations, all by using natural language conversation. For instance, you could ask Gemini for something to watch that would be a blend of two people’s tastes, or get help remembering a show or movie where you can’t remember the title, but can describe the plot or name one of the actors.\n\nYou could even ask Google something like, “What’s the new hospital drama everyone’s talking about?”\n\nGemini can respond to users’ questions through a new visually rich framework that adapts to individual queries, combining text, imagery, video context, and real-time sports updates, as required.\n\nBut Google sees the potential for the TV’s screen to be used for more than just entertainment; with Gemini, the TV can be used to educate, too.\n\nAt CES, Google showed how this would work. When users ask a question about something they want to learn about, the TV screen can offer a deep dive into the topic. A narrated interactive overview simplifies concepts, and users can ask follow-up questions to learn more.\n\nGemini will also allow users to query their Google Photos library for specific people or moments. They can also apply artistic styles to their photos and videos using Gemini AI and turn their memories into cinematic slideshows, says Google.\n\nHowever, perhaps the most useful feature is one that gives you the power to optimize the TV’s settings using only your voice.\n\nNow, you’ll be able to tell Gemini things like “the screen is too dim” or “I can’t hear the dialogue,” and Gemini will adjust the relevant settings without you having to leave the movie or TV show you’re watching to dig through menus to find the necessary option.\n\nGoogle says the new Gemini features will require the Google TV devices to be running Android TV OS 14 or higher, and they will need an internet connection. Not all languages, countries, or devices will be supported at launch, and users must also have a Google account to access the Gemini for TV experience.",
+  "meta_description": "Google TV will let you ask Gemini to find and edit your photos, adjust your TV settings and more.",
+  "status": 200,
+  "source_domain": "techcrunch.com",
+  "word_count": 486,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 14
+    }
+  ],
+  "relevance_score": 0.40618955512572535,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Alphabet Inc. (Google)",
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "mentions": 14
+  }
+}

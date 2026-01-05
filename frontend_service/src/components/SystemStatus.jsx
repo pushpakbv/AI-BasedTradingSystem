@@ -1,27 +1,37 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, Database, TrendingUp, Clock } from 'lucide-react';
+import { Activity, Database, Clock } from 'lucide-react';
 import axios from 'axios';
 
 const SystemStatus = () => {
   const [health, setHealth] = useState(null);
+  const [error, setError] = useState(null);
+
+  // Normalizes REACT_APP_API_URL to always point to ".../api"
+  const rawBase = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+  const API_BASE_URL = rawBase.replace(/\/$/, '').endsWith('/api')
+    ? rawBase.replace(/\/$/, '')
+    : `${rawBase.replace(/\/$/, '')}/api`;
 
   useEffect(() => {
     const fetchHealth = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/health');
+        const response = await axios.get(`${API_BASE_URL}/health`, { timeout: 5000 });
         setHealth(response.data);
-      } catch (error) {
-        console.error('Health check failed:', error);
+        setError(null);
+      } catch (err) {
+        console.error('Health check failed:', err);
+        setError('Failed to fetch health status');
       }
     };
 
     fetchHealth();
-    const interval = setInterval(fetchHealth, 30000); // Every 30 seconds
+    const interval = setInterval(fetchHealth, 30000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [API_BASE_URL]);
 
-  if (!health) return null;
+  if (!health) return <div className="text-xs text-gray-500">Loading...</div>;
+  if (error) return <div className="text-xs text-red-500">{error}</div>;
 
   return (
     <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
@@ -40,7 +50,9 @@ const SystemStatus = () => {
         </div>
         <div className="flex items-center gap-2 col-span-2">
           <Clock className="w-3 h-3 text-gray-400" />
-          <span className="text-gray-600">Last update: {new Date(health.timestamp).toLocaleTimeString()}</span>
+          <span className="text-gray-600">
+            Last update: {new Date(health.timestamp).toLocaleTimeString()}
+          </span>
         </div>
       </div>
     </div>

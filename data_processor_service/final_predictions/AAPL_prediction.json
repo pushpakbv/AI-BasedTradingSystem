@@ -1,21 +1,21 @@
 {
   "ticker": "AAPL",
-  "timestamp": "2026-01-05T09:52:38.744054",
-  "total_articles": 22,
-  "average_sentiment": 0.084,
+  "timestamp": "2026-01-05T15:35:11.218618",
+  "total_articles": 27,
+  "average_sentiment": 0.102,
   "financial_events": 0,
-  "confidence": 0.45,
+  "confidence": 0.461,
   "prediction": {
-    "final_signal": "HOLD",
-    "direction": "NEUTRAL",
-    "combined_score": 0.084,
+    "final_signal": "BUY",
+    "direction": "BULLISH",
+    "combined_score": 0.102,
     "confidence_level": "MEDIUM",
-    "reasoning": "Neutral sentiment | Based on 22 articles"
+    "reasoning": "Positive sentiment | Based on 27 articles"
   },
   "components": {
     "general_sentiment": {
-      "score": 0.084,
-      "contribution": 0.05,
+      "score": 0.102,
+      "contribution": 0.061,
       "weight": 0.6
     },
     "financial_signal": {
@@ -25,8 +25,8 @@
     }
   },
   "data_sources": {
-    "general_articles": 22,
+    "general_articles": 27,
     "financial_articles": 0,
-    "total_articles": 22
+    "total_articles": 27
   }
 }

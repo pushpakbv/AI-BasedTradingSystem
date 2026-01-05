@@ -1,0 +1,47 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/ai-bubble-or-not-buy-3-ai-growth-stocks-2026/",
+  "fetched_at": "2026-01-05T14:46:05.408977Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T14:20:00Z",
+  "title": "AI Bubble or Not, These 3 Stocks Make Excellent Long-Term Plays to Buy in January | The Motley Fool",
+  "content": "With the S&P 500 up a remarkable 79% in the last three years, some investors may be worried that we're due for a sell-off in 2026. And while no one can know for sure when such down markets will occur nor how long they'll last, we do know that investing in fundamentally sound companies, even when they're trading at expensive valuations based on their recent results, can be an effective way to grow one's wealth over the long term.\n\nAccording to The Motley Fool's 2026 AI Investor Outlook Report , 60% of survey respondents said they believe that companies focused on artificial intelligence (AI) will deliver strong long-term results, with outsized optimism coming from Gen Z (67%), millennials (63%), and high earners making at least $150,000 per year (70%).\n\nHere's why ASML ( ASML +4.83% ) , Nvidia ( NVDA +0.75% ) , and Microsoft ( MSFT 2.21% ) stand out to me as excellent AI stocks to buy now.\n\nASML is a semiconductor equipment manufacturer and services company. It is the only company in the world capable of making extreme ultraviolet (EUV) lithography machines, which are essential equipment for manufacturing the advanced chip designs created by companies like Nvidia, Broadcom , and Advanced Micro Devices .\n\nDemand for ASML's EUV machines should continue to grow for decades to come, as cutting-edge chips (which have smaller features packed more densely) require a level of precision that isn't achievable at general-purpose fabs. Chip foundries must invest in ASML's machines to meet the needs of their AI customers.\n\nCustom chips from Broadcom, AMD, and Alphabet (which designed its chips in collaboration with Broadcom ) are beginning to take more market share from Nvidia in the AI accelerator space. But Nvidia remains the undisputed leader in designing graphics processing units and rack-scale solutions for hyperscale data centers .\n\nAs an investment, Nvidia offers a catch-all way to benefit from increased AI adoption. Whether Oracle takes market share from Amazon Web Services, or Anthropic's Claude large language model gains ground on OpenAI's ChatGPT, the chipmaker will still profit.\n\nNvidia's sky-high 53% net profit margin means it is converting over half of its revenue into after-tax earnings. Even if competition erodes some of its pricing power and its margins fall somewhat, it will remain an incredible business.\n\nFurther up the value chain is Microsoft. It is arguably the most balanced AI stock to buy in 2026 because it is a major player in cloud computing through Azure, a significant investor in OpenAI (which provides the backbone of Microsoft's AI tools), and a leader in enterprise software and gaming.\n\nPut another way, Microsoft is involved in the entire AI stack through infrastructure, models, and applications. As such, it's the perfect stock to pair in your portfolio with ASML and Nvidia.\n\nMicrosoft pays a growing dividend, consistently returns capital to investors through aggressive stock buybacks, and is a reliable value trading at 30 times forward earnings.\n\nFor investors, it would be a mistake to overly concentrate on one aspect of the AI value chain -- like only buying chipmakers or sticking solely with AI software companies.\n\nBy taking positions in industry leaders across the value chain, investors give themselves multiple potential ways to profit from this generational opportunity while also positioning their portfolios to withstand the inevitable bumps that will occur along the way.",
+  "meta_description": "Building a diversified artificial intelligence portfolio can help long-term investors stay even-keeled during stock market sell-offs.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 557,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 8
+    },
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 7
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 2
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.4560810810810811,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 8
+  }
+}

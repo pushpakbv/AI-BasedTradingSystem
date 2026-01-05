@@ -1,0 +1,35 @@
+{
+  "url": "https://www.prnewswire.com/news-releases/sevii-selected-for-the-2026-crowdstrike-aws--nvidia-cybersecurity-startup-accelerator-302652002.html",
+  "fetched_at": "2026-01-05T15:09:57.670421Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T10:01:00Z",
+  "title": "Sevii Selected for the 2026 CrowdStrike, AWS & NVIDIA Cybersecurity Startup Accelerator",
+  "content": "CHARLOTTE, N.C. , Jan. 5, 2026 /PRNewswire/ -- Sevii, Inc , a cybersecurity company delivering an autonomous agentic AI platform for real-time defense and remediation, today announced it has been selected to participate in the 2026 Cybersecurity Startup Accelerator with CrowdStrike , Amazon Web Services (AWS) and NVIDIA through its Inception program, to help fuel the next generation of AI-driven cloud security innovation.\n\nThe elite eight-week program runs from January 5 through March 3, 2026, and connects early-stage startups with hands-on mentorship, technical enablement, funding and go-to-market support from leaders across CrowdStrike, AWS, and NVIDIA. As part of the accelerator, participants receive guidance on cloud architecture, AI and agentic system development, and cybersecurity best practices, along with access to top cybersecurity experts and global visibility across partner ecosystems.\n\nThe program will culminate in an in-person Demo Day at the AWS Startup Loft in San Francisco on March 24, 2026, coinciding with the RSA Conference , where an expert panel will select an innovation award winner with potential for investment from the CrowdStrike Falcon ® Fund .\n\nSevii was chosen for its work in Level 5 autonomous defense and remediation, leveraging agentic AI \"Cyber Warrior\" agents to detect and respond to threats at machine speed, and for its potential to help address pressing security challenges facing enterprises today.\n\n\"We're honored to be selected for the 2026 Cybersecurity Startup Accelerator,\" said Curt Aubley, CEO and co-founder of Sevii. \"This program gives us unique access to mentorship, technical resources and industry leaders that will accelerate our mission to help organizations defend against today's most advanced cyber threats. We look forward to collaborating with CrowdStrike, AWS, and NVIDIA to advance our technology and scale globally.\"\n\nParticipation in the accelerator builds on the expanded global format of the program, which empowers innovators from around the world to accelerate AI-driven cloud security solutions and connect with top cybersecurity investors and technical experts. Alumni of earlier cohorts have collectively raised significant funding, increased their collective valuations by billions, and achieved notable acquisitions, underscoring the program's impact on its participants and the future of cybersecurity.\n\nFor more information on the program, visit here .\n\nAbout Sevii Sevii's mission is to help the cyber good, defeat the cyber evil. Sevii is a cybersecurity company delivering next-generation Level 5 Autonomous Defense and Remediation (ADR) products powered by agentic AI. The company's innovative ADR platform utilizes a 'cyber army' of agentic AI agents that operate at machine speed, and processes detections, hunts, isolates, and remediates threats in real time stopping adversaries across a customer's enterprise, identity, and cloud assets without the need for humans in the loop. For more information about Sevii, visit here or contact us at [email protected]\n\nAbout the CrowdStrike, AWS & NVIDIA Cybersecurity Startup Accelerator The Cybersecurity Startup Accelerator, delivered by CrowdStrike in partnership with AWS and NVIDIA through the NVIDIA Inception program, is a global initiative designed to support early-stage cybersecurity companies with technical enablement, cloud and AI guidance, product development support, and go-to-market resources. The eight-week program culminates with a live demo showcase where founders present their solutions to industry leaders and investors.",
+  "meta_description": "/PRNewswire/ -- Sevii, Inc, a cybersecurity company delivering an autonomous agentic AI platform for real-time defense and remediation, today announced it has...",
+  "status": 200,
+  "source_domain": "www.prnewswire.com",
+  "word_count": 518,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 9
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 7
+    }
+  ],
+  "relevance_score": 0.43478260869565216,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 7
+  }
+}

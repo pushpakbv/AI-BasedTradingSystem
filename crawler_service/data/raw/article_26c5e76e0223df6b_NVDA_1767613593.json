@@ -1,0 +1,23 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/the-next-phase-of-the-ai-boom-could-be-even-bigger/",
+  "fetched_at": "2026-01-05T11:46:33.059169Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T11:15:00Z",
+  "title": "The Next Phase of the AI Boom Could Be Even Bigger for Nvidia | The Motley Fool",
+  "content": "Nvidia ( NVDA +1.14% ) has been an absolutely incredible performer over the past three years. Its stock outperformed the market in 2023, 2024, and 2025, but can it do it in 2026? I think this next phase of artificial intelligence could be even bigger for Nvidia.\n\nHow is that possible? Let's find out.\n\nWhen reviewing Nvidia's Q3 results, CEO Jensen Huang noted that Nvidia was \"sold out\" of cloud graphics processing units (GPUs) . That's simply incredible, especially considering that Nvidia generated $57 billion in total revenue. Data center GPUs made up the majority of that total, with $51.2 billion in sales coming from that division.\n\nThe data center division also encompasses other non-GPU products Nvidia makes to support its ecosystem. However, it's still impressive to sell out of a product when sales are already that high. To meet the unprecedented demand, Nvidia is looking to expand production capacity in any way possible. While it's pushing its suppliers upstream to provide more chips and other hardware, it's also making capacity changes on other product lines.\n\nOne area where Nvidia is making some hard choices is that it's reportedly cutting production capacity for its gaming chips. Gaming generated $4.3 billion in revenue during Q3 for Nvidia, so it's not insignificant to Nvidia's business, but it could free up some chip capacity to build more profitable and in-demand data center GPUs.\n\nCombined with the increased supply chain, these two factors will increase Nvidia's production capacity to meet customer demand. However, meeting all of their demand may not be possible due to the sheer volume required by its clients.\n\nSo, next time you hear about an AI hyperscaler launching its own chip or signing a deal with a competitor, like Advaced Micro Devices , investors shouldn't assume that Nvidia's product is inferior. It could be that Nvidia doesn't have the capacity that they need, so they are turning to alternative sources.\n\nThis bodes well for Nvidia's future and will allow it to control the margins and pricing on its products if supply constraints persist. However, two other factors could provide Nvidia with a significant growth boost in 2026.\n\nIn April 2025, Nvidia's export license to ship H20 chips (which were specifically created to abide by U.S. export laws to China) was revoked. This caused a huge dent in Nvidia's business, although the company kept growing rapidly. For Q2, Nvidia expected about $8 billion in revenue from H20 sales. That revenue could return shortly, but it has a catch.\n\nNvidia is allowed to sell the chips again, but at a 25% fee. It's unknown whether Nvidia will eat the fee or pass that on to the customer, but either way, Nvidia is gaining back a massive client that will boost its growth in 2026. It's also still unclear what restrictions Beijing will put on those sales.\n\nAnother factor for 2026 is the launch of Nvidia's next-generation architecture. The current Blackwell architecture provides impressive results, but its successor, Rubin, will be even more impressive. This upgrade will drive further costs associated with switching to 800-volt power.\n\nNvidia is poised to capitalize on the significant upgrades that its latest and greatest system will offer, further strengthening its growth case.\n\nAll of this adds up to Nvidia's vision for future data center construction. Nvidia believes that global data center capital expenditures will rise to $3 trillion to $4 trillion by 2030, up from around $600 billion in 2025. That's simply amazing growth, and if the industry actually does reach those spending levels, Nvidia's stock could skyrocket over the next few years as a result.\n\nWith all of the massive upgrades coming down the pipeline for Nvidia, a return to China, and increasing production capacity by decreasing output of other product lines, Nvidia is doing everything it can to maximize sales. I think this will bode well for Nvidia's stock , and 2026 could be its biggest year yet.",
+  "meta_description": "Nvidia is just getting started.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 652,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 33
+    }
+  ],
+  "relevance_score": 0.7344213649851632,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

@@ -1,0 +1,35 @@
+{
+  "url": "https://www.cnbc.com/2026/01/05/berlin-power-outage-officials-suspect-arson-attack.html",
+  "fetched_at": "2026-01-05T14:37:37.790045Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T14:14:08Z",
+  "title": "Protest over AI, climate crisis leaves tens of thousands without power in Berlin",
+  "content": "A suspected arson attack has left tens of thousands of homes and businesses in Germany's capital without electricity in near-freezing temperatures.\n\nA fire in southwest Berlin on Saturday prompted a major power outage, with around 45,000 households and 2,200 commercial entities across four districts affected, according to grid operator Stromnetz Berlin.\n\nThe cause was identified as a fire on a cable bridge over the Teltow Canal near the Lichterfelde power station, with several cables damaged as a result.\n\nApproximately 10,000 households and 300 businesses in Berlin's Lichterfelde district have since had electricity restored, Stromnetz Berlin said, although 35,000 households and 1,900 businesses remain affected.\n\nThe grid company said power for all customers is not expected to be restored until Thursday afternoon, at a time when Berlin is experiencing snowy conditions and sub-zero daily temperatures.\n\nLocal officials have attributed the power outage to an arson attack from The Vulkangruppe (The Volcano Group), a left-wing extremist group.\n\nThe Vulkangruppe reportedly published a letter shortly after the attack, claiming responsibility for the incident. They said their actions were directed at the fossil fuel-based energy industry, citing the climate crisis and buildout of artificial intelligence infrastructure . CNBC has been unable to independently verify the letter.\n\n\"The contemptuous attack on our power grid was not left-wing extremism. That was left-wing terrorism, and that must be clearly stated as such,\" Iris Spranger, Berlin's interior affairs minister, said at a press conference on Monday.\n\n\"Here, collateral damage to the life and limb of people in #Berlin was deliberately accepted,\" Spranger said, according to a Google translation of her comments posted on X.\n\nThe power outage comes around four months after a suspected arson attack on power lines in southeast Berlin affected around 50,000 households.\n\nVulkangruppe previously claimed responsibility for an attack on the power supply of Tesla' s gigafactory near Berlin in 2024. The incident forced Elon Musk 's company to halt production for a brief period.\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2026 Versant Media, LLC. All Rights Reserved. A Versant Media Company.\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "A suspected arson attack in southwest Berlin has prompted a major power outage, with tens of thousands of households affected.",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 382,
+  "matched_companies": [
+    {
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "sector": "Automotive & Manufacturing",
+      "mentions": 3
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.14457831325301204,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "sector": "Automotive & Manufacturing",
+    "mentions": 3
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/2-trillion-dollar-stocks-that-could-beat-the-marke/",
+  "fetched_at": "2026-01-05T13:03:31.308961Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T12:35:00Z",
+  "title": "2 Trillion-Dollar Stocks That Could Beat the Market in 2026 | The Motley Fool",
+  "content": "Last year was an amazing one for several members of the \" Magnificent Seven .\" Alphabet was the best-performing of them all, with its shares soaring more than 60%. Nvidia also continued to ride the artificial intelligence (AI) tailwind and had a strong showing.\n\nHowever, some were not so lucky. Amazon ( AMZN 1.93% ) and Apple ( AAPL 0.40% ) both underperformed broader equities in 2025. Even so, both tech leaders could perform much better in 2026. More importantly, both remain excellent buy-and-hold options. Here's why.\n\nAmazon has been losing market share to competitors in cloud computing . However, during the third quarter, the company showed that its Amazon Web Services (AWS) can still perform very well. The segment reported 20% year-over-year sales growth -- it increased faster than it had since 2022. Was that a one-off? Maybe not. Amazon is investing in expanding AWS capacity to position itself to capture the rising demand for cloud and AI services, which could help the segment maintain strong sales growth.\n\nIt's also worth noting that Amazon has signed a seven-year, $38 billion deal with OpenAI. By itself, this deal won't significantly boost Amazon's financial results. But it shows that Amazon remains highly competitive in the cloud market. Amazon's cloud backlog reached $200 billion as of the end of the third quarter, excluding additional deals signed in October. So, AWS has plenty of momentum entering 2026 and could help Amazon deliver stronger financial results and beat broader equities.\n\nOf course, the company's business is more than just AWS. Its advertising unit is still performing well, for instance. It reported $17.7 billion in revenue for the third quarter, representing a 22% increase compared to the same period last year. Amazon has also made progress with its healthcare ambitions. The company's core e-commerce operations could face some headwinds due to macroeconomic factors, particularly tariffs . However, overall, the business is strong, and Amazon's prospects look even stronger.\n\nCloud computing, AI, advertising, and healthcare should all be significant long-term tailwinds for the company. With a wide moat stemming from several sources, including switching costs and network effects , Amazon is well positioned to remain a leader in these markets for a long time. So, even if it doesn't perform well in 2026, the stock is a buy for long-term investors.\n\nApple's top-line growth has been slow to non-existent over the past three years. New iPhones haven't generated the kind of buzz investors had hoped for, while they have faced issues in some countries, including China. Furthermore, the threat of tariffs is very real for the company, as it manufactures most of its devices outside the U.S. However, note that sales growth has been on a northbound trajectory over the past three years.\n\nAAPL Revenue (Quarterly YoY Growth) data by YCharts.\n\nCould that trend continue next year? Apple is predicting revenue growth between 10% and 12% for its upcoming quarter. It hasn't had double-digit revenue growth in a while.\n\nThe company's iPhone 17 is largely responsible for the upbeat forecast. It is leading a strong cycle of renewals. Demand for the device remains high. If anything, Apple has not been able to meet it due to supply constraints, a problem it expects to fix next year.\n\nHere's the bottom line: With its most important product driving excellent revenue growth, Apple could perform much better in 2026 than it did in 2025.\n\nSo, what's the verdict for Apple? It could have a strong 2026 and still deliver excellent returns over the long term, especially once investors factor in its robust dividend program .",
+  "meta_description": "Apple and Amazon could silence the doubters this year.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 596,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 19
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 10
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 1
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.7512116316639742,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

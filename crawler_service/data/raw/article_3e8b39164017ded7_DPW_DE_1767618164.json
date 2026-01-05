@@ -1,0 +1,23 @@
+{
+  "url": "https://www.aircargonews.net/news/region/africa",
+  "fetched_at": "2026-01-05T13:02:44.848103Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T12:57:00Z",
+  "title": "Air Cargo News | The latest airfreight news from Africa",
+  "content": "Carrier aims for first 767Fs this year as part of strategy to lift cargo’s share of group revenues from 10% to 20% in 2026\n\nMoroccan carrier promotes 20-year veteran to lead cargo division's commercial development strategy and network expansion through 2037\n\nSub-Saharan Africa receives just 2% of global cargo capacity despite exponential population growth and increasing demand for medicines\n\nECS Group has promoted Yousra Khalihamou to commercial director at EFIS Maroc as Morocco strengthens its cargo gateway position\n\nDHL Global Forwarding has appointed Tobias Maier as chief executive for the Middle East & Africa region, effective 1 December, succeeding Amadou Diallo\n\nDHL will deploy €300m across Sub-Saharan Africa targeting express, forwarding and supply chain capabilities as the region posts 10% trade value growth in H1\n\nThe air cargo industry mourns the loss of Marwan Traboulsi, founder of Air Ghana, who passed away peacefully in London on 30 September, surrounded by family\n\nFreight forwarder Scan Global Logistics has opened a new office in Cairo as part of its strategic expansion across the Middle East, North Africa and Turkey region\n\nKenyan cargo carrier Astral Aviation has commenced operations on a new China-South Africa route, connecting Haikou with Johannesburg using its Boeing 767-300F\n\nKenya Airways and Air Tanzania have signed a Memorandum of Understanding to boost strategic cooperation and enhance connectivity, including cargo operations\n\nWindracer is establishing an operational hub in Malawi to demonstrate how its unmanned aerial vehicle (UAV) can help in humanitarian air cargo missions\n\nEthiopian Airlines has launched a new route between northwest China’s Xinjiang Uygur Autonomous Region and Addis Ababa, Ethiopia\n\nKenya-based Advantage Air has purchased two Dash 8-400 Package Freighter Conversion Kits from De Havilland Aircraft of Canada\n\nAfrican charter service provider Air Bonanza Express is shifting the base of its IL-76 freighter aircraft to cater for demand out of Chad and the Ivory Coast\n\nIndian carrier receives 737-800P2F at Chennai base, expanding operational capacity across domestic and regional routes amid rising demand\n\nMumbai’s main cargo gateway plans to suspend freighter operations for 10 months starting August 2026 to rebuild its cargo apron",
+  "meta_description": "Interested in the latest air cargo developments in Africa? Air Cargo News is the leading provider of news and analysis on the airfreight industry. Learn more",
+  "status": 200,
+  "source_domain": "www.aircargonews.net",
+  "word_count": 345,
+  "matched_companies": [
+    {
+      "name": "DHL Group",
+      "ticker": "DPW.DE",
+      "sector": "Logistics",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.11811023622047244,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

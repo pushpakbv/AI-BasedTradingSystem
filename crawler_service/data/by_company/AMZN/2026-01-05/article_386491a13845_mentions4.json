@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/prediction-this-will-be-microsofts-stock-price-at/",
+  "fetched_at": "2026-01-05T11:09:26.818858Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T11:00:00Z",
+  "title": "Prediction: This Will Be Microsoft's Stock Price at the End of 2026 | The Motley Fool",
+  "content": "Microsoft ( MSFT 2.21% ) had a strong 2025, rising from about $420 per share at the start of 2025 to around $490 by December. That's about a 17% return, making it a strong stock pick in normal years. However, the S&P 500 ( ^GSPC +0.19% ) also had a great year, rising around 18%. This means that Microsoft's stock lost to the market despite an impressive year.\n\nLooking ahead to 2026, will Microsoft be able to outperform the market? Or will it be another year of market-matching to market-losing performance? Let's figure out what Microsoft's stock price could be to end 2026, and see if that will be good enough to beat the market.\n\nThere are several varieties of companies involved in the artificial intelligence realm. Microsoft is more of an AI facilitator rather than a developer, which could have its benefits and drawbacks as we move closer to an AI-first world.\n\nOne of Microsoft's major components that isn't discussed enough is its Azure cloud computing business. Azure is the second-largest cloud computing service behind Amazon Web Services (AWS), but it may not stay there for long with its rapid growth rate. In first-quarter fiscal year 2026 (ended Sept. 30, 2025), Azure's revenue rose 40% year over year, doubling AWS' 20% growth. Azure's performance likely has to do with the fact that it's neutral in what generative AI models it offers to users.\n\nAlthough Microsoft has a 27% OpenAI stake, that's not the only model it offers on Azure. Developers can deploy competing models like xAI's Grok or Anthropic's Claude, or choose a cost-efficient model from DeepSeek. Because Microsoft isn't tying its success to one model, it can benefit from the rising tide of increased AI usage.\n\nOne area where increased AI usage has benefited Microsoft is its Office products. Its Copilot add-on, which gives users generative AI capabilities specifically for these platforms, has become popular and helped deliver 17% Microsoft 365 commercial growth and 26% 365 consumer growth.\n\nAll these trends that existed in 2025 aren't likely to disappear in 2026, and Wall Street analyst projections back that assumption up. For FY 2026 (ending June 30, 2026), expect Microsoft to deliver 16% sales growth. For FY 2027 (ending June 30, 2027), the consensus estimate for Microsoft's revenue growth is 15%. That's pretty much on par with where Microsoft has been over the past five years.\n\nMSFT Revenue (Quarterly YoY Growth) data by YCharts.\n\nMicrosoft is a very successful business, but it's also quite predictable. This should give us a great basis on which to build out our stock price estimate.\n\nOne area investors must consider to predict a stock price is how the company will be valued. Thirty times forward earnings (or greater) has become the norm for big tech companies like Microsoft and its peers, and assigning a year-end valuation of 30 times forward earnings is reasonable and fair.\n\nMSFT PE Ratio (Forward) data by YCharts.\n\nIf Microsoft can deliver a 15% growth rate from a revenue and earnings perspective throughout the back half of FY 2026 and the first half of FY 2027, and maintain its 30 times forward earnings valuation, that would indicate the stock will rise by the corresponding growth rate.\n\nSo, with Microsoft's stock trading at about $485 per share right now, my year-end stock price expectation for Microsoft would be nearly $560. As mentioned above, that growth rate wasn't enough to beat the market in 2025. However, over the long term, if Microsoft can continue growing at a double-digit growth rate, I have no doubt that it will maintain its status as a long-term winner, making it a solid stock to buy now and hold for several years.",
+  "meta_description": "Microsoft should beat the market, as long as it doesn't have another year like 2025.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 616,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 29
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 4
+    }
+  ],
+  "relevance_score": 0.7650695517774343,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Amazon.com, Inc.",
+    "ticker": "AMZN",
+    "sector": "E-commerce",
+    "mentions": 4
+  }
+}

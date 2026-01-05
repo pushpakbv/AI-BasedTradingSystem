@@ -1,21 +1,21 @@
 {
   "ticker": "NVDA",
-  "timestamp": "2026-01-05T09:53:00.815102",
-  "total_articles": 34,
-  "average_sentiment": 0.084,
+  "timestamp": "2026-01-05T15:35:30.029810",
+  "total_articles": 41,
+  "average_sentiment": 0.196,
   "financial_events": 0,
-  "confidence": 0.45,
+  "confidence": 0.517,
   "prediction": {
-    "final_signal": "HOLD",
-    "direction": "NEUTRAL",
-    "combined_score": 0.084,
+    "final_signal": "BUY",
+    "direction": "BULLISH",
+    "combined_score": 0.196,
     "confidence_level": "MEDIUM",
-    "reasoning": "Neutral sentiment | Based on 34 articles"
+    "reasoning": "Positive sentiment | Based on 41 articles"
   },
   "components": {
     "general_sentiment": {
-      "score": 0.084,
-      "contribution": 0.05,
+      "score": 0.196,
+      "contribution": 0.117,
       "weight": 0.6
     },
     "financial_signal": {
@@ -25,8 +25,8 @@
     }
   },
   "data_sources": {
-    "general_articles": 34,
+    "general_articles": 41,
     "financial_articles": 0,
-    "total_articles": 34
+    "total_articles": 41
   }
 }

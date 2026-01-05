@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/breakfast-news/2026/01/05/breakfast-news-2026-earnings-kick-off/",
+  "fetched_at": "2026-01-05T13:03:26.398681Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T12:30:00Z",
+  "title": "Breakfast News: 2026 Earnings Kick Off | The Motley Fool",
+  "content": "Source: Image created by Jester AI.\n\nRPM International ( RPM 0.32% ) , recommended in both Stock Advisor and Dividend Investor , will release second-quarter earnings Thursday. In Q1, the specialty chemicals company saw record quarterly sales of $2.11 billion, and returned $82 million through dividends and buybacks for a 7.4% rise year over year (YoY). RPM has raised its dividend for 52 years in a row.\n\nChevron ( CVX +2.19% ) , the only U.S. oil major operating in Venezuela, popped 7% in pre-market trading following the special forces operation that captured President Nicolás Maduro and his wife over the weekend. Other big oil stocks also ticked up, with ExxonMobil ( XOM +1.80% ) gaining 3% and ConocoPhillips ( COP +3.30% ) jumping 7% overnight. Oil prices are slightly down this morning, with WTI Crude dipping 1.1% to under $57.\n\nCES, the biggest tech industry show of the year, officially opens tomorrow in Las Vegas, with AI-based technology expected to dominate proceedings. Some events will take place earlier, with Nvidia ( NVDA +1.14% ) CEO Jensen Huang due to speak at 5pm PT today, and AMD ( AMD +4.35% ) CEO Lisa Su to follow at 6:30pm.\n\nAI stocks powered U.S. equities to another double-digit gain in 2025 after a rocky start, but those returns trailed the performance of international stocks and precious metals like gold and silver. The overall bond market returned 7.1% in 2025, making it the fourth-best year for bonds of the past two decades.",
+  "meta_description": "Fool favorites reporting, oil stocks get a boost, it's CES time again, and more...",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 249,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.16483516483516483,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 3
+  }
+}

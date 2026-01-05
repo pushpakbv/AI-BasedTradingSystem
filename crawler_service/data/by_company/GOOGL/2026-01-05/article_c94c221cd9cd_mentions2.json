@@ -1,0 +1,35 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/almost-no-one-is-buying-apples-vision-pro-headset/",
+  "fetched_at": "2026-01-05T15:20:55.443545Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T14:40:00Z",
+  "title": "Almost No One is Buying Apple's Vision Pro Headset | The Motley Fool",
+  "content": "When Apple ( AAPL 0.31% ) launched the first iteration of its Vision Pro headset in early 2024, the tech giant declared that \"the era of spatial computing is here.\" Nearly two years later, it's become clear that Apple badly misjudged demand for its heavy, expensive headset.\n\nThe Financial Times recently reported that Apple has been cutting Vision Pro production and marketing in response to weak sales. Apple doesn't report Vision Pro sales figures, but IDC expects the company to ship just 45,000 Vision Pro units in the final quarter of 2025. Even with a $3,499 price tag, revenue from the Vision Pro is immaterial for Apple if IDC's estimates are accurate.\n\nWhile it's not clear whether Apple is entirely giving up on the Vision Pro, the company's long search for a product that can achieve the same success as the iPhone continues.\n\nMuch of Apple's business is tied to the iPhone. In fiscal 2025, a bit more than half of Apple's total revenue came from iPhone sales, which totaled $201 billion. Wearables and other accessories churned up $37 billion in revenue , but the popular Apple Watch requires an iPhone for full functionality.\n\nServices is Apple's second-largest segment, with revenue of $96 billion in fiscal 2025. However, much of that revenue is at least somewhat dependent on the iPhone as well. A deal with Alphabet that generates around $20 billion for Apple annually, making Google the default search engine on Apple devices, doesn't exist without the iPhone. Neither does all the revenue Apple generates from the App Store or any other services that are deeply integrated with Apple's devices.\n\nThe iPhone remains a juggernaut, but there will eventually come a day when the smartphone will be supplanted by something new. It may be some sort of augmented reality glasses , or potentially a new hardware form that hasn't yet been invented. The Vision Pro certainly isn't it.\n\nApple is starting to look like a classic case of The Innovator's Dilemma , a phrase coined by Clayton Chirstenson decades ago. Apple is heavily dependent on the iPhone, and nearly everything it does ultimately attempts to protect that product. Even the Vision Pro needs an iPhone for some features, including making calls.\n\nThis makes sense in the near term, given the profitability of the iPhone. However, it also means that Apple is unlikely to be the company that develops the next big thing. For that, Apple would need to disrupt itself and the iPhone, and there's no reason to believe the company is willing to take enough risk for that to happen.\n\nApple is valued at around $4 trillion, which translates to a price-to-earnings ratio based on the average analyst estimate for fiscal 2026 of roughly 33. Sales growth is expected to be in the single-digit percentage range this year and next, while earnings-per-share growth is likely to receive a boost from share buybacks .\n\nIs Apple stock attractive at this price? I'd argue that it's not. There's only so much juice to squeeze from the iPhone business, and Apple is no closer today than it was 5 years ago to having a post-iPhone blockbuster product. Apple is risk-averse and unwilling to disrupt the iPhone business in any meaningful way, which may lead to problems down the road.\n\nApple is an incredible business, but the failure of the Vision Pro is a prime example of the company's ongoing struggle to define a post-iPhone era. With a lofty valuation as well, Apple stock doesn't look great to me as a long-term investment.",
+  "meta_description": "The future of spatial computing is not here, it turns out.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 590,
+  "matched_companies": [
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 41
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 1.0,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Alphabet Inc. (Google)",
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "mentions": 2
+  }
+}

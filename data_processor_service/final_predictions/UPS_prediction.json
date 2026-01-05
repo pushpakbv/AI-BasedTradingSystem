@@ -1,21 +1,21 @@
 {
   "ticker": "UPS",
-  "timestamp": "2026-01-05T09:53:05.206855",
-  "total_articles": 11,
-  "average_sentiment": 0.121,
+  "timestamp": "2026-01-05T15:35:33.743519",
+  "total_articles": 12,
+  "average_sentiment": 0.111,
   "financial_events": 0,
-  "confidence": 0.293,
+  "confidence": 0.307,
   "prediction": {
     "final_signal": "BUY",
     "direction": "BULLISH",
-    "combined_score": 0.121,
+    "combined_score": 0.111,
     "confidence_level": "LOW",
-    "reasoning": "Positive sentiment | Based on 11 article(s)"
+    "reasoning": "Positive sentiment | Based on 12 article(s)"
   },
   "components": {
     "general_sentiment": {
-      "score": 0.121,
-      "contribution": 0.073,
+      "score": 0.111,
+      "contribution": 0.067,
       "weight": 0.6
     },
     "financial_signal": {
@@ -25,8 +25,8 @@
     }
   },
   "data_sources": {
-    "general_articles": 11,
+    "general_articles": 12,
     "financial_articles": 0,
-    "total_articles": 11
+    "total_articles": 12
   }
 }

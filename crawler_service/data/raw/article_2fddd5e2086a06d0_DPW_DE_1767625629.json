@@ -1,0 +1,23 @@
+{
+  "url": "https://www.aircargonews.net/news/people",
+  "fetched_at": "2026-01-05T15:07:09.897393Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T14:47:00Z",
+  "title": "People | Air Cargo News | Latest airfreight updates |",
+  "content": "Steven Polmans has begun working for Swissport as senior vice president cargo global following work as a consultant\n\nKersti Krepp, senior vice president at Polar Air Cargo, has left the carrier 10 months after the Atlas-DHL joint venture closure was announced\n\nFreighter lessor ATSG has named Greg Mays as president and CEO, replacing Mike Berger who retires after a seven-year tenure at the company\n\nMoroccan carrier promotes 20-year veteran to lead cargo division's commercial development strategy and network expansion through 2037\n\nGlasgow Prestwick airport secured the air freight business of the year title at Logistics UK's annual awards, beating four other companies\n\nECS Group has promoted Yousra Khalihamou to commercial director at EFIS Maroc as Morocco strengthens its cargo gateway position\n\nQatar Airways Group has appointed Hamad Ali Al-Khater as group chief executive, effective 7 December, succeeding Badr Mohammed Al-Meer in the role\n\nEdge Insight survey reveals widespread dissatisfaction among air cargo professionals, with stress and limited career advancement key concerns\n\nMaastricht Airport has named cargo industry veteran Cor de Man as chief executive, replacing interim CEO Jan Eerkens\n\nIAG Cargo has opened applications for its 2026 graduate programme, expanding the 24-month scheme to include a new commercial stream\n\nAssociation of Asia Pacific Airlines names Wong Hong as director general from April 2026, succeeding Subhas Menon after six-year tenure\n\nDHL Global Forwarding has appointed Henk Venema as executive vice president of global airfreight, replacing Max Sauberschwarz in the role\n\nKuehne+Nagel has appointed DSV senior vice president Aaron Scott as its UK national manager, effective 1 May\n\nECS Group has appointed Girish Kunder as regional manager for the Indian subcontinent to strengthen airline partnerships and accelerate growth\n\nCargojet founding partner Pauline Dhillon will assume sole leadership of the Canadian cargo airline from 1 January as co-CEO Jamie Porteous retires\n\nTrade policy shifts and industry consolidation captured readers’ attention as air cargo market adjusted to new commercial realities\n\nFreight forwarders have two weeks to adopt revised standard trading conditions, reflecting increased customs activity and commercial risks",
+  "meta_description": "Interested in the latest developments in air cargo? Air Cargo News is the leading provider of news and analyses on the airfreight industry. Learn more",
+  "status": 200,
+  "source_domain": "www.aircargonews.net",
+  "word_count": 334,
+  "matched_companies": [
+    {
+      "name": "DHL Group",
+      "ticker": "DPW.DE",
+      "sector": "Logistics",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.12195121951219512,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

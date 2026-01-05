@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/nearly-65-of-warren-buffetts-portfolio-is-invested/",
+  "fetched_at": "2026-01-05T10:39:16.363319Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T09:44:00Z",
+  "title": "Nearly 65% of Warren Buffett's Portfolio Is Invested in These 5 Stocks as 2026 Begins | The Motley Fool",
+  "content": "Is it accurate to still refer to the stocks owned by Berkshire Hathaway ( BRK.A 1.42% ) ( BRK.B 1.15% ) as Warren Buffett's portfolio? I think so, even though the legendary investor no longer serves as the conglomerate's CEO.\n\nFor one thing, every stock currently held by Berkshire was bought under Buffett's leadership, even if he didn't personally make the call to buy the stock. Also, Buffett remains chairman of the board. Most importantly, he's still Berkshire's largest shareholder and controls 30.4% of the voting power of its combined Class A and Class B shares.\n\nThe bottom line is that Berkshire Hathaway's portfolio is Buffett's portfolio, just as it has been for years. And nearly 65% of Buffett's portfolio is invested in five stocks as 2026 begins.\n\nSure, Buffett drastically reduced Berkshire's position in Apple ( AAPL 0.40% ) over the last couple of years. However, the iPhone maker remains the conglomerate's biggest holding. As of Berkshire's latest 13-F regulatory filing , Berkshire owned 238,212,764 shares of Apple, making up 21.1% of its portfolio.\n\nIt's possible that Buffett's successor, Greg Abel, could decide to further trim Berkshire's stake in Apple in 2026. I think that would be a mistake, though. Apple's iPhone ecosystem continues to enjoy remarkable customer loyalty. The company is also reportedly developing smart glasses. I suspect that Apple will soon emerge as a top contender in this rapidly growing market.\n\nBuffett referred to American Express ( AXP +0.97% ) as one of a handful of stocks that Berkshire would own \"indefinitely\" in his 2023 letter to shareholders. Unsurprisingly, the financial services giant is Berkshire's second-largest holding, comprising 18.3% of Buffett's portfolio.\n\nI doubt that Abel will change a thing with Berkshire's stake in American Express. He undoubtedly agrees with Buffett that Amex is a \"wonderful business.\" As Buffett wrote in his 2023 shareholder letter, \"When you find a truly wonderful business, stick with it.\"\n\nOnce upon a time, Buffett was a big fan of bank stocks . His fervor waned in recent years. However, Berkshire still owns more than $31 billion worth of Bank of America ( BAC +1.73% ) stock, enough to make up 10.2% of its total holdings.\n\nIt will be interesting to see if the conglomerate prizes Bank of America as highly under Abel's direction. My hunch is that there won't be any significant sales of the stock, considering its attractive valuation with a forward price-to-earnings ratio of 12.7. On the other hand, I don't expect Berkshire to add significantly to its stake in Bank of America either.\n\nAside from Apple and Berkshire Hathaway itself, few stocks have become more associated with Buffett than The Coca-Cola Company ( KO 1.13% ) . Buffett has owned Coca-Cola longer than any other stock. He's also known to be a regular consumer of the company's soft drinks. Berkshire owns 400 million shares of Coca-Cola, making it the conglomerate's fourth-largest holding.\n\nI'd be shocked if Abel decides to sell even one share of Coca-Cola anytime soon. Everything Buffett wrote about American Express in his 2023 shareholder letter also applied to Coke. It's a \"wonderful business\" that Berkshire is likely to own for a much longer time.\n\nBuffett has often sung the praises of Occidental Petroleum ( OXY +2.96% ) and its CEO, Vicki Hollub. However, another oil stock makes up a bigger portion of Berkshire's portfolio – Chevron ( CVX +2.29% ) . Berkshire owns over 122 million shares of the oil and gas giant, ranking it No. 5 among its largest holdings.\n\nCould Abel lead Berkshire to sell some of its stake in Chevron? Possibly. Buffett has trimmed the position in Chevron several times in recent years. I think, though, that Berkshire will continue to hold a significant stake in the stock. If nothing else, Chevron generates substantial income for the conglomerate with its attractive dividend yield of 4.5%.",
+  "meta_description": "Buffett's favorite stocks remain Berkshire's biggest holdings even after he passed the torch to his successor.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 643,
+  "matched_companies": [
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 9
+    }
+  ],
+  "relevance_score": 0.19911504424778761,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "sector": "Technology & Manufacturing",
+    "mentions": 9
+  }
+}

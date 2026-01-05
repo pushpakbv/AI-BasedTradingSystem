@@ -1,0 +1,35 @@
+{
+  "url": "https://techcrunch.com/2026/01/05/alexa-without-an-echo-amazons-ai-chatbot-comes-to-the-web-and-a-revamped-alexa-app/",
+  "fetched_at": "2026-01-05T15:07:20.741169Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T15:00:00Z",
+  "title": "Amazon's AI assistant comes to the web with Alexa.com | TechCrunch",
+  "content": "Amazon’s AI-powered overhaul of its digital assistant, now known as Alexa+ , is coming to the web. On Monday, at the start of the Consumer Electronics Show in Las Vegas, the company announced the official launch of a new website, Alexa.com, which is now rolling out to all Alexa+ Early Access customers. The site will allow customers to use Alexa+ online, much as you can do today with other AI chatbots such as ChatGPT or Google’s Gemini.\n\nWhile Alexa-powered devices, including Amazon’s own Echo smart speakers and screens, have a well-established footprint with over 600 million devices sold worldwide, Amazon believes that for its AI assistant to be competitive, it will need to be everywhere — not just in the home, but also on the phone and on the web.\n\nPlus, the expansion could later give anyone a way to interact with Alexa+, even if they don’t have a device in their home.\n\nRelated to this expansion, Amazon is updating its Alexa mobile app, which will now offer a more “agent-forward” experience. Or, in other words, it’s putting a chatbot-style interface on the app’s homepage, making it seem more like a typical AI chatbot. (While you could chat with Alexa before in the app, the focus is now on the chatting — while the other features take a backseat.)\n\nOn the Alexa.com website, customers can use Alexa+ for common tasks, for instance exploring complex topics, creating content, and making trip itineraries. However, Amazon aims to differentiate its assistant from others by focusing on families and their needs in the home. That includes controlling smart devices, as you already could with the original Alexa, but it also means doing things like updating the family’s calendar or to-do list, making dinner reservations, adding grocery items you need to your Amazon Fresh or Whole Foods cart, finding recipes and saving them to a library, or even planning the family movie night with personalized recommendations.\n\nMore recently, Amazon has been integrating more services with Alexa+ , including the addition of Angi, Expedia, Square, and Yelp, which will join existing apps like Fodor’s, OpenTable, Suno, Ticketmaster, Thumbtack, and Uber.\n\nThe Alexa.com website features a navigation sidebar for quicker access to your most-used Alexa features, so you can pick up where you left off on tasks like setting the thermostat, checking your calendar for appointments, reviewing shopping lists, and more.\n\nIn addition, Amazon aims to convince customers to share their personal documents, emails, and calendar access with Alexa+, so its AI can become a sort of hub to manage the goings-on at home, from kids’ school holidays and soccer schedules to doctor’s appointments and other things families need to remember — like when the dog got its last rabies shot, or what day the neighbor’s backyard BBQ is taking place.\n\nThis is an area where Amazon will need to stretch, as it doesn’t have its own productivity suite or the wealth of personal data that rivals like Google already have for their own customers. Instead, Amazon has been relying on tools to forward and upload files to Alexa+ for its AI to keep track of. That, too, will now be a feature available on Alexa.com, and the information you share can be displayed on the Echo Show’s screen, where it can also be managed.\n\nThis ability to manage a family’s personal data could be Alexa’s biggest selling point, if it gets it right.\n\n“Seventy-six percent of what customers are using Alexa+ for no other AI can do,” says Daniel Rausch, VP of Alexa and Echo at Amazon, in an interview with TechCrunch. “And I think that’s a really interesting statistic about Alexa+ for two reasons.\n\nHe continues, “One, because customers count on Alexa to do unique things. You know, you can send a photograph of an old family recipe to Alexa and then talk through the recipe as you’re cooking it in your kitchen, substitute ingredients for what you have around the home, and get the job all the way done.”\n\nBut he notes, another 24% are using Alexa to do things other AIs can do — that could indicate they’re shifting more of their AI usage to Alexa+.\n\nAlexa.com will initially only be available to Early Access customers who sign in with their Amazon account. Amazon has been steadily rolling out Early Access since its debut of Alexa+ early last year.\n\nRausch tells us that over 10 million consumers now have access to Alexa+, and they’re having two to three times more conversations with Alexa+ than they did with the original Alexa assistant. Specifically, they’re shopping three times more with Alexa+ and are using recipes five times more than before, he says. Heavy smart home customers also use Alexa+ 50% more for smart home control, compared with the original Alexa.\n\nHowever, across social media and online forums, there are complaints about Alexa+’s misfires and mistakes. But Rausch believes the complaints are over-represented online. He says that the number of people opting out of the Alexa+ experience after trying it is in the low single digits, on average, or “effectively … almost none.”\n\n“Ninety-seven percent of Alexa devices support Alexa+, and we see now in adoption from customers that they’re using Alexa across all those many years and many generations of devices,” Rausch adds. “We support all of Alexa’s original capabilities, the tens of thousands of services and devices that Alexa was integrated with already are carried forward to the Alexa+ experience.”",
+  "meta_description": "Amazon is bringing Alexa+ to the web with a new Alexa.com site, expanding its AI assistant beyond devices and positioning it as a family-focused, agent-style chatbot.",
+  "status": 200,
+  "source_domain": "techcrunch.com",
+  "word_count": 906,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 15
+    },
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 2
+    }
+  ],
+  "relevance_score": 0.2704135737009544,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Alphabet Inc. (Google)",
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "mentions": 2
+  }
+}

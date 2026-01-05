@@ -1,25 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { RefreshCw, TrendingUp, TrendingDown, Activity } from 'lucide-react';
-import { usePredictions } from '../hooks/usePrediction';
+import { usePredictionsStore } from "../context/PredictionsContext";
 import PredictionCard from '../components/PredictionCard';
 import PerformanceChart from '../components/PerformanceChart';
 
 const Dashboard = () => {
-  const { predictions, loading, error, lastUpdate, connected, refresh } = usePredictions();
+  const { predictions, loading, error, lastUpdate, refreshNow, connected } = usePredictionsStore();
+  const refresh = refreshNow;
+
   const navigate = useNavigate();
 
-  // Ensure predictions is always an array
-  const predictionList = Array.isArray(predictions) ? predictions : [];
+  const predictionList = useMemo(
+    () => (Array.isArray(predictions) ? predictions : []),
+    [predictions]
+  );
+
+  const lastUpdateTime = lastUpdate ? new Date(lastUpdate) : null;
 
   useEffect(() => {
     console.log('📊 Dashboard re-rendered');
     console.log('   - Predictions count:', predictionList.length);
     console.log('   - Loading:', loading);
     console.log('   - Connected:', connected);
-    console.log('   - Last update:', lastUpdate);
-    console.log('   - Full predictions:', predictionList);
+    console.log('   - Last update:', lastUpdateTime ? lastUpdateTime.toISOString() : null);
   }, [predictionList, loading, connected, lastUpdate]);
+
 
   if (loading && predictionList.length === 0) {
     return (
@@ -39,7 +45,7 @@ const Dashboard = () => {
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 inline-block">
             <p className="text-red-600 mb-4 text-lg">⚠️ {error}</p>
             <button
-              onClick={refresh}
+              onClick={refreshNow}
               className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             >
               Retry
@@ -57,7 +63,7 @@ const Dashboard = () => {
           <Activity className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <p className="text-gray-600 text-lg mb-4">No predictions available yet.</p>
           <button
-            onClick={refresh}
+            onClick={refreshNow}
             className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
           >
             Refresh
@@ -67,13 +73,26 @@ const Dashboard = () => {
     );
   }
 
-  // Calculate statistics
-  const buySignals = predictionList.filter(p => p.prediction?.final_signal?.includes('BUY')).length;
-  const sellSignals = predictionList.filter(p => p.prediction?.final_signal?.includes('SELL')).length;
-  const holdSignals = predictionList.filter(p => p.prediction?.final_signal === 'HOLD').length;
-  const avgSentiment = (
-    predictionList.reduce((sum, p) => sum + (p.average_sentiment || 0), 0) / predictionList.length
-  ).toFixed(3);
+  const getSignal = (p) => {
+    const nested = p?.prediction && typeof p.prediction === 'object' ? p.prediction : null;
+    return (nested?.final_signal ?? p?.final_signal ?? 'HOLD');
+  };
+
+  const buySignals = predictionList.filter(p => {
+    const s = getSignal(p);
+    return s === 'BUY' || s === 'STRONG_BUY';
+  }).length;
+
+  const sellSignals = predictionList.filter(p => {
+    const s = getSignal(p);
+    return s === 'SELL' || s === 'STRONG_SELL';
+  }).length;
+
+  const holdSignals = predictionList.filter(p => getSignal(p) === 'HOLD').length;
+
+  const avgSentiment = predictionList.length > 0
+    ? (predictionList.reduce((sum, p) => sum + (parseFloat(p.average_sentiment) || 0), 0) / predictionList.length)
+    : 0;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -85,6 +104,7 @@ const Dashboard = () => {
               <h1 className="text-3xl font-bold text-gray-900">AI Trading Dashboard</h1>
               <p className="text-sm text-gray-600 mt-1">Real-time market predictions and analysis</p>
             </div>
+
             <div className="flex items-center gap-6">
               {/* Status */}
               <div className="text-right">
@@ -95,13 +115,13 @@ const Dashboard = () => {
                   </span>
                 </div>
                 <p className="text-xs text-gray-500">
-                  {lastUpdate ? `Updated ${lastUpdate.toLocaleTimeString()}` : 'Never updated'}
+                  {lastUpdateTime ? `Updated ${lastUpdateTime.toLocaleTimeString()}` : 'Never updated'}
                 </p>
               </div>
-              
+
               {/* Refresh Button */}
               <button
-                onClick={refresh}
+                onClick={refreshNow}
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium flex items-center gap-2"
               >
                 <RefreshCw className="w-4 h-4" />
@@ -125,13 +145,11 @@ const Dashboard = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Statistics Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-          {/* Total Predictions */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
             <p className="text-gray-600 text-sm font-medium">Total Predictions</p>
             <p className="text-3xl font-bold text-gray-900 mt-2">{predictionList.length}</p>
           </div>
 
-          {/* Buy Signals */}
           <div className="bg-white rounded-lg shadow-sm border border-green-200 p-6">
             <div className="flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-green-600" />
@@ -140,7 +158,6 @@ const Dashboard = () => {
             <p className="text-3xl font-bold text-green-600 mt-2">{buySignals}</p>
           </div>
 
-          {/* Sell Signals */}
           <div className="bg-white rounded-lg shadow-sm border border-red-200 p-6">
             <div className="flex items-center gap-2">
               <TrendingDown className="w-4 h-4 text-red-600" />
@@ -149,16 +166,16 @@ const Dashboard = () => {
             <p className="text-3xl font-bold text-red-600 mt-2">{sellSignals}</p>
           </div>
 
-          {/* Hold Signals */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
             <p className="text-gray-600 text-sm font-medium">Hold Signals</p>
             <p className="text-3xl font-bold text-gray-600 mt-2">{holdSignals}</p>
           </div>
 
-          {/* Average Sentiment */}
           <div className="bg-white rounded-lg shadow-sm border border-blue-200 p-6">
             <p className="text-gray-600 text-sm font-medium">Avg Sentiment</p>
-            <p className={`text-3xl font-bold mt-2 ${avgSentiment > 0 ? 'text-green-600' : avgSentiment < 0 ? 'text-red-600' : 'text-gray-600'}`}>
+            <p className={`text-3xl font-bold mt-2 ${
+              avgSentiment > 0 ? 'text-green-600' : avgSentiment < 0 ? 'text-red-600' : 'text-gray-600'
+            }`}>
               {(avgSentiment * 100).toFixed(1)}%
             </p>
           </div>

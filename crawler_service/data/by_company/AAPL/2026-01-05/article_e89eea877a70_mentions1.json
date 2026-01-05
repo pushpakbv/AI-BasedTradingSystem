@@ -1,0 +1,41 @@
+{
+  "url": "https://www.cnbc.com/2026/01/05/monday-biggest-wall-street-stocks-like-nvidia.html",
+  "fetched_at": "2026-01-05T13:55:48.977723Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T13:44:41Z",
+  "title": "Here are Monday's biggest analyst calls: Nvidia, Apple, Amazon, Coinbase, Oracle, Intel, IBM, Costco & more",
+  "content": "Got a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2026 Versant Media, LLC. All Rights Reserved. A Versant Media Company.\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "Here are Monday's biggest calls on Wall Street.",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 61,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 1
+    },
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 1
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.5294117647058824,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "sector": "Technology & Manufacturing",
+    "mentions": 1
+  }
+}

@@ -15,10 +15,10 @@ const PORT = process.env.PORT || 8000;
 app.use(cors());
 app.use(express.json());
 
-// Paths
-const PREDICTIONS_DIR = path.join(__dirname, '..', 'data_processor_service', 'final_predictions');
-const SENTIMENT_DIR = path.join(__dirname, '..', 'data_processor_service', 'sentiment_results');
-const FINANCIAL_DIR = path.join(__dirname, '..', 'data_processor_service', 'financial_analysis_results');
+// Paths - use environment variable or default
+const PREDICTIONS_DIR = process.env.PREDICTIONS_DIR || path.join(__dirname, '..', 'data_processor_service', 'final_predictions');
+
+console.log('🗂️ PREDICTIONS_DIR:', PREDICTIONS_DIR);
 
 // Company mapping
 const COMPANY_MAP = {
@@ -49,12 +49,12 @@ const clients = new Set();
 
 // ============ WebSocket Handler ============
 wss.on('connection', (ws) => {
-  console.log(`🔌 Client connected. Total: ${wss.clients.size}`);
+  console.log(`✅ WebSocket client connected. Total: ${wss.clients.size}`);
   clients.add(ws);
 
   ws.on('close', () => {
     clients.delete(ws);
-    console.log(`🔌 Client disconnected. Total: ${wss.clients.size}`);
+    console.log(`❌ WebSocket client disconnected. Total: ${wss.clients.size}`);
   });
 
   ws.on('error', (err) => {
@@ -65,6 +65,11 @@ wss.on('connection', (ws) => {
 
 // ============ Broadcast Function ============
 function broadcastToClients(message) {
+  if (clients.size === 0) {
+    console.log('📢 No clients connected to broadcast to');
+    return;
+  }
+  
   console.log(`📢 Broadcasting to ${clients.size} clients:`, message.type);
   
   clients.forEach((client) => {
@@ -84,22 +89,33 @@ function broadcastToClients(message) {
 // Get all predictions
 app.get('/api/predictions/daily', async (req, res) => {
   try {
-    const files = await fs.readdir(PREDICTIONS_DIR);
+    console.log('📥 GET /api/predictions/daily');
+    
+    let files = [];
+    try {
+      files = await fs.readdir(PREDICTIONS_DIR);
+      console.log(`📂 Found ${files.length} files in ${PREDICTIONS_DIR}`);
+    } catch (err) {
+      console.error(`❌ Cannot read directory ${PREDICTIONS_DIR}:`, err.message);
+      return res.json({ predictions: [], count: 0, timestamp: new Date().toISOString() });
+    }
+
     const predictions = [];
 
     for (const file of files) {
       if (file.endsWith('_prediction.json')) {
         try {
           const ticker = file.replace('_prediction.json', '');
-          const data = await fs.readFile(path.join(PREDICTIONS_DIR, file), 'utf8');
+          const filePath = path.join(PREDICTIONS_DIR, file);
+          const data = await fs.readFile(filePath, 'utf8');
           const pred = JSON.parse(data);
 
-          // Validate and normalize
-          if (pred.ticker && pred.prediction) {
+          if (pred.ticker && typeof pred.prediction !== 'undefined') {
             predictions.push({
               ...pred,
               company_name: COMPANY_MAP[ticker] || ticker
             });
+            console.log(`✅ Loaded: ${ticker}`);
           }
         } catch (e) {
           console.warn(`⚠️ Skipping ${file}:`, e.message);
@@ -115,7 +131,7 @@ app.get('/api/predictions/daily', async (req, res) => {
     });
   } catch (error) {
     console.error('Error reading predictions:', error);
-    res.status(500).json({ error: 'Failed to load predictions' });
+    res.status(500).json({ error: 'Failed to load predictions', predictions: [], count: 0 });
   }
 });
 
@@ -180,7 +196,6 @@ app.get('/api/articles/:ticker/:type', async (req, res) => {
   }
 });
 
-// ✅ NEW: Get news for a ticker (alias for articles)
 app.get('/api/news/:ticker', async (req, res) => {
   try {
     const { ticker } = req.params;
@@ -201,7 +216,7 @@ app.get('/api/news/:ticker', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch news' });
   }
 });
-// ✅ NEW: Get company data (prediction + metadata)
+
 app.get('/api/company/:ticker', async (req, res) => {
   try {
     const { ticker } = req.params;
@@ -222,13 +237,10 @@ app.get('/api/company/:ticker', async (req, res) => {
   }
 });
 
-// ✅ NEW: Get stock data for a ticker
 app.get('/api/stock/:ticker', async (req, res) => {
   try {
     const { ticker } = req.params;
     
-    // Return mock stock data
-    // In production, this would fetch from market_data_service
     const stockData = {
       ticker,
       company_name: COMPANY_MAP[ticker] || ticker,
@@ -253,11 +265,11 @@ app.get('/api/stock/:ticker', async (req, res) => {
   }
 });
 
-// Health check
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'healthy',
     websocket_clients: clients.size,
+    predictions_dir: PREDICTIONS_DIR,
     timestamp: new Date().toISOString()
   });
 });
@@ -265,7 +277,6 @@ app.get('/api/health', (req, res) => {
 // ============ File Watching ============
 console.log(`👀 Watching directory: ${PREDICTIONS_DIR}`);
 
-// Watch predictions directory
 chokidar.watch(PREDICTIONS_DIR, {
   awaitWriteFinish: {
     stabilityThreshold: 2000,
@@ -276,13 +287,11 @@ chokidar.watch(PREDICTIONS_DIR, {
     if (!filePath.endsWith('_prediction.json')) return;
 
     const ticker = path.basename(filePath).replace('_prediction.json', '');
-    console.log(`📝 Prediction changed: ${ticker}`);
+    console.log(`📝 Prediction file changed: ${ticker}`);
 
-    // Read the updated file
     const data = await fs.readFile(filePath, 'utf8');
     const prediction = JSON.parse(data);
 
-    // Broadcast to all connected clients
     broadcastToClients({
       type: 'prediction_updated',
       ticker,
@@ -291,16 +300,22 @@ chokidar.watch(PREDICTIONS_DIR, {
       timestamp: new Date().toISOString()
     });
   } catch (err) {
-    console.error(`Error processing file change for ${filePath}:`, err);
+    console.error(`Error processing file change:`, err);
   }
 }).on('error', (err) => {
   console.error('Watcher error:', err);
 });
 
-// Also broadcast all predictions every 2 minutes for fallback
+// Periodic broadcast every 2 minutes
 setInterval(async () => {
   try {
-    const files = await fs.readdir(PREDICTIONS_DIR);
+    let files = [];
+    try {
+      files = await fs.readdir(PREDICTIONS_DIR);
+    } catch (err) {
+      return;
+    }
+
     const predictions = [];
 
     for (const file of files) {
@@ -310,7 +325,7 @@ setInterval(async () => {
           const data = await fs.readFile(path.join(PREDICTIONS_DIR, file), 'utf8');
           const pred = JSON.parse(data);
 
-          if (pred.ticker && pred.prediction) {
+          if (pred.ticker && typeof pred.prediction !== 'undefined') {
             predictions.push({
               ...pred,
               company_name: COMPANY_MAP[ticker] || ticker
@@ -323,7 +338,7 @@ setInterval(async () => {
     }
 
     if (predictions.length > 0 && clients.size > 0) {
-      console.log(`📢 Broadcast refresh: ${predictions.length} predictions to ${clients.size} clients`);
+      console.log(`📢 Periodic broadcast: ${predictions.length} predictions to ${clients.size} clients`);
       broadcastToClients({
         type: 'predictions_refresh',
         predictions,
@@ -333,10 +348,11 @@ setInterval(async () => {
   } catch (err) {
     console.error('Error in periodic broadcast:', err);
   }
-}, 2 * 60 * 1000); // Every 2 minutes
+}, 2 * 60 * 1000);
 
 // ============ Start Server ============
 server.listen(PORT, () => {
   console.log(`✅ API Server running on port ${PORT}`);
   console.log(`🌐 WebSocket: ws://localhost:${PORT}`);
+  console.log(`📂 Watching: ${PREDICTIONS_DIR}`);
 });

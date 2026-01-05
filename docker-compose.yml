@@ -8,9 +8,7 @@ services:
       dockerfile: crawler_service/Dockerfile
     container_name: tradesystem_crawler
     volumes:
-      # Mount crawler data directory - THIS IS CRITICAL
       - ./crawler_service/data:/app/crawler_service/data
-      # Mount config for live updates
       - ./crawler_service/config:/app/crawler_service/config:ro
     environment:
       - PYTHONUNBUFFERED=1
@@ -30,21 +28,18 @@ services:
         BUILDKIT_STEP_LOG_MAX_SPEED: -1
     container_name: tradesystem_processor
     volumes:
-      # Mount processor output directories - BIND MOUNTS for easy access
       - ./data_processor_service/final_predictions:/app/data_processor_service/final_predictions
       - ./data_processor_service/sentiment_results:/app/data_processor_service/sentiment_results
       - ./data_processor_service/financial_analysis_results:/app/data_processor_service/financial_analysis_results
       - ./data_processor_service/classified_articles:/app/data_processor_service/classified_articles
-      # Mount crawler data as READ-ONLY - SHARED WITH CRAWLER
       - ./crawler_service/data:/app/crawler_service/data:ro
-      # ADD: Share final_predictions at root for API compatibility
       - ./data_processor_service/final_predictions:/app/final_predictions
     environment:
-    - PYTHONUNBUFFERED=1
-    - PROCESSOR_CHECK_INTERVAL_SECONDS=30
-    - LOG_LEVEL=DEBUG
-    - REPROCESS_INTERVAL_MINUTES=1
-    - CRAWLER_DATA_DIR=/app/crawler_service/data/by_company
+      - PYTHONUNBUFFERED=1
+      - PROCESSOR_CHECK_INTERVAL_SECONDS=30
+      - LOG_LEVEL=DEBUG
+      - REPROCESS_INTERVAL_MINUTES=1
+      - CRAWLER_DATA_DIR=/app/crawler_service/data/by_company
     networks:
       - tradesystem_network
     restart: unless-stopped
@@ -60,7 +55,6 @@ services:
     ports:
       - "8001:8001"
     volumes:
-      # Mount market data directory - BIND MOUNT for easy access
       - ./market_data_service/stock_data:/app/market_data_service/stock_data
     environment:
       - PYTHONUNBUFFERED=1
@@ -87,14 +81,11 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      # Mount all data directories as READ-ONLY - using bind mounts
       - ./data_processor_service/final_predictions:/data_processor_service/final_predictions:ro
       - ./data_processor_service/sentiment_results:/app/data_processor_service/sentiment_results:ro
       - ./data_processor_service/financial_analysis_results:/app/data_processor_service/financial_analysis_results:ro
       - ./market_data_service/stock_data:/app/market_data_service/stock_data:ro
-      # ADD: Mount final_predictions at /app/data_processor_service/final_predictions for Python API compatibility
       - ./data_processor_service/final_predictions:/app/data_processor_service/final_predictions:ro
-      # ADD: Mount final_predictions at /app/final_predictions for direct access if needed
       - ./data_processor_service/final_predictions:/app/final_predictions:ro
     environment:
       - FLASK_ENV=production
@@ -119,13 +110,27 @@ services:
       - api_service
       - market_data_service
     environment:
-      # These are for browser-side API calls (localhost works because browser is on host machine)
       - REACT_APP_API_URL=http://localhost:8000/api
       - REACT_APP_MARKET_DATA_API=http://localhost:8001/api
       - REACT_APP_WS_URL=ws://localhost:8000
-      # IMPORTANT: For build-time API calls within container, use service names
-      - REACT_APP_INTERNAL_API_URL=http://api_service:8000/api
-      - REACT_APP_INTERNAL_MARKET_DATA_API=http://market_data_service:8001/api
+    networks:
+      - tradesystem_network
+    restart: unless-stopped
+
+  # Scheduler Service
+  scheduler_service:
+    build:
+      context: .
+      dockerfile: scheduler_service/Dockerfile
+    container_name: tradesystem_scheduler
+    volumes:
+      - ./data_processor_service/final_predictions:/app/data_processor_service/final_predictions
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+      - PREDICTIONS_DIR=/app/data_processor_service/final_predictions
+    depends_on:
+      - data_processor_service
     networks:
       - tradesystem_network
     restart: unless-stopped

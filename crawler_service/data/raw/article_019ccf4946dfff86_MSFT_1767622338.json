@@ -1,0 +1,23 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/05/one-best-ai-stocks-hold-10-years/",
+  "fetched_at": "2026-01-05T14:12:18.143557Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T13:22:00Z",
+  "title": "This Is One of the Best Artificial Intelligence (AI) Stocks to Hold for the Next 10 Years | The Motley Fool",
+  "content": "Shares of Iren ( IREN +12.87% ) more than tripled in 2025. The Bitcoin miner, founded in 2018, is pursuing a massive opportunity by offering its data centers for artificial intelligence (AI) cloud services.\n\nIren has secured thousands of megawatts of clean power to meet the projected energy shortage for AI data centers in the coming years. If it signs more deals as it did with Microsoft recently, this could be just the beginning of the stock's bull run.\n\nIn October, Iren announced a $9.7 billion contract with Microsoft, which not only verified the value of the company's data center pipeline, but also, importantly, its ability to build these facilities on schedule.\n\nTime is of the essence with hyperscalers . Microsoft has the resources to invest in its own data centers, but it still needs companies like Iren as Microsoft has $400 billion in remaining performance obligations with cloud customers and insufficient data center capacity to fulfill them in the immediate future.\n\nIt's estimated to take several years to secure the land and power to bring a new data center online. Iren has been ahead of the curve, spending the last several years acquiring these assets specifically for this opportunity. It has disclosed 3 gigawatts of secured power for its data center pipeline.\n\nLong lead times for building new data centers make Iren an increasingly valuable partner for hyperscalers. The stock's current market cap of $13 billion is a fair price for the company's current assets and value of the Microsoft contract. This leaves considerable upside as it announces more deals, which could potentially lead to multibagger returns over the next decade.",
+  "meta_description": "Long lead times for new data centers are driving up the value of this company's land and power assets.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 272,
+  "matched_companies": [
+    {
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "mentions": 5
+    }
+  ],
+  "relevance_score": 0.2403846153846154,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

@@ -1,0 +1,29 @@
+{
+  "url": "https://www.cnbc.com/2026/01/05/nvidia-partner-foxconn-revenue-surge-tops-expectations.html",
+  "fetched_at": "2026-01-05T11:24:49.435064Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T11:18:04Z",
+  "title": "Nvidia partner Foxconn reports 22% revenue surge as AI buildout ramps up",
+  "content": "Foxconn , a major partner for Nvidia , has reported a 22% surge in revenues in the final quarter of 2025, as tech firms continue to ramp up spending on AI infrastructure.\n\nAlso known as Hon Hai, Foxconn reported revenues of 2.6 trillion Taiwan dollars ($83 billion) in the quarter up to December, as its components and cloud businesses demonstrated strong growth, the company said.\n\nThe figure tops analyst expectations of NT$2.4 trillion ($77 billion), according to LSEG estimates.\n\nFoxconn is the world's largest contract electronics manufacturer and makes the servers that hold chips in data centers. It also assembles Apple's iPhone.\n\nThe company has emerged as a key player in AI as companies race to build out infrastructure for the technology. Its share price rose 25% across 2025, following a 76% uptick over the previous year.\n\n\"Revenue in the fourth quarter of 2025 achieved strong growth both QoQ and YoY, exceeding our expectation of significant growth, causing a high base for the first quarter,\" the company said in a statement.\n\nFoxconn signed a partnership with OpenAI in November to collaborate on designs for next-generation AI infrastructure hardware.\n\nIn May, it was announced that the company would partner with Nvidia and the Taiwanese government to provide infrastructure to a major AI factory in Taiwan.\n\nalso announced in July that it was taking a stake in data center construction company TECO Electric & Machinery Co .\n\nFoxconn said it expected earnings to be near the upper end of the past five-year range thanks to the continued rise in AI rack shipments, despite entering the \"traditional off-season\" for ICT products in the first quarter of the year.\n\nGot a confidential news tip? We want to hear from you.\n\nGet this delivered to your inbox, and more info about our products and services.\n\n© 2026 Versant Media, LLC. All Rights Reserved. A Versant Media Company.\n\nData is a real-time snapshot *Data is delayed at least 15 minutes.\n      Global Business and Financial News, Stock Quotes, and Market Data\n      and Analysis.",
+  "meta_description": "The Taiwanese company, also known as Hon Hai, has said it hit revenues of NT$2.6 trillion ($83 billion) in the final quarter of 2025",
+  "status": 200,
+  "source_domain": "www.cnbc.com",
+  "word_count": 336,
+  "matched_companies": [
+    {
+      "name": "Apple Inc.",
+      "ticker": "AAPL",
+      "sector": "Technology & Manufacturing",
+      "mentions": 8
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.4435483870967742,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

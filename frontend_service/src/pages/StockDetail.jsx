@@ -1,130 +1,154 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
-  ArrowLeft, Activity, RefreshCw, AlertCircle, BarChart3,
-  FileText, Newspaper, TrendingUpIcon
+  ArrowLeft,
+  Activity,
+  RefreshCw,
+  AlertCircle,
+  BarChart3,
+  FileText,
+  Newspaper,
+  TrendingUpIcon,
 } from 'lucide-react';
 import axios from 'axios';
 import PredictionCard from '../components/PredictionCard';
 import StockGraphCard from '../components/StockGraphCard';
+import { usePredictionsStore } from '../context/PredictionsContext';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
-const WS_BASE_URL = process.env.REACT_APP_WS_URL || 'ws://localhost:8000';
+// Normalize API base so it always ends with "/api"
+const rawApiBase = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+const API_BASE_URL = rawApiBase.replace(/\/$/, '').endsWith('/api')
+  ? rawApiBase.replace(/\/$/, '')
+  : `${rawApiBase.replace(/\/$/, '')}/api`;
+
+const WS_BASE_URL = process.env.REACT_APP_WS_URL || `${window.location.protocol === 'https:' ? 'wss' : 'ws'}://${window.location.hostname}:8000`;
+
 
 const StockDetail = () => {
   const { ticker } = useParams();
   const navigate = useNavigate();
+
   const wsRef = useRef(null);
   const reconnectTimeoutRef = useRef(null);
 
+  // Store predictions (same source the dashboard uses)
+  const { predictions } = usePredictionsStore();
+  const livePrediction = predictions.find((p) => p.ticker === ticker);
+
+  // Keep companyData only for extra backend data if needed (and for passing into StockGraphCard if you want)
   const [companyData, setCompanyData] = useState(null);
+
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   const [lastUpdate, setLastUpdate] = useState(null);
   const [wsConnected, setWsConnected] = useState(false);
+
   const [newsData, setNewsData] = useState({ general: [], financial: [] });
+
+  // Always prefer store for prediction UI
+  const displayCompanyName =
+    livePrediction?.company_name || companyData?.company_name || ticker;
+
+  const prediction = livePrediction?.prediction || companyData?.prediction || null;
+  const average_sentiment =
+    livePrediction?.average_sentiment ?? companyData?.average_sentiment ?? 0;
+  const total_articles =
+    livePrediction?.total_articles ?? companyData?.total_articles ?? 0;
+
+  // When store updates for this ticker, update "lastUpdate" so the page reflects live refreshes
+  useEffect(() => {
+    if (livePrediction) {
+      setLastUpdate(new Date());
+    }
+  }, [
+    livePrediction?.timestamp,
+    livePrediction?.average_sentiment,
+    livePrediction?.total_articles,
+    livePrediction?.prediction?.combined_score,
+    livePrediction?.prediction?.final_signal,
+  ]);
 
   const fetchCompanyData = async () => {
     try {
       setLoading(true);
       setError(null);
-      
+
       console.log(`📡 Fetching company data for ${ticker}...`);
       const response = await axios.get(`${API_BASE_URL}/prediction/${ticker}`, {
-        timeout: 5000
+        timeout: 5000,
       });
-      
+
       console.log('✅ Company data received:', response.data);
-      
+
       setCompanyData(response.data);
       setLastUpdate(new Date());
       setLoading(false);
     } catch (err) {
       console.error('❌ Error fetching company data:', err);
-      const errorMsg = err.response?.data?.message || err.message || 'Failed to fetch company data. Please try again.';
+      const errorMsg =
+        err.response?.data?.message ||
+        err.message ||
+        'Failed to fetch company data. Please try again.';
       setError(errorMsg);
       setLoading(false);
     }
   };
 
-  // Fetch news articles from backend
-// Replace the fetchNewsArticles function with:
-
   const fetchNewsArticles = async () => {
     try {
       console.log(`📰 Fetching real news articles for ${ticker}...`);
-      
+
       try {
         const response = await axios.get(`${API_BASE_URL}/news/${ticker}`, {
-          timeout: 5000
+          timeout: 5000,
         });
+
+        const data = response.data;
+        if (data?.prediction?.combined_score != null) {
+          const n = Number(data.prediction.combined_score);
+          data.prediction.combined_score = Number.isFinite(n) ? (Math.abs(n) > 1.5 ? n / 100 : n) : 0;
+        }
+
+        if (data?.average_sentiment != null) {
+          const s = Number(data.average_sentiment);
+          data.average_sentiment = Number.isFinite(s) ? (Math.abs(s) > 1.5 ? s / 100 : s) : 0;
+        }
+
+        setCompanyData(data);
+
 
         console.log('✅ News articles received:', response.data);
 
         setNewsData({
           general: response.data.general || [],
-          financial: response.data.financial || []
+          financial: response.data.financial || [],
         });
       } catch (apiErr) {
         console.warn('⚠️ News endpoint error, trying articles endpoint...');
-        
+
         try {
           const response = await axios.get(`${API_BASE_URL}/articles/${ticker}`, {
-            timeout: 5000
+            timeout: 5000,
           });
-          
+
           setNewsData({
             general: response.data.articles || [],
-            financial: response.data.articles || []
+            financial: response.data.articles || [],
           });
         } catch (e) {
           console.warn('⚠️ No articles available');
-          setNewsData({
-            general: [],
-            financial: []
-          });
+          setNewsData({ general: [], financial: [] });
         }
       }
     } catch (err) {
       console.error('Error fetching news articles:', err);
-      setNewsData({
-        general: [],
-        financial: []
-      });
+      setNewsData({ general: [], financial: [] });
     }
   };
-  // Generate mock news for demonstration
-  const generateMockNews = (type, count) => {
-    const mockTitles = {
-      general: [
-        `${ticker} announces new product line`,
-        `${ticker} expands into new market`,
-        `${ticker} reports strong quarterly earnings`,
-        `${ticker} partners with major technology firm`,
-        `${ticker} wins industry award for innovation`
-      ],
-      financial: [
-        `${ticker} stock price surges on strong guidance`,
-        `${ticker} beats analyst expectations`,
-        `${ticker} announces share buyback program`,
-        `${ticker} raises dividend by 15%`,
-        `${ticker} credit rating upgraded by S&P`
-      ]
-    };
 
-    const titles = mockTitles[type] || mockTitles.general;
-    
-    return Array.from({ length: count }, (_, i) => ({
-      id: `mock-${type}-${i}`,
-      title: titles[i % titles.length],
-      content: `Important news about ${ticker}. This is a placeholder article showing what real news would look like in this section.`,
-      published_at: new Date(Date.now() - i * 24 * 60 * 60 * 1000).toISOString(),
-      source: 'News Source',
-      article_type: type
-    }));
-  };
-
-  // Connect to WebSocket
+  // Keep websocket only for connection status in this page
+  // Prediction state should come from the central store (dashboard + detail stay synced)
   const connectWebSocket = () => {
     if (wsRef.current?.readyState === WebSocket.OPEN) {
       console.log('✅ WebSocket already connected');
@@ -132,7 +156,7 @@ const StockDetail = () => {
     }
 
     console.log(`🔌 Connecting WebSocket for ${ticker}...`);
-    
+
     try {
       const ws = new WebSocket(WS_BASE_URL);
       wsRef.current = ws;
@@ -147,49 +171,23 @@ const StockDetail = () => {
         try {
           const message = JSON.parse(event.data);
           console.log('📨 WebSocket message:', message.type, message);
-          
-          if (message.type === 'prediction_updated' && message.ticker === ticker) {
-            console.log(`🔄 Prediction updated for ${ticker}:`, message.prediction);
-            setCompanyData(prev => {
-              if (!prev) return prev;
-              
-              // Deep merge to ensure all fields are updated
-              const updatedData = {
-                ...prev,
-                prediction: {
-                  ...prev.prediction,
-                  ...message.prediction
-                },
-                timestamp: message.timestamp
-              };
-              
-              console.log('✅ Updated company data:', updatedData);
-              return updatedData;
-            });
-            setLastUpdate(new Date());
-          } 
-          else if (message.type === 'predictions_refresh') {
-            const updatedPred = message.predictions.find(p => p.ticker === ticker);
-            if (updatedPred) {
-              console.log(`🔄 ${ticker} found in batch refresh:`, updatedPred);
-              setCompanyData(updatedPred);
-              setLastUpdate(new Date());
-            }
-          }
+
+          // Do NOT setCompanyData here for prediction updates
+          // That creates a second competing source of truth and causes the snap-back/desync issue
         } catch (err) {
           console.error('Error parsing WebSocket message:', err);
         }
       };
 
-      ws.onerror = (error) => {
-        console.error('❌ WebSocket error:', error);
+      ws.onerror = (wsError) => {
+        console.error('❌ WebSocket error:', wsError);
         setWsConnected(false);
       };
 
       ws.onclose = () => {
         console.log('🔌 WebSocket disconnected');
         setWsConnected(false);
-        
+
         reconnectTimeoutRef.current = setTimeout(() => {
           console.log('🔄 Attempting to reconnect WebSocket...');
           connectWebSocket();
@@ -198,7 +196,7 @@ const StockDetail = () => {
     } catch (err) {
       console.error('Failed to create WebSocket:', err);
       setWsConnected(false);
-      
+
       reconnectTimeoutRef.current = setTimeout(() => {
         connectWebSocket();
       }, 5000);
@@ -222,9 +220,11 @@ const StockDetail = () => {
         wsRef.current.close();
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ticker]);
 
-  if (loading && !companyData) {
+  // Only show full-screen loader if we have literally nothing to show yet
+  if (loading && !companyData && !livePrediction) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
@@ -235,7 +235,7 @@ const StockDetail = () => {
     );
   }
 
-  if (error && !companyData) {
+  if (error && !companyData && !livePrediction) {
     return (
       <div className="min-h-screen bg-gray-50">
         <header className="bg-white shadow-sm border-b sticky top-0 z-10">
@@ -268,7 +268,7 @@ const StockDetail = () => {
     );
   }
 
-  if (!companyData) {
+  if (!companyData && !livePrediction) {
     return (
       <div className="min-h-screen bg-gray-50">
         <header className="bg-white shadow-sm border-b sticky top-0 z-10">
@@ -290,8 +290,6 @@ const StockDetail = () => {
     );
   }
 
-  const { prediction, company_name, average_sentiment, total_articles } = companyData || {};
-
   console.log('🎯 Current prediction state:', prediction);
 
   return (
@@ -308,12 +306,19 @@ const StockDetail = () => {
                 <ArrowLeft className="w-5 h-5" />
               </button>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">{company_name || ticker}</h1>
+                <h1 className="text-2xl font-bold text-gray-900">
+                  {displayCompanyName || ticker}
+                </h1>
                 <p className="text-sm text-gray-500">{ticker}</p>
                 <div className="flex items-center gap-3 mt-2">
-                  <div className={`w-2 h-2 rounded-full ${wsConnected ? 'bg-green-500' : 'bg-red-500'}`}></div>
+                  <div
+                    className={`w-2 h-2 rounded-full ${
+                      wsConnected ? 'bg-green-500' : 'bg-red-500'
+                    }`}
+                  ></div>
                   <p className="text-xs text-gray-400">
-                    {wsConnected ? '🟢 Live Updates' : '🔴 Offline'} • {lastUpdate?.toLocaleString()}
+                    {wsConnected ? '🟢 Live Updates' : '🔴 Offline'} •{' '}
+                    {lastUpdate?.toLocaleString()}
                   </p>
                 </div>
               </div>
@@ -333,9 +338,9 @@ const StockDetail = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Prediction Card */}
-        {prediction && (
+        {livePrediction && (
           <div className="mb-8">
-            <PredictionCard prediction={companyData} />
+            <PredictionCard prediction={livePrediction} />
           </div>
         )}
 
@@ -362,7 +367,10 @@ const StockDetail = () => {
               <div className="divide-y divide-gray-200 max-h-96 overflow-y-auto">
                 {newsData.general.length > 0 ? (
                   newsData.general.map((article, idx) => (
-                    <div key={idx} className="p-4 hover:bg-blue-50 transition-colors cursor-pointer">
+                    <div
+                      key={idx}
+                      className="p-4 hover:bg-blue-50 transition-colors cursor-pointer"
+                    >
                       <div className="flex gap-3">
                         <Newspaper className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
                         <div className="flex-1 min-w-0">
@@ -370,13 +378,13 @@ const StockDetail = () => {
                             {article.title || 'Untitled'}
                           </h4>
                           <p className="text-xs text-gray-500 mt-1">
-                            {article.published_at 
+                            {article.published_at
                               ? new Date(article.published_at).toLocaleDateString()
-                              : new Date().toLocaleDateString()
-                            }
+                              : new Date().toLocaleDateString()}
                           </p>
                           <p className="text-xs text-gray-600 line-clamp-2 mt-2">
-                            {article.content?.substring(0, 120) || 'No preview available'}...
+                            {article.content?.substring(0, 120) || 'No preview available'}
+                            ...
                           </p>
                         </div>
                       </div>
@@ -405,7 +413,10 @@ const StockDetail = () => {
               <div className="divide-y divide-gray-200 max-h-96 overflow-y-auto">
                 {newsData.financial.length > 0 ? (
                   newsData.financial.map((article, idx) => (
-                    <div key={idx} className="p-4 hover:bg-green-50 transition-colors cursor-pointer">
+                    <div
+                      key={idx}
+                      className="p-4 hover:bg-green-50 transition-colors cursor-pointer"
+                    >
                       <div className="flex gap-3">
                         <TrendingUpIcon className="w-4 h-4 text-green-600 flex-shrink-0 mt-1" />
                         <div className="flex-1 min-w-0">
@@ -413,13 +424,13 @@ const StockDetail = () => {
                             {article.title || 'Untitled'}
                           </h4>
                           <p className="text-xs text-gray-500 mt-1">
-                            {article.published_at 
+                            {article.published_at
                               ? new Date(article.published_at).toLocaleDateString()
-                              : new Date().toLocaleDateString()
-                            }
+                              : new Date().toLocaleDateString()}
                           </p>
                           <p className="text-xs text-gray-600 line-clamp-2 mt-2">
-                            {article.content?.substring(0, 120) || 'No preview available'}...
+                            {article.content?.substring(0, 120) || 'No preview available'}
+                            ...
                           </p>
                         </div>
                       </div>
@@ -439,38 +450,56 @@ const StockDetail = () => {
           <div className="space-y-6">
             {/* Trading Signal */}
             {prediction && (
-              <div className={`rounded-lg shadow-sm p-6 border-2 transition-all ${
-                prediction.final_signal && String(prediction.final_signal).toUpperCase().includes('BUY')
-                  ? 'bg-green-50 border-green-300'
-                  : prediction.final_signal && String(prediction.final_signal).toUpperCase().includes('SELL')
-                  ? 'bg-red-50 border-red-300'
-                  : 'bg-gray-50 border-gray-300'
-              }`}>
+              <div
+                className={`rounded-lg shadow-sm p-6 border-2 transition-all ${
+                  prediction.final_signal &&
+                  String(prediction.final_signal).toUpperCase().includes('BUY')
+                    ? 'bg-green-50 border-green-300'
+                    : prediction.final_signal &&
+                      String(prediction.final_signal).toUpperCase().includes('SELL')
+                    ? 'bg-red-50 border-red-300'
+                    : 'bg-gray-50 border-gray-300'
+                }`}
+              >
                 <p className="text-xs font-semibold mb-2 text-gray-600">TRADING SIGNAL</p>
-                <p className={`text-4xl font-bold mb-3 ${
-                  prediction.final_signal && String(prediction.final_signal).toUpperCase().includes('BUY')
-                    ? 'text-green-700'
-                    : prediction.final_signal && String(prediction.final_signal).toUpperCase().includes('SELL')
-                    ? 'text-red-700'
-                    : 'text-gray-700'
-                }`}>
+                <p
+                  className={`text-4xl font-bold mb-3 ${
+                    prediction.final_signal &&
+                    String(prediction.final_signal).toUpperCase().includes('BUY')
+                      ? 'text-green-700'
+                      : prediction.final_signal &&
+                        String(prediction.final_signal).toUpperCase().includes('SELL')
+                      ? 'text-red-700'
+                      : 'text-gray-700'
+                  }`}
+                >
                   {prediction.final_signal || 'HOLD'}
                 </p>
                 <p className="text-sm font-semibold mb-4">
-                  {prediction.direction === 'BULLISH' ? '📈 Bullish' : prediction.direction === 'BEARISH' ? '📉 Bearish' : '➡️ Neutral'}
+                  {prediction.direction === 'BULLISH'
+                    ? '📈 Bullish'
+                    : prediction.direction === 'BEARISH'
+                    ? '📉 Bearish'
+                    : '➡️ Neutral'}
                 </p>
                 <div className="grid grid-cols-2 gap-3 pt-4 border-t border-opacity-20 border-gray-400">
                   <div>
                     <p className="text-xs text-gray-600 font-semibold">CONFIDENCE</p>
-                    <p className="text-lg font-bold text-gray-900 mt-1">{prediction.confidence_level || 'N/A'}</p>
+                    <p className="text-lg font-bold text-gray-900 mt-1">
+                      {prediction.confidence_level || 'N/A'}
+                    </p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-600 font-semibold">SENTIMENT</p>
-                    <p className={`text-lg font-bold mt-1 ${
-                      (average_sentiment || 0) > 0 ? 'text-green-600' :
-                      (average_sentiment || 0) < 0 ? 'text-red-600' :
-                      'text-gray-600'
-                    }`}>
+                    <p
+                      className={`text-lg font-bold mt-1 ${
+                        (average_sentiment || 0) > 0
+                          ? 'text-green-600'
+                          : (average_sentiment || 0) < 0
+                          ? 'text-red-600'
+                          : 'text-gray-600'
+                      }`}
+                    >
                       {((average_sentiment || 0) * 100).toFixed(1)}%
                     </p>
                   </div>
@@ -497,13 +526,19 @@ const StockDetail = () => {
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600">Combined Score</span>
                       <span className="font-semibold text-gray-900">
-                        {prediction?.combined_score ? (prediction.combined_score * 100).toFixed(1) : 'N/A'}%
+                        {typeof prediction?.combined_score === 'number'
+                          ? (prediction.combined_score * 100).toFixed(1)
+                          : 'N/A'}
+                        %
                       </span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600">Confidence</span>
                       <span className="font-semibold text-gray-900">
-                        {prediction?.confidence ? (prediction.confidence * 100).toFixed(1) : 'N/A'}%
+                        {typeof prediction?.confidence === 'number'
+                          ? (prediction.confidence * 100).toFixed(1)
+                          : 'N/A'}
+                        %
                       </span>
                     </div>
                     <div className="flex justify-between">
@@ -521,11 +556,11 @@ const StockDetail = () => {
               <div className="mt-3 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-blue-700">WebSocket</span>
-                  <span className={`px-2 py-1 rounded text-xs font-semibold ${
-                    wsConnected
-                      ? 'bg-green-100 text-green-700'
-                      : 'bg-red-100 text-red-700'
-                  }`}>
+                  <span
+                    className={`px-2 py-1 rounded text-xs font-semibold ${
+                      wsConnected ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                    }`}
+                  >
                     {wsConnected ? '🟢 Live' : '🔴 Offline'}
                   </span>
                 </div>
@@ -536,6 +571,14 @@ const StockDetail = () => {
             </div>
           </div>
         </div>
+
+        {/* Optional small inline error without breaking layout */}
+        {error && (companyData || livePrediction) ? (
+          <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4 flex items-center gap-3">
+            <AlertCircle className="w-5 h-5 text-yellow-700 flex-shrink-0" />
+            <p className="text-sm text-yellow-800">{error}</p>
+          </div>
+        ) : null}
       </div>
     </div>
   );

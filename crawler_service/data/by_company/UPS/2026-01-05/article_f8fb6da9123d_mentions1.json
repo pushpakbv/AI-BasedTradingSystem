@@ -1,0 +1,35 @@
+{
+  "url": "https://techcrunch.com/2026/01/05/amazon-revamps-fire-tv-launches-its-own-artline-televisions-with-frames/",
+  "fetched_at": "2026-01-05T15:07:21.635350Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T15:00:00Z",
+  "title": "Amazon revamps Fire TV, launches its own 'Artline' televisions with frames at CES | TechCrunch",
+  "content": "Amazon is rolling out a Fire TV redesign that puts more focus on the content, while also simplifying the navigation and layout. The update represents the first major Fire TV release in years from a user experience perspective, the company says, and is accompanied by a refreshed version of the Fire TV app and the arrival of new premium Fire TV televisions with colorful frames.\n\n“As we brought that content forward, the [user interface] got a little cluttered — a lot of stuff and a lot of rows,” explained Fire TV VP Aidan Marcuss in an interview with TechCrunch. “We know the data — there’s a lot of time spent searching,” he added. “We…know that it could just be easier.”\n\nThe new user interface features several design changes, including rounded corners, varied gradients, consistent typography, and increased spacing between content to make the interface feel less cluttered. While you can still scroll down to see your favorite rows, like what’s up next, you can also see your apps in an expanded horizontal row.\n\nBefore, you could only pin six apps to the Fire TV’s home screen — a common user complaint. But the update has reduced the app icons’ size, allowing more to be visible on the home screen, and offers you 20 app slots you can scroll through.\n\nAt the top of the screen, navigation has been simplified into obvious categories like Movies, TV, Live TV, Sports, and News. A search button is available to the left of the Home tab.\n\nThese pages don’t offer infinite scrolling, but they’re lengthy as they represent the depth of content available on streaming services.\n\nOther TV features are tucked away under the three-line hamburger menu icon, like Games, Art & Photos, the Appstore, Music Video & Audio, a now-universal watchlist (“My Stuff”), Settings, and other options.\n\nTo make it easier to access commonly used settings, you can also now long-press on the Home button to adjust settings for the display and audio, set a sleep timer, use accessibility features, access smart home features, and more. From this panel, you can do things like adjust the TV brightness, boost the audio dialogue, or display your Ring camera’s feed on screen while you watch, among other things.\n\nThe redesign also includes rewritten code that makes the interface move faster on some devices, Amazon claims.\n\n“On our most popular devices, this is 20% to 30% faster for the same functions, because it’s all about getting people to what they want to watch, fast,” notes Marcuss.\n\nOf course, Alexa+ access is built in, allowing users to ask questions, find content, or even do things like call an Uber. This AI-powered assistant allows users to ask questions in natural language, refine their queries as they chat, ask follow-ups, and use visual context. For instance, you could say, “Tell me more about that one,” when you have a movie or TV show’s square tile selected on screen. You could even ask questions with some nuance, like “find me more movies that have the same look,” or have it help you find photos or art.\n\nThe Fire TV app, meanwhile, was also updated to offer the classic remote control combined with a new way to discover new content. The idea is that people may want to browse for something to watch on their phones instead of just having one person drive the content discovery and search experience with the remote.\n\nThe refreshed Fire TV interface and mobile app will begin rolling out in February on the Fire TV Stick 4K Plus, Fire TV Stick 4K Max (2nd Gen), and Fire TV Omni Mini-LED Series in the U.S.\n\nLater this spring, the redesign will come to more countries and more devices, including Fire TV Cube (3rd Gen), the latest generation Fire TV 2-Series, Fire TV 4-Series, Fire TV Omni QLED Series, and TVs made by partners like Hisense, Panasonic, and TCL.\n\nIt will also be available at launch on the new Amazon Ember Artline TVs. (See below).\n\nThe Ember Artline TVs are Amazon’s latest televisions that ship with a frame that can match your room’s style and colors. They’ll come in 55-inch and 65-inch options, starting at $899.\n\nThe new TVs themselves offer 4K QLED screens with 800 nits of brightness. The display is also thin, at one-and-a-half inches, and has a matte screen finish to reduce glare.\n\nThe TVs also support Dolby Vision, HDR10+, and Wi-Fi 6.\n\nHowever, the big selling point is the 10 different frame options you can choose from, offering a variety of colors, textures, and geometries. This allows customers to take better advantage of Fire TV’s Ambient features, which include displaying art when the TV is not in use.\n\nThe colors available include Walnut, Ash, Teak, Black Oak, Matte White, Midnight Blue, Fig, Pale Gold, Graphite, and Silver.\n\nFire TV comes with access to over 2,000 pieces of free art, or you can use your own photos.\n\nYou can also ask Alexa+ to display certain photos from your Amazon Photos collections using commands like, “Alexa, create a slideshow of our family trip to Colorado” or “Alexa, show photos from our wedding.”",
+  "meta_description": "Fire TV's new interface focuses on your content and offers easier, speedier navigation, Amazon says.",
+  "status": 200,
+  "source_domain": "techcrunch.com",
+  "word_count": 856,
+  "matched_companies": [
+    {
+      "name": "Amazon.com, Inc.",
+      "ticker": "AMZN",
+      "sector": "E-commerce",
+      "mentions": 7
+    },
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 1
+    }
+  ],
+  "relevance_score": 0.13544018058690746,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "United Parcel Service",
+    "ticker": "UPS",
+    "sector": "Logistics",
+    "mentions": 1
+  }
+}
