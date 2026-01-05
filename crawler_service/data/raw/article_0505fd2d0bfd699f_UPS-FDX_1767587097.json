@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/this-industrial-stock-pays-a-66-dividend-yield-and/",
+  "fetched_at": "2026-01-05T04:24:57.029719Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T00:36:00Z",
+  "title": "This Industrial Stock Pays a 6.6% Dividend Yield (and It's Safe) | The Motley Fool",
+  "content": "High-yield stocks can be tempting for dividend and value investors alike. However, it's common for stocks with ultra-high dividend yields to ultimately become yield traps .\n\nAt first glance, you may suspect that's the situation at hand with United Parcel Service ( UPS +1.65% ) , better known as UPS. Several factors have impacted the delivery giant's fiscal performance and share price. This has led to concerns about an eventual dividend cut or suspension.\n\nHowever, when you take a closer look, it seems as if UPS' current rate of payout is secure. Already bouncing back, the stock could also experience a further recovery in the coming year.\n\nA few years ago, during the early pandemic e-commerce boom, UPS was thriving, achieving record highs in sales and profitability. Since then, however, higher labor costs, softening demand, and, more recently, tariffs, have all put the squeeze on the company's financial performance.\n\nStill, the company has increased its dividend, albeit modestly. Hence, with the share price falling as the payout rose, this stock currently has an ultra-high forward dividend yield of 6.6%.\n\nYes, alongside this high yield comes a high dividend payout ratio of 87%. However, given recent developments, much suggests that the dividend is safe.\n\nIt's no secret that yield trap and value trap concerns about UPS are waning. Shares have been trending higher since October, when the company reported better-than-expected Q3 2025 results.\n\nHowever, it may not be too late to profit from the turnaround . UPS continues to cut costs, as well as shift toward higher-margin customers in healthcare and other sectors. Wall Street analysts remain conservative, expecting just 4% earnings growth next year.\n\nStill, based on competitor FedEx 's ( FDX +1.48% ) recent reporting of stronger-than-expected results, who knows? If UPS keeps beating expectations, shares could keep rallying on improved results. The stock could also rerate as investors are willing to pay more for it, catching up to FedEx's forward P/E of 16. Considering UPS' high yield and valuation expansion potential, now may be a great time to buy.",
+  "meta_description": "Delivery giant UPS has bounced back in recent months, but it's not too late to grab this high-yielding stock at a more-than-reasonable price.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 341,
+  "matched_companies": [
+    {
+      "name": "United Parcel Service",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "mentions": 10
+    },
+    {
+      "name": "FedEx Corporation",
+      "ticker": "FDX",
+      "sector": "Logistics",
+      "mentions": 3
+    }
+  ],
+  "relevance_score": 0.5145118733509235,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

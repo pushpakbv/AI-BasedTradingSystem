@@ -3,14 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { usePredictions } from '../hooks/usePrediction';
 import PredictionCard from '../components/PredictionCard';
 import PerformanceChart from '../components/PerformanceChart';
-import CompanySelector from '../components/CompanySelector';
 
 const Dashboard = () => {
   const { predictions, loading, error, lastUpdate, refresh } = usePredictions();
   const navigate = useNavigate();
 
-  // Always use the predictions array from the API response
+  // Ensure predictions is always an array
   const predictionList = Array.isArray(predictions) ? predictions : [];
+
+  console.log('Dashboard received predictions:', predictionList);
 
   if (loading) {
     return (
@@ -30,7 +31,7 @@ const Dashboard = () => {
           <p className="text-red-600 mb-4">{error}</p>
           <button
             onClick={refresh}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg"
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
           >
             Retry
           </button>
@@ -43,7 +44,13 @@ const Dashboard = () => {
     return (
       <div className="flex items-center justify-center h-screen">
         <div className="text-center">
-          <p className="text-gray-600">No predictions available.</p>
+          <p className="text-gray-600 mb-4">No predictions available yet.</p>
+          <button
+            onClick={refresh}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+          >
+            Refresh
+          </button>
         </div>
       </div>
     );
@@ -69,8 +76,12 @@ const Dashboard = () => {
       </header>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <PerformanceChart predictions={predictionList} />
+        {/* Performance Chart */}
+        {predictionList.length > 0 && (
+          <PerformanceChart predictions={predictionList} />
+        )}
 
+        {/* Predictions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {predictionList.map((stock) => (
             <div

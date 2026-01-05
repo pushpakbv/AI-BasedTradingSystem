@@ -1,280 +1,249 @@
-# Sentiment analysis using NLP models
-"""
-Sentiment Analysis for General Company News
-Uses transformer models for accurate sentiment detection
-"""
-import os
-import json
 import logging
-from typing import Dict, List
-from datetime import datetime
+from transformers import pipeline
 import torch
-from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
-import warnings
-warnings.filterwarnings('ignore')
+import numpy as np
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-
 class SentimentAnalyzer:
-    """Analyzes sentiment of general company news articles"""
+    """Sentiment analysis using transformer models"""
     
-    def __init__(self, model_name: str = "ProsusAI/finbert"):
-        """
-        Initialize sentiment analyzer with FinBERT model
+    def __init__(self):
+        logger.info("🚀 Initializing Sentiment Analyzer...")
         
-        Args:
-            model_name: HuggingFace model for financial sentiment
-                       Options: "ProsusAI/finbert" (financial focus)
-                               "distilbert-base-uncased-finetuned-sst-2-english" (general)
-        """
-        logger.info(f"Loading sentiment model: {model_name}")
-        
-        # Use GPU if available
-        device = 0 if torch.cuda.is_available() else -1
-        
+        # Try FinBERT first (financial domain-specific)
         try:
-            # Load model and tokenizer
-            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-            self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
-            
-            # Create sentiment pipeline
-            self.sentiment_pipeline = pipeline(
-                "sentiment-analysis",
-                model=self.model,
-                tokenizer=self.tokenizer,
-                device=device,
+            logger.info("Loading FinBERT model...")
+            self.model = pipeline(
+                "text-classification",
+                model="ProsusAI/finbert",
+                device=0 if torch.cuda.is_available() else -1,
                 truncation=True,
                 max_length=512
             )
-            
-            logger.info(f"✅ Sentiment model loaded successfully (Device: {'GPU' if device == 0 else 'CPU'})")
-            
+            self.model_name = "FinBERT"
+            logger.info("✅ FinBERT loaded successfully")
         except Exception as e:
-            logger.error(f"Failed to load model: {e}")
-            raise
+            logger.warning(f"⚠️ FinBERT failed: {e}, trying distilbert-financial...")
+            try:
+                self.model = pipeline(
+                    "text-classification",
+                    model="distilbert-base-uncased-finetuned-sst-2-english",
+                    device=0 if torch.cuda.is_available() else -1,
+                    truncation=True,
+                    max_length=512
+                )
+                self.model_name = "DistilBERT"
+                logger.info("✅ DistilBERT loaded successfully")
+            except Exception as e2:
+                logger.error(f"❌ Failed to load any sentiment model: {e2}")
+                self.model = None
+                self.model_name = "None"
     
-    def analyze_text(self, text: str) -> Dict:
+    def analyze(self, text: str):
         """
-        Analyze sentiment of a single text
+        Analyze sentiment of text
         
         Args:
-            text: Article title or content
+            text: Text to analyze
             
         Returns:
-            Dictionary with sentiment label and score
+            dict with score (-1 to 1) and label
         """
+        if not text or not isinstance(text, str):
+            return {'score': 0.0, 'label': 'NEUTRAL'}
+        
+        # Clean text
+        text = text.strip()
+        if len(text) < 10:
+            return {'score': 0.0, 'label': 'NEUTRAL'}
+        
+        # Truncate to max length (avoid memory issues)
+        max_length = 512
+        if len(text) > max_length:
+            text = text[:max_length]
+        
         try:
-            # Truncate very long text
-            text = text[:2000]
+            if self.model is None:
+                logger.warning("Model not loaded, returning neutral")
+                return {'score': 0.0, 'label': 'NEUTRAL'}
             
-            # Get sentiment
-            result = self.sentiment_pipeline(text)[0]
+            # Get prediction
+            result = self.model(text, truncation=True, max_length=512)
             
-            # Normalize label
-            label = result['label'].lower()
-            if label in ['positive', 'pos']:
-                label = 'positive'
-            elif label in ['negative', 'neg']:
-                label = 'negative'
+            if not result or len(result) == 0:
+                return {'score': 0.0, 'label': 'NEUTRAL'}
+            
+            prediction = result[0]
+            label = prediction.get('label', '').upper()
+            score = float(prediction.get('score', 0.5))
+            
+            # Convert label to sentiment score (-1 to 1)
+            if 'POSITIVE' in label or label == 'LABEL_1':
+                # Positive: convert confidence to 0 to 1
+                sentiment_score = score
+            elif 'NEGATIVE' in label or label == 'LABEL_0':
+                # Negative: convert confidence to -1 to 0
+                sentiment_score = -score
             else:
-                label = 'neutral'
+                # Neutral
+                sentiment_score = 0.0
+            
+            # Clamp to -1 to 1
+            sentiment_score = max(-1.0, min(1.0, sentiment_score))
+            
+            logger.debug(f"Sentiment result - Label: {label}, Score: {sentiment_score:.3f}, Confidence: {score:.3f}")
             
             return {
-                'label': label,
-                'score': float(result['score']),
-                'confidence': float(result['score'])
+                'score': float(sentiment_score),
+                'label': 'POSITIVE' if sentiment_score > 0.1 else 'NEGATIVE' if sentiment_score < -0.1 else 'NEUTRAL',
+                'confidence': float(score),
+                'model': self.model_name
             }
-        
+            
         except Exception as e:
-            logger.error(f"Error analyzing text: {e}")
-            return {
-                'label': 'neutral',
-                'score': 0.5,
-                'confidence': 0.0,
-                'error': str(e)
-            }
+            logger.error(f"❌ Sentiment analysis error: {e}")
+            return {'score': 0.0, 'label': 'NEUTRAL', 'error': str(e)}
     
-    def analyze_article(self, article: Dict) -> Dict:
+    def get_sentiment(self, text: str):
         """
-        Analyze sentiment of an entire article
-        Combines title and content analysis
+        Alias for analyze() method - for compatibility
         
         Args:
-            article: Article dictionary with title and content
+            text: Text to analyze
             
         Returns:
-            Enhanced article with sentiment data
+            dict with score (-1 to 1) and label
         """
-        title = article.get('title', '')
-        content = article.get('content', '')
+        return self.analyze(text)
+    
+    def predict(self, text: str):
+        """
+        Alias for analyze() method - for compatibility
         
-        # Analyze title (more impactful)
-        title_sentiment = self.analyze_text(title)
+        Args:
+            text: Text to analyze
+            
+        Returns:
+            dict with score (-1 to 1) and label
+        """
+        return self.analyze(text)
+    
+    def batch_analyze(self, texts):
+        """
+        Analyze sentiment for multiple texts
         
-        # Analyze first 1000 chars of content
-        content_preview = content[:1000]
-        content_sentiment = self.analyze_text(content_preview)
+        Args:
+            texts: List of texts to analyze
+            
+        Returns:
+            list of {'score': float, 'label': str}
+        """
+        results = []
+        for text in texts:
+            try:
+                result = self.analyze(text)
+                results.append(result)
+            except Exception as e:
+                logger.warning(f"⚠️ Error analyzing text: {e}")
+                results.append({'score': 0.0, 'label': 'NEUTRAL'})
         
-        # Calculate weighted overall sentiment
-        # Title has 40% weight, content has 60% weight
-        title_weight = 0.4
-        content_weight = 0.6
+        return results
+    
+    def get_average_sentiment(self, texts):
+        """
+        Get average sentiment score for multiple texts
         
-        # Convert labels to scores for averaging
-        label_to_score = {'positive': 1.0, 'neutral': 0.0, 'negative': -1.0}
+        Args:
+            texts: List of texts to analyze
+            
+        Returns:
+            float: Average sentiment score (-1 to 1)
+        """
+        results = self.batch_analyze(texts)
+        scores = [r.get('score', 0.0) for r in results]
         
-        title_numeric = label_to_score.get(title_sentiment['label'], 0.0) * title_sentiment['score']
-        content_numeric = label_to_score.get(content_sentiment['label'], 0.0) * content_sentiment['score']
+        if not scores:
+            return 0.0
         
-        overall_score = (title_numeric * title_weight) + (content_numeric * content_weight)
+        avg = float(np.mean(scores))
+        return max(-1.0, min(1.0, avg))
+    
+    def get_sentiment_distribution(self, texts):
+        """
+        Get distribution of sentiment labels across texts
         
-        # Determine overall label
-        if overall_score > 0.15:
-            overall_label = 'positive'
-        elif overall_score < -0.15:
-            overall_label = 'negative'
-        else:
-            overall_label = 'neutral'
+        Args:
+            texts: List of texts to analyze
+            
+        Returns:
+            dict with counts of POSITIVE, NEGATIVE, NEUTRAL
+        """
+        results = self.batch_analyze(texts)
         
-        # Add sentiment data to article
-        article['sentiment_analysis'] = {
-            'overall': {
-                'label': overall_label,
-                'score': float(overall_score),
-                'confidence': (title_sentiment['confidence'] + content_sentiment['confidence']) / 2
-            },
-            'title_sentiment': title_sentiment,
-            'content_sentiment': content_sentiment,
-            'analyzed_at': datetime.utcnow().isoformat() + 'Z'
+        distribution = {
+            'POSITIVE': 0,
+            'NEGATIVE': 0,
+            'NEUTRAL': 0
         }
         
-        return article
-    
-    def analyze_batch(
-        self,
-        input_dir: str,
-        output_dir: str
-    ) -> Dict[str, int]:
-        """
-        Analyze sentiment for all general news articles
+        for result in results:
+            label = result.get('label', 'NEUTRAL')
+            if label in distribution:
+                distribution[label] += 1
         
-        Args:
-            input_dir: Path to classified_articles/general
-            output_dir: Path to sentiment_results
-            
-        Returns:
-            Dictionary with sentiment distribution counts
-        """
-        os.makedirs(output_dir, exist_ok=True)
-        
-        sentiment_counts = {'positive': 0, 'neutral': 0, 'negative': 0}
-        total_articles = 0
-        
-        logger.info("=" * 70)
-        logger.info("SENTIMENT ANALYSIS STARTING")
-        logger.info("=" * 70)
-        
-        # Process each company's general news
-        for filename in os.listdir(input_dir):
-            if not filename.endswith('_general.json'):
-                continue
-            
-            ticker = filename.replace('_general.json', '')
-            input_file = os.path.join(input_dir, filename)
-            
-            try:
-                with open(input_file, 'r', encoding='utf-8') as f:
-                    articles = json.load(f)
-                
-                logger.info(f"📊 Analyzing {ticker}: {len(articles)} articles")
-                
-                analyzed_articles = []
-                
-                for article in articles:
-                    # Analyze sentiment
-                    analyzed_article = self.analyze_article(article)
-                    analyzed_articles.append(analyzed_article)
-                    
-                    # Update counts
-                    sentiment = analyzed_article['sentiment_analysis']['overall']['label']
-                    sentiment_counts[sentiment] += 1
-                    total_articles += 1
-                
-                # Calculate company-level sentiment
-                company_sentiments = [
-                    a['sentiment_analysis']['overall']['score'] 
-                    for a in analyzed_articles
-                ]
-                avg_sentiment = sum(company_sentiments) / len(company_sentiments) if company_sentiments else 0
-                
-                # Determine overall company sentiment
-                if avg_sentiment > 0.15:
-                    company_sentiment = 'positive'
-                elif avg_sentiment < -0.15:
-                    company_sentiment = 'negative'
-                else:
-                    company_sentiment = 'neutral'
-                
-                # Save results
-                output_data = {
-                    'ticker': ticker,
-                    'company_sentiment': {
-                        'label': company_sentiment,
-                        'average_score': float(avg_sentiment),
-                        'article_count': len(analyzed_articles)
-                    },
-                    'sentiment_distribution': {
-                        'positive': sum(1 for a in analyzed_articles 
-                                      if a['sentiment_analysis']['overall']['label'] == 'positive'),
-                        'neutral': sum(1 for a in analyzed_articles 
-                                     if a['sentiment_analysis']['overall']['label'] == 'neutral'),
-                        'negative': sum(1 for a in analyzed_articles 
-                                      if a['sentiment_analysis']['overall']['label'] == 'negative')
-                    },
-                    'articles': analyzed_articles,
-                    'analyzed_at': datetime.utcnow().isoformat() + 'Z'
-                }
-                
-                output_file = os.path.join(output_dir, f"{ticker}_sentiment.json")
-                with open(output_file, 'w', encoding='utf-8') as f:
-                    json.dump(output_data, f, indent=2, ensure_ascii=False)
-                
-                logger.info(f"✅ {ticker}: {company_sentiment.upper()} "
-                          f"(avg: {avg_sentiment:.3f}) - {len(analyzed_articles)} articles")
-            
-            except Exception as e:
-                logger.error(f"Error processing {ticker}: {e}")
-        
-        logger.info("=" * 70)
-        logger.info("SENTIMENT ANALYSIS COMPLETE")
-        logger.info(f"Total articles analyzed: {total_articles}")
-        logger.info(f"Positive: {sentiment_counts['positive']} "
-                   f"({sentiment_counts['positive']/total_articles*100:.1f}%)")
-        logger.info(f"Neutral: {sentiment_counts['neutral']} "
-                   f"({sentiment_counts['neutral']/total_articles*100:.1f}%)")
-        logger.info(f"Negative: {sentiment_counts['negative']} "
-                   f"({sentiment_counts['negative']/total_articles*100:.1f}%)")
-        logger.info("=" * 70)
-        
-        return sentiment_counts
+        return distribution
 
 
 def main():
-    """Run sentiment analysis on general news"""
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    input_dir = os.path.join(base_dir, "data_processor_service", "classified_articles", "general")
-    output_dir = os.path.join(base_dir, "data_processor_service", "sentiment_results")
+    """Test sentiment analyzer"""
+    analyzer = SentimentAnalyzer()
     
-    # Initialize analyzer
-    analyzer = SentimentAnalyzer(model_name="ProsusAI/finbert")
+    test_texts = [
+        "Apple stock surged 15% after beating earnings expectations with strong iPhone sales",
+        "Tesla faces production delays and supply chain issues affecting Q4 delivery targets",
+        "Microsoft announced a partnership with Samsung for cloud services",
+        "Amazon reported disappointing holiday sales and cut workforce by 10,000 employees"
+    ]
     
-    # Run analysis
-    sentiment_counts = analyzer.analyze_batch(input_dir, output_dir)
+    print("\n" + "="*70)
+    print("🧪 Testing Individual Sentiment Analysis")
+    print("="*70)
     
-    print(f"\n✅ Sentiment analysis complete!")
-    print(f"Results saved to: {output_dir}")
+    for text in test_texts:
+        result = analyzer.analyze(text)
+        print(f"\nText: {text[:60]}...")
+        print(f"Score: {result['score']:.3f}")
+        print(f"Label: {result['label']}")
+        print(f"Confidence: {result.get('confidence', 0):.3f}")
+    
+    print("\n" + "="*70)
+    print("📊 Testing Batch Analysis")
+    print("="*70)
+    
+    batch_results = analyzer.batch_analyze(test_texts)
+    print(f"\nAnalyzed {len(batch_results)} texts")
+    for i, result in enumerate(batch_results, 1):
+        print(f"  {i}. Score: {result['score']:.3f}, Label: {result['label']}")
+    
+    print("\n" + "="*70)
+    print("📈 Testing Average Sentiment")
+    print("="*70)
+    
+    avg = analyzer.get_average_sentiment(test_texts)
+    print(f"\nAverage sentiment across {len(test_texts)} texts: {avg:.3f}")
+    
+    print("\n" + "="*70)
+    print("📊 Testing Sentiment Distribution")
+    print("="*70)
+    
+    distribution = analyzer.get_sentiment_distribution(test_texts)
+    print(f"\nSentiment distribution:")
+    for label, count in distribution.items():
+        percentage = (count / len(test_texts)) * 100
+        print(f"  {label}: {count} ({percentage:.1f}%)")
+    
+    print("\n" + "="*70 + "\n")
 
 
 if __name__ == "__main__":

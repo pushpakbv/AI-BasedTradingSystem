@@ -19,409 +19,429 @@ app.use(express.json());
 const PREDICTIONS_DIR = path.join(__dirname, '..', 'data_processor_service', 'final_predictions');
 const SENTIMENT_DIR = path.join(__dirname, '..', 'data_processor_service', 'sentiment_results');
 const FINANCIAL_DIR = path.join(__dirname, '..', 'data_processor_service', 'financial_analysis_results');
-const STOCK_DATA_DIR = path.join(__dirname, '..', 'market_data_service', 'stock_data');
-const CRAWLER_DATA_DIR = path.join(__dirname, '..', 'crawler_service', 'data', 'by_company');
-const GENERAL_ARTICLES_DIR = path.join(__dirname, '..', 'data_processor_service', 'classified_articles', 'general');
-const FINANCIAL_ARTICLES_DIR = path.join(__dirname, '..', 'data_processor_service', 'classified_articles', 'financial');
 
-
-
-
-// --- Company name mapping ---
+// Company mapping
 const COMPANY_MAP = {
-  MSFT: "Microsoft Corporation",
-  AAPL: "Apple Inc.",
-  GOOGL: "Alphabet Inc. (Google)",
-  AMZN: "Amazon.com, Inc.",
-  TSLA: "Tesla, Inc.",
-  NVDA: "NVIDIA Corporation",
-  BABA: "Alibaba Group Holding Limited",
-  JD: "JD.com, Inc.",
-  META: "Meta Platforms, Inc.",
-  NFLX: "Netflix, Inc.",
-  AMD: "Advanced Micro Devices, Inc.",
-  INTC: "Intel Corporation",
-  CRM: "Salesforce, Inc.",
-  UNP: "Union Pacific Corporation",
-  FDX: "FedEx Corporation",
-  UPS: "United Parcel Service",
-  DPW_DE: "DHL Group",
-  XPO: "XPO Inc.",
-  GXO: "GXO Logistics",
-  CHRW: "C.H. Robinson Worldwide",
-  AMKBY: "A.P. Moller – Maersk"
+  MSFT: "Microsoft",
+  AAPL: "Apple",
+  GOOGL: "Alphabet",
+  AMZN: "Amazon",
+  TSLA: "Tesla",
+  NVDA: "NVIDIA",
+  META: "Meta",
+  NFLX: "Netflix",
+  BABA: "Alibaba",
+  AMD: "AMD",
+  INTC: "Intel",
+  CRM: "Salesforce",
+  UNP: "Union Pacific",
+  FDX: "FedEx",
+  UPS: "UPS",
+  XPO: "XPO",
+  CHRW: "C.H. Robinson",
+  DPW_DE: "DHL",
+  AMKBY: "Ambev",
+  GXO: "GXO"
 };
-// --- End company name mapping ---
 
-// WebSocket clients
+// Track connected clients
 const clients = new Set();
 
-// WebSocket connection handler
+// ============ WebSocket Handler ============
 wss.on('connection', (ws) => {
-  console.log('✅ Client connected to WebSocket');
+  console.log(`🔌 Client connected. Total: ${wss.clients.size}`);
   clients.add(ws);
-  
-  // Send initial connection message
-  ws.send(JSON.stringify({ 
-    type: 'connected', 
-    message: 'WebSocket connection established',
-    timestamp: new Date().toISOString() 
-  }));
-  
+
   ws.on('close', () => {
-    console.log('❌ Client disconnected from WebSocket');
     clients.delete(ws);
+    console.log(`🔌 Client disconnected. Total: ${wss.clients.size}`);
   });
-  
-  ws.on('error', (error) => {
-    console.error('WebSocket error:', error);
+
+  ws.on('error', (err) => {
+    console.error('WebSocket error:', err);
     clients.delete(ws);
   });
 });
 
-// Broadcast updates to all connected clients
-function broadcastUpdate(type, data) {
-  const message = JSON.stringify({ 
-    type, 
-    data, 
-    timestamp: new Date().toISOString() 
-  });
+// ============ Broadcast Function ============
+function broadcastToClients(message) {
+  console.log(`📢 Broadcasting to ${clients.size} clients:`, message.type);
   
-  let sent = 0;
   clients.forEach((client) => {
     if (client.readyState === WebSocket.OPEN) {
-      client.send(message);
-      sent++;
-    }
-  });
-  
-  console.log(`📡 Broadcasted ${type} to ${sent} clients`);
-}
-
-// Watch for file changes
-const watchDirectories = [
-  PREDICTIONS_DIR,
-  SENTIMENT_DIR,
-  FINANCIAL_DIR,
-  STOCK_DATA_DIR,
-  GENERAL_ARTICLES_DIR,
-  FINANCIAL_ARTICLES_DIR
-];
-
-
-watchDirectories.forEach(dir => {
-  if (fs.access(dir).catch(() => false)) {
-    const watcher = chokidar.watch(dir, {
-      ignored: /(^|[\/\\])\../,
-      persistent: true,
-      ignoreInitial: true
-    });
-    
-    watcher
-      .on('add', path => {
-        console.log(`📄 File added: ${path}`);
-        broadcastUpdate('file_added', { path });
-      })
-      .on('change', path => {
-        console.log(`📝 File changed: ${path}`);
-        
-        // Determine what changed
-        if (path.includes('_prediction.json')) {
-          const ticker = path.match(/([A-Z]+)_prediction\.json/)?.[1];
-          broadcastUpdate('prediction_updated', { ticker });
-        } else if (path.includes('_sentiment.json')) {
-          const ticker = path.match(/([A-Z]+)_sentiment\.json/)?.[1];
-          broadcastUpdate('sentiment_updated', { ticker });
-        } else if (path.includes('_stock_data.json')) {
-          const ticker = path.match(/([A-Z]+)_stock_data\.json/)?.[1];
-          broadcastUpdate('stock_data_updated', { ticker });
-        }
-      });
-    
-    console.log(`👀 Watching directory: ${dir}`);
-  }
-});
-
-// ============ API ROUTES ============
-
-
-app.get('/api/health', (req, res) => {
-  res.json({
-    status: 'healthy',
-    timestamp: new Date().toISOString(),
-    websocket_clients: clients.size
-  });
-});
-
-// Get daily predictions summary
-// Get daily predictions summary
-app.get('/api/predictions/daily', async (req, res) => {
-  try {
-    console.log('📍 Fetching predictions from:', PREDICTIONS_DIR);
-    
-    // Ensure directory exists
-    try {
-      await fs.mkdir(PREDICTIONS_DIR, { recursive: true });
-    } catch (err) {
-      console.error('❌ Failed to access predictions directory');
-    }
-    
-    const files = await fs.readdir(PREDICTIONS_DIR);
-    console.log(`📂 Files in directory (${files.length}):`, files);
-    
-    const predictionFiles = files.filter(f => f.endsWith('_prediction.json'));
-    console.log(`🔍 Prediction files found (${predictionFiles.length}):`, predictionFiles);
-    
-    if (predictionFiles.length === 0) {
-      console.warn('⚠️ No prediction files found');
-      return res.json({ 
-        predictions: [],
-        timestamp: new Date().toISOString()
-      });
-    }
-    
-    const predictions = [];
-    
-    for (const file of predictionFiles) {
       try {
-        const ticker = file.replace('_prediction.json', '');
-        const filePath = path.join(PREDICTIONS_DIR, file);
-        console.log(`📄 Reading: ${filePath}`);
-        
-        const data = await fs.readFile(filePath, 'utf8');
-        const predictionObj = JSON.parse(data);
-        
-        // Validate structure
-        if (!predictionObj.prediction || !predictionObj.prediction.final_signal) {
-          console.warn(`⚠️ Invalid prediction structure for ${ticker}:`, predictionObj);
-          continue;
-        }
-        
-        // Ensure proper structure
-        const validPrediction = {
-          ticker: predictionObj.ticker || ticker,
-          company_name: COMPANY_MAP[ticker] || ticker,
-          prediction: {
-            final_signal: predictionObj.prediction.final_signal,
-            direction: predictionObj.prediction.direction || 'NEUTRAL',
-            combined_score: predictionObj.prediction.combined_score || 0,
-            confidence: predictionObj.prediction.confidence || 0.5,
-            confidence_level: predictionObj.prediction.confidence_level || 'LOW',
-            reasoning: predictionObj.prediction.reasoning || 'No reasoning available',
-            components: predictionObj.prediction.components || {}
-          },
-          data_sources: predictionObj.data_sources || {  // ✅ Add this
-            general_articles: 0,
-            financial_articles: 0,
-            total_articles: 0
-          },
-          generated_at: predictionObj.generated_at || new Date().toISOString()
-        };
-        
-        predictions.push(validPrediction);
-        console.log(`✅ Loaded ${ticker}: ${validPrediction.prediction.final_signal}`);
-      } catch (e) {
-        console.error(`❌ Error loading ${file}:`, e.message);
+        client.send(JSON.stringify(message));
+      } catch (err) {
+        console.error('Error sending to client:', err);
+        clients.delete(client);
       }
     }
-    
-    console.log(`✅ Returning ${predictions.length} valid predictions`);
-    res.json({ 
+  });
+}
+
+// ============ REST Endpoints ============
+
+// Get all predictions
+app.get('/api/predictions/daily', async (req, res) => {
+  try {
+    const files = await fs.readdir(PREDICTIONS_DIR);
+    const predictions = [];
+
+    for (const file of files) {
+      if (file.endsWith('_prediction.json')) {
+        try {
+          const ticker = file.replace('_prediction.json', '');
+          const data = await fs.readFile(path.join(PREDICTIONS_DIR, file), 'utf8');
+          const pred = JSON.parse(data);
+
+          // Validate and normalize
+          if (pred.ticker && pred.prediction) {
+            predictions.push({
+              ...pred,
+              company_name: COMPANY_MAP[ticker] || ticker
+            });
+          }
+        } catch (e) {
+          console.warn(`⚠️ Skipping ${file}:`, e.message);
+        }
+      }
+    }
+
+    console.log(`✅ Returning ${predictions.length} predictions`);
+    res.json({
       predictions,
-      timestamp: new Date().toISOString(),
-      count: predictions.length
+      count: predictions.length,
+      timestamp: new Date().toISOString()
     });
   } catch (error) {
-    console.error('❌ Error in /api/predictions/daily:', error);
-    res.status(500).json({ 
-      error: 'Failed to load predictions',
-      details: error.message
-    });
+    console.error('Error reading predictions:', error);
+    res.status(500).json({ error: 'Failed to load predictions' });
   }
 });
 
-// Get individual stock prediction
-app.get('/api/predictions/:ticker', async (req, res) => {
+// Get single prediction
+app.get('/api/prediction/:ticker', async (req, res) => {
   try {
     const { ticker } = req.params;
     const filePath = path.join(PREDICTIONS_DIR, `${ticker}_prediction.json`);
     const data = await fs.readFile(filePath, 'utf8');
+    const pred = JSON.parse(data);
+    res.json({
+      ...pred,
+      company_name: COMPANY_MAP[ticker] || ticker
+    });
+  } catch (error) {
+    res.status(404).json({ error: 'Prediction not found' });
+  }
+});
+
+// Health check
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'healthy',
+    websocket_clients: clients.size,
+    timestamp: new Date().toISOString()
+  });
+});
+
+// ============ File Watching ============
+console.log(`👀 Watching directory: ${PREDICTIONS_DIR}`);
+
+// Watch predictions directory
+chokidar.watch(PREDICTIONS_DIR, {
+  awaitWriteFinish: {
+    stabilityThreshold: 2000,
+    pollInterval: 100
+  }
+}).on('change', async (filePath) => {
+  try {
+    if (!filePath.endsWith('_prediction.json')) return;
+
+    const ticker = path.basename(filePath).replace('_prediction.json', '');
+    console.log(`📝 Prediction changed: ${ticker}`);
+
+    // Read the updated file
+    const data = await fs.readFile(filePath, 'utf8');
     const prediction = JSON.parse(data);
 
-    res.json({
+    // Broadcast to all connected clients
+    broadcastToClients({
+      type: 'prediction_updated',
       ticker,
       company_name: COMPANY_MAP[ticker] || ticker,
-      prediction
+      prediction,
+      timestamp: new Date().toISOString()
     });
-  } catch (error) {
-    console.error(`Error reading ${req.params.ticker}:`, error);
-    res.status(404).json({ error: 'Stock not found' });
+  } catch (err) {
+    console.error(`Error processing file change for ${filePath}:`, err);
   }
+}).on('error', (err) => {
+  console.error('Watcher error:', err);
 });
 
-// Get financial analysis
-app.get('/api/financial/:ticker', async (req, res) => {
+// Also broadcast all predictions every 2 minutes for fallback
+setInterval(async () => {
   try {
-    const { ticker } = req.params;
-    const financialPath = path.join(FINANCIAL_DIR, `${ticker}_financial_analysis.json`);
-    const data = await fs.readFile(financialPath, 'utf8');
-    const financial = JSON.parse(data);
-    
-    // Add company name
-    financial.company_name = COMPANY_MAP[ticker] || ticker;
+    const files = await fs.readdir(PREDICTIONS_DIR);
+    const predictions = [];
 
-    res.json(financial);
-  } catch (error) {
-    console.error(`Error reading financial for ${req.params.ticker}:`, error);
-    res.status(404).json({ error: 'Financial data not found' });
-  }
-});
+    for (const file of files) {
+      if (file.endsWith('_prediction.json')) {
+        try {
+          const ticker = file.replace('_prediction.json', '');
+          const data = await fs.readFile(path.join(PREDICTIONS_DIR, file), 'utf8');
+          const pred = JSON.parse(data);
 
-// Get stock price data
-app.get('/api/stock/:ticker', async (req, res) => {
-  try {
-    const { ticker } = req.params;
-    const stockPath = path.join(STOCK_DATA_DIR, `${ticker}_stock_data.json`);
-    
-    console.log(`📍 Fetching stock data from: ${stockPath}`);
-    
-    // Check if file exists before reading
-    if (!fs.existsSync(stockPath)) {
-      console.warn(`⚠️ Stock file not found: ${stockPath}`);
-      return res.status(404).json({ 
-        error: 'Stock data not found',
-        path: stockPath,
-        ticker: ticker
+          if (pred.ticker && pred.prediction) {
+            predictions.push({
+              ...pred,
+              company_name: COMPANY_MAP[ticker] || ticker
+            });
+          }
+        } catch (e) {
+          // Skip invalid files
+        }
+      }
+    }
+
+    if (predictions.length > 0 && clients.size > 0) {
+      console.log(`📢 Broadcast refresh: ${predictions.length} predictions to ${clients.size} clients`);
+      broadcastToClients({
+        type: 'predictions_refresh',
+        predictions,
+        timestamp: new Date().toISOString()
       });
     }
-    
-    const data = await fs.readFile(stockPath, 'utf8');
-    const stockData = JSON.parse(data);
-    
-    // Add company name
-    stockData.company_name = COMPANY_MAP[ticker] || ticker;
-
-    res.json(stockData);
-  } catch (error) {
-    console.error(`Error reading stock data for ${req.params.ticker}:`, error);
-    res.status(500).json({ 
-      error: 'Failed to load stock data',
-      details: error.message,
-      ticker: req.params.ticker
-    });
+  } catch (err) {
+    console.error('Error in periodic broadcast:', err);
   }
+}, 2 * 60 * 1000); // Every 2 minutes
+
+// ============ Start Server ============
+server.listen(PORT, () => {
+  console.log(`✅ API Server running on port ${PORT}`);
+  console.log(`🌐 WebSocket: ws://localhost:${PORT}`);
+});const express = require('express');
+const cors = require('cors');
+const fs = require('fs').promises;
+const path = require('path');
+const http = require('http');
+const WebSocket = require('ws');
+const chokidar = require('chokidar');
+
+const app = express();
+const server = http.createServer(app);
+const wss = new WebSocket.Server({ server });
+
+const PORT = process.env.PORT || 8000;
+
+app.use(cors());
+app.use(express.json());
+
+// Paths
+const PREDICTIONS_DIR = path.join(__dirname, '..', 'data_processor_service', 'final_predictions');
+const SENTIMENT_DIR = path.join(__dirname, '..', 'data_processor_service', 'sentiment_results');
+const FINANCIAL_DIR = path.join(__dirname, '..', 'data_processor_service', 'financial_analysis_results');
+
+// Company mapping
+const COMPANY_MAP = {
+  MSFT: "Microsoft",
+  AAPL: "Apple",
+  GOOGL: "Alphabet",
+  AMZN: "Amazon",
+  TSLA: "Tesla",
+  NVDA: "NVIDIA",
+  META: "Meta",
+  NFLX: "Netflix",
+  BABA: "Alibaba",
+  AMD: "AMD",
+  INTC: "Intel",
+  CRM: "Salesforce",
+  UNP: "Union Pacific",
+  FDX: "FedEx",
+  UPS: "UPS",
+  XPO: "XPO",
+  CHRW: "C.H. Robinson",
+  DPW_DE: "DHL",
+  AMKBY: "Ambev",
+  GXO: "GXO"
+};
+
+// Track connected clients
+const clients = new Set();
+
+// ============ WebSocket Handler ============
+wss.on('connection', (ws) => {
+  console.log(`🔌 Client connected. Total: ${wss.clients.size}`);
+  clients.add(ws);
+
+  ws.on('close', () => {
+    clients.delete(ws);
+    console.log(`🔌 Client disconnected. Total: ${wss.clients.size}`);
+  });
+
+  ws.on('error', (err) => {
+    console.error('WebSocket error:', err);
+    clients.delete(ws);
+  });
 });
 
-// Get complete company data (all in one)
-// ...existing code...
+// ============ Broadcast Function ============
+function broadcastToClients(message) {
+  console.log(`📢 Broadcasting to ${clients.size} clients:`, message.type);
+  
+  clients.forEach((client) => {
+    if (client.readyState === WebSocket.OPEN) {
+      try {
+        client.send(JSON.stringify(message));
+      } catch (err) {
+        console.error('Error sending to client:', err);
+        clients.delete(client);
+      }
+    }
+  });
+}
 
-app.get('/api/company/:ticker', async (req, res) => {
+// ============ REST Endpoints ============
+
+// Get all predictions
+app.get('/api/predictions/daily', async (req, res) => {
   try {
-    const { ticker } = req.params;
-    console.log(`📍 Fetching company data for ${ticker}`);
-    
-    // Read prediction file
-    const predictionFile = path.join(PREDICTIONS_DIR, `${ticker}_prediction.json`);
-    let prediction = null;
-    try {
-      const data = await fs.readFile(predictionFile, 'utf8');
-      prediction = JSON.parse(data);
-    } catch (e) {
-      console.warn(`⚠️ No prediction found for ${ticker}`);
+    const files = await fs.readdir(PREDICTIONS_DIR);
+    const predictions = [];
+
+    for (const file of files) {
+      if (file.endsWith('_prediction.json')) {
+        try {
+          const ticker = file.replace('_prediction.json', '');
+          const data = await fs.readFile(path.join(PREDICTIONS_DIR, file), 'utf8');
+          const pred = JSON.parse(data);
+
+          // Validate and normalize
+          if (pred.ticker && pred.prediction) {
+            predictions.push({
+              ...pred,
+              company_name: COMPANY_MAP[ticker] || ticker
+            });
+          }
+        } catch (e) {
+          console.warn(`⚠️ Skipping ${file}:`, e.message);
+        }
+      }
     }
-    
-    // Read stock data file
-    let stockData = null;
-    const stockFile = path.join(STOCK_DATA_DIR, `${ticker}_stock_data.json`);
-    try {
-      const data = await fs.readFile(stockFile, 'utf8');
-      stockData = JSON.parse(data);
-      console.log(`✅ Loaded stock data for ${ticker}: ${stockData.historical_data?.length || 0} data points`);
-    } catch (e) {
-      console.warn(`⚠️ No stock data found for ${ticker}`);
-    }
-    
-    // Read sentiment file
-    let sentiment = null;
-    const sentimentFile = path.join(SENTIMENT_DIR, `${ticker}_sentiment.json`);
-    try {
-      const data = await fs.readFile(sentimentFile, 'utf8');
-      sentiment = JSON.parse(data);
-    } catch (e) {
-      console.warn(`⚠️ No sentiment data found for ${ticker}`);
-    }
-    
-    // Return aggregated data
+
+    console.log(`✅ Returning ${predictions.length} predictions`);
     res.json({
-      ticker,
-      company_name: COMPANY_MAP[ticker] || ticker,
-      prediction: prediction?.prediction || null,
-      sentiment: sentiment || null,
-      stockData: stockData || null,  // ✅ Include stock data
-      general_articles: [],
-      financial_articles: [],
+      predictions,
+      count: predictions.length,
       timestamp: new Date().toISOString()
     });
   } catch (error) {
-    console.error(`❌ Error fetching company data for ${ticker}:`, error);
-    res.status(500).json({ error: 'Failed to load company data' });
+    console.error('Error reading predictions:', error);
+    res.status(500).json({ error: 'Failed to load predictions' });
   }
 });
 
-
-// Get list of available companies
-app.get('/api/companies', async (req, res) => {
-  try {
-    const files = await fs.readdir(PREDICTIONS_DIR);
-    const companies = files
-      .filter(f => f.endsWith('_prediction.json'))
-      .map(f => {
-        const ticker = f.replace('_prediction.json', '');
-        return { ticker, company_name: COMPANY_MAP[ticker] || ticker };
-      });
-    res.json({ companies });
-  } catch (error) {
-    console.error('Error reading companies:', error);
-    res.status(500).json({ error: 'Failed to load companies' });
-  }
-});
-
-// Get news articles for a company
-app.get('/api/news/:ticker', async (req, res) => {
+// Get single prediction
+app.get('/api/prediction/:ticker', async (req, res) => {
   try {
     const { ticker } = req.params;
-    const companyDir = path.join(CRAWLER_DATA_DIR, ticker);
-    
-    // Get latest date folder
-    const dates = await fs.readdir(companyDir);
-    dates.sort().reverse();
-    
-    if (dates.length === 0) {
-      return res.json({ articles: [] });
-    }
-    
-    const latestDate = dates[0];
-    const articlesDir = path.join(companyDir, latestDate);
-    const articleFiles = await fs.readdir(articlesDir);
-    
-    const articles = await Promise.all(
-      articleFiles
-        .filter(f => f.endsWith('.json'))
-        .map(async (file) => {
-          const data = await fs.readFile(path.join(articlesDir, file), 'utf8');
-          return JSON.parse(data);
-        })
-    );
-    
-    res.json({ ticker, articles });
+    const filePath = path.join(PREDICTIONS_DIR, `${ticker}_prediction.json`);
+    const data = await fs.readFile(filePath, 'utf8');
+    const pred = JSON.parse(data);
+    res.json({
+      ...pred,
+      company_name: COMPANY_MAP[ticker] || ticker
+    });
   } catch (error) {
-    console.error(`Error reading news for ${req.params.ticker}:`, error);
-    res.status(404).json({ error: 'News not found' });
+    res.status(404).json({ error: 'Prediction not found' });
   }
 });
 
+// Health check
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'healthy',
+    websocket_clients: clients.size,
+    timestamp: new Date().toISOString()
+  });
+});
+
+// ============ File Watching ============
+console.log(`👀 Watching directory: ${PREDICTIONS_DIR}`);
+
+// Watch predictions directory
+chokidar.watch(PREDICTIONS_DIR, {
+  awaitWriteFinish: {
+    stabilityThreshold: 2000,
+    pollInterval: 100
+  }
+}).on('change', async (filePath) => {
+  try {
+    if (!filePath.endsWith('_prediction.json')) return;
+
+    const ticker = path.basename(filePath).replace('_prediction.json', '');
+    console.log(`📝 Prediction changed: ${ticker}`);
+
+    // Read the updated file
+    const data = await fs.readFile(filePath, 'utf8');
+    const prediction = JSON.parse(data);
+
+    // Broadcast to all connected clients
+    broadcastToClients({
+      type: 'prediction_updated',
+      ticker,
+      company_name: COMPANY_MAP[ticker] || ticker,
+      prediction,
+      timestamp: new Date().toISOString()
+    });
+  } catch (err) {
+    console.error(`Error processing file change for ${filePath}:`, err);
+  }
+}).on('error', (err) => {
+  console.error('Watcher error:', err);
+});
+
+// Also broadcast all predictions every 2 minutes for fallback
+setInterval(async () => {
+  try {
+    const files = await fs.readdir(PREDICTIONS_DIR);
+    const predictions = [];
+
+    for (const file of files) {
+      if (file.endsWith('_prediction.json')) {
+        try {
+          const ticker = file.replace('_prediction.json', '');
+          const data = await fs.readFile(path.join(PREDICTIONS_DIR, file), 'utf8');
+          const pred = JSON.parse(data);
+
+          if (pred.ticker && pred.prediction) {
+            predictions.push({
+              ...pred,
+              company_name: COMPANY_MAP[ticker] || ticker
+            });
+          }
+        } catch (e) {
+          // Skip invalid files
+        }
+      }
+    }
+
+    if (predictions.length > 0 && clients.size > 0) {
+      console.log(`📢 Broadcast refresh: ${predictions.length} predictions to ${clients.size} clients`);
+      broadcastToClients({
+        type: 'predictions_refresh',
+        predictions,
+        timestamp: new Date().toISOString()
+      });
+    }
+  } catch (err) {
+    console.error('Error in periodic broadcast:', err);
+  }
+}, 2 * 60 * 1000); // Every 2 minutes
+
+// ============ Start Server ============
 server.listen(PORT, () => {
-  console.log(`🚀 API Server running on http://localhost:${PORT}`);
-  console.log(`🔌 WebSocket Server running on ws://localhost:${PORT}`);
-  console.log(`👀 Watching for file changes...`);
+  console.log(`✅ API Server running on port ${PORT}`);
+  console.log(`🌐 WebSocket: ws://localhost:${PORT}`);
 });

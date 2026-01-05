@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/ready-to-buy-nvidia-stock-check-out-this-option/",
+  "fetched_at": "2026-01-05T04:25:01.037783Z",
+  "published_date": "2026-01-05",
+  "published_datetime": "2026-01-05T03:31:00Z",
+  "title": "Ready to Buy Nvidia Stock? Check Out This Option. | The Motley Fool",
+  "content": "Nvidia ( NVDA +1.14% ) just finished up another great year. The stock rose 39% in 2025 and looking at recent earnings reports, for the first three quarters of its 2026 fiscal year (the nine-month period ending Oct. 26, 2025), the chipmaker's revenue increased 62% year over year. Gross profit increased 48%, and net income increased 52%.\n\nExpectations are high for this year, especially after management revealed an order backlog of $500 billion through the end of 2026. However, Nvidia is trading at an expensive 46 times trailing earnings. With that in mind, should you buy Nvidia stock now or wait for a cheaper opportunity?\n\nThere's a lot to like about Nvidia as an investment. Nvidia's graphics processing units (GPUs) are in high demand from other AI companies, which is the primary reason its revenue has exploded. Data center revenue made up 90% of Nvidia's total revenue in its most recent quarter. It's certainly a quality company to have in your portfolio, particularly if you're looking for top AI stocks . Excellent companies often trade at high valuations, so you shouldn't let its price-to-earnings ratio (P/E) dissuade you from investing.\n\nThat said, it's normal to question how much more Nvidia can grow if there is a pullback in the near future. It's the largest public company by market cap as I write this, and the valuation is high, although reasonable compared to most AI companies. For perspective, competitor Advanced Micro Devices trades at 106 times trailing earnings, making Nvidia look like a bargain in comparison.\n\nIf you're concerned about investing too heavily in Nvidia all at once, dollar-cost averaging is a good alternative. This mans buying a fixed amount of Nvidia stock on a schedule that works for you. For example, you could purchase one or two shares each week no matter what the stock is doing.\n\nI've dollar-cost averaged into many tech stocks I like, Nvidia included. It's a useful strategy for volatile stocks because even if the share price declines, you'll have the opportunity to buy the dip .",
+  "meta_description": "Nvidia has been one of the market's biggest winners in recent years, but this success has also led to a high valuation.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 341,
+  "matched_companies": [
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 14
+    }
+  ],
+  "relevance_score": 0.5585106382978723,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only",
+  "primary_company": {
+    "name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "mentions": 14
+  }
+}

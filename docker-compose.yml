@@ -41,8 +41,9 @@ services:
       - ./data_processor_service/final_predictions:/app/final_predictions
     environment:
     - PYTHONUNBUFFERED=1
-    - PROCESSOR_CHECK_INTERVAL_SECONDS=60
-    - LOG_LEVEL=INFO
+    - PROCESSOR_CHECK_INTERVAL_SECONDS=30
+    - LOG_LEVEL=DEBUG
+    - REPROCESS_INTERVAL_MINUTES=1
     - CRAWLER_DATA_DIR=/app/crawler_service/data/by_company
     networks:
       - tradesystem_network

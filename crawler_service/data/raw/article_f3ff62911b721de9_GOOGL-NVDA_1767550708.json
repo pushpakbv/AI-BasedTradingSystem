@@ -1,0 +1,29 @@
+{
+  "url": "https://www.fool.com/investing/2026/01/04/2-ai-stocks-buy-january-hold-20-years/",
+  "fetched_at": "2026-01-04T18:18:28.038109Z",
+  "published_date": "2026-01-04",
+  "published_datetime": "2026-01-04T17:45:00Z",
+  "title": "2 AI Stocks to Buy in January and Hold for 20 Years | The Motley Fool",
+  "content": "Like the internet was 30 years ago, artificial intelligence (AI) is the next major technological shift that will reshape the economy. That also makes it a generational opportunity for investors to accrue wealth by buying and patiently holding the right growth stocks. Research from Morgan Stanley projects that AI could deliver operating efficiencies worth as much as $40 trillion to the global economy over the long term.\n\nInvestors don't need to gamble on unproven companies and excessively risky stocks for the chance to profit from this trend. Simply sticking with leading tech stocks could help you achieve market-beating returns. After all, it's the world's largest and most profitable companies that are doing much of the work involved in enabling the wider adoption of AI. To position your portfolio to profit from this opportunity, I suggest adding shares of these two tech titans that will likely still be leading their respective industries 20 years from now.\n\nFor those seeking to profit from the AI trend over the past few years, Nvidia ( NVDA +1.26% ) has been one of the best stocks to own, and the company's innovation and financial fortitude should keep it in the driver's seat. Its high-end graphics processing units (GPUs) are used by all the leading cloud infrastructure providers, and those data center GPUs are sold out for the foreseeable future.\n\nNvidia's data center revenue surged by 66% year over year last quarter to $51 billion. This high-growth trajectory reflects a long-term transition from traditional computing that relies more on central processing units (CPUs) to accelerated computing that demands massive quantities of parallel processors such as GPUs.\n\nThe good news for investors buying Nvidia stock today is that this transition will unfold over many years. Capital spending on AI infrastructure is expected to grow from $600 billion in 2026 to at least $3 trillion by 2030. This massive buildout portends significant growth for Nvidia.\n\nNvidia will have to continue innovating to maintain its lead over other semiconductor companies that are designing chips to handle AI workloads. However, in recent years, it has accelerated its pace of innovation, moving to a cadence of introducing new and better GPU architectures annually. That continually pushes its chips' performance to new levels, and will make it difficult for competitors to keep up. It is already preparing to launch its Vera Rubin chips in 2026 -- those will deliver significant performance improvements over its current Blackwell generation.\n\nFacilitating Nvidia's steady innovation is its financial fortitude. It's one of the most profitable companies in the world, with net profits of $99 billion over the last four reported quarters on $187 billion in revenue.\n\nIn a world where AI is increasingly driving everything, Nvidia looks likely to remain a solid investment for the next 20 years. It is investing in solutions that will underpin the future economy, such as robots, autonomous vehicles, and AI agents. Analysts expect the company to experience 37% annualized earnings growth over the next few years, pointing to substantial returns ahead for shareholders.\n\nAlphabet ( GOOG +0.48% ) ( GOOGL +0.69% ) delivered market-beating returns for investors over the last decade, driven by strong growth in advertising through Google Search and YouTube. The stock climbed 700%, but the next decade could see more returns as demand for AI and cloud computing takes off.\n\nThe stock rocketed to new highs in 2025 as investors started to recognize Google as a leader in AI, but that was likely just the beginning. Google Gemini is one of the most capable AI models, and it's being layered into all of Alphabet's services, including enterprise tools in Google Cloud. Revenue from its cloud segment increased 34% year over year in the third quarter.\n\nAlphabet just surpassed $100 billion in quarterly revenue for the first time, as AI features are driving Google Search usage higher. The Gemini app has over 650 million monthly active users, making it the second-most-used AI model behind ChatGPT .\n\nThe company was on course to spend more than $91 billion on capital expenditures in 2025, and plans a significant increase from that in 2026. It can cover those outlays through its operating cash flow , which totaled $151 billion over the last four reported quarters. These investments are strengthening its competitive position, paving the way for compounding returns for investors over the long term.",
+  "meta_description": "Investing in these tech leaders can help you profit from a generational opportunity.",
+  "status": 200,
+  "source_domain": "www.fool.com",
+  "word_count": 723,
+  "matched_companies": [
+    {
+      "name": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "sector": "Technology",
+      "mentions": 11
+    },
+    {
+      "name": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "mentions": 8
+    }
+  ],
+  "relevance_score": 0.37898936170212766,
+  "article_type": "company_specific",
+  "crawl_mode": "strict_today_only"
+}

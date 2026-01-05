@@ -1,8 +1,32 @@
 {
   "ticker": "AMZN",
-  "timestamp": "2026-01-04T17:51:07.478403",
+  "timestamp": "2026-01-05T05:13:41.639259",
   "total_articles": 35,
-  "average_sentiment": 0.0,
+  "average_sentiment": -0.029,
   "financial_events": 0,
-  "confidence": 0.0
+  "confidence": 0.418,
+  "prediction": {
+    "final_signal": "HOLD",
+    "direction": "NEUTRAL",
+    "combined_score": -0.029,
+    "confidence_level": "MEDIUM",
+    "reasoning": "Neutral sentiment | Based on 35 articles"
+  },
+  "components": {
+    "general_sentiment": {
+      "score": -0.029,
+      "contribution": -0.018,
+      "weight": 0.6
+    },
+    "financial_signal": {
+      "score": 0.0,
+      "contribution": 0.0,
+      "weight": 0.4
+    }
+  },
+  "data_sources": {
+    "general_articles": 35,
+    "financial_articles": 0,
+    "total_articles": 35
+  }
 }

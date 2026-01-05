@@ -1,5 +1,6 @@
 # Existing packages
 torch>=2.6.0
+textblob>=0.17.0
 transformers>=4.30.0
 sentencepiece>=0.1.99
 pandas>=2.0.0
